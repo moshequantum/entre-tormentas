@@ -1,46 +1,50 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-// Sample curated lead stories reflecting actual Entre Tormentas coverage
+// Lead headline story (Catatumbo / Zulia sports & main news)
 const leadStory = {
   title: '¡GAITA EN EL PANTANO! Gaiteros del Zulia supera a Cocodrilos y concreta su primer triunfo en la LSB',
-  excerpt: 'La furia musical del quinteto zuliano se impuso con autoridad en el Pedro Elías Belisario Aponte ante una afición desbordada.',
+  excerpt: 'La furia musical del quinteto zuliano se impuso con autoridad 84-76 en el Pedro Elías Belisario Aponte de Maracaibo ante una afición desbordada que colmó las gradas.',
   category: 'Deportes',
   time: 'Hace 2 horas',
-  author: 'Redacción Deportes',
+  author: 'Guillermo',
   image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1200&auto=format&fit=crop',
   slug: 'gaita-en-el-pantano-gaiteros-del-zulia-supera-a-cocodrilos',
   isFeatured: true
 };
 
-const topStories = [
+const topRegionalStories = [
   {
-    title: '¡DESDE LA GOBERNACIÓN! Dignifican a los adultos mayores con sedes rehabilitadas y nuevos centros de atención',
+    title: '¡DESDE LA GOBERNACIÓN! Dignifican a los adultos mayores con sedes rehabilitadas y nuevos centros de atención médica',
     category: 'Regionales',
-    time: 'Hace 4 horas',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30',
+    time: 'Hace 3 horas',
     author: 'Guillermo',
     image: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=600&auto=format&fit=crop',
     slug: 'dignifican-adultos-mayores-sedes-rehabilitadas'
   },
   {
-    title: '¡PREVENCIÓN! Alcalde Di Martino inspecciona saneamiento de la cañada Morillo tramo El Varillal',
+    title: '¡PREVENCIÓN! Alcalde Di Martino inspecciona saneamiento integral de la cañada Morillo en el tramo El Varillal',
     category: 'Regionales',
-    time: 'Hace 5 horas',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30',
+    time: 'Hace 4 horas',
     author: 'Redacción',
     image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop',
     slug: 'alcalde-inspecciona-saneamiento-canada-morillo'
   },
   {
-    title: '¡CON EL GOBERNADOR AL FRENTE! Inician rehabilitación integral de la Clínica Popular «La Plateja»',
+    title: '¡CON EL GOBERNADOR AL FRENTE! Inician rehabilitación integral de la Clínica Popular «La Plateja» en el oeste',
     category: 'Regionales',
-    time: 'Hace 6 horas',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30',
+    time: 'Hace 5 horas',
     author: 'Guillermo',
     image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=600&auto=format&fit=crop',
     slug: 'inician-rehabilitacion-clinica-popular-la-plateja'
   },
   {
-    title: 'DE MARTINO AL INSPECCIONAR LA AV. 20: «Esta ciudad se merece lo mejor y nada nos detiene»',
+    title: 'DE MARTINO AL INSPECCIONAR LA AV. 20: «Esta ciudad se merece lo mejor y nada nos detiene en el plan de asfaltado»',
     category: 'Regionales',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30',
     time: 'Ayer',
     author: 'Redacción',
     image: 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?q=80&w=600&auto=format&fit=crop',
@@ -48,113 +52,166 @@ const topStories = [
   }
 ];
 
-const sportsAndCrime = [
+// Most read ranking (Tendencias / Lo Más Leído)
+const trendingRankings = [
   {
-    title: 'Alerta hidrometeorológica en el Sur del Lago ante crecida de ríos tributarios',
+    rank: '01',
+    title: 'Pronóstico del Relámpago del Catatumbo: Reportan más de 200 descargas por hora en la cuenca sur',
+    category: 'Clima & Región',
+    reads: '14.2k lecturas'
+  },
+  {
+    rank: '02',
+    title: 'Puente General Rafael Urdaneta activa operativo especial de mantenimiento nocturno en canal rápido',
     category: 'Sucesos',
-    time: 'Hace 3 horas',
-    author: 'Sucesos Zulia',
-    image: 'https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?q=80&w=600&auto=format&fit=crop'
+    reads: '11.8k lecturas'
   },
   {
-    title: 'Águilas del Zulia arrancan pretemporada con plantilla completa en el Luis Aparicio',
+    rank: '03',
+    title: 'Águilas del Zulia define su rotación abridora para el arranque de temporada en el nido naranja',
     category: 'Deportes',
-    time: 'Hace 7 horas',
-    author: 'Deportes',
-    image: 'https://images.unsplash.com/photo-1508344928928-7165b67de128?q=80&w=600&auto=format&fit=crop'
+    reads: '9.4k lecturas'
   },
   {
-    title: 'Plan de iluminación con energía solar avanza en los principales corredores viales de Maracaibo',
-    category: 'Regionales',
-    time: 'Ayer',
-    author: 'Infraestructura',
-    image: 'https://images.unsplash.com/photo-1509391365360-2e959784a276?q=80&w=600&auto=format&fit=crop'
+    rank: '04',
+    title: 'Inician dragado en canales de navegación del Lago de Maracaibo para potenciar tráfico portuario',
+    category: 'Economía',
+    reads: '8.1k lecturas'
+  }
+];
+
+// Opinion & Columnists (Signature editorial content)
+const opinionPieces = [
+  {
+    author: 'Dr. Alexis Fernández',
+    role: 'Cronista de Maracaibo',
+    title: 'La memoria lacustre: cuando el Catatumbo alumbraba a los navegantes de América',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop'
+  },
+  {
+    author: 'Mariela Chiquinquirá Rivas',
+    role: 'Analista Económica',
+    title: 'El Zulia productivo frente a la reconversión comercial: desafíos del cuarto trimestre',
+    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop'
   }
 ];
 ---
 
 <Layout title="Entre Tormentas | Diario Digital del Zulia">
-  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6">
 
-    <!-- Section Heading: Destacadas -->
-    <div class="mb-6 flex items-center justify-between border-b border-storm-800 pb-3">
-      <div class="flex items-center gap-2.5">
-        <span class="h-4 w-1 rounded-full bg-electric-500"></span>
-        <h2 class="text-xl font-bold tracking-tight text-white uppercase sm:text-2xl">
-          Noticias Destacadas
-        </h2>
-      </div>
-      <span class="text-xs font-semibold text-ion-400">Edición Continua</span>
-    </div>
+  <!-- Atmospheric Background Glow -->
+  <div class="pointer-events-none absolute inset-x-0 top-0 h-[600px] overflow-hidden opacity-30">
+    <div class="absolute -top-40 left-1/2 h-[500px] w-[900px] -translate-x-1/2 rounded-full bg-gradient-to-b from-electric-600/30 via-ion-400/10 to-transparent blur-3xl"></div>
+  </div>
 
-    <!-- Editorial Lead Grid (1 Large Hero + 4 Side Grid Cards) -->
-    <div class="grid grid-cols-1 gap-6 lg:grid-cols-12">
+  <div class="relative mx-auto max-w-7xl px-4 py-6 sm:px-6">
+
+    <!-- Hero Editorial Grid: Lead Story (8 cols) + Top Ranked (4 cols) -->
+    <section class="grid grid-cols-1 gap-8 lg:grid-cols-12">
       
-      <!-- Main Hero Feature (7 cols) -->
-      <article class="group relative overflow-hidden rounded-2xl border border-storm-700/80 bg-storm-900 shadow-xl transition-all hover:border-electric-500 lg:col-span-7 flex flex-col justify-end min-h-[460px] sm:min-h-[520px]">
-        <!-- Image with Duotone Overlay -->
-        <img
-          src={leadStory.image}
-          alt={leadStory.title}
-          class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-        />
-        <div class="absolute inset-0 bg-gradient-to-t from-storm-950 via-storm-950/70 to-transparent"></div>
-
-        <!-- Content Overlay -->
-        <div class="relative z-10 p-6 sm:p-8 space-y-3.5">
-          <div class="flex items-center gap-2.5">
-            <span class="rounded bg-electric-600 px-2.5 py-0.5 text-xs font-bold uppercase tracking-wider text-white">
+      <!-- Lead Hero Article -->
+      <div class="lg:col-span-8">
+        <article class="group relative flex min-h-[480px] flex-col justify-end overflow-hidden rounded-2xl border border-storm-700 bg-storm-900 shadow-2xl transition-all duration-300 hover:border-electric-500 hover:shadow-electric-600/20 sm:min-h-[540px]">
+          <!-- Image with Atmospheric Vignette -->
+          <img
+            src={leadStory.image}
+            alt={leadStory.title}
+            class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-storm-950 via-storm-950/75 to-transparent"></div>
+          
+          <!-- Category & Badge Header -->
+          <div class="absolute top-6 left-6 flex items-center gap-2">
+            <span class="inline-flex items-center gap-1.5 rounded-full bg-electric-600/90 px-3 py-1 text-xs font-bold tracking-wider text-white uppercase backdrop-blur-md shadow-lg shadow-electric-600/30">
+              <span class="h-1.5 w-1.5 rounded-full bg-white animate-pulse"></span>
               {leadStory.category}
             </span>
-            <span class="text-xs text-slate-300 font-medium">{leadStory.time}</span>
-            <span class="text-xs text-slate-400">· {leadStory.author}</span>
+            <span class="rounded-full bg-storm-950/80 px-2.5 py-1 text-[11px] font-semibold text-ion-300 backdrop-blur-md border border-storm-700">
+              Noticia Principal
+            </span>
           </div>
 
-          <h1 class="text-2xl font-extrabold leading-tight tracking-tight text-white sm:text-3xl lg:text-4xl group-hover:text-ion-300 transition-colors">
-            {leadStory.title}
-          </h1>
-
-          <p class="text-sm sm:text-base text-slate-300 line-clamp-2 leading-relaxed">
-            {leadStory.excerpt}
-          </p>
-        </div>
-      </article>
-
-      <!-- Side Grid (4 Stories in 5 cols) -->
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-5 lg:grid-cols-1">
-        {topStories.map((story) => (
-          <article class="card-storm group flex gap-4 overflow-hidden rounded-xl p-3.5">
-            <div class="relative h-24 w-28 flex-shrink-0 overflow-hidden rounded-lg bg-storm-800">
-              <img
-                src={story.image}
-                alt={story.title}
-                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
-              />
+          <!-- Content Block -->
+          <div class="relative z-10 p-6 sm:p-10 space-y-4">
+            <div class="flex items-center gap-3 text-xs text-slate-300 font-medium">
+              <span class="text-ion-400">⚡ {leadStory.time}</span>
+              <span>·</span>
+              <span>Por {leadStory.author}</span>
             </div>
-            <div class="flex flex-1 flex-col justify-between py-0.5">
-              <div class="space-y-1.5">
-                <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-ion-400">
-                  {story.category}
-                </span>
-                <h3 class="text-sm font-bold leading-snug text-white line-clamp-2 group-hover:text-ion-300 transition-colors">
-                  {story.title}
-                </h3>
-              </div>
-              <div class="flex items-center gap-2 text-[11px] text-slate-400">
-                <span>{story.time}</span>
-                <span>·</span>
-                <span>{story.author}</span>
-              </div>
+
+            <h1 class="text-2xl font-extrabold leading-tight tracking-tight text-white sm:text-3xl lg:text-4xl group-hover:text-ion-300 transition-colors">
+              {leadStory.title}
+            </h1>
+
+            <p class="text-sm sm:text-base text-slate-300 leading-relaxed max-w-3xl line-clamp-3">
+              {leadStory.excerpt}
+            </p>
+
+            <div class="pt-2">
+              <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-ion-400 transition-all group-hover:gap-3 group-hover:text-white">
+                Leer artículo completo <span>→</span>
+              </span>
             </div>
-          </article>
-        ))}
+          </div>
+        </article>
       </div>
 
-    </div>
+      <!-- Trending / Lo Más Leído (4 cols) -->
+      <aside class="flex flex-col justify-between rounded-2xl border border-storm-800 bg-storm-900/60 p-6 backdrop-blur-sm lg:col-span-4">
+        <div>
+          <div class="mb-5 flex items-center justify-between border-b border-storm-800 pb-3">
+            <div class="flex items-center gap-2">
+              <span class="text-ion-400 text-lg">🔥</span>
+              <h3 class="text-sm font-bold tracking-wider text-white uppercase">
+                Tendencias · Lo Más Leído
+              </h3>
+            </div>
+            <span class="rounded bg-storm-800 px-2 py-0.5 text-[10px] font-bold text-slate-400 uppercase">24 Horas</span>
+          </div>
 
-    <!-- Secondary Category Row: Sucesos & Actualidad Zulia -->
-    <div class="mt-14">
+          <div class="space-y-4 divide-y divide-storm-800/60">
+            {trendingRankings.map((trend) => (
+              <a href="#" class="group block pt-4 first:pt-0 transition">
+                <div class="flex items-start gap-4">
+                  <span class="font-display text-2xl font-extrabold tracking-tighter text-storm-700 transition group-hover:text-ion-400">
+                    {trend.rank}
+                  </span>
+                  <div class="space-y-1">
+                    <span class="text-[10px] font-bold tracking-wider text-ion-400 uppercase">
+                      {trend.category}
+                    </span>
+                    <h4 class="text-xs sm:text-sm font-semibold leading-snug text-slate-200 transition group-hover:text-white">
+                      {trend.title}
+                    </h4>
+                    <span class="text-[10px] text-slate-500">{trend.reads}</span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <!-- Catatumbo Live Telemetry Widget -->
+        <div class="mt-6 rounded-xl border border-storm-700/80 bg-gradient-to-br from-storm-950 to-storm-900 p-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+              <div class="flex h-7 w-7 items-center justify-center rounded-lg bg-electric-600/20 text-ion-400 border border-electric-500/30">
+                ⚡
+              </div>
+              <div>
+                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Cuenca del Catatumbo</div>
+                <div class="text-xs font-bold text-white">Actividad Eléctrica: Alta</div>
+              </div>
+            </div>
+            <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          </div>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Section 2: Actualidad Noticiosa Zulia (4 Column Cards) -->
+    <section class="mt-14">
       <div class="mb-6 flex items-center justify-between border-b border-storm-800 pb-3">
         <div class="flex items-center gap-2.5">
           <span class="h-4 w-1 rounded-full bg-ion-400"></span>
@@ -162,38 +219,74 @@ const sportsAndCrime = [
             Actualidad Zulia & Sucesos
           </h2>
         </div>
-        <a href="/categoria/regionales" class="text-xs font-semibold text-ion-400 hover:underline">
-          Ver todas →
+        <a href="/categoria/regionales" class="text-xs font-semibold text-ion-400 transition hover:text-white">
+          Ver todas las noticias →
         </a>
       </div>
 
-      <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-        {sportsAndCrime.map((item) => (
-          <article class="card-storm group overflow-hidden rounded-xl">
-            <div class="relative h-44 w-full overflow-hidden bg-storm-800">
-              <img
-                src={item.image}
-                alt={item.title}
-                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
-              />
-              <span class="absolute top-3 left-3 rounded bg-storm-950/80 px-2.5 py-0.5 text-xs font-bold text-white uppercase backdrop-blur-sm border border-storm-700">
-                {item.category}
-              </span>
-            </div>
-            <div class="p-4 space-y-2">
-              <h3 class="text-base font-bold text-white line-clamp-2 leading-snug group-hover:text-ion-400 transition-colors">
-                {item.title}
-              </h3>
-              <div class="flex items-center justify-between text-xs text-slate-400 pt-2 border-t border-storm-800">
-                <span>{item.author}</span>
-                <span>{item.time}</span>
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {topRegionalStories.map((story) => (
+          <article class="card-storm group flex flex-col justify-between overflow-hidden rounded-xl">
+            <div>
+              <div class="relative h-44 w-full overflow-hidden bg-storm-800">
+                <img
+                  src={story.image}
+                  alt={story.title}
+                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <span class="absolute top-3 left-3 rounded-full bg-storm-950/85 px-2.5 py-0.5 text-[10px] font-bold text-ion-300 uppercase backdrop-blur-md border border-storm-700">
+                  {story.category}
+                </span>
               </div>
+              <div class="p-4 space-y-2">
+                <h3 class="text-sm font-bold leading-snug text-white line-clamp-3 group-hover:text-ion-300 transition-colors">
+                  {story.title}
+                </h3>
+              </div>
+            </div>
+            <div class="flex items-center justify-between border-t border-storm-800/80 px-4 py-3 text-[11px] text-slate-400">
+              <span>{story.author}</span>
+              <span>{story.time}</span>
             </div>
           </article>
         ))}
       </div>
-    </div>
+    </section>
+
+    <!-- Section 3: Opinión Editorial & Firmas -->
+    <section class="mt-16 rounded-2xl border border-storm-800 bg-storm-900/40 p-6 sm:p-8 backdrop-blur-sm">
+      <div class="mb-6 flex items-center justify-between border-b border-storm-800 pb-3">
+        <div class="flex items-center gap-2.5">
+          <span class="h-4 w-1 rounded-full bg-electric-500"></span>
+          <h2 class="text-lg font-bold tracking-tight text-white uppercase sm:text-xl">
+            Opinión & Columnistas
+          </h2>
+        </div>
+        <span class="text-xs text-slate-400">Voces de la Región</span>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+        {opinionPieces.map((col) => (
+          <article class="card-storm flex gap-4 rounded-xl p-5 transition hover:border-electric-500">
+            <img
+              src={col.avatar}
+              alt={col.author}
+              class="h-14 w-14 flex-shrink-0 rounded-full object-cover border-2 border-storm-700"
+            />
+            <div class="space-y-1.5">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-bold text-white">{col.author}</span>
+                <span class="text-[10px] text-ion-400">· {col.role}</span>
+              </div>
+              <h3 class="text-sm font-semibold leading-snug text-slate-300 transition hover:text-white">
+                «{col.title}»
+              </h3>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
 
   </div>
 </Layout>

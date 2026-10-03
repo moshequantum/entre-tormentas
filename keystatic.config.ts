@@ -2,8 +2,8 @@ import { config, fields, collection } from '@keystatic/core';
 
 export default config({
   storage: {
-    kind: process.env.NODE_ENV === 'production' ? 'github' : 'local',
-    ...(process.env.NODE_ENV === 'production' && {
+    kind: import.meta.env.PROD ? 'github' : 'local',
+    ...(import.meta.env.PROD && {
       repo: {
         owner: 'moshequantum',
         name: 'entre-tormentas',
