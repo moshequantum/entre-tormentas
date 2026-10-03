@@ -17,5 +17,10 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     })
-  ]
+  ],
+  vite: {
+    optimizeDeps: {
+      exclude: ['@keystatic/core', '@keystatic/astro']
+    }
+  }
 });
