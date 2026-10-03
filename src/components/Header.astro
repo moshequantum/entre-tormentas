@@ -1,0 +1,90 @@
+---
+const categories = [
+  { name: 'Regionales', href: '/categoria/regionales' },
+  { name: 'Nacionales', href: '/categoria/nacionales' },
+  { name: 'Sucesos', href: '/categoria/sucesos' },
+  { name: 'Deportes', href: '/categoria/deportes' },
+  { name: 'Internacionales', href: '/categoria/internacionales' },
+  { name: 'Espectáculos', href: '/categoria/espectaculos' },
+  { name: 'Opinión', href: '/categoria/opinion' },
+];
+
+const today = new Intl.DateTimeFormat('es-VE', {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+}).format(new Date());
+---
+
+<header class="w-full border-b border-storm-700/60 bg-storm-950/95 sticky top-0 z-50 backdrop-blur-md">
+  <!-- Top Ticker / Meta Bar -->
+  <div class="border-b border-storm-800/80 bg-storm-900/60 px-4 py-1.5 text-xs text-slate-400">
+    <div class="mx-auto flex max-w-7xl items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-alert-500/15 px-2.5 py-0.5 font-semibold text-alert-500">
+          <span class="relative flex h-2 w-2">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-alert-500 opacity-75"></span>
+            <span class="relative inline-flex h-2 w-2 rounded-full bg-alert-500"></span>
+          </span>
+          ÚLTIMA HORA
+        </span>
+        <span class="hidden truncate text-slate-300 sm:inline">
+          Gaiteros del Zulia superan a Cocodrilos y aseguran victoria clave en la LSB
+        </span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px] capitalize text-slate-400">
+        <span>{today}</span>
+        <a href="/keystatic" class="rounded border border-storm-700 bg-storm-800/60 px-2 py-0.5 text-ion-400 transition hover:border-electric-500 hover:text-white">
+          Redacción CMS
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Brand Bar -->
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
+    <a href="/" class="group flex items-center gap-3.5 transition">
+      <!-- Minimalist Duotone Isologo -->
+      <div class="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl border border-storm-700 bg-storm-900 shadow-lg shadow-electric-600/10 transition group-hover:border-electric-500 group-hover:shadow-electric-600/25">
+        <img src="/src/assets/logo.svg" alt="Entre Tormentas Isologo" class="h-9 w-9 object-contain" />
+      </div>
+      <div class="flex flex-col">
+        <div class="flex items-baseline gap-1.5 font-display tracking-tight">
+          <span class="text-xl font-extrabold text-white sm:text-2xl">ENTRE</span>
+          <span class="text-xl font-extrabold text-ion-400 sm:text-2xl">TORMENTAS</span>
+        </div>
+        <span class="text-[10px] font-semibold tracking-widest text-slate-400 uppercase">
+          Diario Digital · Zulia
+        </span>
+      </div>
+    </a>
+
+    <!-- Quick weather & search indicator -->
+    <div class="hidden items-center gap-4 md:flex">
+      <div class="flex items-center gap-2 rounded-lg border border-storm-800 bg-storm-900/80 px-3 py-1.5 text-xs text-slate-300">
+        <span class="text-ion-400">⚡ Catatumbo</span>
+        <span class="text-slate-500">|</span>
+        <span>Maracaibo 32°C</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Categories Navigation -->
+  <nav class="border-t border-storm-800/80 bg-storm-900/40">
+    <div class="mx-auto flex max-w-7xl items-center overflow-x-auto px-4 py-2 text-sm no-scrollbar sm:px-6">
+      <ul class="flex items-center gap-6 whitespace-nowrap font-medium text-slate-300">
+        {categories.map((cat) => (
+          <li>
+            <a
+              href={cat.href}
+              class="transition-colors hover:text-ion-400 focus:outline-none"
+            >
+              {cat.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build and cache
+dist/
+.astro/
+.cache/
+
+# Local backups and heavy dumps (NEVER commit to git)
+data/
+*.tar.gz
+*.sql.gz
+*.sql
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Operating System
+.DS_Store
+Thumbs.db

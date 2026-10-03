@@ -1,0 +1,44 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="mt-20 border-t border-storm-800 bg-storm-950 py-12 text-slate-400">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
+      <div class="space-y-4 md:col-span-2">
+        <div class="flex items-center gap-3">
+          <div class="flex h-9 w-9 items-center justify-center rounded-lg border border-storm-700 bg-storm-900">
+            <img src="/src/assets/logo.svg" alt="Entre Tormentas" class="h-7 w-7 object-contain" />
+          </div>
+          <span class="text-lg font-bold text-white">ENTRE <span class="text-ion-400">TORMENTAS</span></span>
+        </div>
+        <p class="max-w-md text-sm text-slate-400">
+          Periodismo digital independiente desde Maracaibo, Zulia. Cubriendo la actualidad regional, nacional e internacional bajo la luz del Relámpago del Catatumbo.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="mb-3 text-xs font-bold tracking-wider text-slate-200 uppercase">Secciones</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/categoria/regionales" class="hover:text-ion-400">Regionales</a></li>
+          <li><a href="/categoria/nacionales" class="hover:text-ion-400">Nacionales</a></li>
+          <li><a href="/categoria/sucesos" class="hover:text-ion-400">Sucesos</a></li>
+          <li><a href="/categoria/deportes" class="hover:text-ion-400">Deportes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="mb-3 text-xs font-bold tracking-wider text-slate-200 uppercase">Portal & Redacción</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/keystatic" class="text-ion-400 hover:underline">Acceso a Redacción (Keystatic)</a></li>
+          <li><span class="text-xs text-slate-500">Astro 5 + Cloudflare GitOps</span></li>
+          <li><span class="text-xs text-slate-500">Maracaibo, Estado Zulia, Venezuela</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-8 border-t border-storm-800/80 pt-6 text-center text-xs text-slate-500">
+      <p>© {currentYear} Diario Digital Entre Tormentas. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>

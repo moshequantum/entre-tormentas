@@ -1,0 +1,199 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Sample curated lead stories reflecting actual Entre Tormentas coverage
+const leadStory = {
+  title: '¡GAITA EN EL PANTANO! Gaiteros del Zulia supera a Cocodrilos y concreta su primer triunfo en la LSB',
+  excerpt: 'La furia musical del quinteto zuliano se impuso con autoridad en el Pedro Elías Belisario Aponte ante una afición desbordada.',
+  category: 'Deportes',
+  time: 'Hace 2 horas',
+  author: 'Redacción Deportes',
+  image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1200&auto=format&fit=crop',
+  slug: 'gaita-en-el-pantano-gaiteros-del-zulia-supera-a-cocodrilos',
+  isFeatured: true
+};
+
+const topStories = [
+  {
+    title: '¡DESDE LA GOBERNACIÓN! Dignifican a los adultos mayores con sedes rehabilitadas y nuevos centros de atención',
+    category: 'Regionales',
+    time: 'Hace 4 horas',
+    author: 'Guillermo',
+    image: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=600&auto=format&fit=crop',
+    slug: 'dignifican-adultos-mayores-sedes-rehabilitadas'
+  },
+  {
+    title: '¡PREVENCIÓN! Alcalde Di Martino inspecciona saneamiento de la cañada Morillo tramo El Varillal',
+    category: 'Regionales',
+    time: 'Hace 5 horas',
+    author: 'Redacción',
+    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop',
+    slug: 'alcalde-inspecciona-saneamiento-canada-morillo'
+  },
+  {
+    title: '¡CON EL GOBERNADOR AL FRENTE! Inician rehabilitación integral de la Clínica Popular «La Plateja»',
+    category: 'Regionales',
+    time: 'Hace 6 horas',
+    author: 'Guillermo',
+    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=600&auto=format&fit=crop',
+    slug: 'inician-rehabilitacion-clinica-popular-la-plateja'
+  },
+  {
+    title: 'DE MARTINO AL INSPECCIONAR LA AV. 20: «Esta ciudad se merece lo mejor y nada nos detiene»',
+    category: 'Regionales',
+    time: 'Ayer',
+    author: 'Redacción',
+    image: 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?q=80&w=600&auto=format&fit=crop',
+    slug: 'de-martino-inspeccion-avenida-20'
+  }
+];
+
+const sportsAndCrime = [
+  {
+    title: 'Alerta hidrometeorológica en el Sur del Lago ante crecida de ríos tributarios',
+    category: 'Sucesos',
+    time: 'Hace 3 horas',
+    author: 'Sucesos Zulia',
+    image: 'https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?q=80&w=600&auto=format&fit=crop'
+  },
+  {
+    title: 'Águilas del Zulia arrancan pretemporada con plantilla completa en el Luis Aparicio',
+    category: 'Deportes',
+    time: 'Hace 7 horas',
+    author: 'Deportes',
+    image: 'https://images.unsplash.com/photo-1508344928928-7165b67de128?q=80&w=600&auto=format&fit=crop'
+  },
+  {
+    title: 'Plan de iluminación con energía solar avanza en los principales corredores viales de Maracaibo',
+    category: 'Regionales',
+    time: 'Ayer',
+    author: 'Infraestructura',
+    image: 'https://images.unsplash.com/photo-1509391365360-2e959784a276?q=80&w=600&auto=format&fit=crop'
+  }
+];
+---
+
+<Layout title="Entre Tormentas | Diario Digital del Zulia">
+  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6">
+
+    <!-- Section Heading: Destacadas -->
+    <div class="mb-6 flex items-center justify-between border-b border-storm-800 pb-3">
+      <div class="flex items-center gap-2.5">
+        <span class="h-4 w-1 rounded-full bg-electric-500"></span>
+        <h2 class="text-xl font-bold tracking-tight text-white uppercase sm:text-2xl">
+          Noticias Destacadas
+        </h2>
+      </div>
+      <span class="text-xs font-semibold text-ion-400">Edición Continua</span>
+    </div>
+
+    <!-- Editorial Lead Grid (1 Large Hero + 4 Side Grid Cards) -->
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-12">
+      
+      <!-- Main Hero Feature (7 cols) -->
+      <article class="group relative overflow-hidden rounded-2xl border border-storm-700/80 bg-storm-900 shadow-xl transition-all hover:border-electric-500 lg:col-span-7 flex flex-col justify-end min-h-[460px] sm:min-h-[520px]">
+        <!-- Image with Duotone Overlay -->
+        <img
+          src={leadStory.image}
+          alt={leadStory.title}
+          class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-storm-950 via-storm-950/70 to-transparent"></div>
+
+        <!-- Content Overlay -->
+        <div class="relative z-10 p-6 sm:p-8 space-y-3.5">
+          <div class="flex items-center gap-2.5">
+            <span class="rounded bg-electric-600 px-2.5 py-0.5 text-xs font-bold uppercase tracking-wider text-white">
+              {leadStory.category}
+            </span>
+            <span class="text-xs text-slate-300 font-medium">{leadStory.time}</span>
+            <span class="text-xs text-slate-400">· {leadStory.author}</span>
+          </div>
+
+          <h1 class="text-2xl font-extrabold leading-tight tracking-tight text-white sm:text-3xl lg:text-4xl group-hover:text-ion-300 transition-colors">
+            {leadStory.title}
+          </h1>
+
+          <p class="text-sm sm:text-base text-slate-300 line-clamp-2 leading-relaxed">
+            {leadStory.excerpt}
+          </p>
+        </div>
+      </article>
+
+      <!-- Side Grid (4 Stories in 5 cols) -->
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-5 lg:grid-cols-1">
+        {topStories.map((story) => (
+          <article class="card-storm group flex gap-4 overflow-hidden rounded-xl p-3.5">
+            <div class="relative h-24 w-28 flex-shrink-0 overflow-hidden rounded-lg bg-storm-800">
+              <img
+                src={story.image}
+                alt={story.title}
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+            <div class="flex flex-1 flex-col justify-between py-0.5">
+              <div class="space-y-1.5">
+                <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-ion-400">
+                  {story.category}
+                </span>
+                <h3 class="text-sm font-bold leading-snug text-white line-clamp-2 group-hover:text-ion-300 transition-colors">
+                  {story.title}
+                </h3>
+              </div>
+              <div class="flex items-center gap-2 text-[11px] text-slate-400">
+                <span>{story.time}</span>
+                <span>·</span>
+                <span>{story.author}</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+
+    </div>
+
+    <!-- Secondary Category Row: Sucesos & Actualidad Zulia -->
+    <div class="mt-14">
+      <div class="mb-6 flex items-center justify-between border-b border-storm-800 pb-3">
+        <div class="flex items-center gap-2.5">
+          <span class="h-4 w-1 rounded-full bg-ion-400"></span>
+          <h2 class="text-lg font-bold tracking-tight text-white uppercase sm:text-xl">
+            Actualidad Zulia & Sucesos
+          </h2>
+        </div>
+        <a href="/categoria/regionales" class="text-xs font-semibold text-ion-400 hover:underline">
+          Ver todas →
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+        {sportsAndCrime.map((item) => (
+          <article class="card-storm group overflow-hidden rounded-xl">
+            <div class="relative h-44 w-full overflow-hidden bg-storm-800">
+              <img
+                src={item.image}
+                alt={item.title}
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+              <span class="absolute top-3 left-3 rounded bg-storm-950/80 px-2.5 py-0.5 text-xs font-bold text-white uppercase backdrop-blur-sm border border-storm-700">
+                {item.category}
+              </span>
+            </div>
+            <div class="p-4 space-y-2">
+              <h3 class="text-base font-bold text-white line-clamp-2 leading-snug group-hover:text-ion-400 transition-colors">
+                {item.title}
+              </h3>
+              <div class="flex items-center justify-between text-xs text-slate-400 pt-2 border-t border-storm-800">
+                <span>{item.author}</span>
+                <span>{item.time}</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</Layout>
