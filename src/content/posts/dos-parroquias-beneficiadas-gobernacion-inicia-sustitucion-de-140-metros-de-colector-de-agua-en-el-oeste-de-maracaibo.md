@@ -1,36 +1,27 @@
 ---
-title: "¡ALCALDÍA ACTIVA! ‎Más de 60 familias recibieron ayudas en jornada social en Francisco Eugenio Bustamante"
+title: "¡DOS PARROQUIAS BENEFICIADAS! Gobernación inicia sustitución de 140 metros de colector de agua en el oeste de Maracaibo"
 publishedAt: "2026-07-12"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','35948-revision-v1','','','2026-07-12 04:56:30','2026-07-12 08:56:30','',35948,'https://entretormentas.com/?p=35954',0,'revision','',0),(35955,2,'2026-07-12 04:59:54','2026-07-12 08:59:54"
+coverImage: "https://entretormentas.com/wp-content/uploads/2026/07/image-288.png"
+excerpt: "ENTRE TORMENTAS. El gobernador Luis Caldera anunció la sustitución de 140 metros lineales de colector de 24 pulgadas, a nueve metros de profundidad, que garantizará la recolección de aguas servidas entre las parroquias San Isidro y Francisc"
 ---
 
-<p><strong>‎ENTRE TORMENTAS. </strong>Joali Fernández cargaba con la preocupación de no poder comprar el coche ortopédico que necesitaba su sobrino Erwin García, de 41 años, diagnosticado con encefalopatía espástica. Este sábado, esa espera terminó cuando recibió la ayuda durante una nueva Jornada Integral del Buen Vivir realizada por la Alcaldía de Maracaibo desarrollada en el barrio José Antonio Páez, de la parroquia Francisco Eugenio Bustamante.</p>
+**ENTRE TORMENTAS.** El gobernador Luis Caldera anunció la sustitución de 140 metros lineales de colector de 24 pulgadas, a nueve metros de profundidad, que garantizará la recolección de aguas servidas entre las parroquias San Isidro y Francisco Eugenio Bustamante, al oeste de Maracaibo.
 
+En el inicio de los trabajos este sábado 11 de julio, en la vía a La Concepción, en el sector Las Mercedes, el gobernador estuvo acompañado por el presidente de Hidroven, Miguel Perozo. La obra forma parte del Plan Rector de Aguas Servidas y el Plan Hídrico Regional.
 
+![](https://entretormentas.com/wp-content/uploads/2026/07/image-289.png)
 
-<figure class="wp-block-image size-large"><img src="https://entretormentas.com/wp-content/uploads/2026/07/image-287-1024x682.png" alt="" class="wp-image-35953"/></figure>
+“Es el plan de recuperación vial y construcción de drenajes superficiales entre el municipio Maracaibo y el municipio Jesús Enrique Lossada, una obra del Gobierno Nacional, cumpliendo instrucciones de nuestra presidenta encargada, la doctora Delcy Rodríguez; del ministro del Poder Popular de las Aguas, Carlos Mast y la Gobernación del estado Zulia, junto al pueblo siempre”, informó el gobernador.
 
+La rehabilitación forma parte de la macro red que conecta el oeste de Maracaibo con el municipio Jesús Enrique Lossada, donde el colector, por estar a nueve metros de profundidad, requiere de un contingente de cuadrillas y el uso de maquinaria pesada como dos retroexcavadoras, un jumbo brazo largo y otro brazo corto que están activadas en la zona.
 
+![](https://entretormentas.com/wp-content/uploads/2026/07/image-290.png)
 
-<p><br>‎<br>‎Con el nuevo equipo, su sobrino podrá pasar gran parte del día con mayor comodidad y mejores condiciones de movilidad. ‎"Nos hacía muchísima falta porque de verdad que para comprar una silla por nuestros propios medios no teníamos. Hicimos la solicitud por la aplicación y nos respondieron. Este coche ortopédico nos va a ayudar porque él pasa la mayor parte del día en la silla. Ahora él va a estar más cómodo. De verdad que es una ayuda muy grande la que nos están dando", expresó Joali Fernández.<br>‎<br>‎Esta marabina, habitante de la parroquia, aprovechó la oportunidad para agradecer la respuesta obtenida tras gestionar la solicitud mediante el sistema 1x10 del Buen Gobierno. "Al alcalde Giancarlo Di Martino y a todo su equipo les damos las gracias por todo lo que hacen por el pueblo. Espero que sigan ayudando a muchas más familias porque de verdad hay muchas personas que necesitan estos beneficios".<br>‎<br>‎Como ella, más de 60 personas recibieron este sábado ayudas técnicas y humanas como sillas de ruedas, andaderas, bastones, muletas, pañales para adultos y colchones antiescaras.</p>
+“Estamos haciendo una intervención de envergadura, con una excavación de más de 30 mil metros cúbicos en este tramo de 140 metros, que nace en su punto más distante, en el urbanismo Villa San Isidro y va recorriendo toda esta vialidad, hasta incorporarse a la ciudad. Se va a construir una nueva boca de visita entre los dos tramos, para facilitar en un futuro lo que es el mantenimiento de este sistema”, explicó Perozo.
 
-
-
-<figure class="wp-block-image size-large"><img src="https://entretormentas.com/wp-content/uploads/2026/07/image-286-1024x682.png" alt="" class="wp-image-35952"/></figure>
-
-
-
-<p>‎Antes de iniciar la entrega, autoridades y asistentes elevaron una oración por las familias afectadas por el reciente terremoto, en un gesto de solidaridad que marcó el inicio de la actividad. Laura Daza, del equipo de Desarrollo Social, explicó que estas entregas responden a solicitudes realizadas por los ciudadanos a través de la VenApp.<br>‎<br>‎"Todos los sábados estamos dando respuesta. Hoy estamos en la parroquia Francisco Eugenio Bustamante, donde confluyen dos comunas: Alí Primera y Doctora Nelly Contreras".<br>‎<br>‎La funcionaria señaló que la jornada permitió atender requerimientos recientes de vecinos que esperaban una respuesta para mejorar su calidad de vida. "Aquí estamos atendiendo a un pueblo que tanto lo necesita y son solicitudes realizadas recientemente".<br>‎<br>‎La actividad reunió a los gabinetes de Salud, Alimentación, IMPA y Desarrollo Social para ofrecer consultas de medicina general y pediatría, inmunización, odontología, despistaje de hipertensión y diabetes, ecografías para la detección de patologías mamarias y uterinas, entrega de medicamentos, atención a adultos mayores, niños y mascotas, además de asesorías jurídicas, Registro Civil, trámites de la plataforma Patria y del SAIME.</p>
-
-
-
-<figure class="wp-block-image size-large"><img src="https://entretormentas.com/wp-content/uploads/2026/07/image-285-1024x682.png" alt="" class="wp-image-35951"/></figure>
-
-
-
-<p><br>‎<br>‎Paralelamente se desarrolló el Mercado Popular, donde se distribuyeron ocho toneladas de alimentos para beneficiar a unas 5.400 familias de 14 consejos comunales de las comunas Alí Primera y Doctora Nelly Contreras.<br>‎<br>‎"En este punto convergen dos comunas: la comuna Alí Primera y la comuna Doctora Nelly Contreras, brindándole satisfacción a los marabinos con productos de calidad y a excelente precio", destacó la autoridad única de Alimentación del municipio, Gelson Carrillo.<br><strong><em>‎ET / Prensa Alcaldía de Maracaibo</em></strong></p>
+Con los trabajos de rehabilitación se resuelve la falla del colector, lo que impacta directamente con la obra que se está ejecutando en la intersección San Isidro, que es uno de los proyectos emblemáticos de la Gobernación en la zona, agregó Perozo.
+***ET / Prensa Gobernación del Zulia***

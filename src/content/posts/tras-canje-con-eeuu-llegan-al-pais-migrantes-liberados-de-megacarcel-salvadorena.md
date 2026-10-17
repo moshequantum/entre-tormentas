@@ -1,52 +1,40 @@
 ---
-title: "¡MANCOMUNADOS! Gobernación y Ejecutivo nacional coordinan acciones para la atención de los zulianos"
+title: "¡TRAS CANJE CON EEUU! Llegan al país migrantes liberados de megacárcel salvadoreña"
 publishedAt: "2025-07-19"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','19530-revision-v1','','','2025-07-19 10:55:44','2025-07-19 08:55:44','',19530,'https://entretormentas.com/?p=19534',0,'revision','',0),(19535,2,'2025-07-19 11:00:12','2025-07-19 09:00:12"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/07/liberados1.jpeg"
+excerpt: "ENTRE TORMENTAS. Los 252 venezolanos liberados de la megacárcel de pandilleros de El Salvador llegaron el viernes a su país tras un canje de prisioneros entre Venezuela y Estados Unidos."
 ---
 
-<p><strong>ENTRE TORMENTAS. </strong>Tras la reciente visita del presidente Nicolás Maduro Moros al Zulia, el gobernador Luis Caldera y el vicepresidente sectorial de Obras Públicas y Servicios, MG Jorge Eliécer Márquez, sostuvieron un encuentro estratégico en el Palacio de los Cóndores, con el objetivo de alinear prioridades y definir planes concretos para ejecutar proyectos esenciales que eleven la calidad de vida de más de cuatro millones de zulianos.</p>
+**ENTRE TORMENTAS. **Los 252 venezolanos liberados de la megacárcel de pandilleros de El Salvador llegaron el viernes a su país tras un canje de prisioneros entre Venezuela y Estados Unidos.
 
+Estos migrantes arribaron en dos aviones al aeropuerto que sirve a Caracas. Vestidos de civil con un tapabocas rojo, varios bajaron la escalinata con los brazos en alto, uno llegó a besar el asfalto de la pista, reseñó EFE.
 
+Fueron capturados en Estados Unidos y enviados en marzo -sin juicio- al temido Centro de Confinamiento del Terrorismo (Cecot) de El Salvador tras ser señalados por el gobierno del presidente Donald Trump de pertenecer a la banda delictiva Tren de Aragua.
 
-<p>Durante la jornada de trabajo, los titulares de los ministerios de Atención de las Aguas, Carlos Mast Yustiz; de Obras Públicas, Juan José Ramírez; de Hábitat y Vivienda, Raúl Paredes; y el Director General de Transporte, Eddison Torrealba, evaluaron de forma conjunta las acciones requeridas para transformar sectores claves como vialidad, electricidad, suministro de agua potable, alumbrado público y telecomunicaciones.</p>
+![](https://entretormentas.com/wp-content/uploads/2025/07/liberados2.jpeg)
 
+Trump declaró a esa pandilla «organización terrorista» e invocó una ley de enemigos extranjeros de 1798 para expulsar a estos migrantes de forma expedita.
 
+«¡Libres, libres al fin!», celebró el presidente venezolano Nicolás Maduro desde un acto oficial que coincidió con la llegada de la aeronave.
 
-<figure class="wp-block-image size-large"><img src="https://entretormentas.com/wp-content/uploads/2025/07/bolivariano2-1024x683.jpeg" alt="" class="wp-image-19531"/></figure>
+Su ministro de Interior, Diosdado Cabello, y otras autoridades subieron a ambos aviones antes del desembarque y entonaron el himno venezolano.
 
+**TERRORISTAS POR INOCENTES**
+El secretario de Estado de Estados Unidos, Marco Rubio, celebró la libertad de 10 estadounidenses y de «presos políticos» venezolanos, mientras Maduro destacó el «alto precio» que pagó en la negociación.
 
+«Terroristas por inocentes», dijo el mandatario. «Le entregamos a cambio 10 mercenarios», coincidió Cabello. «Se llevaron un asesino condenado a 30 años de cárcel, se lo llevó Estados Unidos porque es un agente gringo».
 
-<p>El gobernador Caldera destacó el alcance del plan “Zulia 100 días 2025”, cuya hoja de ruta abarca 12 áreas prioritarias, entre ellas salud, recuperación del centro histórico de Maracaibo, seguridad ciudadana y saneamiento ambiental.</p>
+La embajada estadounidense que sirve a Caracas desde Bogotá publicó una foto de los liberados con banderas de ese país.
 
+![](https://entretormentas.com/wp-content/uploads/2025/07/liberados3.jpeg)
 
+No está clara su identidad, aunque ONG especializadas como Foro Penal aclaró que cinco tienen nacionalidad estadounidense y los otros son residentes permanentes provenientes de México, Francia, Bolivia, Perú y Uruguay.
 
-<p>Sobre el impacto territorial del proyecto, el mandatario regional destacó que el plan abarca los 21 municipios, las 576 comunas y circuitos comunales.</p>
+«Ya mi hermano está en casa, ya está en Venezuela. ¡Estoy contento, estoy feliz!», dijo a la AFP Juan Yamarte, el único de tres hermanos que permanece en Estados Unidos. El mayor, Mervin, terminó en el Cecot y el menor se autodeportó.
 
-
-
-<p>"Ya contempla la sustitución de cilindros por gas metano directamente a las casas, recuperación de vialidad en la carretera Falcón-Zulia, Lara-Zulia, Cabimas, Guajira, zona metropolitana, entrega de ambulancias, centros de diagnóstico, hospitales. Es decir, es la integralidad con el pueblo siempre”, refirió.</p>
-
-
-
-<figure class="wp-block-image size-large"><img src="https://entretormentas.com/wp-content/uploads/2025/07/bolivariano3-1024x682.jpeg" alt="" class="wp-image-19532"/></figure>
-
-
-
-<p>Márquez aseguró por su parte que el cronograma de ejecución responde al mandato presidencial de atender con urgencia las necesidades más sentidas del pueblo.</p>
-
-
-
-<p>indicó que la Corporación Eléctrica Nacional (Corpoelec), brinda soporte técnico y logístico para materializar proyectos, como la sustitución de transformadores y el refuerzo del alumbrado público en comunidades populares, en concordancia con la Consulta Popular Nacional.</p>
-
-
-
-<p>Este encuentro marca el inicio de una etapa decisiva para el Zulia, donde la planificación comunal y el respaldo institucional convergen en favor de una transformación estructural que parte desde las bases del Poder Popular.<br><strong><em>ET / Nota de Prensa</em></strong></p>
-
-
-
-<p></p>
+«A todos los que nos pudieron ayudar, ustedes no saben la alegría que tiene uno al ver todo eso», indicó por su parte Erkia Palencia, madre de Andry Perozo, otro de los liberados.
+***ET / Agencias***

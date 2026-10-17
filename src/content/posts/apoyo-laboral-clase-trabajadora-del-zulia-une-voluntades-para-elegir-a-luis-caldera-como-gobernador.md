@@ -1,56 +1,29 @@
 ---
-title: "¡EN EL CENTRO DE ATENCIÓN VETERINARIA! Alcaldía de Maracaibo inaugura unidad ecográfica para mascotas"
+title: "¡APOYO LABORAL! Clase trabajadora del Zulia une voluntades para elegir a Luis Caldera como gobernador"
 publishedAt: "2025-05-10"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','16403-revision-v1','','','2025-05-10 12:23:40','2025-05-10 10:23:40','',16403,'https://entretormentas.com/?p=16404',0,'revision','',0),(16405,2,'2025-05-10 12:24:25','2025-05-10 10:24:25"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/05/laboral1.jpg"
+excerpt: "ENTRE TORMENTAS. Trabajadores de diferentes áreas productivas y de servicio de la región zuliana, unieron voluntades para elegir a Luis Caldera, como el próximo gobernador del estado Zulia, quien un encuentro realizado este viernes 9 de may"
 ---
 
-<p><strong>ENTRE TORMENTAS.</strong> El Centro de Atención Veterinaria de la Alcaldía de Maracaibo, ubicado en Plaza para Todos, inauguró su nueva unidad ecográfica para mascotas, convirtiéndose en el primer centro en el país en ofrecer este servicio a bajo costo. Con este innovador equipo médico de ultrasonido, el centro se afianza como el más moderno y completo en su tipo.</p>
+**ENTRE TORMENTAS. **Trabajadores de diferentes áreas productivas y de servicio de la región zuliana, unieron voluntades para elegir a Luis Caldera, como el próximo gobernador del estado Zulia, quien un encuentro realizado este viernes 9 de mayo, manifestó que junto al pueblo logrará una victoria aplastante en las elecciones del 25 de mayo.
 
+Caldera expresó sentirse honrado con la clase obrera del estado, que le acompañará en la gran etapa para el Zulia a partir del 25 de mayo, en un gobierno que los protegerá y mejorará sus condiciones de vida.
 
+![](https://entretormentas.com/wp-content/uploads/2025/05/laboral2-1024x683.jpg)
 
-<p>Desde su apertura, el 12 de enero del año pasado, el centro brinda atención permanente de consultas de lunes a viernes y lleva a cabo jornadas de esterilización. Ahora, con la incorporación del servicio de ecografías, los veterinarios podrán diagnosticar y evaluar problemas de salud en las mascotas sin necesidad de cirugía o procedimientos invasivos, así lo explicó María Gabriela Retamosa, presidenta del Instituto Municipal de Protección Animal (IMPA).</p>
+El encuentro masivo de trabajadores tuvo lugar en el Teatro Niños Cantores, con la presencia del presidente de la Central Bolivariana Socialista de Trabajadores, Wills Rangel y de hombres y mujeres de la fuerza petrolera, gasífera, petroquímica, avícola, de salud tanto de empresas del estado, como privadas.
 
+"A partir del 25 de mayo, la clase trabajadora tendrá el acompañamiento de Luis Caldera, con un gobernador que garantiza un sistema único público de salud en clínicas, los 34 hospitales del Zulia, el acceso al agua, al gas, a la electricidad", expuso el candidato al gobierno regional por el Gran Polo Patriótico Simón Bolívar (GPPSB).
 
+El trabajador de la Corporación Socialista del Cemento en el Zulia, Nelson Viera resaltó que la fuerza obrera se une reforzada en apoyo a Caldera, porque es el hombre de la unidad y que conoce bien de las necesidades del pueblo trabajador. “Es el hombre que va a apoyar a la clase obrera del Zulia que produce”, aseguró.
 
-<figure class="wp-block-image size-large"><img src="https://entretormentas.com/wp-content/uploads/2025/05/CANINO2-1024x683.jpg" alt="" class="wp-image-16399"/></figure>
+![](https://entretormentas.com/wp-content/uploads/2025/05/laboral3-1024x682.jpg)
 
+Por su parte, José Briceño, de la Federación Unitaria de los Trabajadores y Trabajadoras de la Construcción, dijo que todos los sindicatos, federaciones y asociaciones de trabajadores de la entidad zuliana, acompaña a Caldera, quien tienen en su propuesta de gobierno apuntalar y fortalecer el desarrollo económico regional, junto a sectores productivos y la masa laboral de la región.
 
-
-<p>“Nos ayudará en el diagnóstico de muchas patologías que son silenciosas y que muchas veces son tratables, pero que no se detectan a tiempo”, indicó Retamosa, además, explicó que se prevé atender entre 10 y 15 casos remitidos desde el centro de atención diariamente.</p>
-
-
-
-<p>“Y ese trabajo no se queda aquí, nosotros vamos hacia las comunidades y hacemos jornadas de esterilización en cada una de las parroquias para llevarles vacunación, esterilización y consultas para el cuidado y protección de nuestras mascotas en todo el municipio”, recordó Retamosa.</p>
-
-
-
-<p>Adrián Romero Martínez, alcalde encargado de Maracaibo, asistió al acto de entrega en compañía de su esposa, Mónica Parra; el legislador José Javier Barbosa, y la doctora Jacqueline Simanca, directora general encargada de Desarrollo Social.</p>
-
-
-
-<p>Romero Martínez enfatizó que este esfuerzo por parte de la Alcaldía busca complementar el gran proyecto del centro, que actualmente atiende entre 40 y 50 mascotas diarias.</p>
-
-
-
-<figure class="wp-block-image size-large"><img src="https://entretormentas.com/wp-content/uploads/2025/05/CANINO3-1024x683.jpg" alt="" class="wp-image-16400"/></figure>
-
-
-
-<p>Anunció que ya están trabajando en la siguiente etapa del centro, que incluirá el proyecto de la farmacia veterinaria para complementar la atención a las mascotas.</p>
-
-
-
-<p>Darcy Malavera, vecina del sector Los Claveles y dueña de cinco gatos rescatados, expresó su satisfacción con los servicios del centro.</p>
-
-
-
-<p>“Aquí los castré y les puse sus vacunas. La labor que hacen realmente nos ayuda. El verdadero acto de amor hacia los animales es cuidarlos y velar por su bienestar, y aquí encontramos una manera fácil de hacerlo porque los precios son muy accesibles y la atención es comparable a la de una clínica privada”, destacó la mujer de 34 años.<br><strong><em>ET / DCI Alcaldía de Maracaibo</em></strong></p>
-
-
-
-<p></p>
+Mientras que Nilson Enrique Pineda, integrante de la Unión de Trabajadores de Venezuela, juró ante las banderas de la dignidad de la clase obrera, que no descansará de trabajar por el país y el Zulia, estado que con el respaldo de la clase obrera “tendrá a Luis Caldera como el gobernador de los trabajadores zulianos”.
+***ET / Prensa PSUV Zulia***

@@ -1,11 +1,15 @@
 ---
-title: "edmu2"
+title: "¡CONTRALORÍA! Inhabilitan a otros cinco opositores para ejercer cargos de elección popular"
 publishedAt: "2024-04-25"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','edmu2','','','2024-04-25 06:13:45','2024-04-25 04:13:45','',1661,'https://entretormentas.com/wp-content/uploads/2024/04/edmu2.jpeg',0,'attachment','image/jpeg',0),(1663,2,'2024-04-25 06:14:47'"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/04/INHABILITADOs.jpg"
+excerpt: "ENTRE TORMENTAS. Este miércoles 24 de abril, la Contraloría General publicó en página web que inhabilitan a cinco políticos de la oposición. Entre ellos están Carlos Ocariz, José Antonio Fernández López, Tomás Guanipa, Elías Sayegh y Juan C"
 ---
 
+**ENTRE TORMENTAS. **Este miércoles 24 de abril, la Contraloría General publicó en página web que inhabilitan a cinco políticos de la oposición. Entre ellos están Carlos Ocariz, José Antonio Fernández López, Tomás Guanipa, Elías Sayegh y Juan Carlos Caldera.
+
+Los primeros cuatros están imposibilitados a postularse a cargos de elección popular por 15 años y Caldera por 12 meses. Se desconoce a qué se debe esta decisión.
+***GS / Tal Cual***

@@ -1,11 +1,42 @@
 ---
-title: "VILEANA"
+title: "Llegar a Miraflores es el reto opositor con Manuel Rosales"
 publishedAt: "2024-03-27"
-category: "regionales"
+category: "opinion"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','vileana','','','2024-03-27 22:37:37','2024-03-27 21:37:37','',318,'https://entretormentas.com/wp-content/uploads/2024/03/VILEANA.jpg',0,'attachment','image/jpeg',0),(320,2,'2024-03-27 22:38:01"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/03/Jose-Aranguibel-Carrasco1.jpeg"
+excerpt: "Por José Aranguibel Carrasco"
 ---
 
+**Por José Aranguibel Carrasco**
+
+*"Nuestra marcha hacia la libertad es irreversible. No debemos dejar que el temor se interponga en nuestro camino".*
+
+*Nelson Mandela*
+
+Nunca como la noche de este lunes millones de venezolanos quizá no habíamos estado tan atentos, pendientes y con los nervios de punta mirando las agujas del reloj hasta que llegara la media noche, --ni siquiera esperando el año nuevo--, cuando vencía el plazo de inscripción de la candidatura opositora a las elecciones del 28 de julio, que pudo ser posible luego de la aceptación por parte del CNE del código de acceso de las tarjetas de Un Nuevo Tiempo y Fuerza Vecinal que inscribieron al gobernador del Zulia, Manuel Rosales Guerrero.
+
+Una noche con final de fotografía contra el tiempo, la abstención y las intenciones del gobierno de evitar, impedir y no permitir que la oposición en sana paz inscribiera a la sustituta de María Corina Machado, en la persona de la docente universitaria Corina Yoris, sin macula alguna en su vida pública y/o familiar, quien tuvo el respaldo unánime de la Plataforma Unitaria Democrática desde el momento mismo que el CNE abrió el lapso de postulaciones e inscripción, entre el 21 al 25 de marzo, pero sin nada oficial le fue impedida su inscripción sin razón legal alguna.
+
+No obstante, al paso de los días, tomó fuerza la versión que venía circulando en el sentido que la no admisión por el sistema en línea del código asignado a las tarjetas de UNT y la MUD, ---eliminada finalmente por el "arbitro"---, en favor de la profesora Yoris no abriría por las buenas o malas. Eso ratifica, ---lo dije en anteriores artículos---, desde antes de la realización de Las Primarias que ganó abrumadoramente María Corina Machado el 22 de octubre pasado, que el gobierno chavista impediría, evitaría y no iba a permitir la candidatura de la líder de Vente Venezuela o de alguien que a futuro fuera propuesta (o) por ella.
+
+Recordemos que la medida quedó "oficializada" a través de otra acción ilegal ejecutada a principios de 2024, cuando el TSJ ratificó la inhabilitación amañada que le levantó la Contraloría General de la República a María Corina Machado, sin derecho a defenderse y violandósele sus derechos constitucionales. Después, el atropello del adversario oficialista dirigió sus baterías contra Corina Yoris, universitaria honorable, respetable y digna. Este lunes lo que todos vimos es que comenzó a agotarse el tiempo. La esperanza de su aceptación no llegó, tampoco ninguna sorpresa que permitiera salir de ese trance. Fueron varias las reuniones entre María Corina Machado y los partidos adscritos en la PUD, pero todo fue en vano.
+
+![](https://entretormentas.com/wp-content/uploads/2024/03/ilustracion-feyo.jpg)Ilustración: Feyo
+
+La ganadora de Las Primarias no admitía otra solución distinta a seguír insistiendo con la candidatura de su tocaya Corina Yoris. Sucedió, diría, a algo similar cuando pretendemos salir insistentemente por una puerta de vidrio sin abrirla. Las agujas del reloj no dejaban de moverse, tampoco las pantallas de los celulares que ninguno dejaba de mirarlas. Las horas, minutos y segundos no daban tregua. No hubo forma ni manera ya entrado otro día lleno de angustia, estrés y desasosiego que permitiera un cambio en la actitud del CNE, a pesar de las denuncias públicas que la Plataforma Unitaria Democrática formuló, también María Corina Machado y asimismo la propia docente que tomó su lugar.
+
+Colegas periodistas de distintos medios de comunicación y de redes sociales difundieron la noticia que traspasó las fronteras del país. Obviamente la solidaridad nacional e internacional no se hizo esperar, pero eso no le provocó ni frío ni calor a la mayoría de los rectores del CNE de militancia en el Psuv. Menos al gobierno. En vista de la tranca del órgano electoral en la PUD optaron por proponer al mismo cargo de elección popular a su principal vocero, Omar Barboza Gutiérrez, pero el intento resultó inadmisible por el sistema manejado desde el CNE.
+
+Otros nombres sonaron, pero la posición cerrada, intransigente y desafiante de llegar y traspasar el límite de la hora de cierre del proceso, no inmutaba ni parecía preocupar a la candidata inhabilitada por el TSJ que tenía a su disposición el respaldo de las tarjetas de UNT y de la MUD que, posteriormente, el CNE no permitió su asignación a nadie, entre el Rosario de trabas promovidas contra la oposición democrática. La conducta de la dirigente de Vente Venezuela en verdad no ayudó a ganarle tiempo al tiempo, sino que su proceder fue echarle, agregarle y colocarle más leña a la candela ante la posibilidad del cierre del lapso de inscripción. Más de uno, seguramente, los nervios lo llevaron a comerse las pocas uñas que a esas horas de la noche aún les quedaba.
+
+A todas estas, la cercanía de la media noche de este lunes llegaba cual verdugo que no ofrece tregua en el movimiento de las agujas del reloj, sin saberse, claramente, si iba o no a salir humo blanco que brotara de la sensatez del tamaño del compromiso tan importante y trascendente, que, por ejemplo, pasa como cuando la Iglesia Católica de tiempo en tiempo le toca elegir al sucesor de Pedro, pero por tratarse que el problema es nuestro, más cercano, diría de vida o muerte, el no haber hecho nada y dejar ir, alejarse y desperdiciar la posibilidad para salir de esta pesadilla, que llegó a 25 años en el poder, sería después de este lunes una decisión imperdonable, injustificable e inexcusable.
+
+Por eso el que haya sido posible que sea Rosales Guerrero a quien le tocó asumir esta responsabilidad, debe comprometernos a los venezolanos a que no podemos ni debemos avalar ningún error o cualquier excusa, dejando de tener un candidato para poder votar. Ese es el verdadero temor que tiene este gobierno desgastado, mentiroso, que tocó fondo, cuando pretende otros seis años como si se tratara que aspiran a llegar, por primera vez, a dirigir un país destruido, atrasado y arruinado por malas políticas publicas y la ausencia de una buena gerencia. Los ejemplos sobran de esa realidad que a diario nos golpea en ciudades, pueblos o caseríos. La lectura no es desplazar o ignorar el liderazgo de María Corina Machado. Su decisión moverá el equilibrio de la victoria o la derrota. Esa es la verdad, dependerá de ella.
+
+Cuando escribía estas líneas desconocía cual sería la postura de María Corina Machado en respuesta a la negativa que el gobierno impidiera, frustrara o truncara su candidatura a Miraflores y la que propuso a la PUD en reemplazo suyo. Tampoco su parecer a la decisión de Rosales Guerrero que al ser inscrito evitó que la oposición quedara desplazada y eliminada. Me niego a creer que llamar a la gente a abstenerse no sería una respuesta inteligente, adecuada ni la que esperan ni merecemos los venezolanos que formamos parte del universo del 82,5 por ciento que deseamos un cambio de gobierno. Estoy convencido que el soplo, murmullos y consejos a sus oidos de algún sector de Voluntad Popular y de la Causa R de llamar a no votar no es la salida.
+
+Ya los venezolanos tenemos de anteriores errores y llamados a la abstención una desagradable experiencia que es el momento de erradicar. Queremos y deseamos ser protagonistas para construir otro destino distinto al actual. Tenemos el derecho de participar en las decisiones votando y decidiendo un mejor país. Cuando hemos optado por la abstención dejamos a los venezolanos sin opción, desamparados y además esa mala experiencia desacrédita el voto como herramienta de lucha.
+
+A lo mejor habrá quien critique que sea Manuel Rosales Guerrero el candidato. No obstante estoy convencido que será mayor el porcentaje que esté de acuerdo que es la opción que tenemos para hacer posible ganar la Presidencia de la República. La tarea no es fácil, pero no imposible. Credenciales tiene para ser el gerente que corrija el desorden administrativo del país, dirija a puerto seguro a esta gran nación y se ocupe de la gente, el principal patrimonio de esta tierra bendecida por papá Dios. ¡Amanecerá y Veremos!

@@ -1,11 +1,19 @@
 ---
-title: "accidenteeeee"
+title: "¡CONVICCIÓN MENTAL! El \"Bocha\" Batista trabaja para que la Vinotinto sorprenda a América"
 publishedAt: "2024-06-17"
-category: "regionales"
+category: "deportes"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','accidenteeeee','','','2024-06-17 10:21:32','2024-06-17 08:21:32','',3735,'https://entretormentas.com/wp-content/uploads/2024/06/accidenteeeee.jpg',0,'attachment','image/jpeg',0),(3737,2,'2024-"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/06/tinto.jpg"
+excerpt: "ENTRE TORMENTAS. El técnico argentino, Fernando Batista, está convencido que en la Vinotinto hay suficiente talento y preparación para ser la sorpresa en la Copa América y lograr metas esquivas, como participar por primera vez en una Copa d"
 ---
 
+**ENTRE TORMENTAS. **El técnico argentino, Fernando Batista, está convencido que en la Vinotinto hay suficiente talento y preparación para ser la sorpresa en la Copa América y lograr metas esquivas, como participar por primera vez en una Copa del Mundo.
+
+El estratega argentino, que tomó las riendas de la selección en marzo del año pasado tras el cese del vínculo contractual entre el también argentino José Pekerman y la Federación Venezolana de Fútbol, sostiene que esencialmente falta que los jugadores se convenzan de ello y en consecuencia busca que sus dirigidos con mentalidad ganadora se sientan capaces de lograr el éxito.
+
+“El gran rival de Venezuela es Venezuela”, dice repetidamente el “Bocha” Batista. “Estamos en buen camino. Todavía queda muchísimo que mejorar, cosas por corregir; pero más allá de lo táctico, de lo técnico, hay que trabajar en la mentalidad, en eso yo hago mucho hincapié. Creérsela, en buen sentido, que podemos ser competitivos”, recalcó.
+
+“En la Copa América vamos a tratar de llegar lo más lejos posible”, destacó Batista.
+***GS / AP***

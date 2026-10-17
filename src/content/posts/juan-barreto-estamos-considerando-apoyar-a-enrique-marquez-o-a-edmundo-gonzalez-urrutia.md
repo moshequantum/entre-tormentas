@@ -1,11 +1,17 @@
 ---
-title: "El venezolano Salomón Rondón desafía en pleno Azteca al campeón América"
+title: "JUAN BARRETO: “Estamos considerando apoyar a Enrique Márquez o a Edmundo González Urrutia\""
 publishedAt: "2024-04-23"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "Salomón Rondón de Pachuca celebra un gol. Imagen de archivo. EFE/ David Martínez Pelcastre','inherit','','closed','','el-venezolano-salomon-rondon-desafia-en-pleno-azteca-al-campeon-america','','','2024-04-23 06:06:01','"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/04/Barreto-1.jpg"
+excerpt: "ENTRE TORMENTAS. El dirigente del partido Redes de Respuesta de Cambios Comunitarios Redes, Juan Barreto, expresó que su organización política evalúa apoyar a los candidatos Enrique Márquez o a Edmundo González Urrutia, tras retirarle el ap"
 ---
 
+**ENTRE TORMENTAS.** El dirigente del partido Redes de Respuesta de Cambios Comunitarios (Redes), Juan Barreto, expresó que su organización política evalúa apoyar a los candidatos Enrique Márquez o a Edmundo González Urrutia, tras retirarle el apoyo a Benjamín Rausseo.
+
+Barreto aseveró que la dirigencia hizo un debate en el que decidieron retirar la candidatura de Rausseo y darse una tregua para estudiar el escenario político.
+
+"Están cambiando las circunstancias hora a hora, prácticamente", dijo durante una entrevista al periodista Vladimir Villegas.
+***GS / Agencias***

@@ -1,24 +1,26 @@
 ---
-title: "¡TRAGEDIA EN LA VÍA! Muere un CPNB al estrellar su moto contra un Optra en la Circunvalación 2"
+title: "¡EN EL JARDIN BOTÁNICO! Zulianos y visitantes ya disfrutan del florecer de los curarires"
 publishedAt: "2024-04-26"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','1731-revision-v1','','','2024-04-26 09:43:33','2024-04-26 07:43:33','',1731,'https://entretormentas.com/?p=1732',0,'revision','',0),(1733,2,'2024-04-26 09:44:31','2024-04-26 07:44:31',''"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/04/jardin1.jpg"
+excerpt: "ENTRE TORMENTAS. El Jardín Botánico se vistió de amarillo con el tradicional \"Florecimiento de los Curarires\", desde este miércoles 24 de abril, un espectáculo que te muestra una alfombra de flores amarillas rodeadas de árboles que se extie"
 ---
 
-<p><strong>ENTRE TORMENTAS. </strong>Un agente del Cuerpo de Policía Nacional Bolivariana (CPNB) falleció cerca de las 5.34 de la tarde de este jueves, 25 de abril de 2024, en un accidente vial en el cual estrelló su motocicleta contra un automóvil marca Chevrolet, modelo Optra, color índigo. El acompañante del oficial fallecido resultó gravemente herido.</p>
+**ENTRE TORMENTAS. **El Jardín Botánico se vistió de amarillo con el tradicional "Florecimiento de los Curarires", desde este miércoles 24 de abril, un espectáculo que te muestra una alfombra de flores amarillas rodeadas de árboles que se extiende ante tus ojos, creando un cuadro que parece sacado de un cuento de hadas.
 
+Los zulianos asisten en familia, al Jardín Botánico de Maracaibo, el cual abrió sus puertas con la floración de los Curarires, evento natural único e inédito en la región. La floración de los curaríres también es conocida como la “primavera dorada” que tiñe de amarillo las más de 180 hectáreas de terreno, con los árboles en distintas formas y tamaño, que surge de un fenómeno natural que se produce tras las primeras lluvias de abril.
 
+Se espera que hasta el domingo 28, quedan oportunidades para que propios y extraños puedan disfrutar de un verdadero oasis amarillo y contemplar de un espectáculo único de la madre naturaleza.
 
-<p>El hecho se registró en la Circunvalación 2, cerca de la estación de combustible E/S El Chaparral, muy cerca del comando de Tránsito Terrestre del barrio Bolívar de Maracaibo.</p>
+![](https://entretormentas.com/wp-content/uploads/2024/04/jardin2.jpg)
 
+La presidenta de Corzutur, Gladys Socorro, informó que la Gobernación del Zulia, a través de la Secretaría de Turismo, dispuso de un servicio de traslado en autobús desde el Parque La Marina hasta el Jardín Botánico. Las salidas serán desde este viernes 26 de abril, a las 9:00 de la mañana, con retorno a la 1:00 de la tarde, asimismo durante viernes, sábado y domingo.
 
+La Alcaldía de Maracaibo también ofrece rutas especiales en tranvía desde la Estación Central hasta el Jardín Botánico. Los horarios son de 9:00 de la mañana a 12:00 del mediodía y de 2:00 de la tarde a 5:00 de la tarde, los días 26, 27 y 28 de abril.
 
-<p>El periodista José Andara Rivas, de NotiPin, ofreció detalles de este accidente e informó que el oficial caído en la colisión respondía al nombre de Diego Linarez, inspector de la Unidad de Tránsito de ese cuerpo policial. Se desconoce el estado actual de su compañero y sobre el conductor del Optra tampoco se conoció mayor información.</p>
-
-
-
-<p>Se desconocen los pormenores de la colisión. Autoridades de desplegaron en el lugar para atender la eventualidad. Indagaron con testigos lo que pudo haber causado esta nueva tragedia en la peligrosa autopista que ha sido testigo, últimamente, de varios accidentes viales, principalmente en las intersecciones.<br><strong><em>GS / NAM</em></strong></p>
+El Jardín Botánico estará abierto al público de 8:00 de la mañana a 3:00 de la tarde durante los días de la floración de los Curarire. Se invita a las familias zulianas a disfrutar de este evento único en un ambiente de paz y armonía.
+***GS / Entre Tormentas
+Fotos: Josè Puche @puchefoto***

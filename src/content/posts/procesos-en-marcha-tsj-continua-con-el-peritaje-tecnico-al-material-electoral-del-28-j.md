@@ -1,11 +1,15 @@
 ---
-title: "image-54"
+title: "¡PROCESOS EN MARCHA! TSJ continúa con el peritaje técnico al material electoral del 28-J"
 publishedAt: "2024-08-17"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','image-54','','','2024-08-17 10:55:15','2024-08-17 08:55:15','',6468,'https://entretormentas.com/wp-content/uploads/2024/08/image-54.png',0,'attachment','image/png',0),(6470,2,'2024-08-17 10:55"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/08/image-57.png"
+excerpt: "ENTRE TORMENTAS. Este viernes el Tribunal Supremo de Justicia TSJ, continúa el peritaje de todo el material físico y digital consignado por el CNE y las organizaciones políticas ante la Sala Electoral."
 ---
 
+**ENTRE TORMENTAS.** Este viernes el Tribunal Supremo de Justicia (TSJ), continúa el peritaje de todo el material físico y digital consignado por el CNE y las organizaciones políticas ante la Sala Electoral.
+
+El proceso de peritaje consiste en la transcripción de los resultados que reflejan las actas de escrutinios de cada organización política, así como de la evaluación del material.
+**GS / Unión Radio**

@@ -1,11 +1,18 @@
 ---
-title: "IMG-20260223-WA0045"
+title: "MENOS IMPROVISACIÓN, MÁS CIUDAD"
 publishedAt: "2026-02-24"
-category: "regionales"
+category: "opinion"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','img-20260223-wa0045','','','2026-02-24 00:50:14','2026-02-24 04:50:14','',29435,'https://entretormentas.com/wp-content/uploads/2026/02/IMG-20260223-WA0045.jpg',0,'attachment','image/jpeg',0),("
+coverImage: "https://entretormentas.com/wp-content/uploads/2026/02/IMG-20260223-WA0049.jpg"
+excerpt: "Gobernar con visión de futuro implica entender que el orden urbano no es un lujo técnico, sino la base para que una gestión sea eficiente, cercana y próspera. En el contexto actual de Venezuela, la planificación no es una opción a discreció"
 ---
 
+***Por el Arq. José Antonio Robles***
+
+Gobernar con visión de futuro implica entender que el orden urbano no es un lujo técnico, sino la base para que una gestión sea eficiente, cercana y próspera. En el contexto actual de Venezuela, la planificación no es una opción a discreción del funcionario, sino un mandato legal dictado por la Ley Orgánica de Ordenación Urbanística (LOOU), la cual define la responsabilidad institucional de las alcaldías de guiar su crecimiento de forma coherente. Bajo esta premisa, surge la necesidad de un Pacto Urbano: un acuerdo superior de convivencia y corresponsabilidad que trasciende las ideologías para rescatar la ciudad. Es un "contrato social territorial" donde el Estado, el sector privado y los ciudadanos se comprometen a respetar las reglas del juego para transformar el caos actual en orden, seguridad jurídica y calidad de vida, garantizando que el desarrollo sea una inversión compartida y no una improvisación costosa. Esta urgencia es ineludible si consideramos que se estima que más del 80% de las ciudades y centros poblados de Venezuela no cuentan con un Plan de Desarrollo Urbano Local (PDUL) actualizado o vigente, lo que evidencia un vacío institucional que debe ser llenado con visión y rigor.
+
+Para lograrlo, la planificación debe actualizarse adoptando el estudio del potencial económico de la ciudad y de sus actividades generadoras de riqueza. Al definir estrategias de inversión con base en la modelación económica y espacial, se activan motores de oportunidad: las zonas comerciales se dinamizan, los barrios se integran y la recaudación municipal se fortalece de forma justa. Un alcalde que lidera con esta visión de planificación integral se convierte en un gobernante de gran relevancia, proyectando su influencia más allá de los límites de su municipio. Al fomentar la participación ciudadana, abrirse a la cooperación internacional y atraer inversiones para diversificar la economía, su gestión deja de ser una simple administración de carencias para transformarse en un modelo de éxito digno de imitar, dejando un legado de orden que mejora la cotidianidad de todos de manera inmediata.![](https://entretormentas.com/wp-content/uploads/2026/02/IMG-20260223-WA0050.jpg)
+
+Sin embargo, para que nuestras ciudades dejen de ser espectadoras pasivas de su propio transcurrir, es imperativo romper el ciclo de una gestión que hoy responde a los caprichos del gobernante de turno o a la presión momentánea de crisis puntuales. El verdadero liderazgo proactivo no reside en reaccionar ante la urgencia, sino en ejecutar con ética las políticas que anticipen riesgos en lugar de mitigar daños. No necesitamos más documentos que se engavetan mientras se gobierna por ocurrencias; necesitamos una voluntad firme que entienda que cada decisión no tomada hoy es una crisis asegurada para mañana. Solo sustituyendo la improvisación por el método, y el capricho por el cumplimiento del pacto social y la norma, abandonaremos la deriva institucional para construir la ciudad equitativa, productiva y resiliente que el país reclama.

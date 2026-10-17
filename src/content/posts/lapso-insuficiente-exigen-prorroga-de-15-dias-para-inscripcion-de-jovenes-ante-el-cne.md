@@ -1,28 +1,23 @@
 ---
-title: "¡SE AGOTA EL TIEMPO! María Corina Machado espera reunirse con Manuel Rosales"
+title: "¡LAPSO INSUFICIENTE! Exigen prórroga de 15 días para inscripción de jóvenes ante el CNE"
 publishedAt: "2024-04-16"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','1221-revision-v1','','','2024-04-16 04:22:16','2024-04-16 02:22:16','',1221,'https://entretormentas.com/?p=1222',0,'revision','',0),(1223,2,'2024-04-16 04:28:06','2024-04-16 02:28:06','\n"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/04/jovenescne1.jpg"
+excerpt: "ENTRE TORMENTAS. El diputado del Consejo Legislativo del estado Zulia CLEZ, José Javier Barboza con apoyo de la juventud armaron la operación remolque, con la intención de trasladar a más de 800 jóvenes al registro electoral, brindando apoy"
 ---
 
-<p><strong>ENTRE TORMENTAS.</strong> La líder del partido político Vente Venezuela, María Corina Machado, confirmó este lunes, que ha planteado reuniones con Manuel Rosales, gobernador del estado Zulia y abanderado del partido Un Nuevo Tiempo (UNT) a las presidenciales del próximo 28 de julio.</p>
+**ENTRE TORMENTAS.** El diputado del Consejo Legislativo del estado Zulia (CLEZ), José Javier Barboza con apoyo de la juventud armaron la operación remolque, con la intención de trasladar a más de 800 jóvenes al registro electoral, brindando apoyo de movilización e hidratación.
 
+Ofreció un balance sobre el proceso del Consejo Nacional Electoral (CNE) donde destacó que la mayoría de los jóvenes se han inscritos a pesar de las dificultades que se han presentado por parte del CNE.
 
+![](https://entretormentas.com/wp-content/uploads/2024/04/jovenes2.jpg)
 
-<p>"Yo le he planteado al gobernador Manuel Rosales que estoy dispuesta a reunirme, como efectivamente lo han planteado varios representantes de él y otros partidos, y he pedido que en esta oportunidad que sea una reunión en donde estén presentes los miembros de los distintos partidos que conforman la Plataforma Unitaria Democrática", comentó Machado.</p>
+"Hoy el Zulia demuestra una vez más su compromiso con la democracia en Venezuela. Siendo el estado con mayor nuevos votantes inscritos a pesar de los obstáculos puesto por el ente", recalcó Barboza.
 
+Es por esto que le exigen al Consejo Nacional Electoral una prórroga de 15 días para este proceso de inscripción. "Aún hay muchos jóvenes que quieren inscribirse para votar por el cambio anhelado por la inmensa mayoría del país", puntualizó el legislador.
 
-
-<p>En entrevista para NTN24, la líder de la oposición aseguró: "Esto no se trata de dos dirigentes que se tienen que poner de acuerdo, como si esto se puede hacer de espaldas al país, en cuartos cerrados, no señor. Las primarias representan el acuerdo institucional y político más importante en las últimas décadas en Venezuela y representan un mandato para todos los que participamos en ellas. Un acuerdo constitucional y político que suscribieron todos los partidos de la Plataforma Unitaria con el apoyo de la Comunidad Internacional".</p>
-
-
-
-<p>Reiteró que: "Esto no se puede borrar de un plumazo y descartar como si no hubiese ocurrido. Las primarias si ocurrieron y yo insisto que esa reunión debe tener lugar a la mayor brevedad".</p>
-
-
-
-<p>La líder opositora concluyó diciendo: "Yo he dicho que estoy dispuesta a participar junto con los partidos de la Plataforma Unitaria".<br><strong><em>GS / Agencias</em></strong></p>
+Durante la mañana de este lunes 15 de abril, al igual que toda ma semana anterior, una gran cantidad de jóvenes acudieron a la sede del CNE con la finalidad de inscribirse por primera vez para ejercer su derecho al voto. Se espera que este martes 16 sea mayor en número en el último día dispuesto por el ente comicial.
+***GS / Nota de Prensa***

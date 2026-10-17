@@ -1,52 +1,23 @@
 ---
-title: "¡ANUNCIO! Trump asegura que EEUU ataca a una tercera embarcación con drogas en el mar Caribe"
+title: "¡LA FINAL ES EL JUEVES! Yulimar Rojas regresa con éxito y luchará por medallas en Tokio"
 publishedAt: "2025-09-17"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','21957-revision-v1','','','2025-09-17 04:43:16','2025-09-17 08:43:16','',21957,'https://entretormentas.com/?p=21958',0,'revision','',0),(21959,2,'2025-09-17 04:45:36','2025-09-17 08:45:36"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/09/yuliyuli.jpeg"
+excerpt: "ENTRE TORMENTAS. La venezolana Yulimar Rojas hizo su esperado regreso a las pistas y en su primer salto tuvo una marca de 14,49 metros que le dio el boleto a la final de triple salto del Mundial de Atletismo de Tokio."
 ---
 
-<p><strong>ENTRE TORMENTAS.</strong> El presidente de Estados Unidos, Donald Trump, dijo este martes que las fuerzas estadounidenses han atacado hasta ahora en el mar Caribe a tres embarcaciones de supuestos narcotraficantes provenientes de Venezuela y no dos, como hasta ahora había dicho.</p>
+**ENTRE TORMENTAS.** La venezolana Yulimar Rojas hizo su esperado regreso a las pistas y en su primer salto tuvo una marca de 14,49 metros que le dio el boleto a la final de triple salto del Mundial de Atletismo de Tokio.
 
+Luego de un año de ausencia por una lesión en el Tendón de Aquiles que la marginó de los Juegos Olímpicos de París, Yulimar Rojas hizo su vuelta a la escena mundial dejando claro que llegó con la misión de recuperar su hegemonía en la disciplina.
 
+Previo a este torneo, Rojas tuvo una leve presentación en una exhibición en Barcelona que tuvo que abandonar debido a molestias físicas.
 
-<p>"Derribamos barcos. En realidad fueron tres barcos, no dos, pero ustedes vieron dos", dijo Trump a la prensa en la Casa Blanca antes de partir hacia el Reino Unido para una visita de Estado.</p>
+Contenta por su salto, en cuanto vio la medición ya se lanzó a bailar. Objetivo cumplido. Yulimar sólo había competido una vez este año en longitud, donde realizó tres nulos. Con algunos problemas físicos, decidió no competir hasta esta cita universal.
 
+Esa fue la decisión de varios de los favoritos que han tenido lesiones en los últimos meses. A Ingebrigtsen, por ejemplo, le pasó factura en los mil 500, en los que se quedó fuera a la primera de cambio. Sin embargo, en peso el estadounidense Crouser se proclamó campeón mundial.
 
-
-<p>El mandatario fue preguntado por las declaraciones del líder venezolano, Nicolás Maduro, en las que acusó al estadounidense de querer invadir su país.</p>
-
-
-
-<p>"Dejen de enviar (miembros del) Tren de Aragua a los Estados Unidos. Dejen de enviar drogas a los Estados Unidos", respondió Trump.</p>
-
-
-
-<p>El republicano se refirió a esta tercera embarcación un día después de informar que las fuerzas armadas estadounidenses habían atacado una lancha en la que, según dijo, murieron tres personas, que calificó de ‘terroristas’.</p>
-
-
-
-<p>Poco después, en el Despacho Oval, afirmó que la lancha destruida transportaba cocaína y fentanilo.</p>
-
-
-
-<p>El sábado pasado, Caracas denunció que un «destructor» de Estados Unidos abordó de manera «ilegal» y ocupó durante ocho horas una embarcación venezolana con «nueve pescadores» que estaban -subrayó- en aguas del país suramericano</p>
-
-
-
-<p>Sin embargo, Estados Unidos no había reaccionado todavía.</p>
-
-
-
-<p>Estos ataques se producen en medio de la escalada de tensiones entre Estados Unidos y Venezuela por el despliegue militar estadounidense en el mar Caribe con el argumento de combatir el narcotráfico.</p>
-
-
-
-<p>La Administración de Trump acusa a Maduro de liderar el denominado Cartel de los Soles, algo que niega el Gobierno de Venezuela, y ha ofrecido una recompensa de 50 millones de dólares por información que conduzca a la captura del mandatario venezolano.</p>
-
-
-
-<p>Maduro afirmó este lunes que las comunicaciones con Estados Unidos están «deshechas» ante lo que considera una «agresión» del país norteamericano, y agregó que Venezuela está ahora «más preparada» si tocara una «lucha armada».<br><strong><em>ET / EFE</em></strong></p>
+La final en la que buscará subirse al podio se llevará a cabo el jueves a las 6:50 de la mañana, hora Venezuela.
+***ET / Unión Radio***

@@ -1,11 +1,17 @@
 ---
-title: "image"
+title: "¡LA GAITA ESTÁ DE LUTO! Fallece a los 78 años el \"Poeta Diamantino\", Renato Aguirre González"
 publishedAt: "2026-02-08"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','image-6366','','','2026-02-08 11:46:13','2026-02-08 15:46:13','',28590,'https://entretormentas.com/wp-content/uploads/2026/02/image-231.png',0,'attachment','image/png',0),(28592,2,'2026-02-08 "
+coverImage: "https://entretormentas.com/wp-content/uploads/2026/02/image-233.png"
+excerpt: "ENTRE TORMENTAS. El Zulia y la gaita están de luto. Este domingo 8 de febrero amaneció con la triste noticia de una pérdida irreparable, el fallecimiento de Renato Aguirre González, el \"Poeta Diamantino\"."
 ---
 
+**ENTRE TORMENTAS.** El Zulia y la gaita están de luto. Este domingo 8 de febrero amaneció con la triste noticia de una pérdida irreparable, el fallecimiento de Renato Aguirre González, el "Poeta Diamantino".
+
+Nacido en Maracaibo en 1948, Renato destacó como un compositor excepcional y su obra musical trascendió a lo largo de los años exaltando para la posteridad la gaita zuliana.
+
+El «Poeta Diamantino» dejó una huella imborrable en el corazón del pueblo. Su sensibilidad artística permitió crear melodías que ahora son parte del patrimonio nacional con temas como Aquel Zuliano, Sagrada Dama del Saladillo y La Elegida.
+***ET / Gabriel Sthormes***

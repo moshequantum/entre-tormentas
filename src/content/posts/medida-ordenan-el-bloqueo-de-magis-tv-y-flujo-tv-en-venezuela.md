@@ -1,60 +1,33 @@
 ---
-title: "¡CUMPLIENDO! Rosales inspecciona trabajos de recuperación en Los Haticos II de Maracaibo"
+title: "¡MEDIDA! Ordenan el bloqueo de Magis TV y Flujo TV en Venezuela"
 publishedAt: "2025-03-29"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','14831-revision-v1','','','2025-03-29 11:04:47','2025-03-29 10:04:47','',14831,'https://entretormentas.com/?p=14832',0,'revision','',0),(14833,2,'2025-03-29 11:07:16','2025-03-29 10:07:16"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/03/image-565.png"
+excerpt: "ENTRE TORMENTAS. La justicia de Venezuela ordenó el bloqueo de los dominios web asociados a las aplicaciones de televisión por streaming Magis TV y Flujo TV, en el contexto de una investigación sobre piratería digital y acceso indebido a co"
 ---
 
-<p><strong>ENTRE TORMENTAS. </strong>El Gobernador Manuel Rosales Guerrero, acompañado de su Gabinete Ejecutivo, supervisó personalmente los avances en las labores de recuperación, construcción y modernización que se llevan a cabo en la emblemática avenida 22, ubicada en el sector Los Haticos II de Maracaibo.</p>
+**ENTRE TORMENTAS. **La justicia de Venezuela ordenó el bloqueo de los dominios web asociados a las aplicaciones de televisión por streaming Magis TV y Flujo TV, en el contexto de una investigación sobre piratería digital y acceso indebido a contenido protegido.
 
+La medida la dictó el 23 de enero el Tribunal Octavo de Control del Circuito Judicial Penal de Maracaibo, estado Zulia, y se notificó a la Comisión Nacional de Telecomunicaciones, encargada de hacer efectiva la restricción de acceso.
 
+Así lo publicó el medio digital El Pitazo, que señaló que, según fuentes cercanas al caso, la orden judicial contempla el bloqueo de más de 100 páginas web y del proveedor DNS vinculado a estas plataformas, que transmiten contenido sin autorización de sus legítimos propietarios.
 
-<p>Estas obras, lideradas por el Instituto de Vialidad del Estado Zulia (INVEZ), forman parte de un plan para revitalizar la infraestructura vial de la entidad.</p>
+Detenidos por red que comercializaba Magis TV y Flujo TV en Venezuela
+La medida judicial está relacionada con un proceso iniciado en 2024 tras una denuncia interpuesta por el abogado José Benigno Rojas, representante legal en Venezuela de empresas como Paramount, Columbia, Sony Pictures Television, Disney Enterprises, Universal City Studios y Warner Bros Entertainment.
 
+Las autoridades identificaron a Romer Capuzzi y Alexander Bohórquez como los presuntos responsables de la red que comercializa estos servicios ilegales.
 
+A Bohórquez lo detuvieron el 26 de marzo en Maracaibo, mientras que Capuzzi tiene una orden de captura internacional emitida por Interpol, según El Pitazo. A ambos se les acusa de acceso indebido a sistemas informáticos, apropiación de propiedad intelectual, asociación para delinquir y legitimación de capitales.
 
-<p><strong>MÁS DE 2.5 KILÓMETROS INTERVENIDOS</strong><br>El proyecto abarca una extensión de más de 2,5 kilómetros, comprendida entre la calle 125 y la avenida 25F, en la parroquia Cristo de Aranza del municipio Maracaibo. En esta intervención se utilizarán mil 712 toneladas de mezcla asfáltica, para garantizar una superficie de rodamiento más segura y duradera para los usuarios del transporte público y los ciudadanos que transitan por esta importante arteria vial.</p>
+**BLOQUEADO EN OTROS PAÍSES**
+Con esta acción, Venezuela se une a otros países de la región, como Argentina, Colombia, Ecuador, Brasil y Bolivia, que han bloqueado Magis TV por considerar que infringe derechos de autor y opera de manera ilegal.
 
+La plataforma ofrece sin autorización la señal de más de 950 canales de televisión, además de un catálogo de más de 20 mil películas y 10 mil series.
 
+El abogado Rojas advirtió que Magis TV no es una empresa registrada en Venezuela ni cuenta con permisos del Servicio Autónomo de Propiedad Intelectual o Conatel para operar legalmente, indicó el medio. Además, alertó sobre los riesgos de seguridad para los usuarios, cuyos datos podrían quedar expuestos a ciberdelincuentes.
 
-<figure class="wp-block-image size-large"><img src="https://entretormentas.com/wp-content/uploads/2025/03/image-564-1024x576.png" alt="" class="wp-image-14828"/></figure>
-
-
-
-<p>En su recorrido, Rosales destacó que “Los Haticos es una zona emblemática para Maracaibo y el Zulia. Haticos por arriba, Haticos por abajo, una historia larga, a orillas del lago. Para este proyecto, estamos trabajando por recuperar el corredor vial con más de 2,5 kilómetros".</p>
-
-
-
-<p>Además de la repavimentación, se implementarán mejoras importantes en la señalización vial, incluyendo la demarcación de líneas continuas y discontinuas, así como la instalación de señalética moderna que facilitará la orientación de los conductores.</p>
-
-
-
-<p>La iluminación también será un aspecto prioritario en este proyecto. Se instalarán luminarias de última generación que no solo mejorarán la visibilidad nocturna, sino que también contribuirán a la seguridad de los transeúntes y conductores. Este proyecto beneficiará de forma directa a los marabinos que residen en las adyacencias de la avenida 22 en Los Haticos II, así como a los demás habitantes que hacen vida en la parroquia Cristo de Aranza.</p>
-
-
-
-<p>El Gobernador Rosales destacó la importancia de estas obras para mejorar la calidad de vida de los habitantes de Maracaibo, subrayando que la modernización de la infraestructura vial es clave para impulsar el progreso económico y social de la región.</p>
-
-
-
-<p><strong>PLAN DE RESPUESTA INMEDIATA</strong><br>“Desplegamos el plan de Respuesta Inmediata, que tiene que ver con esto, aguas blancas y servidas, colectores, construcción de aceras, drenajes de agua de lluvia, iluminación, entre otros, para que esta vía se convierta nuevamente en un corredor vial importante, una ruta de transporte importante de la ciudad de Maracaibo”, expresó el Gobernador.</p>
-
-
-
-<figure class="wp-block-image size-large"><img src="https://entretormentas.com/wp-content/uploads/2025/03/image-563-1024x576.png" alt="" class="wp-image-14827"/></figure>
-
-
-
-<p>Rosales también destacó los esfuerzos adicionales que se están llevando a cabo en zonas aledañas: “Asimismo, trabajamos en sectores cercanos como la Pomona, la Chinita y en El Progreso, con esta primera parte de la recuperación del drenaje. Aquí ya se está asfaltando también. Como decía, son dos puntos, más de dos kilómetros y medio de vialidad, una inversión importante, para después ir extendiéndose hacia los barrios. Primero la vía de transporte, que es muy importante, y después avanzamos hacia las comunidades y los barrios, aunque ya algunos barrios y urbanizaciones se han asfaltado hasta el momento”.</p>
-
-
-
-<p>Con estos trabajos, la Gobernación del Zulia sigue en pie con el desarrollo integral y sostenible de Maracaibo y demás municipios de la región, enfocándose en mejorar las condiciones de movilidad y la calidad de vida de sus habitantes.<br><strong><em>ET / Nota de Prensa</em></strong></p>
-
-
-
-<p></p>
+Como parte de las acciones para frenar la difusión de la aplicación, se prevé solicitar a Google que también restrinja su acceso, siguiendo las acciones de países como Colombia y Ecuador, donde la empresa tiene oficinas.
+***ET / Agencias***

@@ -1,28 +1,28 @@
 ---
-title: "OMAR BARBOZA: \"La campaña electoral no debe ser un torneo de descalificaciones\""
+title: "LEGISLADOR OTTO PIÑERO: \"Rosales ha construido soluciones mediante el diálogo y la negociación\""
 publishedAt: "2025-04-30"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','15912-revision-v1','','','2025-04-30 01:39:33','2025-04-29 23:39:33','',15912,'https://entretormentas.com/?p=15913',0,'revision','',0),(15914,2,'2025-04-30 01:40:24','2025-04-29 23:40:24"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/04/OTTO1.jpeg"
+excerpt: "ENTRE TORMENTAS. \"El gobernador Manuel Rosales ha hecho esfuerzos innegables para resolver los problemas que apremian a los zulianos, y hoy estamos mejor que hace ocho años atrás\", afirmó Otto Piñero, legislador zuliano y candidato a la ree"
 ---
 
-<p><strong>ENTRE TORMENTAS.</strong> El exsecretario ejecutivo de la Plataforma Unitaria Democrática (PUD), Omar Barboza, cree que "votar es una manera de mantener la resistencia democrática, porque abstenerse para defender lo ocurrido el 28 de julio es una conducta comprensible, pero cuando no está acompañada de un plan, conduce a la inmovilización y la desesperanza".</p>
+**ENTRE TORMENTAS.** "El gobernador Manuel Rosales ha hecho esfuerzos innegables para resolver los problemas que apremian a los zulianos, y hoy estamos mejor que hace ocho años atrás", afirmó Otto Piñero, legislador zuliano y candidato a la reelección en el Consejo Legislativo del Estado Zulia.
 
+Durante su participación en el programa A 8 Columnas, conducido por el periodista Rafael Galicia, Piñero aseguró que la mejora del estado es producto del trabajo conjunto de alcaldes, legisladores y Rosales, la máxima autoridad regional, que ha construido soluciones mediante el diálogo y la negociación.
 
+El legislador resaltó la recuperación institucional en el estado, argumentando que, hoy en día tenemos un Consejo Legislativo donde se han revisado 19 leyes que han permitido que nuestro estado tenga un cambio y una voz, contrastando este progreso con lo que denominó la “era oscura del estado Zulia”.
 
-<p>Barboza recalcó que todos los que están de acuerdo con el cambio político por la vía democrática, "deben evitar que la actual coyuntura política se convierta en un torneo de descalificaciones entre nosotros mismos, cuando debemos estar conscientes de que más adelante deberíamos unirnos para hacer posible el objetivo común", precisó.</p>
+![](https://entretormentas.com/wp-content/uploads/2025/04/OTTO2-1024x564.jpeg)
 
+Piñero hizo un llamado a la participación ciudadana en las elecciones del próximo 25 de mayo como una forma activa de resistencia: “Participar es un acto de rebeldía en el estado Zulia. Quedarme sentado y no hacer nada esperando que pase algo, no es una opción”.
 
+Asimismo, recordó los logros electorales que marcaron un antes y un después en la región: “El Zulia fue ejemplo. En cada uno de los centros electorales cuidamos los votos el 28 de julio. Eso es lo que nos permite hoy levantar la voz. Somos el estado que marcó pauta el 21 de noviembre, cuando ganamos la Gobernación y las alcaldías”.
 
-<p>"Respetemos las diferencias tácticas o de otro tipo entre nosotros aunque cada parte considere tener los mejores argumentos para sustentar su posicion. Una conducta diferente sólo favorece al verdadero adversario que es el Gobierno", indicó el líder político.</p>
+El legislador concluyó su intervención destacando que Manuel Rosales ha cumplido su palabra: “Prometió esperanza, y hoy el Zulia es un estado que vive en esperanza y en progreso. Estamos mejor que hace ocho años atrás, y eso es innegable”.
 
+Con miras a un nuevo período, los zulianos se preparan para ratificar con su voto el liderazgo que ha devuelto rumbo y dignidad a la región. La voz del Zulia, una vez más, se hará sentir.
 
-
-<p>Barboza Gutiérrez considera que "votar es una manera de mantener la resistencia democrática". Acotó que abstenerse para defender lo ocurrido el 28 de julio es una conducta comprensible, pero cuando no está acompañada de un plan de acción conocido para hacer valer ese resultado, conduce a la inmovilización y la desesperanza.<br><strong><em>ET / Nota de Prensa</em></strong></p>
-
-
-
-<p></p>
+***ET / Nota de prensa***

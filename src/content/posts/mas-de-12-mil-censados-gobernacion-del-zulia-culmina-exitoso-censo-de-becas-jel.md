@@ -1,40 +1,33 @@
 ---
-title: "¡ACOMPAÑAMIENTO FAMILIAR! FUNDANIS dicta charlas sobre salud mental en comunidades marabinas"
+title: "¡MÁS DE 12 MIL CENSADOS! Gobernación del Zulia culmina exitoso censo de becas JEL"
 publishedAt: "2026-02-28"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','29654-revision-v1','','','2026-02-28 05:47:47','2026-02-28 09:47:47','',29654,'https://entretormentas.com/?p=29655',0,'revision','',0),(29656,2,'2026-02-28 05:48:25','2026-02-28 09:48:25"
+coverImage: "https://entretormentas.com/wp-content/uploads/2026/02/image-701.png"
+excerpt: "ENTRE TORMENTAS. En una jornada cargada de emoción, esperanza y entusiasmo, la Gobernación del Zulia, a través de la Fundación Dr. Jesús Enrique Lossada, Fundalossada, culminó con rotundo éxito el censo de becas para universidades públicas"
 ---
 
-<p><strong>ENTRE TORMENTAS. </strong>En el marco de su programa Centro de Orientación Familiar (COF) la Fundación Niños del Sol (FUNDANIS), adscrita a la Alcaldía de Maracaibo, realizó durante el mes de febrero, un ciclo de charlas informativas sobre depresión, ansiedad y herramientas para la gestión emocional en la comunidad marabina de la mano del Consejo Danés para Refugiados (RDC).</p>
+**ENTRE TORMENTAS. **En una jornada cargada de emoción, esperanza y entusiasmo, la Gobernación del Zulia, a través de la Fundación Dr. Jesús Enrique Lossada, (Fundalossada), culminó con rotundo éxito el censo de becas para universidades públicas y privadas, destinado para todos los jóvenes del Zulia.
 
+El censo estuvo desplegado en siete municipios y espacios estratégicos del estado, con el objetivo de que la juventud zuliana pudiera acercarse y consignar sus requisitos para formalizar su censo de manera rápida y sencilla.
 
+El Gobernador del Zulia, Luis Caldera, expresó su impresión por la gran receptividad que tuvo el censo en los diferentes municipios del estado. “Estamos muy emocionados por la altísima participación de la juventud zuliana. La juventud que abarrotó nuestras Plazas Bolívar, que tenemos todo un equipo puesto y dispuesto para atenderlos en distintas plazas: San Francisco, Cabimas, Mara; jóvenes buscando estas oportunidades”, señaló.
 
-<p>La jornada fue dirigida por la psicóloga Nicole Sardi, coordinadora del COF de FUNDANIS, quien abordó temas relacionados con la ansiedad, la depresión, la manera de gestionarlas y cómo acompañar a otras personas en situaciones similares.</p>
+![](https://entretormentas.com/wp-content/uploads/2026/02/image-702-1024x768.png)
 
+Por su parte, el mandatario regional, destacó la importancia de que los jóvenes del Zulia estén interesados en la educación, la preparación universitaria, pero sobre todo, en seguir apostando por el Zulia y Venezuela, y no en salir del país para buscar un mejor futuro.
 
+“Debemos darle gracias a Dios que no tenemos a los jóvenes zulianos haciendo colas para atravesar el Darién. Tenemos que darle gracias a Dios que no tenemos jóvenes zulianos haciendo cola para atravesar el Río Bravo, en la frontera con Estados Unidos, sino que tenemos jóvenes zulianos haciendo cola porque quieren estudiar, porque se quieren capacitar, porque se quieren quedar aquí, porque están buscando en la universidad, en la educación, su herramienta de desarrollo y qué, además, están confiando en la Gobernación del Zulia en esta nueva etapa de gobierno”, afirmó Caldera.
 
-<p>La primera actividad, realizada en la comunidad Hato Escondido I, parroquia Venancio Pulgar, contó con la participación de 25 habitantes de la comunidad. Mientras, que una segunda tanda tuvo lugar en la escuela Emerio Darío Lunar, parroquia Luis Hurtado Higuera, con la participación de 15 representantes y docentes de la unidad educativa, quienes se sumaron a este espacio formativo diseñado para brindar orientación, apoyo y herramientas prácticas ante situaciones de estrés y problemáticas cotidianas.</p>
+Asimismo, el Gobernador del Zulia resaltó que la Gobernación tenía cuatro años sin llamar a un censo de becas para el acceso a la educación universitaria. “Hay que decirlo, en 202 días que nosotros tuvimos del 2025, estamos al día con las universidades”. Además, informó que actualmente se mantiene un convenio con 18 universidades, 10 pública y 8 privadas. Subrayó que la Gobernación está al día con el pago de esas universidades privadas en su totalidad.
 
+![](https://entretormentas.com/wp-content/uploads/2026/02/image-703-1024x768.png)
 
+Por último, dijo que en lo que va de su gestión van mil becas nuevas, son dos mil 642 estudiantes universitarios que están recibiendo su beca regularmente, incluyendo las becas públicas. “Las primeras 500 becas públicas las hicimos nosotros; solamente LUZ, en esas 500, la Universidad del Zulia, recibió 173 becas y están recibiendo su erogación directa a la cuenta del estudiante, directamente al joven en su cuenta, en su tarjeta, el apoyo para que esa sea una herramienta de la educación universitaria”, expresó.
 
-<p>Durante las actividades, desarrolladas bajo la modalidad “Escuela para Padres”, los asistentes participaron en dinámicas grupales que permitieron compartir experiencias personales, identificar factores de estrés y fortalecer estrategias de afrontamiento ante crisis y adversidades.</p>
+Por otro lado, el Presidente de Fundalossada, Andrés Ponnefz, manifestó que un gran equipo conformado por la Fundación Jesús Enrique Lossada, y la Gobernación del Zulia, se preparó para atender a una extraordinaria cantidad de jóvenes en este primer censo de becas 2026, instruido por el Gobernador Luis Caldera. “Estamos seguros que la juventud zulia a estará con la mayor esperanza que le ofrece el Gobernador Luis Caldera para garantizar sus estudios en las dos modalidades, tanto pública como privada.
 
-
-
-<p>Sardi explicó que el objetivo principal de esta iniciativa es “abordar temas de ansiedad y depresión, maneras de solventarlas, gestionarlas y poder ayudar a otros en la misma situación, afrontando crisis y buscando herramientas para responder ante cualquier adversidad”.</p>
-
-
-
-<p><strong>RESILIENCIA CONUNITARIA</strong><br>Los participantes valoraron positivamente la iniciativa y resaltaron la importancia de este tipo de encuentros en el sector. Así lo dejó entrever Marievelyn Negrette, habitante de la comunidad Hato Escondido I, que considera que es “súper importante aprender a poner en prácticas herramientas para nuestro bienestar” y que toda persona debe tener conocimiento en el área de la psicología.</p>
-
-
-
-<p>“Fue una charla informativa y educativa. Ojalá tuviéramos más actividades y siguieran viniendo a nuestra comunidad a ayudar a varias personas que tienen esa necesidad de recibir esa mano amiga”, concluyó Negrette.</p>
-
-
-
-<p>Con este tipo de acciones, la Fundación Niños del Sol, bajo la dirección general de la Dirección de Desarrollo Social de la alcaldía Bolivariana de Maracaibo, reafirma su compromiso de extender la orientación psicológica y el acompañamiento familiar más allá de sus instalaciones, con el fin de fortalecer el bienestar emocional de las comunidades y promover espacios de apoyo, escucha y formación.<br><strong><em>ET / Prensa Alcaldía de Maracaibo</em></strong></p>
+El Gobernador Luis Caldera continúa ejerciendo su mirada hacia la transformación del Zulia, hacia la educación zuliana, la preparación, la motivación de salir adelante para potenciar al estado como uno de los mejores de Venezuela.
+***ET / Prensa Gobernación del Zulia***

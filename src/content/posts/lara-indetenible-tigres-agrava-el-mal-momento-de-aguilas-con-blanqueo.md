@@ -1,36 +1,40 @@
 ---
-title: "¡GREMIO UNIDO! CNP Zulia rechaza la privación de libertad dictada en contra del periodista Leandro Palmar"
+title: "¡LARA INDETENIBLE! Tigres agrava el mal momento de Águilas con blanqueo"
 publishedAt: "2025-01-13"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','12234-revision-v1','','','2025-01-13 09:22:13','2025-01-13 08:22:13','',12234,'https://entretormentas.com/?p=12235',0,'revision','',0),(12236,2,'2025-01-13 09:26:18','2025-01-13 08:26:18"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/01/image-166.png"
+excerpt: "ENTRE TORMENTAS. Los Tigres de Aragua se niegan a morir. Estaban obligados a ganar en casa, en el duelo contra las Águilas del Zulia, y vieron a todas sus piezas engranarse para conseguir un triunfo de 6 carreras por 0 que los mantiene con"
 ---
 
-<p><strong>ENTRE TORMENTAS. </strong>‎Este sábado 11 de enero en los tribunales penales de Maracaibo, estado Zulia, se llevó a cabo la audiencia de presentación de un grupo de 10 ciudadanos, entre los cuales se encontraban, el periodista Leandro Palmar y el técnico audiovisual Belises Salvador Cubillán.</p>
+**ENTRE TORMENTAS. **Los Tigres de Aragua se niegan a morir. Estaban obligados a ganar en casa, en el duelo contra las Águilas del Zulia, y vieron a todas sus piezas engranarse para conseguir un triunfo de 6 carreras por 0 que los mantiene con vida y agrava la situación de los rapaces.
 
+El mánager de los Tigres, Russell Vásquez, manejó muy bien el pitcheo, que hoy le respondió. El veterano Guillermo Moscoso abrió y aunque hizo un buen trabajó se limitó a tres entradas para dar paso al bullpen, que mantuvo amarrada a la ofensiva de los rapaces.
 
+La ofensiva, que había estado en deuda, despertó. Lorenzo Cedrola celebró su cumpleaños 27 convirtiéndose en la gran figura del partido con tres hits en cuatro turnos, incluyendo un doble. Impulsó una carrera y anotó otras dos.
 
-<p>Culminada la audiencia, el juez determinó que los mismos deberían permanecer privados de su libertad a la espera de que el Ministerio Público concrete las imputaciones en su contra. Los delitos que se les pretenden imputar son terrorismo, asociación para delinquir, instigación al odio y alteración al orden público.</p>
+En Aragua siguen contra la pared y con la victoria de este domingo sólo ganaron un día más de vida. Pero para las Águilas la situación también se está complicando.
 
+Esta fue la cuarta derrota consecutiva para los dirigidos por Lipso Nava, que ven cómo el pitcheo se hunde y la ofensiva sigue sin reaccionar. Tienen récord de 5-7 para empezar la última semana de acción en el Round Robin y se les acaba el tiempo.
 
+**LO QUE VIENE**
+Las Águilas, que son fuertes en casa, tendrán jornada de descanso este lunes antes de volver a Maracaibo. La tropa aragüeña viajará a Barquisimeto para medirse con los inspirados Cardenales de Lara y tendrá como abridor a José Enrique Martínez, a pesar de que lanzó un inning de relevo en el duelo dominical contra el Zulia.
 
-<p>Vale destacar que la detención de Palmar y Cubillán se produjo mientras daban cobertura a la manifestación que se originó en la Plaza República de la ciudad de Maracaibo, el pasado 9 de enero, portando solo sus instrumentos de trabajo.</p>
+![](https://entretormentas.com/wp-content/uploads/2025/01/image-167-1024x683.png)
 
+**JONRÓN ASEGURÓ UN JUEGO EXTRA A CARDENALES**
+Una revisión de jugada resultó determinante para que los Cardenales de Lara derrotaran 4-3 a los Navegantes del Magallanes la tarde-noche del domingo, en el Estadio Antonio Herrera Gutiérrez de Barquisimeto, y aseguraran, en el peor de los escenarios, un juego extra para definir su pase a la Gran Final.
 
+La repetición coronó un racimo de cuatro carreras en la tercera entrada, otorgándole un jonrón con dos corredores en circulación a Rangel Ravelo, revirtiendo la primera decisión de los umpires, quienes habían decretado foul la conexión, ceñida al poste de fair del jardín izquierdo.
 
-<p>El CNP manifestó que “el Colegio Nacional de Periodistas, seccional Zulia, siempre garante de los derechos de sus agremiados, rechaza de manera contundente que se pretenda criminalizar la labor de estos comunicadores que no es otra que mantener informada a la ciudadanía, labor que está contemplada en la Ley del Ejercicio del Periodista Venezolano y en la Constitución misma, por lo que la institución gremial considera que la privación de su libertad y la injusta criminalización, representa una flagrante violación a sus derechos y a la libertad de prensa”.</p>
+![](https://entretormentas.com/wp-content/uploads/2025/01/image-168-819x1024.png)
 
+**LO QUE SIGUE**
+Cardenales (9-3) con el ímpetu de su tercer lauro en fila, recibirá el lunes a los Tigres de Aragua.
 
+![](https://entretormentas.com/wp-content/uploads/2025/01/image-169-819x1024.png)
 
-<p>Agregó: “Una vez más elevamos la voz del gremio de periodistas zulianos para exigir a los organismos jurisdiccionales la liberación inmediata de Leandro Palmar, periodista de la emisora de la Universidad del Zulia, LUZ – FM y de Belises Salvador Cubillán, miembro del equipo reporteril”.</p>
-
-
-
-<p>Finalmente expreso que “reiteramos el llamado a las autoridades venezolanas a respetar la labor y la integridad de los periodistas”.<br><strong><em>ET / Nota de prensa</em></strong></p>
-
-
-
-<p></p>
+Magallanes (5-7), por su parte, vio cortada su breve racha de dos conquistas, y ahora está obligado a ganarle a los Bravos de Margarita el lunes, en Valencia, para mantener vivas sus opciones de disputar la serie por el gallardete.
+***ET / Prensa LVBP***

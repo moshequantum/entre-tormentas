@@ -1,20 +1,42 @@
 ---
-title: "¡COMPROMISO! Escuelas Zulianas de Avanzada son el pilar educativo para la Gobernación del Zulia"
+title: "¡POR SEXTA VEZ EN EL 2025! Antonio Borjas Romero recibe Jornada de Atención Integral de la Alcaldía de Maracaibo"
 publishedAt: "2025-05-23"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','17054-revision-v1','','','2025-05-23 10:21:29','2025-05-23 08:21:29','',17054,'https://entretormentas.com/?p=17057',0,'revision','',0),(17058,2,'2025-05-23 10:25:11','2025-05-23 08:25:11"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/05/ar1.jpeg"
+excerpt: "ENTRE TORMENTAS. La Alcaldía de Maracaibo llevó nuevas soluciones a la parroquia Antonia Borjas Romero este 20 de mayo, con una Jornada de Atención Integral que estuvo a cargo de la Dirección General de Desarrollo Social y la Dirección Gene"
 ---
 
-<p><br>‎<strong>ENTRE TORMENTAS.</strong> ‎En un esfuerzo por mejorar la infraestructura educativa en el estado Zulia, se han llevado a cabo intervenciones en más de 120 escuelas, donde se han realizado trabajos de pintura, reparación de baños, impermeabilización, instalación de tanques de agua, mejoras eléctricas y cercas, así como la implementación del Programa de Alimentación Escolar (PAEZ) entre otros. Estas acciones buscan garantizar un ambiente adecuado para el aprendizaje y el desarrollo integral de los estudiantes.</p>
+**ENTRE TORMENTAS. **La Alcaldía de Maracaibo llevó nuevas soluciones a la parroquia Antonia Borjas Romero este 20 de mayo, con una Jornada de Atención Integral que estuvo a cargo de la Dirección General de Desarrollo Social y la Dirección General Infraestructura.
 
+Los sectores beneficiados con fumigación, atención médica, odontología, y achique de pozos, fueron San Antonio I, San Antonio II y Torito Fernández, con un total de más de mil personas atendidas de esta importante parroquia del oeste.
 
+![](https://entretormentas.com/wp-content/uploads/2025/05/ar2-1024x683.jpeg)
 
-<figure class="wp-block-image size-large"><img src="https://entretormentas.com/wp-content/uploads/2025/05/avanzada2-1024x683.jpeg" alt="" class="wp-image-17055"/></figure>
+Adrián Romero Martínez, alcalde encargado de Maracaibo, destacó la importancia de estas jornadas que se activan en los sectores para atender y dar soluciones concretas. “Aquí nos recibe una importante cantidad de personas. Nuestras direcciones están preparadas para atender hasta al último marabino que llegue este lugar”.
 
+El alcalde encargado recalcó que esta es la sexta Jornada de Atención Integral en Antonio Borjas Romero de este 2025. “Podemos decir que hemos asistido una vez al mes a esta parroquia y en junio, Dios mediante, estaremos de nuevo en los sectores del oeste”.
 
+**ATENCIÓN EN SALUD**
+La Dirección General de Salud y el Servicio Autónomo Municipal de Salud (SAMAS) ofrecieron atención médica y odontológica a niños, niñas, adolescentes, adultos y adultos mayores, logrando atender a 150 personas.
 
-<p><br>‎<br>‎Se han inaugurado 15 escuelas que han sido objeto de reconstrucción, construcción y modernización. En estas instituciones se han realizado importantes mejoras que incluyen impermeabilización, pintura, renovación de baños, construcción de canchas deportivas, mesas de ajedrez y ping pong, así como la dotación de kits deportivos y de gaita y la implementación de aulas virtuales. Estas iniciativas no solo mejoran las condiciones físicas de las escuelas, sino que también enriquecen la experiencia educativa de los niños y jóvenes zulianos.<br>‎<br>‎Destacando la gran labor del Gobernador Manuel Rosales Guerrero, quien ha demostrado un firme compromiso con la educación y el bienestar de los Zulianos. Su gestión ha sido fundamental para impulsar estas transformaciones en el sistema educativo, reafirmando su dedicación a construir un futuro mejor para las nuevas generaciones en el estado Zulia.<br><strong><em>ET / Nota de Prensa</em></strong></p>
+Marisel Fuenmayor, de 64 años, padece de artrosis. Acudió a la jornada por la atención que brinda y, además, por la entrega de medicamentos. “No tenemos muchos recursos económicos y aquí obtenemos beneficios y nos atienden muy bien”.
+
+Por otra parte, la Dirección de Servicio y Mantenimiento Urbano (DISMU) realizó una fumigación en San Antonio II y Torito Fernández IV para beneficiar a más de más de 600 personas. En 204 viviendas se espació el humo que erradica la plaga que surge en época de lluvia, además, en el colegio Apolinar González, que consta con una matrícula de 347 niños y niñas, se cumplió con la fumigación.
+
+La Dirección de Aguas también se hizo presente en esta jornada para abordar 25 pozos sépticos de la zona, brindando soluciones a 100 personas.
+
+Javier Otero, director de Aguas, indicó que este programa visita las comunidades que no cuentan con red de agua segura y que utilizan pozos. “Queremos ofrecer soluciones y darle una mejor calidad de vida a los marabinos del oeste”.
+
+![](https://entretormentas.com/wp-content/uploads/2025/05/ar3-1024x683.jpeg)
+
+Yohenia Parra, vecina de San Antonio II, recibió en su vivienda la cuadrilla para el achique de pozo. “Esto me da tranquilidad porque sé que ya no se van desbordar los sanitarios y que las lluvias no van a colapsar el pozo”.
+
+Para finalizar la jornada, el Instituto Municipal de la Vivienda en Maracaibo (IVIMA) entregó 21 kits de láminas de zinc y cinco tanques de agua.
+
+Hugo Morales presidente del IVIMA, indicó que el compromiso con los habitantes del oeste es mayor. “Estamos aquí para brindar soluciones y sabemos que con estas entregas se alivia un problema por familia”.
+
+“Estoy muy agradecida con estas mejoras que nos llegaron, esperamos que siga pasando. Esto es lo que queremos, que luchen por el pueblo, así como nosotros lo hacemos”, concluyó Zenaida Fernández, vecina del sector.
+***ET / DCI Alcaldía de Maracaibo***

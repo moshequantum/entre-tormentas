@@ -1,11 +1,19 @@
 ---
-title: "image"
-publishedAt: "2024-10-31"
-category: "regionales"
+title: "¡RESPALDO AL DEPORTE! IMDEP San Francisco organiza Clínica de Voleibol"
+publishedAt: "2024-11-01"
+category: "deportes"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','image-1420','','','2024-10-31 09:50:20','2024-10-31 08:50:20','',9639,'https://entretormentas.com/wp-content/uploads/2024/10/image-631.png',0,'attachment','image/png',0),(9641,2,'2024-10-31 09"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/11/image.png"
+excerpt: "ENTRE TORMENTAS. El Instituto Público Municipal de Deporte de San Francisco realizó una clínica de voleibol en la cancha Luis Homez."
 ---
 
+**ENTRE TORMENTAS. **El Instituto Público Municipal de Deporte de San Francisco realizó una clínica de voleibol en la cancha Luis Homez.
+
+En la actividad participaron 43 niños y jóvenes de los sectores, El Perú, San Ramón, San Felipe, Bicentenario Sur, La Coromoto, Plaza El Sol y Urb. San Francisco donde se repasaron aspectos del deporte de la malla alta, historia del voleibol, su evolución en Venezuela y el reglamento actualizado del juego.
+
+También practicaron posiciones en la cancha, tipos de saques, desplazamientos y remates.
+
+La actividad fue llevada a cabo por el entrenador Hugo Bórquez, y contó con el apoyo de los monitores y del municipio Gay Karina, Jesús Ortiz y José Carmona.
+***ET / Alcaldía de San Francisco***

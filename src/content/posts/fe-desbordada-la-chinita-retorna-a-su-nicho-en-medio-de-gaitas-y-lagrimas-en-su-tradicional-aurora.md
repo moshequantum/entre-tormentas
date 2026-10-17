@@ -1,48 +1,33 @@
 ---
-title: "¡RIBERA DEL COQUIVACOA! El IMA celebra su 29 aniversario limpiando Playa Macuto"
+title: "¡FE DESBORDADA! La Chinita retorna a su nicho en medio de gaitas y lágrimas en su tradicional Aurora"
 publishedAt: "2025-12-07"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','26373-revision-v1','','','2025-12-07 21:03:50','2025-12-08 01:03:50','',26373,'https://entretormentas.com/?p=26374',0,'revision','',0),(26375,2,'2025-12-07 21:08:20','2025-12-08 01:08:20"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/12/image-185.png"
+excerpt: "ENTRE TORMENTAS. A las 11:00 de la noche de este sábado 6 de diciembre se celebró la eucaristía presidida por Mons. José Luis Azuaje Ayala, arzobispo de Maracaibo, dio paso a la tradicional procesión de la Aurora que despidió a la Virgen de"
 ---
 
-<p><strong>ENTRE TORMENTAS. </strong>El Instituto Municipal de Ambiente de Maracaibo (IMA) se fue con el contingente de "salserines" a limpiar las Riberas del Lago Coquivacoa como parte de la celebración de su 29 aniversario.</p>
+**ENTRE TORMENTAS.** A las 11:00 de la noche de este sábado 6 de diciembre se celebró la eucaristía presidida por Mons. José Luis Azuaje Ayala, arzobispo de Maracaibo, dio paso a la tradicional procesión de la Aurora que despidió a la Virgen del Rosario de Chiquinquirá, la Chinita, en sus fiestas patronales 2025 con el retorno a su nicho ya en horas de la mañana del domingo 7 de diciembre.
 
+En su emotiva homilía, Monseñor Azuaje destacó el carácter misionero de la fe y la profunda manifestación de devoción que acompañó a la sagrada imagen durante su recorrido por las calles y avenidas de la región.
 
+![](https://entretormentas.com/wp-content/uploads/2025/12/image-186.png)
 
-<p>En esta jornada de cariño visitaron Playa Macuto, de la parroquia Bolivar, donde el IMA unificó esfuerzos con la Gobernación del Zulia, grupos ambientalistas, brigadas juveniles, la Guardia del Pueblo, PDVSA, poder popular organizado y diversas instituciones públicas y entes de la municipalidad.</p>
+La tradicional Aurora de la Chinita reunió una vez más a miles de devotos que la acompañaron durante toda la noche y madrugada en su recorrido por las calles saladilleras repletas de flores, altares improvisados, globos y banderas blancas y celestes.
 
+La santa reliquia se desplazó entre aplausos y cánticos por la avenida 12 (Padre Añez–El Recreo), la calle 89E (Carmona), la avenida 10, la calle 89D (Celis), la avenida 9 (Miranda), la calle 89B (Belloso), la avenida 9B y la calle 89 (Nueva Belloso).
 
+![](https://entretormentas.com/wp-content/uploads/2025/12/image-187.png)
 
-<figure class="wp-block-image size-large"><img src="https://entretormentas.com/wp-content/uploads/2025/12/image-180-1024x576.png" alt="" class="wp-image-26367"/></figure>
+Luego siguió por la avenida 13 (Andes), la calle 89B (Belloso), la avenida 13B, la calle 89C (Madueño), la avenida 13 (Andes), la calle 93 (Padilla) y regresó finalmente a la Basílica por la avenida 12.
 
+Las bandas Rafael Urdaneta y San Juan de Dios acompañaron la caminata mariana hasta el amanecer.
 
+![](https://entretormentas.com/wp-content/uploads/2025/12/image-188.png)
 
-<p>El presidente (e) del Instituto Municipal de Ambiente, Janner Pérez, destacó que esta actividad forma parte de la gestión del Alcalde Giancarlo Di Martino, y demuestra la participación activa de la Alcaldía de Maracaibo en los programas de saneamiento de las riberas del Lago.</p>
+Con este recorrido culminaron las celebraciones que comenzaron el 25 de octubre con la tradicional Bajada. El lema: “Con Chiquinquirá adoremos a Jesús, fuente de toda santidad” destacó la reciente canonización de los dos primeros santos venezolanos, José Gregorio Hernández y Carmen Rendiles. Este año, se conmemoraron 316 años de la renovación milagrosa de la Virgen de Chiquinquirá.
 
-
-
-<p>Estas labores incluyeron recolección de desechos sólidos, limpieza de áreas verdes, retiro de escombros y la sensibilización dirigida a los habitantes y visitantes de la zona para apoyar la preservación del ambiente.</p>
-
-
-
-<p>El sopazo familiar fue el cierre para compartir y agradecer apoyo por esta jornada de integración, realizada para seguir construyendo una Maracaibo más limpia, verde y sostenible.</p>
-
-
-
-<figure class="wp-block-image size-full"><img src="https://entretormentas.com/wp-content/uploads/2025/12/image-181.png" alt="" class="wp-image-26368"/></figure>
-
-
-
-<p>Pérez mencionó que estás acciones de conservación y saneamiento forman parte de un plan sostenido de recuperación de espacios naturales, ejecutadas por Instituto Municipal de Ambiente, con el propósito de devolverle al Lago de Maracaibo su valor ecológico y turístico.</p>
-
-
-
-<p>Destacó Pérez que el compromiso de la Alcaldía de Maracaibo es fortalecer la conciencia ciudadana y la participación del poder popular en la preservación del entorno.<br><strong><em>ET / Prensa Alcaldía de Maracaibo</em></strong></p>
-
-
-
-<p></p>
+Como ya es tradición, el Barrio Obrero de Cabimas, ofreció una velada gaitera a las 5.00 de la mañana de este domingo, donde los presentes luego de acompañar la procesión y se llenaron de lágrimas de emoción y devoción para despedir hasta octubre del 2026 a la Santa Patrona de todos los zulianos.
+***ET / Gabriel Sthormes***

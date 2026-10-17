@@ -1,32 +1,25 @@
 ---
-title: "¡EN LA PARROQUIA COQUIVACOA! Alcaldía de Maracaibo supervisa recolección de desechos"
+title: "¡PLAN ESTADAL DE ASFALTADO! Gobernación interviene calles y avenidas de Santa Lucía para realzar su belleza"
 publishedAt: "2025-12-11"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','26535-revision-v1','','','2025-12-11 04:18:32','2025-12-11 08:18:32','',26535,'https://entretormentas.com/?p=26536',0,'revision','',0),(26537,2,'2025-12-11 04:20:51','2025-12-11 08:20:51"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/12/image-274.png"
+excerpt: "ENTRE TORMENTAS. El tradicional e histórico barrio Santa Lucía continúa siendo intervenido de manera integral por la Gobernación Bolivariana del estado Zulia, realzando la belleza de este sector que tiene una huella identitaria en el maraca"
 ---
 
-<p><strong>ENTRE TORMENTAS. </strong>La Alcaldía de Maracaibo, a través de la Dirección General de Servicios Públicos y el Instituto Municipal de Aseo Urbano (Imau) supervisó este miércoles 10 de diciembre, el cumplimiento de la recolección de desechos y la presencia de botes de aguas negras en el sector Altos de Jalisco de la parroquia Coquivacoa ante las reiteradas denuncias hechas por sus habitantes en los medios de comunicación.</p>
+**ENTRE TORMENTAS.** El tradicional e histórico barrio Santa Lucía continúa siendo intervenido de manera integral por la Gobernación Bolivariana del estado Zulia, realzando la belleza de este sector que tiene una huella identitaria en el maracaibero.
 
+Desde este martes 9 de diciembre maquinarias y un equipo humano del Instituto de Vialidad del Estado Zulia (Invez) llegó encabezado por el gobernador Luis Caldera, para dar comienzo al Plan Estadal de Asfaltado, para abordar calles y avenidas del icónico y patrimonial barrio santaluciteño, que celebra el día de su patrona Santa Lucía este sábado 13 de diciembre.
 
+El gobernador Caldera detalló que serán colocadas 1.000 toneladas de asfalto tipo tres en 700 metros lineales, se colocará capa de rodamiento, demarcación de línea continua y pintarán los brocales.
 
-<p>Joemel Robles, director encargado de Servicios Públicos y presidente encargado del Imau, se trasladó hasta esa comunidad, situada al norte de la ciudad, para constatar las quejas de los vecinos y, durante el recorrido, verificó que las calles se encontraban limpias sin la presencia de desechos. Esta parroquia es atendida con operativos especiales hasta que sea incluida en el Plan de Recolección Domiciliaria que, progresivamente viene implementando la municipalidad desde el pasado mes de septiembre con una frecuencia de recolección tres veces a la semana.</p>
+![](https://entretormentas.com/wp-content/uploads/2025/12/image-275-1024x683.png)
 
+Estos trabajos beneficiarán a más de 10.000 habitantes, conformadas en 2.282 familias y la Comuna Emblemática Chávez Visionario con 12 consejos comunales.
 
+Destacó el gobernador que los trabajos se realizan en una articulación perfecta del Gobierno Nacional liderado por el presidente Nicolás Maduro, la Gobernación Bolivariana del Zulia, la Alcaldía Bolivariana de Maracaibo y el protagonismo del Poder Popular.
 
-<figure class="wp-block-image size-full"><img src="https://entretormentas.com/wp-content/uploads/2025/12/image-146.png" alt="" class="wp-image-26309"/></figure>
-
-
-
-<p>Es importante destacar que Juana de Ávila y Olegario Villalobos, tienen un cronograma de recolección correspondiente a los días lunes, miércoles y viernes; y en Cacique Mara y Cecilio Acosta los días martes, jueves y sábados. Estas cuatro parroquias son las primeras que ya gozan del servicio.</p>
-
-
-
-<p>El pasado 2 de diciembre, el alcalde Giancarlo Di Martino anunció que, próximamente, se sumarán 12 parroquias más como parte de las operaciones destinadas a perfeccionar el sistema de recolección de desechos sólidos en el municipio Maracaibo.</p>
-
-
-
-<p><strong>BOTES DE AGUAS NEGRAS</strong><br>El director general encargado de Servicios Públicos y presidente del Imau, en su supervisión por el sector Altos de Jalisco II detectó la presencia de botes de aguas y confirmó con una de las vecinas que tienen “bastante tiempo” con el problema, por lo tanto coordino acciones con los entes correspondientes para canalizar la solución.<br><strong><em>ET / Prensa Alcaldía de Maracaibo</em></strong></p>
+El gobierno de Caldera también aborda en Santa Lucía el Museo de la Gaita, la Iglesia Santa Lucía, el bulevar, el sistema de alumbrado y entregó trabajos realizados en conjunto con Hidrolago, referentes a la instalación de un colector de 80 metros, que favorece directamente a 500 familias del populoso sector.
+***ET / Prensa Gobernación del Zulia***

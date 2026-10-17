@@ -1,11 +1,17 @@
 ---
-title: "diosa"
+title: "¡FUERA DE LA UNIDAD! Enrique Márquez anuncia que continuará en la carrera presidencial"
 publishedAt: "2024-04-26"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','diosa','','','2024-04-26 00:17:19','2024-04-25 22:17:19','',1691,'https://entretormentas.com/wp-content/uploads/2024/04/diosa.jpg',0,'attachment','image/jpeg',0),(1693,2,'2024-04-26 00:17:30',"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/04/enriquemarquez.jpg"
+excerpt: "ENTRE TORMENTAS. El candidato presidencial Enrique Márquez, aseguró que continuará con su campaña de cara a las elecciones del próximo 28 de julio."
 ---
 
+**ENTRE TORMENTAS. **El candidato presidencial Enrique Márquez, aseguró que continuará con su campaña de cara a las elecciones del próximo 28 de julio.
+
+“Hoy informamos que hemos decidido continuar. Continuar promoviendo nuestra alternativa. Desde la oposición; (…) Hemos decidido continuar no desde el punto de vista del necio, sino del punto de vista de un hombre que desea lo mejor para su país, jamás a dividir"; dijo Enrique Márquez durante su rueda de prensa.
+
+Además, se mostró a favor de la propuesta del presidente de Colombia, Gustavo Petro, que busca garantizar “la vida y derechos políticos de los perdedores”.
+***GS / Unión Radio***

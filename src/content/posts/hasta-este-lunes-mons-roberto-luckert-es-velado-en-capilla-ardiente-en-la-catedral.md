@@ -1,11 +1,17 @@
 ---
-title: "monsenorroberto2"
-publishedAt: "2024-06-16"
+title: "¡HASTA ESTE LUNES! Mons. Roberto Lückert es velado en capilla ardiente en la catedral"
+publishedAt: "2024-06-17"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','monsenorroberto2','','','2024-06-16 15:16:08','2024-06-16 13:16:08','',3716,'https://entretormentas.com/wp-content/uploads/2024/06/monsenorroberto2.jpg',0,'attachment','image/jpeg',0),(3718,2,"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/06/capillaardiente.jpg"
+excerpt: "ENTRE TORMENTAS. Familiares, amigos y fieles de la iglesia católica acuden a la Catedral de Maracaibo donde llegaron los restos mortales de Monseñor Roberto Lückert para las exequias que se extenderán hasta este lunes 17junio."
 ---
 
+**ENTRE TORMENTAS. **Familiares, amigos y fieles de la iglesia católica acuden a la Catedral de Maracaibo donde llegaron los restos mortales de Monseñor Roberto Lückert para las exequias que se extenderán hasta este lunes #17junio.
+
+Este lunes los legisladores del Consejo Legislativo del Zulia y autoridades del gobierno regional realizarán una guardia de honor.
+
+Sus restos mortales reposarán en la Iglesia Nuestra Señora de la Asunción ubicada en el sector haticos por abajo de la ciudad.
+***GS / Agencias***

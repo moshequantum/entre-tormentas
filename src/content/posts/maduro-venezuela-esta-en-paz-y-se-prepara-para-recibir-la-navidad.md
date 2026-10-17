@@ -1,11 +1,17 @@
 ---
-title: "image"
+title: "MADURO: \"Venezuela está en paz y se prepara para recibir la Navidad\""
 publishedAt: "2024-10-08"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','image-927','','','2024-10-08 10:40:41','2024-10-08 08:40:41','',8601,'https://entretormentas.com/wp-content/uploads/2024/10/image-138.png',0,'attachment','image/png',0),(8603,2,'2024-10-08 10:"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/10/image-139.png"
+excerpt: "ENTRE TORMENTAS. El presidente Nicolás Maduro, en su cuenta de Instagram, afirmó que Venezuela se prepara para recibir la Navidad."
 ---
 
+**ENTRE TORMENTAS.** El presidente Nicolás Maduro, en su cuenta de Instagram, afirmó que Venezuela se prepara para recibir la Navidad.
+
+"Venezuela está en paz y nos preparamos desde octubre para la llegada de la Navidad. Los tiempos que están por venir serán más esplendorosos, de la mano de Dios", resaltó el Mandatario nacional.
+
+Así mismo, Maduro aseveró este domingo, en su mensaje acompañado por un video de ‘Super Bigote’ que "nada ni nadie perturbará la felicidad y la estabilidad de las venezolanas y los venezolanos. Vamos pa’ lante con Super Bigote, siempre junto al pueblo".
+***GS / Agencias***

@@ -1,52 +1,38 @@
 ---
-title: "¡MÁS DE 11 MIL BENEFICIADOS! Gobernador Caldera lleva el Plan Estadal de Asfaltado a Antonio Borjas Romero"
+title: "¡FIESTA EN LA CURVA! Alcaldía de Maracaibo inaugura este viernes las plazas Bolívar y Maracaibo"
 publishedAt: "2025-11-28"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','25914-revision-v1','','','2025-11-28 04:41:21','2025-11-28 08:41:21','',25914,'https://entretormentas.com/?p=25915',0,'revision','',0),(25916,2,'2025-11-28 04:44:59','2025-11-28 08:44:59"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/11/image-500.png"
+excerpt: "ENTRE TORMENTAS. Nuevos espacios se suman para el disfrute y bienestar de todo el pueblo marabino, con la reinauguración de las plazas Bolívar y Maracaibo en La Curva de Molina, donde se ha realizado una gran inversión por parte de la alcal"
 ---
 
-<p><strong>ENTRE TORMENTAS. </strong>La Gobernación del estado Zulia impulsa el Plan Estadal de Asfaltado en la parroquia Antonio Borjas Romero, donde se ejecuta la colocación de cuatro mil toneladas de asfalto en caliente tipo III en el corredor vial Torito Fernández y comunidades adyacentes.</p>
+**ENTRE TORMENTAS. **Nuevos espacios se suman para el disfrute y bienestar de todo el pueblo marabino, con la reinauguración de las plazas Bolívar y Maracaibo en La Curva de Molina, donde se ha realizado una gran inversión por parte de la alcaldía de Maracaibo para devolver a la comunidad la dignidad de poseer sitios de esparcimiento en un ambiente sano.
 
+El director del Servicio Desconcentrado de Plazas y Parques (SEDEPAR), Namik Torres, informó que en la plaza Bolívar, ubicada frente al Mercado Popular Curva de Molina, entre calles 78A Y 79, fueron dos mil 150 metros cuadrados de espacio intervenidos con trabajos de limpieza de pisos de granito y elementos de concreto armado (bancas y jardineras), colocación de señalética, pintado de mural en pared trasera, adecuación de superficies de concreto y mampostería con estilosa o pasta profesional.
 
+![](https://entretormentas.com/wp-content/uploads/2025/11/image-501-1024x683.png)
 
-<p>Las cuadrillas llegaron a los sectores Luis Ángel García, Aníbal Ospino y al propio corredor vial Torito Fernández para iniciar la obra que busca mejorar la movilidad y dignificar a las familias de la zona.</p>
+Igualmente se realizó la pintura de pedestales y brocales, se colocaron postes de iluminación, condicionamiento de sustrato de plantas, reparación de sistema y partes eléctricas, colocación de lámparas tipo cobra, colocación de granzón en caminerías y todo un remozamiento del paisajismo.
 
+**PLAZA MARACAIBO**
+El director de SEDEPAR informó también sobre la entrega de la plaza Maracaibo, ubicada entre la avenida La Limpia y la vía hacia La Concepción, junto al módulo policial Curva de Molina, pero del lado de la parroquia Raúl Leoni, donde “intervinimos dos mil 70 metros cuadrados de espacio con trabajos de limpieza de caminerías, poda de arbustos y árboles, reparación de pisos de concreto, acondicionamiento de superficies metálicas, esmalte en postes de iluminación, reparación, fondeado y pintado de letras corpóreas (MARACAIBO)”.
 
+También -agregó el funcionario-, “se repararon las partes del sistema eléctrico, colocamos lámparas de iluminación pública, se colocó grama artificial en el área de juegos, reparación de juegos infantiles, remozamiento de paisajismo general, colocación de luminarias tipo aplique de pared, pintura de paredes y brocales”.
 
-<p>La jornada se desarrolla con el respaldo del Gobierno del presidente Nicolás Maduro, a través del Ministerio del Poder Popular para el Transporte, junto a la Alcaldía de Maracaibo y el Poder Popular organizado.</p>
+![](https://entretormentas.com/wp-content/uploads/2025/11/image-502-1024x683.png)
 
+Torres destacó la importancia de estas dos obras desarrolladas por la Alcaldía Bolivariana de Maracaibo, a través del Servicio Desconcentrado de Plazas y Parques (SEDEPAR), para continuar brindando sitios de esparcimiento y recreación a los marabinos y marabinas, “porque se lo merecen, como dice el alcalde Di Martino, quien ha venido entregando obras que enaltecen la ciudad y van recuperando el brillo que en otrora tenía. Estas dos plazas vienen a beneficiar en total a tres mil 879 habitantes de este populoso sector”.
 
+Finalmente, hizo un llamado a todos los habitantes de La Curva de Molina y a quienes transitan diariamente por el sector a cuidar los espacios recuperados y a celebrar este viernes 28 en el evento que tiene preparado la Alcaldía de Maracaibo con un gran show musical.
 
-<p>Desde el lugar donde se ejecuta la obra, el gobernador del estado Luis Caldera, destacó que este esfuerzo forma parte de un plan integral Zulia en el Oeste, una acción del Gobierno nacional “que reconoce a los territrorios de los humildes, de los leales, de los que ponen su alma para defender la Patria”.</p>
+![](https://entretormentas.com/wp-content/uploads/2025/11/image-503-1024x645.png)
 
+**ARTISTAS EN CONCIERTO**
+A partir de las 6 pm inicia el espectáculo musical en la Curva de Molina, con un prestigioso cartel de reconocidos artistas.
+Rincon Morales, Pillopo, Ámbar García, Madero Show y Alejandro Palacios, que animarán el encendido de la Plaza Bolívar en La Curva de Molina, parroquia Venancio Pulgar.
 
-
-<p>Este plan incluye vialidad, alumbrado público, sustitución de transformadores y la ejecución de 128 proyectos comunales en Maracaibo, que se corresponden a los 576 de todo el estado Zulia.</p>
-
-
-
-<figure class="wp-block-image size-large"><img src="https://entretormentas.com/wp-content/uploads/2025/11/image-413-1024x682.png" alt="" class="wp-image-25769"/></figure>
-
-
-
-<p>“Seguimos trabajando en el Zulia, dignificando al pueblo humilde que ejerce la gobernanza y que ha sido leal al legado del presidente Hugo Chávez y al liderazgo del presidente Nicolás Maduro”, expresó el gobernador Caldera.</p>
-
-
-
-<p>Voceros de la Comuna Maluami Robinsoniana, subrayaron que esta obra responde a más de tres décadas de abandono en el territorio: “Hoy más de dos mil 100 familias se benefician gracias a la agenda concreta de acción impulsada desde las salas de autogobierno, junto al Gobierno Nacional, la Gobernación, la Alcaldía y el Poder Popular”.</p>
-
-
-
-<p>El dirigente comunitario Villegas, resaltó que el asfaltado beneficia a más de 11 mil personas y a cuatro rutas de transporte con más de veinte años de trayectoria. “Este plan de soluciones llega a nuestros sectores gracias a la Revolución y a la respuesta inmediata del gobernador Caldera y del presidente Maduro”, enfatizó.</p>
-
-
-
-<p>Con estas acciones, el Plan Estadal de Asfaltado Zulia 2025 fortalece la infraestructura vial del oeste de Maracaibo y reafirma el compromiso del Gobierno nacional junto al Poder Popular para garantizar mejores condiciones de vida en las comunidades de la entidad zuliana.<br><strong><em>ET / Nota de Prensa</em></strong></p>
-
-
-
-<p></p>
+Está festividad es iniciativa del alcalde Giancarlo Di Martino, quien invita al pueblo a compartir con alegría este viernes 28 con motivo de la recuperación de la Plaza Bolívar, en la zona oeste de la ciudad marabina.
+***ET / Prensa Alcaldía de Maracaibo***

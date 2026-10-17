@@ -1,36 +1,23 @@
 ---
-title: "¡CAMBIO EN EL MAPA POLÍTICO! En total son cuatro los alcaldes de la oposición que repiten en Zulia"
+title: "ADRIÁN ROMERO: “Entrego una Alcaldía completamente operativa y sin deudas”"
 publishedAt: "2025-07-29"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','19926-revision-v1','','','2025-07-29 10:05:20','2025-07-29 08:05:20','',19926,'https://entretormentas.com/?p=19927',0,'revision','',0),(19928,2,'2025-07-29 10:08:42','2025-07-29 08:08:42"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/07/arentrega1.jpeg"
+excerpt: "ENTRE TORMENTAS. De una forma inédita y siguiendo los patrones de responsabilidad que le han caracterizado, Adrián Romero Martínez, alcalde encargado de Maracaibo, presidirá la comisión de enlace que le entregará la Alcaldía de Maracaibo a"
 ---
 
-<p><strong>ENTRE TORMENTAS. </strong>De los 21 municipios del Zulia, este domingo 27 de julio, solo cuatro candidatos de la oposición ganaron las alcaldías durante los comicios donde se eligieron 335 ayuntamientos y dos mil 402 cargos de concejales.</p>
+**ENTRE TORMENTAS. **De una forma inédita y siguiendo los patrones de responsabilidad que le han caracterizado, Adrián Romero Martínez, alcalde encargado de Maracaibo, presidirá la comisión de enlace que le entregará la Alcaldía de Maracaibo a Gian Carlo Di Martino, alcalde electo para gobernar en el periodo 2025-2029.
 
+Detalló que el equipo será conformado por él mismo, junto al director general, director de Despacho, director de Talento Humano, el consultor jurídico.
 
+“Tenemos todo listo con la comisión de enlace. Yo mismo, junto con mi equipo, entregaré la municipalidad y llevaremos este proceso de la forma más transparente y menos traumática posible. Esperamos que hoy mismo empiecen las conversaciones para hacer la transición en cada uno de los organismos y paramunicipales. Resolveremos los temas de último momento hasta que sea juramentado en el Concejo municipal. Yo mismo le entregaré, no voy a poner un tercero. Así como yo recibí, en lo personal, me gusta entregar. Yo entrego buenas cuentas”, señaló Romero Martínez.
 
-<p>Se conoció que tres candidatos de Un Nuevo Tiempo (UNT) y uno de Acción Demócraticas (AD) que iban a la reelección lograron repetir en sus municipios.</p>
+![](https://entretormentas.com/wp-content/uploads/2025/07/arentrega2-1024x682.jpeg)
 
+Destacó además que entrega una Alcaldía completamente operativa y al día en todos los aspectos. “Entrego una Alcaldía completamente operativa y sin deudas. Tenemos pendiente solo lo que se ha generado en el mes de julio que esperamos que, con la aprobación del crédito adicional, le honren todos los compromisos de este mes a los proveedores y que, entre otras cosas, paguen el HCM. Ese dinero está allí para cubrir todos los compromisos. No le debo un bolívar ni un dólar a nadie. Lo que asumíamos, lo pagábamos”.
 
-
-<p><strong>BURGOMAESTRES OPOSITORES:</strong><br><strong>Lagunillas:</strong> José “Cheo» Mosquera. Es empresario, presidente de la Fundación Rea Bolívar Costa Oriental del Lago. Es secretario general de Un Nuevo Tempo en el municipio. Repite en su segundo periodo.</p>
-
-
-
-<p><strong>Rosario de Perijá:</strong> Ely Ramón Atencio. Fue diputado de la Asamblea Nacional 2010-2015 y alcalde de Perijá en el período 2004-2008, repite este Gobierno del 2026 – 2030, además de concejal en el 2000-2004.</p>
-
-
-
-<p><strong>Sucre: </strong>Yonys González. Es el actual alcalde del municipio Sucre desde el 2017 y dirigente del partido Un Nuevo Tiempo.</p>
-
-
-
-<p><strong>Francisco Javier Pulgar: </strong>Ervins Rosales. Es dirigente de Un Nuevo Tiempo y productor agropecuario. Es sobrino de Manuel Rosales.</p>
-
-
-
-<p>Hasta los momentos se espera el segundo boletín del Consejo Nacional Electoral, para conocer la participación en estos municipios del Zulia.<br><strong><em>ET / Agencias</em></strong></p>
+Cerró agradeciendo a todos los empleados públicos. "Estoy profundamente orgulloso de haber liderado un equipo municipal y les agradezco todas las enseñanzas que me dieron. La gran mayoría trabaja con compromiso por la ciudad, por los marabinos y eso es invaluable".
+***ET / DCI Alcaldía de Maracaibo***

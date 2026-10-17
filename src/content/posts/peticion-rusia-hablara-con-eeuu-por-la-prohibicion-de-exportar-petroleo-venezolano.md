@@ -1,16 +1,21 @@
 ---
-title: "2DO. CARTEL DE NOTIFICACIÓN - DIVORCIO JURISPRUDENCIA (DESAFECTO) - DARWIN ANTONIO SOLER SOLER"
+title: "¡PETICIÓN! Rusia hablará con EEUU por la prohibición de exportar petróleo venezolano"
 publishedAt: "2026-02-12"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','28787-revision-v1','','','2026-02-12 10:05:12','2026-02-12 14:05:12','',28787,'https://entretormentas.com/?p=28788',0,'revision','',0),(28789,2,'2026-02-12 10:07:44','2026-02-12 14:07:44"
+coverImage: "https://entretormentas.com/wp-content/uploads/2026/02/image-321.png"
+excerpt: "ENTRE TORMENTAS. El Kremlin anunció este miércoles que se pondrá en contacto con la Casa Blanca para tratar la prohibición impuesta por Estados Unidos a Venezuela para exportar su petróleo a Rusia, país que está muy preocupado por el futuro"
 ---
 
-<p><img class="wp-image-28759" style="width: 150px;" src="https://entretormentas.com/wp-content/uploads/2026/02/image-306.png" alt=""></p>
+**ENTRE TORMENTAS.** El Kremlin anunció este miércoles que se pondrá en contacto con la Casa Blanca para tratar la prohibición impuesta por Estados Unidos a Venezuela para exportar su petróleo a Rusia, país que está muy preocupado por el futuro de sus inversiones en el país latinoamericano.
 
+"Esta es una decisión bastante reciente, pero sin duda emplearemos los canales de comunicación existentes con los estadounidenses para aclarar la situación", aseguró el portavoz del Kremlin, Dmitri Peskov, en su rueda de prensa telefónica diaria.
 
+Peskov también hizo saber que una de las motivaciones para el "diálogo con los estadounidenses" son los intereses rusos en el país latinoamericano.
 
-<p></p>
+"Tenemos inversiones en Venezuela, proyectos a largo plazo e interés mutuo con nuestros socios venezolanos", añadió.
+
+El Departamento del Tesoro de Estados Unidos prohibió el martes que Venezuela realizase transacciones con particulares de Rusia, Irán, Corea del Norte y Cuba.
+***ET / EFE***

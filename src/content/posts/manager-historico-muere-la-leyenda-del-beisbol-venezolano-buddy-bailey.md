@@ -1,11 +1,19 @@
 ---
-title: "onutrump"
+title: "¡MÁNAGER HISTÓRICO! Muere la leyenda del béisbol venezolano Buddy Bailey"
 publishedAt: "2025-09-24"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','onutrump','','','2025-09-24 04:46:33','2025-09-24 08:46:33','',22350,'https://entretormentas.com/wp-content/uploads/2025/09/onutrump.jpeg',0,'attachment','image/jpeg',0),(22352,2,'2025-09-24 0"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/09/buddy1.jpeg"
+excerpt: "ENTRE TORMENTAS. El manager estadounidense Welby Sheldon ‘Buddy’ Bailey falleció este martes a los 68 años, según dieron a conocer numerosas fuentes vinculadas al béisbol venezolano."
 ---
 
+**ENTRE TORMENTAS.** El manager estadounidense Welby Sheldon ‘Buddy’ Bailey falleció este martes a los 68 años, según dieron a conocer numerosas fuentes vinculadas al béisbol venezolano.
+
+![](https://entretormentas.com/wp-content/uploads/2025/09/buddy2-819x1024.jpeg)
+
+Bailey es recordado por liderar la disnastía ganadora de Tigres de Aragua en la LVBP, en la que consiguió seis títulos además de una Serie del Caribe.
+
+El estratega también vistió el uniforme de Tiburones de La Guaira en una oportunidad.
+***ET / Unión Radio***

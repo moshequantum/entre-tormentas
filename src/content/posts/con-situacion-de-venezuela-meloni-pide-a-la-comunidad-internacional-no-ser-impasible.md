@@ -1,11 +1,17 @@
 ---
-title: "image"
+title: "¡CON SITUACIÓN DE VENEZUELA! Meloni pide a la comunidad internacional no ser \"impasible\""
 publishedAt: "2024-09-26"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','image-699','','','2024-09-26 10:31:16','2024-09-26 08:31:16','',8095,'https://entretormentas.com/wp-content/uploads/2024/09/image-444.png',0,'attachment','image/png',0),(8097,2,'2024-09-26 10:"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/09/image-445.png"
+excerpt: "ENTRE TORMENTAS. La primera ministra italiana, Giorgia Meloni, instó a la comunidad internacional a que no permanezca \"impasible\" por la situación que se vive en Venezuela, durante su intervención ante la Asamblea General de las Naciones Un"
 ---
 
+**ENTRE TORMENTAS.** La primera ministra italiana, Giorgia Meloni, instó a la comunidad internacional a que no permanezca "impasible" por la situación que se vive en Venezuela, durante su intervención ante la Asamblea General de las Naciones Unidas.
+
+Consideró que "la comunidad internacional no puede permanecer impasible mientras, casi dos meses después de las elecciones del 28 de julio, sigue sin reconocerse el resultado electoral".
+
+"Es nuestro deber alzar la voz", enfatizó la ministra italiana.
+***GS / EFE***

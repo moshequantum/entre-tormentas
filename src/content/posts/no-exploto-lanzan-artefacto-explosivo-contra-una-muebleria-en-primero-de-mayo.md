@@ -1,11 +1,19 @@
 ---
-title: "vialidadgf2"
+title: "¡NO EXPLOTÓ! Lanzan artefacto explosivo contra una mueblería en Primero de Mayo"
 publishedAt: "2024-04-30"
-category: "regionales"
+category: "sucesos"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','vialidadgf2','','','2024-04-30 09:01:16','2024-04-30 07:01:16','',1881,'https://entretormentas.com/wp-content/uploads/2024/04/vialidadgf2.jpg',0,'attachment','image/jpeg',0),(1883,2,'2024-04-3"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/04/Mubleria.jpg"
+excerpt: "ENTRE TORMENTAS. La tarde de este lunes, delincuentes lanzaron un artefacto explosivo contra la mueblería Faddy, ubicada en el sector Primero de Mayo, en la ciudad de Maracaibo."
 ---
 
+**ENTRE TORMENTAS. **La tarde de este lunes, delincuentes lanzaron un artefacto explosivo contra la mueblería Faddy, ubicada en el sector Primero de Mayo, en la ciudad de Maracaibo.
+
+Trabajadores alertaron a las autoridades del hallazgo del artefacto, el cual no se activó, a través del número de emergencia VEN-911.
+
+Hasta el momento se desconoce si fue una granada, un niple o una bomba molotov lo que sembró el terror en esa zona residencial.
+
+La información la dio a conocer el periodista José Andara, quien señaló a través de un video, que la zona fue acordonada de manera inmediata por funcionarios de los cuerpos de seguridad y ya iniciaron las investigaciones, ya que el hecho quedó grabado en las cámaras de seguridad del local.
+***GS / Es Con Usted***

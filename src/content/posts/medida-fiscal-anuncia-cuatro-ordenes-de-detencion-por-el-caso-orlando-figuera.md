@@ -1,44 +1,25 @@
 ---
-title: "JORGE RODRÍGUEZ EN ANGOSTURA: \"Es materialmente imposible que la derecha gane\""
+title: "¡MEDIDA! Fiscal anuncia cuatro órdenes de detención por el caso Orlando Figuera"
 publishedAt: "2024-06-06"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','3309-revision-v1','','','2024-06-06 10:44:16','2024-06-06 08:44:16','',3309,'https://entretormentas.com/?p=3310',0,'revision','',0),(3311,2,'2024-06-06 10:46:59','2024-06-06 08:46:59','\n"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/04/Tarek-William-Saab-1-960x640-1.jpg"
+excerpt: "ENTRE TORMENTAS. El fiscal general, Tarek William Saab, lamentó que hasta la fecha no se haya materializado la extradición desde España de Enzo Franchini, acusado de quemar vivo a Orlando Figuera durante las guarimbas de 2017."
 ---
 
-<p><strong>ENTRE TORMENTAS. </strong>El coordinador nacional de la campaña de Nicolás Maduro, Jorge Rodríguez, y la vicepresidenta de la República, Delcy Rodríguez, lideraron una movilización el miércoles 5 de junio en el municipio Angostura, estado Bolívar, en apoyo al presidente y en rechazo a las sanciones de Estados Unidos contra Venezuela.</p>
+**ENTRE TORMENTAS.** El fiscal general, Tarek William Saab, lamentó que hasta la fecha no se haya materializado la extradición desde España de Enzo Franchini, acusado de quemar vivo a Orlando Figuera durante las guarimbas de 2017.
 
+Anunció que han solicitado nuevas órdenes de aprehensión contra Ángel Daniel Sucre Cova, Kleiver José Hernández; Yuber Enrique Rodríguez Villa y Elio Enrique Carrasquel Azócar por los delitos de lesiones gravísimas y agavillamiento contra Orlando Figuera con quienes habría tenido problemas previos.
 
+Afirmó que su muerte fue "un emblema, un símbolo de lo que pudiera ser la acción fascista y criminal en contra de alguien que incluso por su apariencia física y manera de vestir pudiera significar una condena de muerte, eso fue lo que pasó con Orlando Figuera en medio de las guarimbas de 2017".
 
-<p>Durante la campaña para las elecciones presidenciales del 28 de julio de 2024, Jorge Rodríguez pronunció un discurso en Angostura, subrayando la importancia de esta región histórica en el próximo evento electoral, reseñó Últimas Noticias.</p>
+Recordó que el Estado venezolano reactivó la solicitud de extradición "del asesino Enzo Franchini, el presidente ha solicitado al Rey de España y a la máxima autoridad del gobierno español para que hagan lo correspondiente para que Enzo Franchini pague lo que hizo con este inocente ser humano, Orlando Figuera".
 
+Recordó que el despacho que preside solicitó su detención en octubre de 2017 por instigación publica, terrorismo y homicidio intencional calificado y el 10 de junio de 2019 Enzo Franchini fue detenido en España con motivo de la alerta roja solicitada.
 
+Sin embargo, explicó que en 2020 el pleno de la Sala Penal del Reino de España declaró procedente la extradición de Franchini a Venezuela, pero de manera lamentable el Ministerio Público de la nación ibérica apeló y dijo que no debe ser extraditado, la excusa fue que a Franchini se le podía violentar sus derechos humanos en Venezuela porque era un opositor.
 
-<p>En su intervención, Jorge Rodríguez destacó el valor y el compromiso del pueblo de Guayana, afirmando que este se ha mantenido firme en defensa de la soberanía nacional frente a quienes intentaron «vender la patria a intereses extranjeros». Además, mencionó la figura de Simón Bolívar y la relevancia de mantener viva la estrella de Angostura en la bandera de Venezuela.</p>
-
-
-
-<p>“Es muy emocionante ver que un río de gente, que un río de pueblo, de almas, de futuro, viene a encontrarse con el padre río, aquí, en Angostura, de aquellos tiempos del Libertador. El pueblo que se ha probado en las mayores dificultades, porque ellos, los que ya creían que le podían entregar la Guayana Esequiba a la ExxonMobil, el pueblo de Guayana no lo va a permitir”, afirmó Rodríguez.</p>
-
-
-
-<p>El presidente del Parlamento también enfatizó que cada sanción de Estados Unidos y cada daño infligido al país se los «van a cobrar» uno por uno a los dirigentes de la oposición.</p>
-
-
-
-<p>“Esos (la oposición) que nos robaron el oro que estaba en Inglaterra, que nos robaron Monómeros, que se hicieron multimillonarios a punta de robarse lo que pertenece al pueblo de Venezuela. Esos mismos que le mandaron cartas a Netanyahu para que viniera a hacer a este país lo mismo que le hacen al pueblo de Gaza, esos ahora quieren venir a pedir al pueblo su voto, como si es que el pueblo no se acuerda del daño que le hicieron. Por eso, esa cuenta se la vamos a cobrar el próximo 28 de julio”, resaltó.</p>
-
-
-
-<p>Rodríguez subrayó que mientras la Revolución garantiza futuro y progreso, la derecha representa el pasado y está dirigida por "vulgares ladrones". “Mientras ellos han pedido sanciones, el presidente Maduro siempre ha estado al frente, en la calle defendiendo a su pueblo. Ese hombre jamás ha caído en las tentaciones en que si cayeron otros”, destacó.</p>
-
-
-
-<p>Finalmente, Rodríguez predijo el triunfo de Nicolás Maduro en las presidenciales del 28 de julio. «Es materialmente imposible que esos ladrones nos ganen las elecciones del 28 de julio (…) los vamos a revolcar, vamos a hacer que muerdan el polvo de la derrota y que se sientan derrotados por 20 años más de la paliza que les vamos a dar», afirmó.</p>
-
-
-
-<p>"La oposición no tiene palabra, no tiene vida, no tiene patria, ya se vendió. Vamos a pegarle hasta en la madre el próximo domingo 28 de julio", ratificó.<br><strong><em>GS / Agencias</em></strong></p>
+Saab se preguntó: "no tiene derecho humano una persona humilde, sencilla, por tener una piel oscura, pero el que asesinó por ser blanco, de apellido extranjero, ser blanco, adinerado, a ese sí dijeron que se le podían violar los derechos humanos en Venezuela, una barbaridad".
+***GS / Unión Radio***

@@ -1,11 +1,17 @@
 ---
-title: "image"
+title: "¡ANUNCIO OFICIAL! Gobierno realiza gestiones para repatriar a venezolanos deportados a El Salvador"
 publishedAt: "2025-03-18"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','image-3703','','','2025-03-18 08:32:30','2025-03-18 07:32:30','',14343,'https://entretormentas.com/wp-content/uploads/2025/03/image-331.png',0,'attachment','image/png',0),(14345,2,'2025-03-18 "
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/03/image-333.png"
+excerpt: "ENTRE TORMENTAS. La vicepresidenta, Delcy Rodríguez, afirmó este lunes que el Ejecutivo nacional trabaja para traer de vuelta al país a los venezolanos deportados a una cárcel de El Salvador, reseñó Unión Radio."
 ---
 
+**ENTRE TORMENTAS. **La vicepresidenta, Delcy Rodríguez, afirmó este lunes que el Ejecutivo nacional trabaja para traer de vuelta al país a los venezolanos deportados a una cárcel de El Salvador, reseñó Unión Radio.
+
+"La respuesta del presidente Nicolás Maduro es brazos abiertos para que nuestros connacionales, hermanos, regresen a Venezuela", dijo.
+
+Las declaraciones se ofrecieron en la inauguración de la Expo Metal en el estado Bolívar.
+***ET / Agencias***
