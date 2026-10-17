@@ -2,14 +2,12 @@ import { defineConfig, envField } from 'astro/config';
 import react from '@astrojs/react';
 import keystatic from '@keystatic/astro';
 import tailwind from '@astrojs/tailwind';
-import cloudflare from '@astrojs/cloudflare';
+import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
   output: 'static',
-  adapter: cloudflare({
-    imageService: 'passthrough'
-  }),
+  adapter: vercel(),
   env: {
     schema: {
       KEYSTATIC_GITHUB_CLIENT_ID: envField.string({ context: 'server', access: 'secret', optional: true }),

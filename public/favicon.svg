@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="32" height="32" fill="none">
+  <!-- Brand Catatumbo Gradient Tile -->
+  <rect width="40" height="40" rx="10" fill="url(#bg-brand-grad)" />
+  <rect width="39" height="39" x="0.5" y="0.5" rx="9.5" stroke="#38BDF8" stroke-opacity="0.3" />
+
+  <!-- Clean Editorial Catatumbo Spark Mark -->
+  <path
+    d="M22 5L9 21H19L17 35L31 18H20L22 5Z"
+    fill="url(#spark-grad)"
+    stroke="#FFFFFF"
+    stroke-width="0.75"
+    stroke-linejoin="round"
+  />
+
+  <defs>
+    <linearGradient id="bg-brand-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0055FF" />
+      <stop offset="1" stop-color="#003BB0" />
+    </linearGradient>
+    <linearGradient id="spark-grad" x1="9" y1="5" x2="31" y2="35" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" />
+      <stop offset="0.7" stop-color="#E0F2FE" />
+      <stop offset="1" stop-color="#38BDF8" />
+    </linearGradient>
+  </defs>
+</svg>

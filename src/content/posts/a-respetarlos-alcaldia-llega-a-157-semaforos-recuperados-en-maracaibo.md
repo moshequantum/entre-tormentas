@@ -1,0 +1,11 @@
+---
+title: "cruces2"
+publishedAt: "2024-06-26"
+category: "regionales"
+isFeatured: false
+isBreaking: false
+author: "Redacción Entre Tormentas"
+coverImage: "/images/posts/default-post.jpg"
+excerpt: "','inherit','','closed','','cruces2','','','2024-06-26 10:27:48','2024-06-26 08:27:48','',4149,'https://entretormentas.com/wp-content/uploads/2024/06/cruces2.jpg',0,'attachment','image/jpeg',0),(4151,2,'2024-06-26 10:28:"
+---
+

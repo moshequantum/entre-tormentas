@@ -1,5 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Pagination from '../components/Pagination.astro';
+import NewsCardSkeleton from '../components/NewsCardSkeleton.astro';
+import AdBanner from '../components/AdBanner.astro';
 
 // Lead headline story (Catatumbo / Zulia sports & main news)
 const leadStory = {
@@ -252,6 +255,13 @@ const opinionPieces = [
           </article>
         ))}
       </div>
+
+      <!-- Smart Sliding Window Pagination -->
+      <Pagination
+        currentPage={1}
+        totalPages={12}
+        baseUrl="/categoria/regionales"
+      />
     </section>
 
     <!-- Section 3: Opinión Editorial & Firmas -->

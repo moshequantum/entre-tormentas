@@ -7,10 +7,28 @@ const currentYear = new Date().getFullYear();
     <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
       <div class="space-y-4 md:col-span-2">
         <div class="flex items-center gap-3">
-          <div class="flex h-9 w-9 items-center justify-center rounded-lg border border-storm-700 bg-storm-900">
-            <img src="/src/assets/logo.svg" alt="Entre Tormentas" class="h-7 w-7 object-contain" />
+          <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-electric-brand to-electric-600 p-2 shadow-md shadow-electric-brand/20 border border-white/10">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="h-full w-full" fill="none">
+              <path
+                d="M18 3L6 17H15L13 29L26 14H17L18 3Z"
+                fill="url(#lightning-footer-grad)"
+                stroke="#ffffff"
+                stroke-width="0.75"
+                stroke-linejoin="round"
+              />
+              <defs>
+                <linearGradient id="lightning-footer-grad" x1="6" y1="3" x2="26" y2="29" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFFFFF" />
+                  <stop offset="0.65" stop-color="#E0F2FE" />
+                  <stop offset="1" stop-color="#38BDF8" />
+                </linearGradient>
+              </defs>
+            </svg>
           </div>
-          <span class="text-lg font-bold text-white">ENTRE <span class="text-ion-400">TORMENTAS</span></span>
+          <div class="flex items-baseline gap-1.5">
+            <span class="font-sans text-lg font-medium text-slate-200 tracking-tight">Entre</span>
+            <span class="font-serif text-lg font-bold text-white tracking-tight">Tormentas</span>
+          </div>
         </div>
         <p class="max-w-md text-sm text-slate-400">
           Periodismo digital independiente desde Maracaibo, Zulia. Cubriendo la actualidad regional, nacional e internacional bajo la luz del Relámpago del Catatumbo.

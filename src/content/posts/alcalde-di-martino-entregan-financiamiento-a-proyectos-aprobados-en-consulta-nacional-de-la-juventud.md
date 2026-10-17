@@ -1,0 +1,11 @@
+---
+title: "situacion2"
+publishedAt: "2025-10-31"
+category: "regionales"
+isFeatured: false
+isBreaking: false
+author: "Redacción Entre Tormentas"
+coverImage: "/images/posts/default-post.jpg"
+excerpt: "','inherit','','closed','','situacion2','','','2025-10-31 04:25:15','2025-10-31 08:25:15','',24359,'https://entretormentas.com/wp-content/uploads/2025/10/situacion2.jpeg',0,'attachment','image/jpeg',0),(24361,2,'2025-10-"
+---
+

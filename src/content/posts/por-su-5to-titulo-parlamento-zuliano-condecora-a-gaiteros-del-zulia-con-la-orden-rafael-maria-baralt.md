@@ -1,0 +1,11 @@
+---
+title: "trumpppp"
+publishedAt: "2025-07-23"
+category: "regionales"
+isFeatured: false
+isBreaking: false
+author: "Redacción Entre Tormentas"
+coverImage: "/images/posts/default-post.jpg"
+excerpt: "','inherit','','closed','','trumpppp','','','2025-07-23 10:17:17','2025-07-23 08:17:17','',19742,'https://entretormentas.com/wp-content/uploads/2025/07/trumpppp.jpeg',0,'attachment','image/jpeg',0),(19744,2,'2025-07-23 1"
+---
+

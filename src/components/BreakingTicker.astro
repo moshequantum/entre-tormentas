@@ -1,0 +1,81 @@
+---
+interface TickerItem {
+  title: string;
+  href: string;
+  image?: string;
+  category?: string;
+}
+
+interface Props {
+  items?: TickerItem[];
+}
+
+const defaultItems: TickerItem[] = [
+  {
+    title: '¡AFILANDO SUS GARRAS! Guillermo Quiroz dirigió su primera práctica en el nido aguilucho',
+    href: '#',
+    image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=120&auto=format&fit=crop',
+    category: 'Deportes'
+  },
+  {
+    title: '¡DESDE EL ZULIA! Inician operativo especial de mantenimiento nocturno en el Puente Sobre el Lago',
+    href: '#',
+    image: 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?q=80&w=120&auto=format&fit=crop',
+    category: 'Regionales'
+  },
+  {
+    title: 'Pronóstico del Relámpago del Catatumbo: Reportan alta actividad eléctrica en la cuenca sur',
+    href: '#',
+    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=120&auto=format&fit=crop',
+    category: 'Clima'
+  }
+];
+
+const { items = defaultItems } = Astro.props;
+---
+
+<div class="border-b border-storm-800 bg-storm-950">
+  <div class="mx-auto flex max-w-7xl items-stretch overflow-hidden">
+    <!-- Blue Badge for Ticker -->
+    <div class="flex items-center gap-2 bg-electric-brand px-4 py-2.5 font-sans text-xs font-black tracking-wider text-white uppercase whitespace-nowrap shadow-md z-10">
+      <span class="h-2 w-2 rounded-full bg-white animate-pulse"></span>
+      Últimas Noticias
+    </div>
+
+    <!-- Ticker Stream -->
+    <div class="relative flex-1 overflow-hidden py-1.5 px-4 flex items-center bg-storm-900/60">
+      <div class="flex items-center gap-8 animate-marquee whitespace-nowrap">
+        {items.map((item) => (
+          <a href={item.href} class="group inline-flex items-center gap-3 transition-colors">
+            {item.image && (
+              <img
+                src={item.image}
+                alt=""
+                class="h-6 w-9 rounded object-cover border border-storm-700 group-hover:border-electric-brand"
+                loading="lazy"
+              />
+            )}
+            <span class="text-xs font-medium text-slate-200 group-hover:text-ion-300 transition-colors">
+              {item.title}
+            </span>
+            <span class="text-storm-600">/</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    display: inline-flex;
+    animation: marquee 25s linear infinite;
+  }
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+</style>
