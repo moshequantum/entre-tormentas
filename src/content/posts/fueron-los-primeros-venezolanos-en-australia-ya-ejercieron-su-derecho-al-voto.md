@@ -1,11 +1,17 @@
 ---
-title: "nuevopolisu2"
+title: "¡FUERON LOS PRIMEROS! Venezolanos en Australia ya ejercieron su derecho al voto"
 publishedAt: "2024-07-28"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','nuevopolisu2','','','2024-07-28 11:21:40','2024-07-28 09:21:40','',5550,'https://entretormentas.com/wp-content/uploads/2024/07/nuevopolisu2.jpg',0,'attachment','image/jpeg',0),(5552,2,'2024-07"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/07/australia.jpg"
+excerpt: "ENTRE TORMENTAS. La elección presidencial de este domingo 28 de julio ya arrancó para los venezolanos en el exterior, quienes ya comenzaron a ejercer su derecho al voto."
 ---
 
+**ENTRE TORMENTAS.** La elección presidencial de este domingo 28 de julio ya arrancó para los venezolanos en el exterior, quienes ya comenzaron a ejercer su derecho al voto.
+
+En Australia, ya se registraron los primeros votos del proceso que en ese país transcurrieron con total normalidad.
+
+Según reportes, el venezolano Gabriel Mijares se ha convertido en el primer venezolanos en sufragar en el proceso, reseñó 800 Noticias.
+**GS / Agencias**

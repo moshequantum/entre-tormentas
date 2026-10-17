@@ -1,36 +1,29 @@
 ---
-title: "¡EN UNA CARTA! Maduro pide apoyo al papa León XIV por operativo de EE UU en el mar Caribe"
+title: "¡MAYOR PRESIÓN! Trump evalúa fase dos contra narcos en el Caribe con nuevas estrategias"
 publishedAt: "2025-10-06"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','22934-revision-v1','','','2025-10-06 03:30:08','2025-10-06 07:30:08','',22934,'https://entretormentas.com/?p=22935',0,'revision','',0),(22936,2,'2025-10-06 03:32:29','2025-10-06 07:32:29"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/10/donita.jpg"
+excerpt: "ENTRE TORMENTAS. Donald Trump anunció una nueva fase en la lucha contra el narcotráfico en el Caribe, tras declarar “conflicto armado con narcos” ante el Congreso estadounidense."
 ---
 
-<p><strong>ENTRE TORMENTAS.</strong> El presidente Nicolás Maduro solicitó al papa León XIV -a través de una carta- su apoyo especial para consolidar la paz de Venezuela, en un contexto en el que el líder chavista advierte sobre la "amenaza" que -asegura- representa el despliegue militar de Estados Unidos en el mar Caribe.</p>
+**ENTRE TORMENTAS. **Donald Trump anunció una nueva fase en la lucha contra el narcotráfico en el Caribe, tras declarar “conflicto armado con narcos” ante el Congreso estadounidense.
 
+El presidente aseguró que las operaciones marítimas han sido exitosas. Cuatro embarcaciones con cargamento ilícito fueron hundidas en aguas del Caribe.
 
+“Vamos a acabar con el tráfico de drogas. El mar está vacío”, afirmó Trump. Su declaración fue difundida por medios estadounidenses.
 
-<p>A través de Telegram, el canciller venezolano, Yván Gil, informó que el embajador del país suramericano ante el Vaticano, Franklin Zeltzer, entregó la carta de Maduro al secretario de Estado de la Santa Sede, Pietro Parolin.</p>
+Washington califica a los grupos objetivo como organizaciones narcoterroristas. Entre ellos, el Cártel de los Soles, presuntamente vinculado a Venezuela.Negocios en Venezuela
 
+La administración notificó al Congreso que los traficantes abatidos son considerados “combatientes ilegales” bajo leyes de guerra.
 
+Este enfoque legal permite a Trump ejercer poderes extraordinarios. Se busca reforzar la ofensiva militar en la región caribeña.
 
-<p>"Esta reunión fue propicia para hacer entrega de una carta del presidente Nicolás Maduro Moros, dirigida al papa León XIV, en la cual se le solicita el apoyo especial para consolidar la paz en Venezuela", indicó Gil, sin brindar más detalles sobre el contenido de la misiva.</p>
+Los ataques recientes dejaron 17 muertos. Las embarcaciones fueron interceptadas en operaciones conjuntas con fuerzas navales.
 
+La fase dos del conflicto armado con narcos incluiría nuevas acciones estratégicas. Se espera mayor presión sobre rutas marítimas.
 
-
-<p>Además, según el canciller, en este encuentro se realizaron "todas las coordinaciones necesarias para los eventos relativos a la canonización" del médico laico José Gregorio Hernández y la religiosa Carmen Rendiles, ambos venezolanos, pautada para el próximo 19 de octubre.</p>
-
-
-
-<p><strong>Operativo de EE UU contra carteles del narcotráfico</strong><br>Venezuela permanece en tensión por el despliegue militar que ordenó el mandatario estadounidense, Donald Trump, en el mar Caribe bajo el argumento de combatir el narcotráfico, pero que Maduro considera un intento de propiciar un «cambio de régimen» en el país suramericano.</p>
-
-
-
-<p>Este sábado se llevaron a cabo ejercicios de organización en Venezuela para afinar «aún más todos los mecanismos de defensa territorial», según Maduro, en un contexto marcado por la presencia militar de Estados Unidos cerca de las costas venezolanas, donde mantiene al menos ocho buques de guerra y un submarino de ataque rápido de propulsión nuclear, así como más de cuatro mil 500 soldados.</p>
-
-
-
-<p>Durante la jornada de este sábado, el ministro de Defensa venezolano, Vladimir Padrino López, llamó a la unión para hacer de Venezuela "un gran poder" y enfrentar la hegemonía de Estados Unidos.<br><strong><em>ET / EFE</em></strong></p>
+Estados Unidos intensifica su postura contra el narcotráfico. La región del Caribe se convierte en punto clave de vigilancia.
+***ET / EFE***

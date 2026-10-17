@@ -1,11 +1,15 @@
 ---
-title: "image"
+title: "¡EN MADRID! Edmundo González se reúne con el rector del CNE Juan Carlos Delpino"
 publishedAt: "2024-10-07"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','image-904','','','2024-10-07 10:03:01','2024-10-07 08:03:01','',8550,'https://entretormentas.com/wp-content/uploads/2024/10/image-115.png',0,'attachment','image/png',0),(8552,2,'2024-10-07 10:"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/10/image-116.png"
+excerpt: "ENTRE TORMENTAS. El ex embajador Edmundo González Urrutia, a través de redes sociales, este 6 de octubre, dio a conocer que sostuvo una reunión con Juan Carlos Del Pino, rector del Consejo Nacional Electoral CNE."
 ---
 
+**ENTRE TORMENTAS.** El ex embajador Edmundo González Urrutia, a través de redes sociales, este 6 de octubre, dio a conocer que sostuvo una reunión con Juan Carlos Del Pino, rector del Consejo Nacional Electoral (CNE).
+
+En lo expresado en la publicación González Urrutia asegura que Delpino "le transmitió detalladamente su experiencia de lo vivido el 28 de julio dentro de las instalaciones del organismo electoral".
+***GS / Foco Informativo***

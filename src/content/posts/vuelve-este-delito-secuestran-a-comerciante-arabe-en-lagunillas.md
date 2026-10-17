@@ -1,11 +1,19 @@
 ---
-title: "image"
+title: "¡VUELVE ESTE DELITO! Secuestran a comerciante árabe en Lagunillas"
 publishedAt: "2024-12-05"
-category: "regionales"
+category: "sucesos"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','image-2059','','','2024-12-05 09:15:42','2024-12-05 08:15:42','',10953,'https://entretormentas.com/wp-content/uploads/2024/12/image-90.png',0,'attachment','image/png',0),(10955,2,'2024-12-05 0"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/12/image-93.png"
+excerpt: "ENTRE TORMENTAS. Cerca de las 12:00 del mediodía de este 4 de diciembre de 2024, sujetos armados se llevaron a la fuerza a un comerciante árabe en la parroquia Paraute del municipio Lagunillas de la Costa Oriental del Lago."
 ---
 
+**ENTRE TORMENTAS. **Cerca de las 12:00 del mediodía de este 4 de diciembre de 2024, sujetos armados se llevaron a la fuerza a un comerciante árabe en la parroquia Paraute del municipio Lagunillas de la Costa Oriental del Lago.
+
+Se trata del Zaid Abou Assali, propietario de una tienda de electrodomésticos en el centro de Ciudad Ojeda.
+
+Sobre este hecho se conoció, por algunos testigos, que el Zaid Abou Assali iba llegando en su camioneta blanca, cuando fue interceptado por los sujetos en un taller mecánico ubicado en las calles Los Olivos del sector La Ceiba.
+
+El área está acordonada por efectivos policiales de la zona, mientras se realizan las investigaciones respectivas.
+***ET / El Regional del Zulia***

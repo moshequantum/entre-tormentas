@@ -1,16 +1,17 @@
 ---
-title: "¡RECUPERÁNDOSE! Dan de alta a Yulimar Rojas tras ser operada de su pie izquierdo"
+title: "¡EN EL SUR DEL LAGO! Detienen a tres hombres por contrabando de medicamentos en Zulia"
 publishedAt: "2024-04-15"
-category: "regionales"
+category: "sucesos"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','1167-revision-v1','','','2024-04-15 10:31:26','2024-04-15 08:31:26','',1167,'https://entretormentas.com/?p=1168',0,'revision','',0),(1169,2,'2024-04-15 10:37:52','2024-04-15 08:37:52','\n"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/04/Medicamentos-1-1.jpg"
+excerpt: "ENTRE TORMENTAS. Funcionarios del Cuerpo de Policía Nacional Bolivariana en labores de investigación detuvieron en flagrancia a tres sujetos por los delitos de contra la salud pública y contrabando de medicamentos en el sector Las Pulgas, m"
 ---
 
-<p><strong>ENTRE TORMENTAS. </strong>Yulimar Rojas informó a través de las redes sociales este domingo 14 de abril, que fue dada de alta tras ser operada en la ciudad de Madrid del tendón de Aquiles de su pie izquierdo.</p>
+**ENTRE TORMENTAS.** Funcionarios del Cuerpo de Policía Nacional Bolivariana en labores de investigación detuvieron en flagrancia a tres sujetos por los delitos de contra la salud pública y contrabando de medicamentos en el sector Las Pulgas, municipio Catatumbo del estado Zulia.
 
+La captura se llevó a cabo cuando la comisión solicito los permisos correspondiente para la venta de los medicamentos, los sujetos manifestaron no poseer ningún documento legal.
 
-
-<p>“Hoy he dejado la clínica. Quiero agradecer todas muestras de cariño, todas las atenciones y los mensajes tan llenos de amor que he recibido. Estoy feliz y llena de optimismo frente a esta etapa de mi vida que me toca afrontar. Abrazos y besos a todos”, escribió.<br><strong><em>GS / Agencias</em></strong></p>
+Durante el procedimiento fueron incautados como evidencias: Múltiples medicamentos, un teléfono celular. El caso fue pasado a la orden del Ministerio Público.
+***GS / Nota de Prensa***

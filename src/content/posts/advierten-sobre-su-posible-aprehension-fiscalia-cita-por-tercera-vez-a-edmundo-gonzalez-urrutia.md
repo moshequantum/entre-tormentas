@@ -1,11 +1,19 @@
 ---
-title: "image-269"
+title: "¡ADVIERTEN SOBRE SU POSIBLE APREHENSIÓN! Fiscalía cita por tercera vez a Edmundo González Urrutia"
 publishedAt: "2024-08-30"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','image-269','','','2024-08-30 09:44:30','2024-08-30 07:44:30','',7019,'https://entretormentas.com/wp-content/uploads/2024/08/image-269.png',0,'attachment','image/png',0),(7021,2,'2024-08-30 09:"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/08/image-270.png"
+excerpt: "ENTRE TORMENTAS. El Ministerio Público informó este jueves que citó, por tercera vez, a Edmundo González Urrutia, en el marco de una investigación en su contra. La citación está pautada para las 10 de la mañana de este viernes 30 de agosto."
 ---
 
+**ENTRE TORMENTAS. **El Ministerio Público informó este jueves que citó, por tercera vez, a Edmundo González Urrutia, en el marco de una investigación en su contra. La citación está pautada para las 10 de la mañana de este viernes 30 de agosto.
+
+![](https://entretormentas.com/wp-content/uploads/2024/08/image-271-611x1024.png)
+
+"Citado por tercera vez Edmundo González Urrutia para que asista el viernes al Ministerio Público", indicó la institución en una publicación en Instagram, donde posteó la boleta de citación, detalla EFE.
+
+La Fiscalía advirtió que, de no asistir nuevamente en la fecha indicada, le será "librada una orden de aprehensión respectiva" al considerar que se "encuentra en presencia de peligro de fuga".
+***GS / Agencias***

@@ -1,11 +1,15 @@
 ---
-title: "prorroga"
+title: "¡ACCIÓN JUDICIAL! TSJ ordena el \"retorno inmediato\" de la niña retenida en EEUU"
 publishedAt: "2025-05-03"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','prorroga','','','2025-05-03 15:15:50','2025-05-03 13:15:50','',16101,'https://entretormentas.com/wp-content/uploads/2025/05/prorroga.jpg',0,'attachment','image/jpeg',0),(16103,2,'2025-05-03 15"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/05/tsj.jpg"
+excerpt: "ENTRE TORMENTAS. Este viernes, vía Instagram, el Tribunal Supremo de Justicia TSJ publicó la sentencia en la que ordena el \"retorno de manera inmediata, de una manera segura y sana\" de una niña, que apartaron de su madre, identificada como"
 ---
 
+**ENTRE TORMENTAS.** Este viernes, vía Instagram, el Tribunal Supremo de Justicia (TSJ) publicó la sentencia en la que ordena el "retorno de manera inmediata, de una manera segura y sana" de una niña, que apartaron de su madre, identificada como Yorely Bernal.
+
+La pequeña de solo dos años, se encuentra en EEUU, y se conoció que fue apartada de los brazos de su madre antes de regresar a Venezuela la semana pasada.
+***ET / Agencias***

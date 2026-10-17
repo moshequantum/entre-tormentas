@@ -1,48 +1,29 @@
 ---
-title: "¡PLATAFORMA UNITARIA! Piden salvoconductos para asilados en la Embajada de Argentina en Caracas"
+title: "¡SUBEN AL 2DO! Águilas blanquean a Bravos en el último de la serie en Margarita"
 publishedAt: "2024-11-25"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','10533-revision-v1','','','2024-11-25 09:29:45','2024-11-25 08:29:45','',10533,'https://entretormentas.com/?p=10534',0,'revision','',0),(10535,2,'2024-11-25 09:30:49','2024-11-25 08:30:49"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/11/image-429.png"
+excerpt: "ENTRE TORMENTAS. Tras caer derrotados en los dos primeros compromisos de la serie en el Estadio Nueva Esparta, las Águilas del Zulia salieron con nuevos bríos al encuentro dominical y blanquearon con pizarra de 6-0 a los Bravos de Margarita"
 ---
 
-<p><strong>ENTRE TORMENTAS. </strong>El comando de campaña de la Plataforma Unitaria Democrática de Venezuela pidió este domingo que se emitan, «cuanto antes», salvoconductos para los seis antichavistas asilados en la residencia de la Embajada de Argentina en Caracas -custodiada por Brasil-, quienes denunciaron desde la noche del sábado un «asedio» policial que se mantiene -dijeron- hasta hoy.</p>
+**ENTRE TORMENTAS. **Tras caer derrotados en los dos primeros compromisos de la serie en el Estadio Nueva Esparta, las Águilas del Zulia salieron con nuevos bríos al encuentro dominical y blanquearon con pizarra de 6-0 a los Bravos de Margarita, para evitar la barrida y tomar ventaja en la serie particular ante el conjunto insular.
 
+El conjunto rapaz le pegó a Osmer Morales con carreras en el segundo, tercer y cuarto episodio. Sandy León inauguró la pizarra con elevado de sacrificio, Rougned Odor pegó sencillo impulsor y de nueva cuenta el veterano receptor zuliano aportó a la causa de su equipo, sonando su segundo cuadrangular de la zafra.
 
+Por su parte, José Dávila; que realizó su primera apertura tras el juego de la Chinita el pasado lunes, tuvo su mejor actuación en lo que va de campaña.
 
-<p>A través de un comunicado, el comando denunció que la sede diplomática «permanece sin energía eléctrica y rodeada por vehículos del régimen que impiden el tránsito en el lugar».</p>
+Lanzó cuatro episodios en los que permitió cuatro hits, otorgó un boleto y ponchó a cuatro contrarios. Solo un golpe en la rodilla, tras una línea de Alberto González en el cuarto inning; cuando Bravos amenzaba con situación de bases llenas, evitó que el jovencito marabino saliera para su quinto inning de labor.
 
+![](https://entretormentas.com/wp-content/uploads/2024/11/image-430-819x1024.png)
 
+No obstante, los bates zulianos atacaron a José Gabriel Torres en la octava entrada. Alí Castillo trajo a la goma a Simón Muzziotti con doble y Oleivis Basabe empalmó cuadrangular de dos carreras para ponerle cifras definitivas al compromiso.
 
-<p>Asimismo, reportó un «bloqueo de las señales de comunicación para evitar que se denunciara la situación desde el sitio mientras se utilizaban drones para sobrevolar las áreas protegidas de la residencia».</p>
+La victoria terminó siendo para Nomar Rojas (2-0); espaciando dos capítulos en blanco en relevo de José Dávila, mientras que Osmer Morales fue el derrotado (5-3).
 
+![](https://entretormentas.com/wp-content/uploads/2024/11/image-431-819x1024.png)
 
-
-<p>«Esta acción repetida constituye una clara violación a los convenios internacionales en materia de asilo y diplomacia suscritos por el Estado venezolano, así como un ataque a los derechos de los perseguidos políticos», sostuvo.</p>
-
-
-
-<p>La noche del sábado, Pedro Urruchurtu -coordinador Internacional de Vente Venezuela (VV) y uno de los asilados- denunció que agentes «encapuchados» con «armas largas» de la Dirección de Acciones Estratégicas y Tácticas (DAET) de la Policía Nacional Bolivariana (PNB) «rodean la sede diplomática y bloquean los accesos en la calle».</p>
-
-
-
-<p>El pasado septiembre, luego de que varios asilados denunciaran otro «asedio» policial en la residencia diplomática de Argentina, la líder opositora María Corina Machado solicitó a las «naciones democráticas» hacer «las gestiones pertinentes» para la emisión de salvoconductos de los refugiados.</p>
-
-
-
-<p>En agosto, Brasil asumió la representación de Argentina en Venezuela, luego de la expulsión de los diplomáticos argentinos ese mismo mes, pero el Gobierno de Venezuela revocó esta autorización en septiembre por la supuesta planificación de actos terroristas en el interior de la sede por parte de los opositores asilados.</p>
-
-
-
-<p>Tras la medida, la Cancillería de Brasil indicó que «permanecerá con la custodia y defensa de los intereses» de Argentina hasta que el país austral «designe a otro Estado aceptable» para el Ejecutivo de Nicolás Maduro, a fin de llevar a cabo esas funciones.</p>
-
-
-
-<p>Los seis opositores se refugiaron en marzo luego de que la Fiscalía los acusara de varios delitos, como conspiración y traición a la patria, entre otros.</p>
-
-
-
-<p>Además de Urruchurtu, también se encuentran Magalli Meda, quien fue la jefa de campaña para las presidenciales; Claudia Macero, coordinadora de Comunicaciones de VV; Omar González, exdiputado; Humberto Villalobos, coordinador electoral del Comando de Campaña de VV, y el exministro Fernando Martínez Mottola, asesor de la Plataforma Unitaria Democrática (PUD), el principal bloque opositor.<br><strong><em>ET / Agencias</em></strong></p>
+Osleivis Basabe se fue de 5-3 con dos anotadas y dos producidas, en tanto que el relevo aguilucho se combinó para dejar a la toletería neoespartana en solo dos hits en cinco tramos; que incluyeron a Silvino Bracho retirando a los cuatro bateadores que enfrentó con tres ponches.
+***ET / Prensa LVBP***

@@ -1,11 +1,19 @@
 ---
-title: "image"
+title: "¡ANUNCIO PRESIDENCIAL! Maduro asegura que para 2025 vendrán tiempos mejores"
 publishedAt: "2024-12-27"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','image-2491','','','2024-12-27 09:58:42','2024-12-27 08:58:42','',11783,'https://entretormentas.com/wp-content/uploads/2024/12/image-522.png',0,'attachment','image/png',0),(11785,2,'2024-12-27 "
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/12/image-523.png"
+excerpt: "ENTRE TORMENTAS. El presidente de la República, Nicolás Maduro, aseguró que para El próximo año 2025 para Venezuela vienen tiempos mejores y junto al pueblo seguirá trabajando por el desarrollo y avance de la patria."
 ---
 
+**ENTRE TORMENTAS. **El presidente de la República, Nicolás Maduro, aseguró que para El próximo año 2025 para Venezuela vienen tiempos mejores y junto al pueblo seguirá trabajando por el desarrollo y avance de la patria.
+
+El "2024 ha sido un año bonito que presagia para 2025 tiempos mejores en donde seguiremos hacia adelante", expresó el jefe de Estado a través de su canal de Telegram.
+
+Resaltó la resistencia y consciencia del pueblo venezolano ante los ataques y el bloqueo económico, detalla AVN.
+
+Al respecto, indicó que a pesar de eso «somos un pueblo redentor que lleva el mensaje de amor, vida, honestidad y renacimiento permanente».
+***ET / Agencias***

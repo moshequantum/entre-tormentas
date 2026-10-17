@@ -1,36 +1,29 @@
 ---
-title: "¡MEDIDA! Fiscal anuncia cuatro órdenes de detención por el caso Orlando Figuera"
+title: "¡LEYENDA! Ronaldinho llega a Venezuela para jugar en la Liga Monumental"
 publishedAt: "2024-06-06"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','3311-revision-v1','','','2024-06-06 10:46:59','2024-06-06 08:46:59','',3311,'https://entretormentas.com/?p=3312',0,'revision','',0),(3313,2,'2024-06-06 10:50:06','2024-06-06 08:50:06','\n"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/06/brasileno.jpg"
+excerpt: "ENTRE TORMENTAS. Ronaldinho llegó este miércoles a Venezuela para incorporarse a la Liga Monumental, un atípico torneo de fútbol 9 en el que ya han participado otras estrellas retiradas como el jugador de Países Bajos Clarence Seedorf y el"
 ---
 
-<p><strong>ENTRE TORMENTAS.</strong> El fiscal general, Tarek William Saab, lamentó que hasta la fecha no se haya materializado la extradición desde España de Enzo Franchini, acusado de quemar vivo a Orlando Figuera durante las guarimbas de 2017.</p>
+**ENTRE TORMENTAS. **Ronaldinho llegó este miércoles a Venezuela para incorporarse a la Liga Monumental, un atípico torneo de fútbol 9 en el que ya han participado otras estrellas retiradas como el jugador de Países Bajos Clarence Seedorf y el colombiano Carlos «El Pibe» Valderrama.
 
+A través de un breve video difundido por la liga, el excampeón del mundo, de 44 años, confirmó que ya se encuentra en Venezuela y le mandó un abrazo a los seguidores de esta competición, disputada en el estadio de béisbol Simón Bolívar, de Caracas, reseñó EFE.
 
+El espacio, adaptado para el torneo, ha acogido hasta ahora tres jornadas completas, en las que ocho equipos buscan sumar puntos para avanzar a la siguiente fase, que comenzará a mediados de junio.
 
-<p>Anunció que han solicitado nuevas órdenes de aprehensión contra Ángel Daniel Sucre Cova, Kleiver José Hernández; Yuber Enrique Rodríguez Villa y Elio Enrique Carrasquel Azócar por los delitos de lesiones gravísimas y agavillamiento contra Orlando Figuera con quienes habría tenido problemas previos.</p>
+La semana pasada, la liga confirmó que Ronaldinho vestirá las camisetas de los equipos de Forum Jet y Vergatarios en los partidos del jueves y el viernes, cuando también jugará el italiano Luca Toni.
 
+Asimismo, según le explicó a la Agencia EFE el equipo de organizadores, aún no están definidos los colores que usará Toni, de 47 años, pues dependerá de un sorteo que no se ha celebrado, por lo que aún no se sabe si será o no rival de Ronaldinho.
 
+Hasta ahora, la Liga no ha confirmado la llegada del italiano a Venezuela.
 
-<p>Afirmó que su muerte fue "un emblema, un símbolo de lo que pudiera ser la acción fascista y criminal en contra de alguien que incluso por su apariencia física y manera de vestir pudiera significar una condena de muerte, eso fue lo que pasó con Orlando Figuera en medio de las guarimbas de 2017".</p>
+El torneo consiste en enfrentamientos de tres tiempos de 20 minutos cada uno, sin la existencia del fuera de juego y con un minuto por tanda en el que los goles valen doble.
 
+El reglamento también explica que los goles no serán acumulativos entre tiempos, por lo que se hace con la victoria quien gane dos de los tres tiempos sobre el campo, con la opción de desempatar por promedio de gol o por penaltis entre capitanes de equipos.
 
-
-<p>Recordó que el Estado venezolano reactivó la solicitud de extradición "del asesino Enzo Franchini, el presidente ha solicitado al Rey de España y a la máxima autoridad del gobierno español para que hagan lo correspondiente para que Enzo Franchini pague lo que hizo con este inocente ser humano, Orlando Figuera".</p>
-
-
-
-<p>Recordó que el despacho que preside solicitó su detención en octubre de 2017 por instigación publica, terrorismo y homicidio intencional calificado y el 10 de junio de 2019 Enzo Franchini fue detenido en España con motivo de la alerta roja solicitada.</p>
-
-
-
-<p>Sin embargo, explicó que en 2020 el pleno de la Sala Penal del Reino de España declaró procedente la extradición de Franchini a Venezuela, pero de manera lamentable el Ministerio Público de la nación ibérica apeló y dijo que no debe ser extraditado, la excusa fue que a Franchini se le podía violentar sus derechos humanos en Venezuela porque era un opositor.</p>
-
-
-
-<p>Saab se preguntó: "no tiene derecho humano una persona humilde, sencilla, por tener una piel oscura, pero el que asesinó por ser blanco, de apellido extranjero, ser blanco, adinerado, a ese sí dijeron que se le podían violar los derechos humanos en Venezuela, una barbaridad".<br><strong><em>GS / Unión Radio</em></strong></p>
+Además, por cada cinco faltas que cometa un equipo, el contrario podrá sumar a un jugador a su plantilla durante todas las fases de la competición, que terminará el 30 de junio, sin que se conozca el premio que se llevará el campeón.
+***GS / EFE***

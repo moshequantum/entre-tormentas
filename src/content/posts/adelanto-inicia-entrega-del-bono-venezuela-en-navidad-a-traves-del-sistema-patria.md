@@ -1,11 +1,15 @@
 ---
-title: "image"
+title: "¡ADELANTO! Inicia entrega del Bono Venezuela en Navidad a través del Sistema Patria"
 publishedAt: "2024-10-11"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','image-997','','','2024-10-11 10:08:54','2024-10-11 08:08:54','',8750,'https://entretormentas.com/wp-content/uploads/2024/10/image-208.png',0,'attachment','image/png',0),(8752,2,'2024-10-11 10:"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/10/image-209.png"
+excerpt: "ENTRE TORMENTAS. El gobierno nacional inició la entrega del Bono Venezuela en Navidad, a través del Sistema Patria. La entrega tendrá lugar entre los días 10 al 19 de octubre de 2024."
 ---
 
+**ENTRE TORMENTAS. **El gobierno nacional inició la entrega del Bono Venezuela en Navidad, a través del Sistema Patria. La entrega tendrá lugar entre los días 10 al 19 de octubre de 2024.
+
+Se conoció que 180,00 bolívares será el monto asignado a este bono. Los beneficiados les llegará un mensaje de texto a los números telefónicos que se encuentran afiliados al sistema con el siguiente mensaje: "En Venezuela, la magia de la Navidad llega en octubre. Serán días hermosos, llenos de Paz, felicidad y seguridad, de mucho brillo y alegría".
+***GS / VTV***

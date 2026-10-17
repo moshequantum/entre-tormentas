@@ -1,11 +1,17 @@
 ---
-title: "image"
+title: "¡POR ROBO DE CITGO! Jorge Rodríguez propone retirar nacionalidad a Guaidó y otros opositores"
 publishedAt: "2025-12-03"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','image-5117','','','2025-12-03 04:39:40','2025-12-03 08:39:40','',26182,'https://entretormentas.com/wp-content/uploads/2025/12/image-79.png',0,'attachment','image/png',0),(26184,2,'2025-12-03 0"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/12/image-80.png"
+excerpt: "ENTRE TORMENTAS. El presidente de la Asamblea Nacional AN, Jorge Rodríguez, propuso este martes 2 de diciembre revocarles la nacionalidad a los principales cabecillas del robo de la empresa Citgo, filial de Pdvsa."
 ---
 
+**ENTRE TORMENTAS. **El presidente de la Asamblea Nacional (AN), Jorge Rodríguez, propuso este martes 2 de diciembre revocarles la nacionalidad a los principales cabecillas del robo de la empresa Citgo, filial de Pdvsa.
+
+“Yo propongo que se incluya en el acuerdo una exhortación al ejecutivo nacional para que constate el retiro de la nacionalidad, aquellos que no respetan su nacionalidad: A José Ignacio Hernández, Dinorah Figuera, Carlos Vecchio, Juan Guaidó y Horacio Medina por el robo de Citgo”, señaló que presidente del Parlamento.
+
+Durante la sesión ordinaria, Rodríguez denunció que el opositor Juan Guaidó y Dinorah Figuera se robaron 14 millones de dólares de Citgo Petroleum Corp para distribuirlos en mansiones y lujos en el exterior.
+***ET / El Universal***

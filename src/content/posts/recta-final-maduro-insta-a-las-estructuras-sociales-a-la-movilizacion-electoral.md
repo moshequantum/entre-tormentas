@@ -1,11 +1,15 @@
 ---
-title: "mujicafelipe"
+title: "¡RECTA FINAL! Maduro insta a las estructuras sociales a la movilización electoral"
 publishedAt: "2024-06-04"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','mujicafelipe','','','2024-06-04 09:50:03','2024-06-04 07:50:03','',3206,'https://entretormentas.com/wp-content/uploads/2024/06/mujicafelipe.jpg',0,'attachment','image/jpeg',0),(3208,2,'2024-06"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/06/maduromas.jpg"
+excerpt: "ENTRE TORMENTAS. El presidente Nicolás Maduro llamó a los 17 mil 166 jefes de calle de Lara a movilizarse en las elecciones del 28 de julio. “La victoria perfecta tiene dos elementos es arrolladora y es en paz para el pueblo”, aseveró en VT"
 ---
 
+**ENTRE TORMENTAS.** El presidente Nicolás Maduro llamó a los 17 mil 166 jefes de calle de Lara a movilizarse en las elecciones del 28 de julio. “La victoria perfecta tiene dos elementos es arrolladora y es en paz para el pueblo”, aseveró en VTV.
+
+El mandatario insistió en que deben renovarse todas las estructuras. “Vamos a hacer todo nuevo: nuestro discurso, forma de trabajo para esta jornada electoral y la gran victoria del 28 de julio”, aseguró. Asimismo, expresó su deseo de visitar el estado Lara para recorrerlo.
+***GS / Unión Radio***

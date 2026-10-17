@@ -1,36 +1,25 @@
 ---
-title: "¡INICIO DE LA CUARESMA! Gobernador Luis Caldera participa en la eucaristía de imposición de cenizas"
-publishedAt: "2026-02-18"
+title: "¡EN ANCÓN BAJO! Alcaldía de Maracaibo avanza en los trabajos de limpieza de la cañada Manuelita Sáenz"
+publishedAt: "2026-02-19"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','29138-revision-v1','','','2026-02-18 16:56:56','2026-02-18 20:56:56','',29138,'https://entretormentas.com/?p=29142',0,'revision','',0),(29143,2,'2026-02-19 04:05:56','2026-02-19 08:05:56"
+coverImage: "https://entretormentas.com/wp-content/uploads/2026/02/image-480.png"
+excerpt: "ENTRE TORMENTAS. La cañada Manuelita Sáenz, un tramo de la cañada Morillo, en el sector Ancón Bajo, de la parroquia Francisco Eugenio Bustamante, sigue en su intervención por parte del Instituto Municipal del Ambiente, y durante este miérco"
 ---
 
-<p><strong>ENTRE TORMENTAS</strong>. En una ceremonia cargada de espiritualidad y fe, el gobernador Luis Caldera, en compañía de la primera dama del Zulia, Roselyn López de Caldera, celebró el inicio de la Cuaresma con la misa de Miércoles de Ceniza e invitó a orar desde la fe.</p>
+**ENTRE TORMENTAS.** La cañada Manuelita Sáenz, un tramo de la cañada Morillo, en el sector Ancón Bajo, de la parroquia Francisco Eugenio Bustamante, sigue en su intervención por parte del Instituto Municipal del Ambiente, y durante este miércoles se realizó la inspección respectiva de los trabajos de saneamiento, logrando un avance de 500 metros lineales.
 
+El presidente del IMA, Janner Pérez, dirige el operativo de limpieza de la referida cañada, e informó que se trata de todo un esfuerzo que amerita de la colaboración de los habitantes de Ancón Bajo. “Quienes habitan en las cercanías de la cañada deben considerar todo lo que dispone la alcaldía bolivariana de Maracaibo para la limpieza, una maquinaria para lograr el despeje e ir descubriendo las partes embauladas que por años permanecieron repletas de sedimentos y desechos. Deben entender que es necesario respetar y evitar construcciones que la obstruyan, para el beneficio de todos”.
 
+![](https://entretormentas.com/wp-content/uploads/2026/02/image-481-1024x686.png)
 
-<p>La eucaristía de imposición de la Ceniza, realizada en la Catedral de Maracaibo, ubicada en el casco central de la ciudad, fue presidida por el Arzobispo de Maracaibo, Monseñor Luis Azuaje, quien destacó la importancia de este tiempo litúrgico e invitó a la población marabina a vivir la Cuaresma como un periodo de reflexión, conversión y reconciliación con Jesucristo.<img class="wp-image-29140" style="width: 500px;" src="https://entretormentas.com/wp-content/uploads/2026/02/IMG-20260218-WA0037.jpg" alt=""></p>
+Es importante destacar que en esta cañada Morillo, tramo Manuelita Sáenz, van 15 días ejecutándose las labores de limpieza, “incluso iniciamos con la presencia del Alcalde Giancarlo Di Martino, quien se ha mostrado vigilante en la zona, a fin de devolverle tranquilidad a los habitantes de los sectores adyacentes a la cañada, ya que en época de lluvias estos tramos colapsaban”, refirió Janner Pérez.
 
+Mari Luz López, integrante del Consejo Comunal Manuelita Sáenz, mostró su agradecimiento a la gestión del Alcalde Di Martino y refirió que ahora el deber de los residentes es utilizar el servicio de aseo urbano. “No podemos seguir arrojando desechos en la cañada. En varias oportunidades solicité la limpieza y gracias a Dios el Alcalde nos está dando respuesta con la maquinaria en nuestra comunidad, ahora todos debemos ser responsables”.
 
+![](https://entretormentas.com/wp-content/uploads/2026/02/image-482-1024x686.png)
 
-<p>Además de la primera autoridad regional, asistieron la presidenta del Consejo Legislativo del Estado Zulia (Clez), Magdely Valbuena Muñoz; legisladores del parlamento regional y el contralor del estado, Manuel Ramón Núñez González.</p>
-
-
-
-<p>La celebración contó con momentos de oración, cantos y fe, permitiendo a los asistentes conectarse con su espiritualidad y reflexionar sobre el verdadero significado de la Cuaresma, un periodo de 40 días que inicia con el Miércoles de Ceniza y culmina con el Jueves Santo, el próximo 2 de abril.<img class="wp-image-29141" style="width: 500px;" src="https://entretormentas.com/wp-content/uploads/2026/02/IMG-20260218-WA0042.jpg" alt=""></p>
-
-
-
-<p>El mandatario regional exhortó a la ciudadanía a orar desde la fe: “Nuestro mensaje siempre será el de orar; la fe, las tradiciones venezolanas, el respeto y, sobre todo, la contribución de todos por la paz que anhelamos como venezolanos y como familia”.</p>
-
-
-
-<p>Los asistentes también se refirieron al significado de estas fechas, describiéndolas como momentos de conversión, reconciliación y amor al prójimo.<br><strong><em>ET / Prensa Gobernación del Zulia</em></strong></p>
-
-
-
-<p></p>
+El presidente del IMA agregó que el trabajo en Ancón Bajo no se ha detenido y que el avance de la maquinaria ha permitido “un despeje importante que estamos contabilizando ya que es una gran cantidad de desechos; en pocos días llegaremos a la Circunvalación 3, sector la Chamarreta”.
+***ET / Prensa Alcaldía de Maracaibo***

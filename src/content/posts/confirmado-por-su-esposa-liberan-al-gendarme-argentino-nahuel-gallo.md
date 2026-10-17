@@ -1,11 +1,17 @@
 ---
-title: "image"
+title: "¡CONFIRMADO POR SU ESPOSA! Liberan al gendarme argentino Nahuel Gallo"
 publishedAt: "2026-03-02"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','image-6922','','','2026-03-02 04:06:34','2026-03-02 08:06:34','',29822,'https://entretormentas.com/wp-content/uploads/2026/03/image-57.png',0,'attachment','image/png',0),(29824,2,'2026-03-02 0"
+coverImage: "https://entretormentas.com/wp-content/uploads/2026/03/image-59.png"
+excerpt: "ENTRE TORMENTAS. María Alexandra Gómez, esposa del gendarme argentino, Nahuel Gallo, anunció este domingo, la liberación de este, luego de estar detenido en Venezuela desde finales de 2024."
 ---
 
+**ENTRE TORMENTAS.** María Alexandra Gómez, esposa del gendarme argentino, Nahuel Gallo, anunció este domingo, la liberación de este, luego de estar detenido en Venezuela desde finales de 2024.
+
+"Acabo de hablar con Nahuel Gallo y puedo informarles que ya está volando hacia la Argentina. Estamos profundamente emocionados. Víctor podrá abrazar a su papá en pocas horas", informó la esposa de Gallo.
+
+Se espera que el argentino llegue a su país en las próximas horas luego de más de un año detenido y pudiendo haber hablado con su esposa por primera vez hace unas semanas.
+***ET / Agencias***

@@ -1,88 +1,39 @@
 ---
-title: "¡BUSCAN SALIDAS! Consecomercio propone 14 medidas para evitar cierre de negocios ante cortes eléctricos"
+title: "¡EN TOCOMA! Venezuela firma contrato con IMPSA para culminar construcción de hidroeléctrica"
 publishedAt: "2026-08-13"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','37612-revision-v1','','','2026-08-13 03:52:43','2026-08-13 07:52:43','',37612,'https://entretormentas.com/?p=37615',0,'revision','',0),(37616,2,'2026-08-13 03:55:50','2026-08-13 07:55:50"
+coverImage: "https://entretormentas.com/wp-content/uploads/2026/08/image-279.png"
+excerpt: "ENTRE TORMENTAS. El Gobierno de Venezuela firmó este miércoles un addendum apéndice de contrato con la multinacional de origen argentino IMPSA para reactivar los trabajos de construcción de la central hidroeléctrica Tocoma, en el estado Bol"
 ---
 
-<p><strong>ENTRE TORMENTAS.</strong> El Consejo Nacional del Comercio y los Servicios (Consecomercio) propuso 14 medidas urgentes para proteger los puestos de trabajo y prevenir el cierre de establecimientos durante el período de racionamiento eléctrico anunciado por el Ejecutivo Nacional.</p>
+**ENTRE TORMENTAS. **El Gobierno de Venezuela firmó este miércoles un addendum (apéndice) de contrato con la multinacional de origen argentino IMPSA para reactivar los trabajos de construcción de la central hidroeléctrica Tocoma, en el estado Bolívar (sur, fronterizo con Brasil), en medio de un llamado al ahorro energético y fallas constantes en el servicio.
 
+«Hoy sabemos la afectación que tiene nuestro sistema eléctrico nacional y por eso trabajamos sin descanso en la recuperación», señaló la presidenta encargada, Delcy Rodríguez, en el acto de firma transmitido por el canal estatal Venezolana de Televisión (VTV).
 
+Rodríguez indicó que el objetivo de este contrato es culminar Tocoma para fortalecer el sistema hidroeléctrico del país suramericano.
 
-<p>El presidente de la institución, José Gregorio Rodríguez, enfatizó la necesidad de establecer un cronograma claro, público y sectorizado para los 335 municipios del país. Asimismo, señaló que la ausencia de un calendario preciso de cortes, sumada a la limitada capacidad de autogeneración de las empresas, genera un impacto crítico en el comercio y la prestación de servicios a nivel nacional.</p>
+Por su parte, el presidente de IMPSA, Jorge Rafael Salcedo, agradeció al Departamento de Estado y de Energía de Estados Unidos por el apoyo a este acuerdo que, sostuvo, contempla uno de los proyectos más importantes para el sector en Latinoamérica.
 
+![](https://entretormentas.com/wp-content/uploads/2026/08/image-280-1024x576.png)
 
+«Para nosotros es un voto de confianza muy importante que nos están dando y vamos a ejecutar este proyecto con la mayor eficiencia, con la mayor calidad y, sobre todo, con los más altos estándares de generación y tecnología que puede haber en el área hidroeléctrica», agregó Salcedo.
 
-<figure class="wp-block-image size-full"><img src="https://entretormentas.com/wp-content/uploads/2026/08/image-278.png" alt="" class="wp-image-37614"/></figure>
+Igualmente, el ministro de Energía Eléctrica de Venezuela, Rolando Alcalá, explicó que la culminación de esta obra va a fortalecer el desarrollo industrial de Bolívar y le dará estabilidad a todo el sistema de embalses del gran complejo de Guayana.
 
+En junio pasado, el Ejecutivo chavista firmó un memorando de entendimiento con IMPSA para reanudar las obras de Tocoma.
 
+El objetivo, según explicó entonces el Ministerio de Comunicación, es incorporar 2.640 megavatios al sistema eléctrico nacional con el montaje de diez unidades generadoras.
 
-<p><strong>Las 14 propuestas de Consecomercio</strong><br>Para mitigar el impacto operativo en el sector y garantizar la sostenibilidad comercial, el gremio planteó los siguientes puntos:</p>
+Según una nota oficial, los trabajos en esta infraestructura estratégica sobre el río Caroní se llevarán a cabo por etapas, con un plazo estimado de catorce a diecinueve meses para «completar las fases iniciales de construcción y acoplamiento técnico en la región».
 
+La construcción de Tocoma, que forma parte del complejo hidroeléctrico de Guayana junto con las centrales Guri, Macagua y Caruachi, comenzó en 2007, durante el gobierno del entonces presidente Hugo Chávez (1999-2013), y estaba previsto que concluyera en 2014, según la ONG Transparencia Venezuela.
 
+Sin embargo, las obras se paralizaron con el 87,19 % de avance, asegura la organización.
 
-<p>-Flexibilidad operativa y horaria: Coordinar los cortes eléctricos durante las horas de menor afluencia comercial.</p>
+Venezuela sufre desde hace años fallas en el suministro eléctrico, sobre todo en regiones alejadas de Caracas, de las que el chavismo ha responsabilizado a las sanciones extranjeras, principalmente las estadounidenses, y a «saboteos»; mientras que la oposición y expertos aseguran que es el resultado de la corrupción y la falta de mantenimiento, entre otros factores.
 
-
-
-<p>-Sincronización de jornadas: Ajustar los horarios de apertura para aprovechar la luz natural.</p>
-
-
-
-<p>-Trabajo remoto: Fomentar el teletrabajo en áreas y oficinas administrativas.</p>
-
-
-
-<p>-Ventanas de facturación: Garantizar el suministro eléctrico continuo durante las horas pico de ventas.</p>
-
-
-
-<p>-Incentivos financieros y tributarios: Exonerar de aranceles e impuestos la importación de plantas eléctricas.</p>
-
-
-
-<p>-Tasa cero de IVA en eficiencia energética: Suprimir temporalmente el impuesto a generadores, paneles solares y luminarias LED.</p>
-
-
-
-<p>-Acceso a combustible: Garantizar y subsidiar el suministro de diésel para los generadores de emergencia.</p>
-
-
-
-<p>-Ajuste en la facturación: Aplicar descuentos por las horas del servicio eléctrico no prestado.</p>
-
-
-
-<p>-Alivio tributario municipal: Otorgar prórrogas en el pago de tasas e impuestos comerciales locales.</p>
-
-
-
-<p>-Protección a infraestructuras clave: Mantener flujo eléctrico constante en zonas financieras y centros comerciales.</p>
-
-
-
-<p>-Seguridad pública: Desplegar patrullaje policial en ejes comerciales durante las interrupciones del servicio.</p>
-
-
-
-<p>-Respaldo en telecomunicaciones: Garantizar energía continua en las antenas de transmisión para mantener la conectividad de los puntos de venta.</p>
-
-
-
-<p>-Planes de contingencia: Crear redes de asistencia técnica para atender emergencias eléctricas comerciales.</p>
-
-
-
-<p>-Financiamiento de autogeneración: Otorgar créditos blandos para la adquisición de sistemas de almacenamiento y generación de energía.</p>
-
-
-
-<p>Consecomercio reiteró la urgencia de estructurar un sistema eléctrico nacional robusto e hizo un llamado a la articulación entre el sector público y el privado para avanzar en la recuperación y modernización del servicio.<br><strong><em>ET / Agencias</em></strong></p>
-
-
-
-<p></p>
+A principios de este mes, Rodríguez pidió a los ciudadanos ahorrar electricidad y agua por el fenómeno climático «Superniño», como se conoce de manera coloquial a un episodio de El Niño de gran intensidad.
+***ET / EFE***

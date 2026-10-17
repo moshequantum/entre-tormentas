@@ -1,11 +1,17 @@
 ---
-title: "franciscopapa"
+title: "¡ANTE POSIBLES ATAQUES! FANB activa plan de patrullaje para proteger instalaciones eléctricas"
 publishedAt: "2024-06-26"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','franciscopapa','','','2024-06-26 10:19:07','2024-06-26 08:19:07','',4143,'https://entretormentas.com/wp-content/uploads/2024/06/franciscopapa.jpg',0,'attachment','image/jpeg',0),(4145,2,'2024-"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/06/electrico.jpg"
+excerpt: "ENTRE TORMENTAS. La Fuerza Armada Nacional Bolivariana FANB, activó este martes un plan de patrullaje y vigilancia en todas las instalaciones estratégicas del sistema eléctrico para \"salvaguardar y proteger\" el servicio."
 ---
 
+**ENTRE TORMENTAS. **La Fuerza Armada Nacional Bolivariana (FANB), activó este martes un plan de patrullaje y vigilancia en todas las instalaciones estratégicas del sistema eléctrico para "salvaguardar y proteger" el servicio.
+
+El comandante de la Ceofanb, Domingo Hernández Lárez, informó que la vigilancia se mantendrá las 24 horas del día a través de todos los cuadrantes de paz.
+
+La medida fue adoptada después que el Ejecutivo nacional acusara a la oposición de preparar una "guerra eléctrica" en el país.
+***GS / Unión Radio***

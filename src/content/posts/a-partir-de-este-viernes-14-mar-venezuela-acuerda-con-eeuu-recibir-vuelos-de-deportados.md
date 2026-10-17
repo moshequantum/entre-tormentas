@@ -1,11 +1,19 @@
 ---
-title: "image"
+title: "¡A PARTIR DE ESTE VIERNES 14-MAR! Venezuela acuerda con EEUU recibir vuelos de deportados"
 publishedAt: "2025-03-14"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','image-3627','','','2025-03-14 03:43:28','2025-03-14 02:43:28','',14192,'https://entretormentas.com/wp-content/uploads/2025/03/image-255.png',0,'attachment','image/png',0),(14194,2,'2025-03-14 "
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/03/image-256.png"
+excerpt: "ENTRE TORMENTAS. Venezuela y el gobierno de Estados Unidos acordaron la llegada de vuelos con inmigrantes ilegales a Caracas. Se trata de venezolanos que vienen deportados desde tierra estadounidense por su condición de indocumentados."
 ---
 
+**ENTRE TORMENTAS. **Venezuela y el gobierno de Estados Unidos acordaron la llegada de vuelos con inmigrantes ilegales a Caracas. Se trata de venezolanos que vienen deportados desde tierra estadounidense por su condición de indocumentados.
+
+El anuncio lo hizo durante la mañana de este jueves, Richard Grenell, enviado especial de Trump para Venezuela.
+
+"Me complace anunciar que Venezuela ha acordado reanudar los vuelos para recoger a sus ciudadanos que violaron las leyes de inmigración de Estados Unidos y entraron ilegalmente al país. Los vuelos se reanudarán el viernes", escribió Grenell por medio de X.
+
+Venezuela había frenado la recepción de vuelo de deportados, luego de que Estados Unidos suspendió las operaciones de Chevron en el país. No queda claro si este acuerdo tendrá algún efecto en la medida con la transnacional.
+ET / Agencias

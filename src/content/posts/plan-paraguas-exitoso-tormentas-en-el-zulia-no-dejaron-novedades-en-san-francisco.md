@@ -1,24 +1,23 @@
 ---
-title: "¡OTRA DE PLATA! Alejandra Pérez conquista una nueva medalla para Venezuela en los Paralímpicos"
+title: "¡PLAN PARAGUAS EXITOSO! Tormentas en el Zulia no dejaron novedades en San Francisco"
 publishedAt: "2024-09-08"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','7359-revision-v1','','','2024-09-08 14:28:27','2024-09-08 12:28:27','',7359,'https://entretormentas.com/?p=7361',0,'revision','',0),(7362,2,'2024-09-08 14:31:57','2024-09-08 12:31:57','\n"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/09/image-112.png"
+excerpt: "ENTRE TORMENTAS. La Alcaldía de San Francisco, bajo el liderazgo del alcalde Gustavo Fernández, reafirma su compromiso con los sanfranciscanos a través del exitoso Plan Paraguas. Este plan preventivo, centrado en la limpieza y saneamiento d"
 ---
 
-<p><strong>ENTRE TORMENTAS. </strong>La atleta venezolana Alejandra Pérez, junto a su guía Eubrig Maza, conquistaron este sábado la medalla de plata en los 200 metros planos clase T12 (corredores que tienen una discapacidad visual, con un campo de visión restringido a un radio de menos de cinco grados) en los Juegos Paralímpicos de París, reseña Mundo UR.</p>
+**ENTRE TORMENTAS.** La Alcaldía de San Francisco, bajo el liderazgo del alcalde Gustavo Fernández, reafirma su compromiso con los sanfranciscanos a través del exitoso Plan Paraguas. Este plan preventivo, centrado en la limpieza y saneamiento de las cañadas, ha sido crucial para evitar desbordamientos durante las recientes lluvias.
 
+Gracias a las acciones preventivas y al mantenimiento constante, las siete cañadas del municipio manejaron el flujo de agua sin incidentes tras el fuerte aguacero registrado en la madrugada de hoy, demostrando la efectividad del Plan Paraguas.
 
+![](https://entretormentas.com/wp-content/uploads/2024/09/image-113-1024x576.png)
 
-<p>Pérez se colgó la presea al lograr un tiempo de 24.19 segundos, siendo este crono una marca personal para la atleta paralímpica. El primer puesto lo alcanzó la cubana Omara Durand con un registro de 23.62 y la de bronce la obtuvo la india Simram Sharma, alcanzando los 24.75 segundos.</p>
+Los vecinos de las zonas aledañas expresaron su gratitud y tranquilidad por el trabajo realizado por la alcaldía. "Le damos gracias al alcalde Gustavo Fernández, de verdad llegaron justo a tiempo, porque gracias a esa limpieza que hicieron no se nos metió el agua", comentó Nubin Soto, residente junto a la cañada La Silva.
 
+En la parroquia Domitila Flores tampoco se registraron desbordamientos, como certifica Yajaira Barrios, habitante del Barrio Universidad, quien resaltó el alivio que representa para su familia. "En años anteriores, cada vez que llovía, se desbordaba la cañada y se inundaba la casa. Ahora, gracias al alcalde, no hemos tenido problemas durante las últimas lluvias", expresó Barrios.
 
-
-<p>Por su parte, Linda Pérez se llevó el décimo primer diploma paralímpico para el país al quedar de cuarto lugar en la prueba de los 200 metros clase T11 (corredores que tienen una discapacidad visual casi total) con un tiempo de 25.44 segundos.</p>
-
-
-
-<p>Con esta cuenta, Venezuela lleva tres medallas de oro, dos de plata, una de bronce y 11 diplomas en los Juegos Paralímpicos de París 2024.<br><strong><em>GS / Agencias</em></strong></p>
+La gestión del alcalde Gustavo Fernández, caracterizada por su compromiso con la seguridad y el bienestar de sus ciudadanos, continúa demostrando que la prevención es la clave. El primer mandatario sureño también instó a los ciudadanos a mantener las cañadas libres de desechos sólidos para garantizar el buen funcionamiento y correcto flujo del agua, especialmente ante la llegada de las ondas tropicales anunciadas por el Inameh.
+***GS / Alcaldía de San Francisco***

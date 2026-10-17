@@ -1,32 +1,27 @@
 ---
-title: "¡VUELTA A LA PATRIA! Arriban otros 208 venezolanos repatriados desde EE.UU."
+title: "¡TRAS CONSUMIR CARAMELOS MASTICABLES! Alarma por intoxicación de 15 estudiantes en Maracaibo"
 publishedAt: "2025-04-05"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','15098-revision-v1','','','2025-04-05 11:45:06','2025-04-05 09:45:06','',15098,'https://entretormentas.com/?p=15099',0,'revision','',0),(15100,2,'2025-04-05 11:45:49','2025-04-05 09:45:49"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/04/image-103.png"
+excerpt: "ENTRE TORMENTAS. La tarde de este viernes, unos 15 estudiantes resultaron intoxicados al consumir caramelos masticables en la parroquia Manuel Dagnino de la ciudad de Maracaibo."
 ---
 
-<p><strong>ENTRE TORMENTAS.</strong> Un total de 208 connacionales repatriados arribaron al país en un tercer vuelo desde los Estados Unidos, a través del Plan Vuelta a la Patria, cuya iniciativa fue diseñada para asegurar el regreso seguro y organizado de los migrantes venezolanos, informó el ministro del Poder Popular para el Transporte y presidente de Conviasa, Ramón Celestino Velásquez Araguayán.</p>
+**ENTRE TORMENTAS. **La tarde de este viernes, unos 15 estudiantes resultaron intoxicados al consumir caramelos masticables en la parroquia Manuel Dagnino de la ciudad de Maracaibo.
 
+Un testigo del caso informó que los alumnos pertenecen a la Unidad Educativa Juan Antonio Paredes, ubicada en el sector La Misión.
 
+Los afectados recibieron los primeros auxilios en el ambulatorio de la zona. Se conoció que presuntamente consumieron caramelos masticables "Lokiño" y presentaron mareos, vómitos y hasta desmayos.
 
-<p>“Son 208 pasajeros, de los cuales vienen 30 mujeres, dos niños y 176 hombres. Hemos detectado que vienen algunas personas con antecedentes; sin embargo, apenas lleguen serán verificados y direccionados de acuerdo con la condición con la cual llegan”, expresó Velásquez Araguayán.</p>
+![](https://entretormentas.com/wp-content/uploads/2025/04/image-104.png)
 
+Según reportes preliminares se informó que los dulces fueron adquiridos por una docente en el casco central de la ciudad y se presume que son de origen colombiano. Los mismos fueron distribuidos durante una actividad de la materia Instrucción Premilitar.
 
+Ante la gravedad de la situación, padres y representantes actuaron de inmediato, trasladando a sus hijos a centros de atención médica por sus propios medios.
 
-<p>Indicó que a través del Plan Vuelta a la Patria se le estará dando trato humanitario a los connacionales que llegaron a Venezuela. “Es una jornada única en el mundo y se les dará a los repatriados reinserción en nuestro país”, dijo el funcionario.</p>
+La respuesta de emergencia se intensificó con la llegada de funcionarios de la Dirección General de Contrainteligencia Militar (DGCIM) y Polimaracaibo, quienes se desplegaron en el lugar para brindar apoyo y resguardo.
 
-
-
-<p>El Plan Vuelta a la Patria garantiza el retorno de ciudadanos que buscan reintegrarse a sus comunidades. Con estos vuelos, el Gobierno refuerza su compromiso de protección y atención a los venezolanos en el exterior.</p>
-
-
-
-<p>Vale mencionar, que el presidente Nicolás Maduro ha afirmado que los repatriados son bienvenidos y protegidos en su retorno a Venezuela. “La verdad es que los migrantes que han regresado son bienvenidos a su patria. Lo ratificó: son gente de bien, gente de trabajo y que ha sufrido mucho”, acotó.<br><strong><em>ET / VTV</em></strong></p>
-
-
-
-<p></p>
+Se espera la pronta intervención del Cuerpo de Investigaciones Científicas, Penales y Criminalísticas (CICPC) para llevar a cabo las investigaciones pertinentes.
+***ET / ECU / NAM***

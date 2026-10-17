@@ -1,36 +1,38 @@
 ---
-title: "¡EL PRIMER SANTO VENEZOLANO! Papa autoriza canonización de José Gregorio Hernández"
-publishedAt: "2025-02-25"
+title: "¡23 MARABINAS PARTICIPARON! Maracaibo corona a las reinas del Carnaval 2025"
+publishedAt: "2025-02-26"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','13491-revision-v1','','','2025-02-25 15:35:18','2025-02-25 14:35:18','',13491,'https://entretormentas.com/?p=13494',0,'revision','',0),(13498,2,'2025-02-26 02:31:32','2025-02-26 01:31:32"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/02/image-219.png"
+excerpt: "ENTRE TORMENTAS. En una noche de brillo, talento y emociones, resultaron electas las reinas del Carnaval Maracaibo 2025, en la 58 edición del concurso que se realizó este 23 de febrero en la concha acústica de la Plaza de la República."
 ---
 
-<p><strong>ENTRE TORMENTAS. </strong>El beato venezolano José Gregorio Hernández será proclamado santo. Lo ha estipulado el Santo Padre Francisco en el comunicado publicado este martes 25 de febrero de 2025, tras la audiencia concedida en el Hospital Policlínico Gemelli, donde se encuentra internado, al Cardenal Pietro Parolin, Secretario de Estado de la Santa Sede, y a Monseñor Edgar Peña Parra, Sustituto para los Asuntos Generales de la Secretaría de Estado.</p>
+**ENTRE TORMENTAS. **En una noche de brillo, talento y emociones, resultaron electas las reinas del Carnaval Maracaibo 2025, en la 58 edición del concurso que se realizó este 23 de febrero en la concha acústica de la Plaza de la República.
 
+Nahomy Bermúdez, en la categoría Baby; Dagnny Paz, en la categoría Infantil; María Victoria Fuenmayor, en la categoría Juvenil; e Irama Rangel, en categoría Adulto Mayor; se alzaron con las coronas, representando la belleza y el espíritu festivo de la mujer marabina, además, se le otorgó una banda especial a la niña con síndrome down Camila Prado.
 
+En total fueron 23 las marabinas que concursaron en el certamen para coronarse como las reinas del Carnaval, evento que contó con la participación de Garcés Music, Rosse, Acuarela con su show de baile y las danzas municipales.
 
-<p>El Pontífice aprobó los votos favorables de la Sesión Ordinaria de los Padres Cardenales y Obispos miembros del Dicasterio para las Causas de los Santos para esta canonización, así como para la del Beato Bartolo Longo, fiel laico, nacido en Latiano (Italia) el 10 de febrero de 1841 y fallecido en Pompeya (Italia) el 5 de octubre de 1926. Al mismo tiempo, Francisco decidió convocar a un consistorio para definir la fecha de ambas canonizaciones, reseñó Vatican News.</p>
+El jurado calificador que seleccionó a las ganadoras lo conformaron: Mónica Parra de Romero, esposa del Alcalde encargado de Maracaibo; Raúl Rodríguez, empresario, coreógrafo y director de las Danzas Típicas Maracaibo; Michell Navarro, exreina de la Feria de La Chinita; Ítalo Jiménez, expresidente de la Junior Chamber International (JCI); Malena Soto, directora de Cultura; Galvis Latino, músico y cantante regional.
 
+Adrián Romero Martínez, alcalde encargado de Maracaibo, agradeció el apoyo que el público marabino le dio a este evento. “A todo los que hicieron posible esta noche majestuosa les agradecemos por tanta entrega. Tendremos un divertido Carnaval y estaremos bien representados con estas reinas que cumplirán con una serie de actividades en las venideras fiestas”.
 
+![](https://entretormentas.com/wp-content/uploads/2025/02/image-223-1024x682.png)
 
-<p>El Cardenal venezolano Baltazar Porras celebró el anuncio con un escrito en la red social X: "El día esperado ha llegado. El papa Francisco ha firmado el decreto de canonización de nuestro beato José Gregorio Hernández. Ya podemos llamarlo San José Gregorio Hernández".&nbsp;</p>
+Malena Soto, directora de Cultura, destacó que el reinado no solo celebra la belleza y el talento de las participantes, sino que también resalta la rica cultura y tradiciones de Maracaibo.
 
+“Cada una de las candidatas ha demostrado un compromiso excepcional y una pasión por nuestra cultura que es verdaderamente inspiradora. La alegría y el entusiasmo que hemos visto en este reinado son un testimonio del espíritu vibrante de Maracaibo”, indicó la directora de Cultura.
 
+**HABLAN LAS REINAS**
+Elsa Monzant, representante de la reina infantil Dagnny Cristina Paz, felicitó a los organizadores por el evento. “Fue realmente una experiencia maravillosa memorable donde disfrutamos cada momento. Dagnny está muy emocionada”.
 
-<figure class="wp-block-image size-large"><img src="https://entretormentas.com/wp-content/uploads/2025/02/image-218-819x1024.png" alt="" class="wp-image-13493"/></figure>
+María Victoria Fuenmayor, reina juvenil 2025, expresó felicidad por esta experiencia que recibe y la hace representara a la ciudad. “Estoy ansiosa por saber cómo será esta nueva etapa junto a toda Maracaibo”.
 
+Senia Bermúdez, representante de Nahomy Bermúdez, reina categoría Baby; destacó la emoción de la pequeña al lograr ganar este reinado a tan corta edad. “Mi niña cumplió uno de sus grandes sueños”.
 
+Irama Rangel, la adulta mayor que se convirtió en reina este 2025, agradeció a Dios por haber sido coronada como la primera abuela en este certamen. “Me siento muy orgullosa de representar a los abuelos de Maracaibo, especialmente a mi parroquia Caracciolo Parra Pérez”.
 
-<p><strong>LEGADO DE FE</strong><br>El legado de José Gregorio Hernández sigue calando fuerte en el pueblo venezolano, quien desde hace años aguardaba con fe esta noticia. Además, el interés y la devoción por su figura crecieron exponencialmente en los últimos años tanto en su país natal como en el resto de Latinoamérica y el Caribe. Al ingresar en la Tercera Orden Regular de San Francisco, se comprometió a ayudar a los más necesitados, siendo llamado «el médico de los pobres», un apelativo que se consolidó internacionalmente.</p>
-
-
-
-<p>También ingresó en la Cartuja de Farneta (Lucca), pero por motivos de salud, tuvo que abandonarla a los nueve meses, regresando a Caracas. Posteriormente, comenzó a prepararse para el sacerdocio pero, mientras estaba en el Colegio Pío Latino Americano de Roma, le sobrevino una pleuresía y un principio de tuberculosis. De vuelta a sus tierras, se dedicó definitivamente a la medicina.</p>
-
-
-
-<p>Y fue al salir de una farmacia en Caracas, en junio de 1919, donde había comprado unas medicinas para un paciente anciano, cuando fue atropellado por un coche, muriendo posteriormente en el hospital. Fue proclamado beato en 2021 y sus restos mortales se veneran en la iglesia de Nuestra Señora de la Candelaria de Caracas.<br><strong><em>ET / Agencias</em></strong></p>
+Con este evento comenzó la agenda que la Alcaldía de Maracaibo tiene preparada para el Carnaval 2025, donde prevalecerá la alegría con el tradicional desfile y otras actividades que resaltan la riqueza cultural y folclórica de la ciudad.
+***ET / DCI Alcaldía de Maracaibo***

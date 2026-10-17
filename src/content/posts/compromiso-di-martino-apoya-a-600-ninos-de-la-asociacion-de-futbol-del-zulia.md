@@ -1,48 +1,33 @@
 ---
-title: "¡APUESTAN AL FUTURO! Ministro de Juventud y gobernador del Zulia participan en asamblea del Poder Popular Juvenil Comunal"
-publishedAt: "2025-07-05"
+title: "¡COMPROMISO! Di Martino apoya a 600 niños de la Asociación de Fútbol del Zulia"
+publishedAt: "2025-07-06"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','18912-revision-v1','','','2025-07-05 12:11:49','2025-07-05 10:11:49','',18912,'https://entretormentas.com/?p=18916',0,'revision','',0),(18918,2,'2025-07-06 12:09:48','2025-07-06 10:09:48"
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/07/dimafut1.jpeg"
+excerpt: "ENTRE TORMENTAS. Más de 600 niños y niñas pertenecientes a la Asociación de Fútbol del Estado Zulia AFEZ, de 30 escuelas recibirán todo el apoyo por parte de Giancarlo Di Martino, candidato a la Alcaldía de Maracaibo por el PSUV y el GPPSB."
 ---
 
-<p><strong>ENTRE TORMENTAS.</strong> La parroquia Cacique Mara se convirtió en punto de encuentro de la juventud durante la Asamblea del Poder Popular Juvenil Comunal, en la que convergieron las voces del ministro del Poder Popular para la Juventud, Sergio Lotartaro, y del gobernador del estado Zulia, Luis Caldera.</p>
+**ENTRE TORMENTAS. **Más de 600 niños y niñas pertenecientes a la Asociación de Fútbol del Estado Zulia (AFEZ), de 30 escuelas recibirán todo el apoyo por parte de Giancarlo Di Martino, candidato a la Alcaldía de Maracaibo por el PSUV y el GPPSB.
 
+En acto celebrado en la cancha ubicada en el sector Don Bosco de la parroquia Olegario Villalobos se realizó a la inauguración de la Liga de Desarrollo de Fútbol Sala 2025 (FUTSAL) de la AFEZ junto a las distintas asociaciones del estado Zulia, donde fue invitado Giancarlo Di Martino, quien llegó acompañado por el exlegislador joven José Javier Barboza.
 
+![](https://entretormentas.com/wp-content/uploads/2025/07/dimafut2-1024x839.jpeg)
 
-<p>Desde la comuna Cacique Mara Unidos por Siempre y el Consejo Comunal Generalísimo Francisco de Miranda, cientos de jóvenes debatieron propuestas en asambleas abiertas. El resultado: siete proyectos comunitarios que abarcan el impulso al emprendimiento, la recuperación de espacios deportivos, formación académica y cultura. Estas ideas serán sometidas a votación popular el próximo 27 de julio, fortaleciendo el ejercicio democrático y el protagonismo juvenil.</p>
+La presidenta de la AFEZ, Suying Olivares, visiblemente emocionada por el inicio de esta gran fiesta deportiva, dijo que el apoyo de Giancarlo Di Martino sería vital para que crezca el futbol. “Necesitamos que cada escuela que hagas Di Martino vaya de la mano con el fútbol organizado para que asi integre a la comunidad, integre al consejo comunal, para que haya de verdad deporte integral, para eso hay que trabajar de la mano, fútbol organizado con un alcalde organizado”.
 
+En el acto el candidato, junto al joven José Javier Barboza, Suying Olivares y el director técnico Néstor Ávila, hicieron entrega de material deportivo a todos los equipos.
 
+Giancarlo Di Martino compartió con los pequeños una tarde deportiva, manifestando que el fútbol ha sido siempre desde pequeño su inclinación, “empecé así chiquitico y quería ser futbolista profesional, pero la vida me dio otro camino”.
 
-<figure class="wp-block-image size-large"><img src="https://entretormentas.com/wp-content/uploads/2025/07/jovenlc2-1024x683.jpeg" alt="" class="wp-image-18913"/></figure>
+Reconoció el esfuerzo y dedicación que Suying Olivares ha tenido con la Asociación y por tal motivo dará un rotundo apoyo “para que sigas haciendo el trabajo que has venido desarrollando, conozco el sacrificio de ustedes, porque hemos compartido, porque sé la importancia de la actividad deportiva.”
 
+![](https://entretormentas.com/wp-content/uploads/2025/07/dimafut3-768x1024.jpeg)
 
+Indicó que otorgará el comodato de la Vereda del Lago para que los niños y niñas puedan ejercer el fútbol en ese parque, “es el primer comodato que vamos a firmar apenas lleguemos, cada una de las asociaciones, organizaciones, van a tener sus canchas, como se lo merecen, para que estos muchachos crezcan y sigan el camino del deporte y podamos tener más vinotinto, porque aquí hay capacidades y potencialidades para tenerlo y solamente con este camino que has labrado con mucho sacrificio y ahora con el apoyo de este amigo, no del alcalde, de este amigo, vamos a seguir trabajando para que este esfuerzo, este presente y este futuro se pueda consolidar”.
 
-<p>“Ver a la juventud zuliana reunida para exponer problemáticas es una oportunidad inédita que el gobierno bolivariano ha brindado”, expresó el ministro Lotartaro, al tiempo de destacar que esta iniciativa permite que los jóvenes diseñen a corto, mediano y largo plazo el futuro de sus comunidades:</p>
+Entre las solicitudes al candidato está la propuesta de consolidar también el fútbol de playa también, para lo cual el director técnico Néstor Ávila, propuso construir en el terreno alterno a la cancha de Don Bosco, un estadio formal de fútbol playa.
 
-
-
-<p>El gobernador Caldera resaltó la participación activa de 576 comunas que han cargado más de cuatro mil proyectos en el sistema del Centro Nacional de Información (CNI), enfocándose en áreas como educación, transporte, recuperación de espacios públicos y economía socioproductiva.</p>
-
-
-
-<p>El joven Alexander Sánchez, vocero de la comuna Cacique Mara en Batalla, detalló los planteamientos realizados: equipos deportivos, dispositivos tecnológicos para el estudio, canchas multifuncionales, iniciativas de salud comunitaria y créditos productivos gestionados por el Banco Comunal.</p>
-
-
-
-<figure class="wp-block-image size-large"><img src="https://entretormentas.com/wp-content/uploads/2025/07/jovenlc3-1024x683.jpeg" alt="" class="wp-image-18914"/></figure>
-
-
-
-<p>“Nosotros asumimos este primer proyecto con responsabilidad, soñando con un país de progreso y oportunidades para todos”, afirmó.</p>
-
-
-
-<p>Este evento no solo celebra el liderazgo juvenil, sino que visibiliza el compromiso colectivo por construir una Venezuela con participación activa desde las comunidades. En palabras del gobernador Caldera: “la juventud zuliana está abrazando esta etapa de revolución democrática participativa y está lista para salir a enamorar a cada familia con sus propuestas”.<br><strong><em>ET / Nota de Prensa</em></strong></p>
-
-
-
-<p></p>
+Finalmente, Suying Olivares dijo que, con esta actividad tan hermosa, “con nuestro alcalde Di Martino, está demostrado que nuevamente el deporte va a ser potencia en el municipio. Con todos esos anuncios de Di Martino para el fútbol zuliano no nos queda más que decirlo: Di Martino cuenta con el fútbol zuliano, con cada papá, con cada mamá, con cada entrenador, para de verdad retomar el fútbol y el deporte que nos merecemos. Vamos contigo Di Martino, vamos confiados”.
+***ET / Nota de Prensa***

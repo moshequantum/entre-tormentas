@@ -1,11 +1,17 @@
 ---
-title: "ruiz"
+title: "¡PARA ESTE MIÉRCOLES! Maduro anuncia reinicio de negociaciones con Estados Unidos"
 publishedAt: "2024-07-02"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','ruiz','','','2024-07-02 19:03:54','2024-07-02 17:03:54','',4411,'https://entretormentas.com/wp-content/uploads/2024/07/ruiz.jpg',0,'attachment','image/jpeg',0),(4413,2,'2024-07-02 19:04:04','2"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/07/dialogo1.jpg"
+excerpt: "ENTRE TORMENTAS. El presidente Nicolás Maduro, anunció que volverá a negociar con Estados Unidos. “He recibido la propuesta por dos meses continuos del Gobierno de Estados Unidos para restablecer las relaciones y el diálogo. Luego de pensar"
 ---
 
+**ENTRE TORMENTAS.** El presidente Nicolás Maduro, anunció que volverá a negociar con Estados Unidos. “He recibido la propuesta por dos meses continuos del Gobierno de Estados Unidos para restablecer las relaciones y el diálogo. Luego de pensarlo, he aceptado y el próximo miércoles se reinician las conversaciones con el Gobierno de Estados Unidos para que cumpla con los acuerdos firmados en Qatar y para restablecer los términos del diálogo con respeto”, dijo Maduro.
+
+Aunque Maduro no precisó el lugar de los encuentros, sí mencionó que la delegación venezolana estará encabezada por el presidente de la Asamblea Nacional, Jorge Rodríguez, y por el gobernador del estado Miranda (centro), Héctor Rodríguez Castro.
+
+Además el mandatario solicitó que los diálogos sean públicos. Esta decisión marca un nuevo capítulo en las relaciones entre ambos países, que han estado tensas en los últimos años.
+***GS / Agencias***

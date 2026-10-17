@@ -1,36 +1,23 @@
 ---
-title: "¡POLÉMICA! PJ no acepta renuncia de Capriles y expulsa a Eudoro González"
+title: "¡CONVENCIDA! MCM afirma que cada día están más cerca de liberar a Venezuela"
 publishedAt: "2024-09-24"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','7990-revision-v1','','','2024-09-24 11:52:27','2024-09-24 09:52:27','',7990,'https://entretormentas.com/?p=7992',0,'revision','',0),(7993,2,'2024-09-24 11:56:40','2024-09-24 09:56:40','\n"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/09/image-397.png"
+excerpt: "ENTRE TORMENTAS. La líder opositora de Venezuela María Corina Machado aseguró este sábado que la lucha del antichavismo se \"está acelerando en diversos planos\", al tiempo que consideró que el presidente Nicolás Maduro se debilita en el terr"
 ---
 
-<p><strong>ENTRE TORMENTAS. </strong>El partido Primero Justicia (PJ) expulsó al dirigente Eudoro González de sus filas y manifestó que no acepta la renuncia de Henrique Capriles a la Junta Directiva Nacional.</p>
+**ENTRE TORMENTAS. **La líder opositora de Venezuela María Corina Machado aseguró este sábado que la lucha del antichavismo se "está acelerando en diversos planos", al tiempo que consideró que el presidente Nicolás Maduro se debilita en el terreno político.
 
+"Estamos viviendo días de enorme intensidad y las cosas se están moviendo mucho y acelerando en diversos plano", expresó la liberal en un video que compartió a través de X, en el que repitió que el Gobierno chavista, que defiende la victoria de Maduro en los comicios, "cada día está más solo y aislado".
 
+Remarcó que el controvertido triunfo de Maduro no ha sido reconocido por numerosos países y que esa proclamación por parte del Consejo Nacional Electoral (CNE), cuestionada dentro y fuera del país, hizo que el líder chavista perdiera "muchísimo" respaldo internacional.
 
-<p>Ángel Medina, dirigente del partido aurinegro, afirmó este lunes, que esa instancia no aceptó la renuncia anunciada del exgobernador de Miranda. "Para quien me está escuchando, él no está renunciando al partido, sino a la junta directiva nacional y en una reunión de la dirección del partido, todos decidimos no aceptar esa renuncia", dijo.</p>
+"A Maduro (solo) lo reconocen las tiranías del mundo", subrayó. Machado, que se ha mantenido bajo resguardo en las últimas semanas, reiteró que la principal coalición opositora -Plataforma Unitaria Democrática (PUD)- cuenta con una "estrategia robusta" para hacer valer la victoria que, asegura, obtuvo su abanderado, Edmundo González Urrutia, en las presidenciales.
 
+"Hemos tenido una disciplina rigurosa para cumplirla y, porque hemos mantenido confianza en la dirección política, no nos han podido infiltrar. Nos hemos mantenido unidos, por eso les pido foco en la meta, vamos a hacer valer la soberanía popular expresada el 28 de julio y eso es lo que va a pasar", insistió.
 
-
-<p>Medina, sin embargo, reconoció que comparte con Capriles la gran mayoría de las palabras que plasmó en su carta mostrada en redes sociales.</p>
-
-
-
-<p>Igualmente, informó que espera que la Junta Directiva Nacional de la tolda aurinegra pueda reunirse en los próximos días con Capriles.</p>
-
-
-
-<p><strong>EXPULSADO</strong><br>Eudoro González habría sido la persona que estuvo en la reunión efectuada en la sede de la Embajada del Reino de España, en la que González Urrutia firmó una declaración en que decía acatar la decisión del TSJ que ratificó el resultado de la elección presidencial del 28 de julio y sería la voz que el presidente de la Asamblea Nacional, Jorge Rodríguez, mostró (aunque con sonido distorsionado) en una grabación dando testimonio sobre el encuentro.</p>
-
-
-
-<p>A través de las redes sociales, PJ informó "la autoexclusión partidaria, prevista en nuestros estatutos, de Eudoro González por haber actuado de forma unilateral en el exilio forzado del presidente electo Edmundo González Urrutia".</p>
-
-
-
-<p>La publicación del partido asegura que el compromiso, foco y energía de la organización se centra en la defensa de los resultados del 28 de julio. La exclusión de Eudoro González se aprobó en una junta de Dirección Nacional.<br><strong><em>GS / Unión Radio</em></strong></p>
+"Cada día están más débiles y cada día estamos más fuertes nosotros, cada día estamos más cerca de liberar a Venezuela y de traer a nuestros hijos de vuelta a casa, así que serenidad, coraje y firmeza", concluyó.
+***GS / Agencias***

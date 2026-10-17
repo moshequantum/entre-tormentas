@@ -1,28 +1,29 @@
 ---
-title: "¡DESDE LA FUNDACIÓN TODO ES POSIBLE! Alcaldía entregará nuevos módulos policiales en diversos puntos de Maracaibo"
+title: "¡LA FANB JUNTO AL GOBERNADOR CALDERA! Entregan equipos para reforzar operaciones en el eje fronterizo del Zulia"
 publishedAt: "2026-08-10"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','closed','closed','','37494-revision-v1','','','2026-08-10 19:40:21','2026-08-10 23:40:21','',37494,'https://entretormentas.com/?p=37495',0,'revision','',0),(37496,2,'2026-08-10 19:45:21','2026-08-10 23:45:21"
+coverImage: "https://entretormentas.com/wp-content/uploads/2026/08/IMG-20260810-WA0036.jpg"
+excerpt: "ENTRE TORMENTAS. El comandante Estratégico Operacional de la Fuerza Armada Nacional Bolivariana Ceofanb, MG Rubén Darío Belzares Escobar, presidió la entrega formal de material militar, vehículos y dotación de equipos a las unidades acanton"
 ---
 
-<p><strong>ENTRE TORMENTAS</strong>. Trabajos de asfaltado, la rehabilitación integral del estadio Alejandro Borges y la próxima inauguración de nuevos módulos policiales, ejecuta la Dirección de Infraestructura de la Alcaldía de Maracaibo, a través de la Fundación Juntos Todo es Posible.</p>
+**ENTRE TORMENTAS**. El comandante Estratégico Operacional de la Fuerza Armada Nacional Bolivariana (Ceofanb), MG Rubén Darío Belzares Escobar, presidió la entrega formal de material militar, vehículos y dotación de equipos a las unidades acantonadas en el eje fronterizo del estado Zulia. El acto contó con el acompañamiento del gobernador de la entidad, Luis Caldera, y se llevó a cabo en la 11ª Brigada Blindada "GB Pedro José Ruiz Rondón" del Ejército Bolivariano, ubicada en Fuerte Mara.
 
+La actividad contó también con la presencia del comandante general del Ejército Bolivariano, MG Pedro Esteban González Ovalles, y del comandante de la Región Estratégica de Defensa Integral Occidente (REDI Occidente), MG Javier Magallanes.![](https://entretormentas.com/wp-content/uploads/2026/08/IMG-20260810-WA0041.jpg)
 
+Durante el despliegue, el MG Belzares Escobar destacó que los recursos asignados mediante el Fondo Negro Primero incrementan la capacidad operativa de la tropa en una zona de importancia en la defensa de la soberanía nacional.
 
-<p>Oscar Urdaneta, al frente de estas dependencias municipales, informó que en la parroquia Francisco Eugenio Bustamante -donde el pasado sábado la Alcaldía reinauguró el Centro de Participación Popular tras casi 17 años de abandono- "se colocaron 29.88 toneladas de asfalto. Pero además de ello, abordamos la Avenida 12, la 72 con todas las intersecciones a través de la Dirección de Ingeniería Municipal".<img class="wp-image-37492" style="width: 500px;" src="https://entretormentas.com/wp-content/uploads/2026/08/IMG-20260810-WA0027-1.jpg" alt=""></p>
+"Venezuela renace a nivel institucional y, dentro de esas instituciones, la Fuerza Armada Nacional Bolivariana eleva su nivel de apresto operacional y garantiza el bienestar de cada uno de sus efectivos militares", afirmó el jefe del Ceofanb.
 
+Añadió además que esta jornada marca el inicio de un plan integral de adecuación que atenderá las bases militares del país en materia de equipamiento, alimentación y atención socioeconómica para el personal.
 
+El gobernador del Zulia, Luis Caldera, resaltó el impacto estratégico del equipamiento enviado por la presidenta encargada y comandante en jefe, Delcy Rodríguez, en la resguardada franja fronteriza.![](https://entretormentas.com/wp-content/uploads/2026/08/IMG-20260810-WA0035.jpg)
 
-<p>El funcionario indicó que por indicaciones del alcalde Giancarlo Di Martino, a través de la Corporación Juntos Todo es Posible, "seguimos con la recuperación integral del Estadio Olímpico Alejandro Borges. Próximamente estarán listas las áreas de baños". Destacó que en este estadio se construye el Museo de de Luis Aparicio, se reparan más de 2400 metros cuadrados de gradas, tribuna principal y techado".</p>
+Enfatizó la articulación cívico-militar entre las unidades de la Fanb, las organizaciones indígenas, campesinas, comerciantes y el gobierno regional para combatir la delincuencia organizada y el narcotráfico en los 685 kilómetros de frontera con Colombia.
 
+"Desde hace meses libramos una batalla efectiva por la paz y la estabilidad en el Sur del Lago y la Guajira. Este equipamiento fortalece la moral de nuestros combatientes para seguir garantizando la seguridad en el territorio zuliano", subrayó el mandatario regional.
 
-
-<p>Anunció que "en próximos días vamos a inaugurar el módulo policial que está en 5 de Julio con Delicias, un nuevo espacio que va a estar al lado de Daka, con el que se reforzará la seguridad en todo este sector". Dijo que también se construirán módulos policiales en el mercado Simón Bolívar, frente al terminal de pasajeros, y en Santa Lucía.</p>
-
-
-
-<p>El director municipal de Infraestructura también informó que esta semana se tiene previsto inaugurar "una cancha importante, hermosa, en el Barrio Altamira Sur, de la Parroquia Cristo de Aranza, que contará con máquina de biosalud y parque infantil. También vamos a inaugurar la cancha Agua de Dios, en la Parroquia Cacique Mara".<br><strong><em>ET / Prensa Alcaldía de Maracaibo</em></strong></p>
+Entre los equipos, materiales y vehículos, se cuentan cinco camiones de 30 y 40 toneladas, 23 camionetas, 145 motos,10 motores fuera de borda, 110 radios portátiles 20 antenas starlink, uniformes, botas y chalecos, entre otros.
+***ET / Prensa Gobernación del Zulia***

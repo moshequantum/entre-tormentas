@@ -1,11 +1,17 @@
 ---
-title: "CHIQUIN2"
+title: "¡INFORME! MP informa que hay 686 experticias e investigaciones por protestas tras el 28J"
 publishedAt: "2024-08-13"
-category: "regionales"
+category: "nacionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','chiquin2','','','2024-08-13 10:34:09','2024-08-13 08:34:09','',6302,'https://entretormentas.com/wp-content/uploads/2024/08/CHIQUIN2.jpg',0,'attachment','image/jpeg',0),(6304,2,'2024-08-13 10:3"
+coverImage: "https://entretormentas.com/wp-content/uploads/2024/08/MARICA.jpg"
+excerpt: "ENTRE TORMENTAS. El fiscal general, Tarek William Saab, indicó que han realizado 686 experticias y diligencias de investigación tras los hechos ocurridos el 28 de julio."
 ---
 
+**ENTRE TORMENTAS. **El fiscal general, Tarek William Saab, indicó que han realizado 686 experticias y diligencias de investigación tras los hechos ocurridos el 28 de julio.
+
+Aseguró que ha designado cinco fiscales con competencia plena nacional para investigar hechos que calificó como “terroristas y criminales”.
+
+Saab presentó un informe durante una reunión del Consejo de Defensa de la Nación y Consejo de Estado desde la cancillería venezolana.
+***GS / Unión Radio***

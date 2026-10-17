@@ -1,11 +1,23 @@
 ---
-title: "image"
+title: "¡A PRECIOS SOLIDARIOS! Feria Socialista del Pescado llegó a Cañada Honda y Altos del Sol Amada"
 publishedAt: "2026-01-31"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','image-6130','','','2026-01-31 06:50:35','2026-01-31 10:50:35','',28067,'https://entretormentas.com/wp-content/uploads/2026/01/image-459.png',0,'attachment','image/png',0),(28069,2,'2026-01-31 "
+coverImage: "https://entretormentas.com/wp-content/uploads/2026/01/image-461.png"
+excerpt: "ENTRE TORMENTAS. Con la firme intención de brindar productos de calidad y a precios solidarios, la Secretaría de Desarrollo Agropecuario de la Gobernación del Zulia llevó la Feria Socialista del Pescado a dos sectores de la capital zuliana."
 ---
 
+**ENTRE TORMENTAS**. Con la firme intención de brindar productos de calidad y a precios solidarios, la Secretaría de Desarrollo Agropecuario de la Gobernación del Zulia llevó la Feria Socialista del Pescado a dos sectores de la capital zuliana.
+
+![](https://entretormentas.com/wp-content/uploads/2026/01/image-462.png)
+
+En esta oportunidad los beneficiarios fueron los residentes de Cañada Honda, parroquia Cacique Mara, el día jueves 29 de enero; mientras que el viernes 30 de enero, la acción social llegó a los habitantes del urbanismo Altos del Sol Amada, en la Plaza Los Faroles.
+
+Los residentes pudieron adquirir a precios subsidiados y a tasa Banco Central de Venezuela (BCV) diferentes especies como atún, corvina, lebranche, filet de corvina, mojito de corvina, tilapia, jurel, carite y robalo.
+
+![](https://entretormentas.com/wp-content/uploads/2026/01/image-463.png)
+
+Los beneficiaros se mostraron complacidos con esta Feria Socialista del Pescado, auspiciada desde la Gobernación del Zulia a través de la Secretaría de Desarrollo Agropecuario, la cual es itinerante y llega a los diferentes rincones de ma geografía regional.
+***ET / Nota de Prensa***

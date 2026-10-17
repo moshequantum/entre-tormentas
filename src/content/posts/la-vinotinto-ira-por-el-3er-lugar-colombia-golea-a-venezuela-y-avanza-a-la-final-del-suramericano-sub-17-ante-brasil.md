@@ -1,11 +1,17 @@
 ---
-title: "image"
+title: "¡LA VINOTINTO IRÁ POR EL 3ER LUGAR! Colombia golea a Venezuela y avanza a la final del Suramericano Sub 17 ante Brasil"
 publishedAt: "2025-04-10"
 category: "regionales"
 isFeatured: false
 isBreaking: false
 author: "Redacción Entre Tormentas"
-coverImage: "/images/posts/default-post.jpg"
-excerpt: "','inherit','','closed','','image-4132','','','2025-04-10 11:23:15','2025-04-10 09:23:15','',15235,'https://entretormentas.com/wp-content/uploads/2025/04/image-169.png',0,'attachment','image/png',0),(15237,2,'2025-04-10 "
+coverImage: "https://entretormentas.com/wp-content/uploads/2025/04/image-170.png"
+excerpt: "ENTRE TORMENTAS. El equipo colombiano se convirtió en el segundo finalista del Sudamericano Sub 17, tras lograr una contundente victoria de 5-1 frente a Venezuela. Así, la tricolor cafetera se medirá ante Brasil por el campeonato de la cate"
 ---
 
+**ENTRE TORMENTAS. **El equipo colombiano se convirtió en el segundo finalista del Sudamericano Sub 17, tras lograr una contundente victoria de 5-1 frente a Venezuela. Así, la tricolor cafetera se medirá ante Brasil por el campeonato de la categoría.
+
+Con esta victoria, Colombia asegura su lugar en la final del torneo, donde disputará el título ante Brasil, que superó a Chile por la mínima de 1-0. Este emocionante encuentro se llevará a cabo el próximo sábado 12.
+
+En tal sentido, Venezuela se preparará para el partido por el tercer lugar contra Chile, también el sábado, recordando que ambos equipos ya han asegurado su clasificación para el Mundial Sub 17.
+***ET / Agencias***
