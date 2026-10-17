@@ -1,0 +1,60 @@
+---
+interface Props {
+  count?: number;
+}
+
+const { count = 4 } = Astro.props;
+---
+
+<div
+  role="status"
+  aria-label="Cargando artículos de noticias..."
+  aria-busy="true"
+  class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
+>
+  {Array.from({ length: count }).map((_, index) => (
+    <div
+      class="flex flex-col justify-between overflow-hidden rounded-xl border border-storm-800/80 bg-storm-900/60 p-0 shadow-lg"
+    >
+      <div>
+        <!-- Image placeholder with Shimmer -->
+        <div class="relative h-44 w-full overflow-hidden bg-storm-800">
+          <div class="absolute inset-0 -translate-x-full animate-shimmer bg-gradient-to-r from-transparent via-white/5 to-transparent motion-reduce:animate-none"></div>
+          <!-- Category badge skeleton -->
+          <div class="absolute top-3 left-3 h-5 w-20 rounded-full bg-storm-700/80"></div>
+        </div>
+
+        <!-- Text skeleton lines -->
+        <div class="p-4 space-y-3">
+          <div class="relative h-4 w-5/6 overflow-hidden rounded bg-storm-700/70">
+            <div class="absolute inset-0 -translate-x-full animate-shimmer bg-gradient-to-r from-transparent via-white/5 to-transparent motion-reduce:animate-none"></div>
+          </div>
+          <div class="relative h-4 w-full overflow-hidden rounded bg-storm-700/70">
+            <div class="absolute inset-0 -translate-x-full animate-shimmer bg-gradient-to-r from-transparent via-white/5 to-transparent motion-reduce:animate-none"></div>
+          </div>
+          <div class="relative h-4 w-2/3 overflow-hidden rounded bg-storm-700/50">
+            <div class="absolute inset-0 -translate-x-full animate-shimmer bg-gradient-to-r from-transparent via-white/5 to-transparent motion-reduce:animate-none"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer metadata skeleton -->
+      <div class="flex items-center justify-between border-t border-storm-800/80 px-4 py-3">
+        <div class="h-3 w-16 rounded bg-storm-800"></div>
+        <div class="h-3 w-12 rounded bg-storm-800"></div>
+      </div>
+    </div>
+  ))}
+  <span class="sr-only">Cargando contenido noticioso, por favor espere...</span>
+</div>
+
+<style>
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  .animate-shimmer {
+    animation: shimmer 1.8s infinite;
+  }
+</style>

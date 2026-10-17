@@ -1,0 +1,30 @@
+---
+interface Props {
+  image?: string;
+  href?: string;
+  alt?: string;
+  className?: string;
+}
+
+const {
+  image = '/images/ads/banner-header.png',
+  href = '#',
+  alt = 'Espacio Publicitario - Entre Tormentas',
+  className = ''
+} = Astro.props;
+---
+
+<div class={`relative overflow-hidden rounded-xl border border-storm-800 bg-storm-900/50 p-1 backdrop-blur-sm transition-all hover:border-electric-brand/50 ${className}`}>
+  <!-- Sponsor label for legal & editorial transparency -->
+  <span class="absolute top-1 right-2 text-[9px] font-mono tracking-widest text-slate-500 uppercase z-10 pointer-events-none">
+    Publicidad
+  </span>
+  <a href={href} target="_blank" rel="noopener noreferrer" class="block w-full h-full group">
+    <img
+      src={image}
+      alt={alt}
+      class="h-auto max-h-[90px] w-full rounded-lg object-contain transition-transform duration-300 group-hover:opacity-95"
+      loading="eager"
+    />
+  </a>
+</div>

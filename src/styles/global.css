@@ -4,20 +4,32 @@
 
 @layer base {
   :root {
-    --color-storm-950: #070A11;
-    --color-storm-900: #0E131F;
-    --color-electric-600: #0055FF;
-    --color-cyan-400: #00D2FF;
-    --color-flash-50: #F8FAFC;
+    --canvas-bg: #070A11;
+    --surface-card: #0E131F;
+    --surface-elevated: #121826;
+    --border-subtle: #1A2234;
+    --border-active: #25314C;
+
+    --brand-electric: #0055FF;
+    --brand-ion: #00D2FF;
+
+    --ink-headline: #F8FAFC;
+    --ink-body: #E2E8F0;
+    --ink-muted: #94A3B8;
   }
 
   body {
-    background-color: #070A11;
-    color: #F8FAFC;
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--canvas-bg);
+    color: var(--ink-body);
+    font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     overflow-x: hidden;
-    selection-background-color: #0055FF;
-    selection-color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-editorial {
+    font-family: 'Lora', Georgia, serif;
+    color: var(--ink-headline);
   }
 }
 

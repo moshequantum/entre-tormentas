@@ -1,0 +1,119 @@
+---
+interface Props {
+  currentPage: number;
+  totalPages: number;
+  baseUrl: string;
+}
+
+const { currentPage, totalPages, baseUrl } = Astro.props;
+
+const hasPrev = currentPage > 1;
+const hasNext = currentPage < totalPages;
+const prevUrl = currentPage === 2 ? baseUrl : `${baseUrl}?page=${currentPage - 1}`;
+const nextUrl = `${baseUrl}?page=${currentPage + 1}`;
+
+// Calculate visible page range (Smart sliding window)
+const getPageNumbers = () => {
+  const pages: (number | string)[] = [];
+  const delta = 1; // Number of adjacent pages to show
+
+  for (let i = 1; i <= totalPages; i++) {
+    if (
+      i === 1 ||
+      i === totalPages ||
+      (i >= currentPage - delta && i <= currentPage + delta)
+    ) {
+      pages.push(i);
+    } else if (pages[pages.length - 1] !== '...') {
+      pages.push('...');
+    }
+  }
+  return pages;
+};
+
+const pages = getPageNumbers();
+---
+
+<nav aria-label="Navegación de noticias paginadas" class="my-10 flex items-center justify-center gap-2">
+  <!-- Botón Anterior -->
+  {hasPrev ? (
+    <a
+      href={prevUrl}
+      rel="prev"
+      class="flex h-10 items-center gap-1.5 rounded-lg border border-storm-700 bg-storm-900/80 px-3.5 text-xs font-semibold text-slate-200 transition-all hover:border-electric-brand hover:bg-storm-850 hover:text-white focus:outline-none focus:ring-2 focus:ring-electric-brand focus:ring-offset-2 focus:ring-offset-storm-950"
+      aria-label="Ir a la página anterior"
+    >
+      <span aria-hidden="true">←</span>
+      <span class="hidden sm:inline">Anterior</span>
+    </a>
+  ) : (
+    <span
+      class="flex h-10 items-center gap-1.5 rounded-lg border border-storm-800/50 bg-storm-950/50 px-3.5 text-xs font-semibold text-slate-600 cursor-not-allowed select-none"
+      aria-disabled="true"
+    >
+      <span aria-hidden="true">←</span>
+      <span class="hidden sm:inline">Anterior</span>
+    </span>
+  )}
+
+  <!-- Números de Página con Ventana Inteligente -->
+  <ul class="flex items-center gap-1">
+    {pages.map((page) => {
+      if (page === '...') {
+        return (
+          <li>
+            <span class="flex h-10 w-8 items-center justify-center font-mono text-xs text-slate-600 select-none">
+              …
+            </span>
+          </li>
+        );
+      }
+
+      const isCurrent = page === currentPage;
+      const pageUrl = page === 1 ? baseUrl : `${baseUrl}?page=${page}`;
+
+      return (
+        <li>
+          {isCurrent ? (
+            <span
+              class="flex h-10 min-w-[40px] items-center justify-center rounded-lg bg-electric-brand px-3 font-mono text-xs font-bold text-white shadow-lg shadow-electric-brand/30 select-none"
+              aria-current="page"
+              aria-label={`Página actual, página ${page}`}
+            >
+              {page}
+            </span>
+          ) : (
+            <a
+              href={pageUrl}
+              class="flex h-10 min-w-[40px] items-center justify-center rounded-lg border border-storm-700/80 bg-storm-900/60 px-3 font-mono text-xs font-semibold text-slate-300 transition-all hover:border-electric-brand hover:bg-storm-850 hover:text-white focus:outline-none focus:ring-2 focus:ring-electric-brand focus:ring-offset-2 focus:ring-offset-storm-950"
+              aria-label={`Ir a la página ${page}`}
+            >
+              {page}
+            </a>
+          )}
+        </li>
+      );
+    })}
+  </ul>
+
+  <!-- Botón Siguiente -->
+  {hasNext ? (
+    <a
+      href={nextUrl}
+      rel="next"
+      class="flex h-10 items-center gap-1.5 rounded-lg border border-storm-700 bg-storm-900/80 px-3.5 text-xs font-semibold text-slate-200 transition-all hover:border-electric-brand hover:bg-storm-850 hover:text-white focus:outline-none focus:ring-2 focus:ring-electric-brand focus:ring-offset-2 focus:ring-offset-storm-950"
+      aria-label="Ir a la página siguiente"
+    >
+      <span class="hidden sm:inline">Siguiente</span>
+      <span aria-hidden="true">→</span>
+    </a>
+  ) : (
+    <span
+      class="flex h-10 items-center gap-1.5 rounded-lg border border-storm-800/50 bg-storm-950/50 px-3.5 text-xs font-semibold text-slate-600 cursor-not-allowed select-none"
+      aria-disabled="true"
+    >
+      <span class="hidden sm:inline">Siguiente</span>
+      <span aria-hidden="true">→</span>
+    </span>
+  )}
+</nav>

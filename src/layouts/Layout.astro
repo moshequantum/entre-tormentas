@@ -21,7 +21,7 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
     <meta name="description" content={description} />
 
@@ -37,21 +37,29 @@ const {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={image} />
 
-    <!-- Typography: Plus Jakarta Sans -->
+    <!-- Typography: Lora (Editorial Serif), Geist (Interface Sans) & Geist Mono (Telemetry) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Geist:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body class="min-h-screen bg-storm-950 text-slate-100 flex flex-col antialiased">
+    <!-- Accessibility Skip Link (WCAG 2.1 AA requirement) -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[200] focus:rounded-lg focus:bg-electric-brand focus:px-4 focus:py-2 focus:text-xs focus:font-bold focus:text-white focus:shadow-xl focus:outline-none"
+    >
+      Saltar al contenido principal
+    </a>
+
     <!-- Top Scroll Progress Bar (Frontend-Craft standard) -->
     <div id="scroll-progress" class="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-electric-500 via-ion-400 to-electric-600 z-[100] w-0 transition-all duration-75"></div>
 
     <Header />
 
-    <main class="flex-1">
+    <main id="main-content" class="flex-1 focus:outline-none" tabindex="-1">
       <slot />
     </main>
 

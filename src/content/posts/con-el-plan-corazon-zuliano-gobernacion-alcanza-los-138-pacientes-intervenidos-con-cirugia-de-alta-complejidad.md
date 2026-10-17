@@ -1,0 +1,11 @@
+---
+title: "image"
+publishedAt: "2026-09-30"
+category: "regionales"
+isFeatured: false
+isBreaking: false
+author: "Redacción Entre Tormentas"
+coverImage: "/images/posts/default-post.jpg"
+excerpt: "','inherit','','closed','','image-11757','','','2026-09-30 04:03:49','2026-09-30 08:03:49','',39632,'https://entretormentas.com/wp-content/uploads/2026/09/image-548.png',0,'attachment','image/png',0),(39634,2,'2026-09-30"
+---
+
