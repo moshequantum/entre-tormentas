@@ -3,6 +3,19 @@ const path = require('path');
 const { spawn } = require('child_process');
 const { S3Client, PutObjectCommand, HeadObjectCommand } = require('@aws-sdk/client-s3');
 
+// Auto-load .env if present
+if (fs.existsSync('.env')) {
+  const envContent = fs.readFileSync('.env', 'utf8');
+  for (const line of envContent.split('\n')) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+    const [key, ...values] = trimmed.split('=');
+    if (key && values.length > 0) {
+      process.env[key.trim()] = process.env[key.trim()] || values.join('=').trim();
+    }
+  }
+}
+
 // Configure S3 Client (compatible with Cloudflare R2, InsForge S3, and AWS S3)
 const endpoint = process.env.S3_ENDPOINT; // e.g. https://<account_id>.r2.cloudflarestorage.com or InsForge S3 endpoint
 const bucket = process.env.S3_BUCKET || 'entretormentas-media';
@@ -105,8 +118,8 @@ async function uploadFiles() {
 
         // Si el archivo termina en .jpg.webp o .png.webp, subir también alias sin .webp
         // para compatibilidad directa con las URLs originales de WordPress
-        if (relativeKey.endsWith('.webp') && (relativeKey.includes('.jpg.') || relativeKey.includes('.jpeg.') || relativeKey.includes('.png.'))) {
-          const aliasKey = relativeKey.replace(/\.webp$/, '');
+        if (/\.(jpe?g|png)\.webp$/i.test(relativeKey)) {
+          const aliasKey = relativeKey.replace(/\.webp$/i, '');
           await s3.send(
             new PutObjectCommand({
               Bucket: bucket,
