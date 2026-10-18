@@ -52,11 +52,9 @@ const currentMeta = categoryLabels[categoria.toLowerCase()] || {
   badge: 'bg-storm-700/50 text-slate-300 border-storm-600'
 };
 
-// Obtener todas las publicaciones y filtrar por categoría
-const allPosts = await getCollection('posts');
-const categoryPosts = allPosts
-  .filter((p) => p.data.category.toLowerCase() === categoria.toLowerCase())
-  .sort((a, b) => new Date(b.data.publishedAt || 0).getTime() - new Date(a.data.publishedAt || 0).getTime());
+// Obtener publicaciones filtradas directamente por categoría
+const categoryPosts = await getCollection('posts', ({ data }) => data.category.toLowerCase() === categoria.toLowerCase());
+categoryPosts.sort((a, b) => new Date(b.data.publishedAt || 0).getTime() - new Date(a.data.publishedAt || 0).getTime());
 
 // Paginación
 const urlPage = Astro.url.searchParams.get('page') || Astro.url.searchParams.get('pagina') || '1';
@@ -69,6 +67,8 @@ const paginatedPosts = categoryPosts.slice((currentPage - 1) * pageSize, current
 <Layout
   title={`${currentMeta.title} | Entre Tormentas`}
   description={currentMeta.desc}
+  type="website"
+  category={categoria}
 >
   <div class="relative mx-auto max-w-7xl px-4 py-8 sm:px-6">
     <!-- Category Hero Header -->

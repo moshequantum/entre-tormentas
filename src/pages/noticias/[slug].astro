@@ -68,6 +68,10 @@ const pageUrl = Astro.url.href;
   title={`${post.data.title} | Entre Tormentas`}
   description={post.data.excerpt || post.data.title}
   image={coverImage}
+  type="article"
+  publishedTime={post.data.publishedAt}
+  category={post.data.category}
+  author={post.data.author}
 >
   <!-- Atmospheric Glow Effect -->
   <div class="pointer-events-none absolute inset-x-0 top-0 h-[400px] overflow-hidden opacity-25">
