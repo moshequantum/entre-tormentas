@@ -1,7 +1,7 @@
 ---
 export const prerender = false;
 
-import { getCollection } from 'astro:content';
+import { getEntry } from 'astro:content';
 
 const { slug } = Astro.params;
 
@@ -9,9 +9,11 @@ if (!slug) {
   return Astro.redirect('/404');
 }
 
-// Comprobar si el slug corresponde a un artículo
-const posts = await getCollection('posts');
-const post = posts.find((p) => p.id === slug || p.id === `${slug}.md`);
+// Comprobar si el slug corresponde a un artículo mediante búsqueda indexada O(1)
+let post = await getEntry('posts', slug);
+if (!post) {
+  post = await getEntry('posts', `${slug}.md`);
+}
 
 if (post) {
   // Redirección permanente 301 a la ruta canónica de noticias para preservar SEO

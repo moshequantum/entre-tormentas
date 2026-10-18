@@ -3,7 +3,7 @@ export const prerender = false;
 
 import Layout from '../../layouts/Layout.astro';
 import AdBanner from '../../components/AdBanner.astro';
-import { getCollection, render } from 'astro:content';
+import { getCollection, getEntry, render } from 'astro:content';
 
 const { slug } = Astro.params;
 
@@ -11,9 +11,11 @@ if (!slug) {
   return Astro.redirect('/404');
 }
 
-// Obtener todas las noticias y encontrar la correspondiente por slug o id
-const posts = await getCollection('posts');
-const post = posts.find((p) => p.id === slug || p.id === `${slug}.md`);
+// Obtener el artículo directamente por id indexado O(1)
+let post = await getEntry('posts', slug);
+if (!post) {
+  post = await getEntry('posts', `${slug}.md`);
+}
 
 if (!post) {
   return Astro.redirect('/404');
@@ -53,8 +55,8 @@ const currentCategory = categoryLabels[post.data.category] || {
 };
 
 // Noticias relacionadas de la misma categoría (excluyendo la actual)
-const relatedPosts = posts
-  .filter((p) => p.data.category === post.data.category && p.id !== post.id)
+const categoryPosts = await getCollection('posts', ({ data, id }) => data.category === post.data.category && id !== post.id);
+const relatedPosts = categoryPosts
   .sort((a, b) => new Date(b.data.publishedAt || 0).getTime() - new Date(a.data.publishedAt || 0).getTime())
   .slice(0, 4);
 

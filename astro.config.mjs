@@ -6,8 +6,14 @@ import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://www.entretormentas.com',
   output: 'static',
-  adapter: vercel(),
+  adapter: vercel({
+    isr: {
+      expiration: 600,
+      exclude: ['/api/keystatic(.*)'],
+    },
+  }),
   env: {
     schema: {
       KEYSTATIC_GITHUB_CLIENT_ID: envField.string({ context: 'server', access: 'secret', optional: true }),
