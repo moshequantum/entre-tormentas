@@ -10,6 +10,7 @@ dist/
 
 # Local backups and heavy dumps (NEVER commit to git)
 data/
+temp_uploads_extracted/
 *.tar.gz
 *.sql.gz
 *.sql
