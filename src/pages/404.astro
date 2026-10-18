@@ -1,0 +1,45 @@
+---
+export const prerender = false;
+
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Página no encontrada | Entre Tormentas"
+  description="La página o noticia que busca no se encuentra disponible o ha cambiado de dirección."
+  type="website"
+>
+  <div class="relative mx-auto flex min-h-[60vh] max-w-3xl flex-col items-center justify-center px-4 py-16 text-center">
+    <!-- Atmospheric Accent -->
+    <div class="pointer-events-none absolute inset-0 -z-10 flex items-center justify-center opacity-30">
+      <div class="h-64 w-64 rounded-full bg-electric-600/30 blur-3xl"></div>
+    </div>
+
+    <span class="rounded-full border border-electric-500/30 bg-electric-500/10 px-4 py-1 font-mono text-sm font-semibold tracking-wider text-electric-400">
+      ERROR 404
+    </span>
+
+    <h1 class="mt-6 font-serif text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+      Noticia o página no encontrada
+    </h1>
+
+    <p class="mt-4 max-w-lg text-base text-slate-400">
+      El artículo que buscás puede haber sido reubicado o ya no está disponible. Podés volver a la portada o explorar las secciones principales.
+    </p>
+
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 rounded-xl bg-electric-600 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-electric-600/25 transition hover:bg-electric-500"
+      >
+        Ir a la Portada
+      </a>
+      <a
+        href="/categoria/regionales"
+        class="inline-flex items-center gap-2 rounded-xl border border-storm-700 bg-storm-900/80 px-6 py-3 text-sm font-bold text-slate-200 transition hover:border-slate-500 hover:text-white"
+      >
+        Ver Regionales
+      </a>
+    </div>
+  </div>
+</Layout>

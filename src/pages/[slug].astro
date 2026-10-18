@@ -5,8 +5,8 @@ import { getEntry } from 'astro:content';
 
 const { slug } = Astro.params;
 
-if (!slug) {
-  return Astro.redirect('/404');
+if (!slug || slug.includes('.')) {
+  return new Response(null, { status: 404, statusText: 'Not Found' });
 }
 
 // Comprobar si el slug corresponde a un artículo mediante búsqueda indexada O(1)
@@ -20,5 +20,5 @@ if (post) {
   return Astro.redirect(`/noticias/${post.id}`, 301);
 }
 
-return Astro.redirect('/404');
+return new Response(null, { status: 404, statusText: 'Not Found' });
 ---
