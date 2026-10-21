@@ -1,6 +1,11 @@
 ---
 export const prerender = false;
 
+// Disable all caching for backoffice editor
+Astro.response.headers.set('Cache-Control', 'private, no-cache, no-store, max-age=0, must-revalidate');
+Astro.response.headers.set('CDN-Cache-Control', 'no-store');
+Astro.response.headers.set('Vercel-CDN-Cache-Control', 'no-store');
+
 import AdminLayout from '../../layouts/AdminLayout.astro';
 
 // Verify authenticated session
@@ -379,13 +384,23 @@ try {
     const bodyFileInput = document.getElementById('body-file-input');
     const bodyUploadIndicator = document.getElementById('body-upload-indicator');
 
+    function getSessionToken() {
+      const match = document.cookie.match(/(?:^|;\s*)entretormentas_session=([^;]*)/);
+      return match ? decodeURIComponent(match[1]) : '';
+    }
+
     // Reusable upload helper
     async function uploadImageFile(file) {
       const formData = new FormData();
       formData.append('file', file);
 
+      const token = getSessionToken();
+      const headers = token ? { 'Authorization': `Bearer ${token}` } : {};
+
       const res = await fetch('/api/admin/upload', {
         method: 'POST',
+        headers,
+        credentials: 'include',
         body: formData,
       });
 
@@ -587,9 +602,16 @@ try {
 
         if (alertBox) alertBox.classList.add('hidden');
 
+        const token = getSessionToken();
+        const headers = {
+          'Content-Type': 'application/json',
+          ...(token ? { 'Authorization': `Bearer ${token}` } : {}),
+        };
+
         const res = await fetch('/api/admin/publish', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers,
+          credentials: 'include',
           body: JSON.stringify({
             title,
             content,

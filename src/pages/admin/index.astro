@@ -1,6 +1,11 @@
 ---
 export const prerender = false;
 
+// Disable all caching for backoffice entries table
+Astro.response.headers.set('Cache-Control', 'private, no-cache, no-store, max-age=0, must-revalidate');
+Astro.response.headers.set('CDN-Cache-Control', 'no-store');
+Astro.response.headers.set('Vercel-CDN-Cache-Control', 'no-store');
+
 import AdminLayout from '../../layouts/AdminLayout.astro';
 import { getCollection } from 'astro:content';
 
@@ -259,6 +264,11 @@ const initialPosts = sortedPosts.slice(0, 40);
   </div>
 
   <script>
+    function getSessionToken() {
+      const match = document.cookie.match(/(?:^|;\s*)entretormentas_session=([^;]*)/);
+      return match ? decodeURIComponent(match[1]) : '';
+    }
+
     const searchInput = document.getElementById('search-input');
     const filterCatButtons = document.querySelectorAll('.btn-filter-cat');
     const filterStatusButtons = document.querySelectorAll('.btn-filter-status');
@@ -328,9 +338,16 @@ const initialPosts = sortedPosts.slice(0, 40);
         if (!slug || !confirm(`¿Mover "${slug}" a la papelera?`)) return;
 
         try {
+          const token = getSessionToken();
+          const headers = {
+            'Content-Type': 'application/json',
+            ...(token ? { 'Authorization': `Bearer ${token}` } : {}),
+          };
+
           const res = await fetch('/api/admin/delete', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers,
+            credentials: 'include',
             body: JSON.stringify({ slug, action: 'trash' }),
           });
           const data = await res.json();
@@ -353,9 +370,16 @@ const initialPosts = sortedPosts.slice(0, 40);
         if (!slug || !confirm(`¿Restaurar "${slug}" a Borrador?`)) return;
 
         try {
+          const token = getSessionToken();
+          const headers = {
+            'Content-Type': 'application/json',
+            ...(token ? { 'Authorization': `Bearer ${token}` } : {}),
+          };
+
           const res = await fetch('/api/admin/delete', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers,
+            credentials: 'include',
             body: JSON.stringify({ slug, action: 'restore' }),
           });
           const data = await res.json();
@@ -378,9 +402,16 @@ const initialPosts = sortedPosts.slice(0, 40);
         if (!slug || !confirm(`⚠️ ¿ELIMINAR DEFINITIVAMENTE "${slug}" de GitHub? Esta acción no se puede deshacer.`)) return;
 
         try {
+          const token = getSessionToken();
+          const headers = {
+            'Content-Type': 'application/json',
+            ...(token ? { 'Authorization': `Bearer ${token}` } : {}),
+          };
+
           const res = await fetch('/api/admin/delete', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers,
+            credentials: 'include',
             body: JSON.stringify({ slug, action: 'delete_permanent' }),
           });
           const data = await res.json();

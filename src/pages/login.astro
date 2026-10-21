@@ -1,6 +1,11 @@
 ---
 export const prerender = false;
 
+// Disable all caching for login route
+Astro.response.headers.set('Cache-Control', 'private, no-cache, no-store, max-age=0, must-revalidate');
+Astro.response.headers.set('CDN-Cache-Control', 'no-store');
+Astro.response.headers.set('Vercel-CDN-Cache-Control', 'no-store');
+
 import Layout from '../layouts/Layout.astro';
 
 // If user already has active session, redirect directly to admin

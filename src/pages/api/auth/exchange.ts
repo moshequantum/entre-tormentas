@@ -49,7 +49,7 @@ export const POST: APIRoute = async ({ request, cookies }) => {
     // Set persistent session cookie (7 days)
     cookies.set('entretormentas_session', data.accessToken, {
       path: '/',
-      httpOnly: true,
+      httpOnly: false,
       secure: import.meta.env.PROD,
       sameSite: 'lax',
       maxAge: 60 * 60 * 24 * 7,
