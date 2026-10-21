@@ -18,9 +18,16 @@ export const POST: APIRoute = async ({ request, cookies }) => {
       );
     }
 
+    // Resolve clean public site origin (never localhost in production)
+    const hostHeader = request.headers.get('x-forwarded-host') || request.headers.get('host');
+    const protoHeader = request.headers.get('x-forwarded-proto') || 'https';
+    const siteUrl = (hostHeader && !hostHeader.includes('localhost'))
+      ? `${protoHeader}://${hostHeader}`
+      : (process.env.PUBLIC_SITE_URL || 'https://www.entretormentas.com');
+
     // Google / OAuth login
     if (provider === 'google') {
-      const redirectUrl = redirectTo || new URL('/api/auth/callback', request.url).href;
+      const redirectUrl = redirectTo || `${siteUrl}/api/auth/callback`;
       const { data, error } = await insforge.auth.signInWithOAuth('google', {
         redirectTo: redirectUrl,
       });

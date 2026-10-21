@@ -3,14 +3,14 @@ export const prerender = false;
 
 import Layout from '../layouts/Layout.astro';
 
-// If user already has active session, redirect to admin
+// If user already has active session, redirect directly to admin
 const sessionCookie = Astro.cookies.get('entretormentas_session');
 if (sessionCookie?.value) {
   return Astro.redirect('/admin');
 }
 ---
 
-<Layout title="Acceso a Redacción | Entre Tormentas">
+<Layout title="EntreTormentas CMS | Redacción Digital">
   <div class="relative flex min-h-[80vh] flex-col items-center justify-center px-4 py-12 sm:px-6">
     <!-- Atmospheric Glow -->
     <div class="pointer-events-none absolute inset-0 -z-10 flex items-center justify-center opacity-30">
@@ -25,11 +25,14 @@ if (sessionCookie?.value) {
             ENTRE <span class="italic text-electric-400">Tormentas</span>
           </span>
         </a>
-        <h2 class="mt-4 font-serif text-xl font-bold text-white">
-          Mesa de Redacción
+        <div class="mt-2 inline-flex items-center gap-1.5 rounded-full border border-electric-500/30 bg-electric-500/10 px-3 py-0.5 text-xs font-mono font-bold text-electric-400">
+          <span>CMS</span>
+        </div>
+        <h2 class="mt-3 font-serif text-xl font-bold text-white">
+          EntreTormentas CMS
         </h2>
         <p class="mt-1 text-xs text-slate-400">
-          Acceso para periodistas, editores y equipo editorial
+          Mesa de Redacción y Publicación Digital
         </p>
       </div>
 
@@ -67,11 +70,11 @@ if (sessionCookie?.value) {
         <div class="relative flex items-center justify-center">
           <div class="w-full border-t border-storm-800"></div>
           <span class="absolute bg-storm-900 px-3 text-[11px] uppercase tracking-wider text-slate-500">
-            o con credenciales
+            o con tu correo
           </span>
         </div>
 
-        <!-- Email & Password / OTP Form -->
+        <!-- Email & Password Form -->
         <form id="form-login" class="space-y-4">
           <div>
             <label for="email" class="block text-xs font-medium text-slate-300">
@@ -81,7 +84,7 @@ if (sessionCookie?.value) {
               id="email"
               type="email"
               required
-              placeholder="redaccion@entretormentas.com"
+              placeholder="tu-correo@gmail.com"
               class="mt-1 block w-full rounded-xl border border-storm-700 bg-storm-950 px-3.5 py-2.5 text-sm text-white placeholder-slate-500 focus:border-electric-500 focus:outline-none focus:ring-1 focus:ring-electric-500"
             />
           </div>
@@ -104,7 +107,7 @@ if (sessionCookie?.value) {
             id="btn-submit"
             class="w-full rounded-xl bg-electric-600 px-4 py-3 text-sm font-bold text-white shadow-lg shadow-electric-600/25 transition hover:bg-electric-500 focus:outline-none"
           >
-            Ingresar al Panel Editorial
+            Ingresar a EntreTormentas CMS
           </button>
         </form>
       </div>
@@ -136,7 +139,10 @@ if (sessionCookie?.value) {
         const res = await fetch('/api/auth/login', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ provider: 'google' }),
+          body: JSON.stringify({
+            provider: 'google',
+            redirectTo: window.location.origin + '/api/auth/callback'
+          }),
         });
         const data = await res.json();
         if (data.url) {
@@ -177,14 +183,14 @@ if (sessionCookie?.value) {
         } else {
           showError(data.error || 'Credenciales incorrectas');
           if (btnSubmit) {
-            btnSubmit.textContent = 'Ingresar al Panel Editorial';
+            btnSubmit.textContent = 'Ingresar a EntreTormentas CMS';
             btnSubmit.removeAttribute('disabled');
           }
         }
       } catch (err) {
         showError('Error de conexión al autenticar');
         if (btnSubmit) {
-          btnSubmit.textContent = 'Ingresar al Panel Editorial';
+          btnSubmit.textContent = 'Ingresar a EntreTormentas CMS';
           btnSubmit.removeAttribute('disabled');
         }
       }
