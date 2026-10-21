@@ -33,22 +33,26 @@ const recentTickerPosts = allPosts
   }));
 ---
 
-<header id="main-header" class="w-full sticky top-0 z-50 bg-storm-950/95 backdrop-blur-md border-b border-storm-700/60 shadow-lg">
+<header id="main-header" class="w-full sticky top-0 z-50 bg-storm-950/95 backdrop-blur-md border-b border-storm-800/80 shadow-editorial-card">
   
   <!-- Top Telemetry & Date Bar (Smoothly collapses on scroll) -->
-  <div id="header-telemetry" class="border-b border-storm-800/80 bg-storm-900/90 px-4 py-1.5 text-xs text-slate-400 overflow-hidden">
+  <div id="header-telemetry" class="border-b border-storm-800/60 bg-storm-950/80 px-4 py-1.5 text-xs text-slate-400 overflow-hidden">
     <div class="mx-auto flex max-w-7xl items-center justify-between">
-      <div class="flex items-center gap-4 text-[11px] font-mono capitalize text-slate-300">
+      <div class="flex items-center gap-4 text-[11px] font-mono capitalize text-slate-400">
         <span>📍 Maracaibo, Zulia</span>
-        <span class="text-storm-600">|</span>
+        <span class="text-storm-700">|</span>
         <span>{today}</span>
       </div>
       <div class="flex items-center gap-3">
-        <div class="flex items-center gap-2 rounded border border-storm-800 bg-storm-950/60 px-2 py-0.5 text-[11px] text-ion-300 font-mono">
-          <span class="h-1.5 w-1.5 rounded-full bg-ion-400 animate-pulse"></span>
-          <span>Catatumbo: Actividad Alta</span>
+        <!-- Amber Catatumbo Atmospheric Indicator -->
+        <div class="flex items-center gap-2 rounded-md border border-amber-500/20 bg-amber-500/10 px-2.5 py-0.5 text-[11px] text-amber-300/90 font-mono">
+          <span class="h-1.5 w-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+          <span class="font-medium">Catatumbo: Actividad Alta</span>
         </div>
-        <a href="/login" class="rounded border border-electric-500/40 bg-electric-600/20 px-2.5 py-0.5 text-[11px] font-bold text-electric-300 transition hover:bg-electric-600 hover:text-white">
+        <a
+          href="/login"
+          class="rounded-md border border-white/10 bg-white/[0.04] px-2.5 py-0.5 text-[11px] font-medium text-slate-300 transition-all hover:border-electric-400/40 hover:bg-electric-500/10 hover:text-white"
+        >
           EntreTormentas CMS
         </a>
       </div>
@@ -56,11 +60,11 @@ const recentTickerPosts = allPosts
   </div>
 
   <!-- Main Masthead: Brand Logo + Sponsor (Compresses to ultra-minimal on scroll) -->
-  <div id="header-masthead" class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6">
+  <div id="header-masthead" class="mx-auto flex max-w-7xl items-center justify-between gap-8 px-4 py-4 sm:px-6 transition-all duration-300">
     <!-- Logotype Brand -->
-    <a href="/" class="group flex items-center gap-3 transition flex-shrink-0">
-      <!-- Boutique Isologo Vector Badge -->
-      <div id="header-isologo" class="relative flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-electric-brand to-electric-600 p-2.5 shadow-lg shadow-electric-brand/25 border border-white/10 transition-all duration-300 group-hover:scale-105">
+    <a href="/" class="group flex items-center gap-3.5 transition flex-shrink-0">
+      <!-- Boutique Isologo Vector Badge with Midnight-Electric Lighting -->
+      <div id="header-isologo" class="relative flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-electric-600 via-electric-700 to-storm-950 p-2.5 shadow-editorial-glow border border-white/15 transition-all duration-300 group-hover:scale-105">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="h-full w-full" fill="none">
           <path
             d="M18 3L6 17H15L13 29L26 14H17L18 3Z"
@@ -81,16 +85,16 @@ const recentTickerPosts = allPosts
 
       <div class="flex flex-col">
         <div class="flex items-baseline gap-1.5">
-          <span id="brand-word-entre" class="font-serif text-2xl sm:text-3xl font-semibold tracking-tight text-white transition-all duration-300 group-hover:text-slate-200">
+          <span id="brand-word-entre" class="font-serif text-2xl sm:text-3xl font-normal tracking-tight text-editorial-parchment transition-all duration-300 group-hover:text-white">
             Entre
           </span>
-          <span id="brand-word-tormentas" class="font-serif italic text-2xl sm:text-3xl font-bold tracking-tight text-white transition-all duration-300 group-hover:text-ion-300">
+          <span id="brand-word-tormentas" class="font-serif italic text-2xl sm:text-3xl font-medium tracking-tight text-white transition-all duration-300 group-hover:text-electric-300">
             Tormentas
           </span>
         </div>
         <div id="header-tagline" class="flex items-center gap-2 mt-0.5">
-          <span class="h-1.5 w-1.5 rounded-full bg-ion-400 animate-pulse"></span>
-          <span class="text-[10px] font-mono font-medium tracking-[0.2em] text-slate-400 uppercase">
+          <span class="h-1.5 w-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+          <span class="text-[10px] font-mono font-medium tracking-[0.22em] text-slate-400 uppercase">
             Diario Digital · Zulia
           </span>
         </div>
@@ -107,27 +111,30 @@ const recentTickerPosts = allPosts
     </div>
 
     <!-- Quick CMS Pill (Visible on shrink scroll) -->
-    <a href="/login" id="header-shrink-cms" class="hidden items-center gap-1.5 rounded-lg bg-electric-600 px-3 py-1.5 text-xs font-bold text-white shadow-md transition hover:bg-electric-500">
+    <a href="/login" id="header-shrink-cms" class="hidden items-center gap-1.5 rounded-lg border border-white/10 bg-white/[0.06] px-3 py-1.5 text-xs font-medium text-slate-200 shadow-sm transition-all hover:bg-white/[0.12] hover:text-white">
       <span>CMS</span>
     </a>
   </div>
 
-  <!-- Primary Categories Navigation (Solid Brand Blue Bar) -->
-  <nav id="header-categories" class="bg-electric-brand text-white shadow-md">
+  <!-- Primary Categories Navigation (Humanized Slate Editorial Bar with Tints & Shadows) -->
+  <nav id="header-categories" class="bg-editorial-surface/95 text-slate-300 border-y border-white/[0.08] shadow-editorial-nav transition-all duration-300">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6">
-      <ul class="flex items-center gap-1 sm:gap-2 overflow-x-auto py-1 text-xs sm:text-sm font-bold tracking-wider uppercase no-scrollbar">
+      <ul class="flex items-center gap-1 sm:gap-2 overflow-x-auto py-1.5 text-xs sm:text-[13px] font-medium tracking-wider uppercase no-scrollbar">
         {categories.map((cat) => (
           <li>
             <a
               href={cat.href}
-              class="px-2.5 py-1.5 rounded transition-colors hover:bg-white/15 focus:outline-none inline-block whitespace-nowrap"
+              class="px-3 py-1.5 rounded-md text-slate-300 transition-colors hover:bg-white/[0.07] hover:text-white focus:outline-none inline-block whitespace-nowrap"
             >
               {cat.name}
             </a>
           </li>
         ))}
       </ul>
-      <a href="/login" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-white/90 hover:text-white px-2 py-1 rounded hover:bg-white/10 transition">
+      <a
+        href="/login"
+        class="hidden sm:inline-flex items-center gap-1.5 text-xs font-medium text-electric-300 bg-electric-500/10 border border-electric-400/25 px-3 py-1 rounded-md hover:bg-electric-500/20 hover:border-electric-400/40 hover:text-white transition-all shadow-sm"
+      >
         EntreTormentas CMS
       </a>
     </div>

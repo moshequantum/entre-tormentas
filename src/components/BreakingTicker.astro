@@ -34,16 +34,19 @@ const defaultItems: TickerItem[] = [
 const { items = defaultItems } = Astro.props;
 ---
 
-<div class="border-b border-storm-800 bg-storm-950">
+<div class="border-b border-storm-800/80 bg-storm-950/90 shadow-sm">
   <div class="mx-auto flex max-w-7xl items-stretch overflow-hidden">
-    <!-- Blue Badge for Ticker -->
-    <div class="flex items-center gap-2 bg-electric-brand px-4 py-2.5 font-sans text-xs font-black tracking-wider text-white uppercase whitespace-nowrap shadow-md z-10">
-      <span class="h-2 w-2 rounded-full bg-white animate-pulse"></span>
-      Últimas Noticias
+    <!-- Editorial Ticker Badge (Humanized tint & weight 500) -->
+    <div class="flex items-center gap-2.5 border-r border-storm-800/90 bg-editorial-surface/90 px-4 py-2 font-sans text-xs font-medium tracking-wider text-slate-300 uppercase whitespace-nowrap z-10 shadow-sm">
+      <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+      </span>
+      <span class="text-xs font-medium text-editorial-sandstone">Últimas Noticias</span>
     </div>
 
     <!-- Ticker Stream -->
-    <div class="relative flex-1 overflow-hidden py-1.5 px-4 flex items-center bg-storm-900/60">
+    <div class="relative flex-1 overflow-hidden py-2 px-4 flex items-center bg-storm-950/40">
       <div class="flex items-center gap-8 animate-marquee whitespace-nowrap">
         {items.map((item) => (
           <a href={item.href} class="group inline-flex items-center gap-3 transition-colors">
@@ -51,14 +54,14 @@ const { items = defaultItems } = Astro.props;
               <img
                 src={item.image}
                 alt=""
-                class="h-6 w-9 rounded object-cover border border-storm-700 group-hover:border-electric-brand"
+                class="h-6 w-9 rounded-md object-cover border border-storm-800/80 group-hover:border-electric-400/50 shadow-sm transition-all"
                 loading="lazy"
               />
             )}
-            <span class="text-xs font-medium text-slate-200 group-hover:text-ion-300 transition-colors">
+            <span class="text-xs font-normal text-slate-300 group-hover:text-white transition-colors">
               {item.title}
             </span>
-            <span class="text-storm-600">/</span>
+            <span class="text-storm-700 font-light">/</span>
           </a>
         ))}
       </div>

@@ -14,8 +14,11 @@
     --brand-ion: #00D2FF;
 
     --ink-headline: #F8FAFC;
+    --ink-parchment: #F5F2EB;
+    --ink-sandstone: #E2DACE;
     --ink-body: #E2E8F0;
     --ink-muted: #94A3B8;
+    --accent-amber: #F59E0B;
   }
 
   body {
@@ -30,6 +33,7 @@
   h1, h2, h3, h4, .font-editorial {
     font-family: 'Lora', Georgia, serif;
     color: var(--ink-headline);
+    font-weight: 500;
   }
 }
 
@@ -48,9 +52,9 @@
 }
 
 .card-storm:hover {
-  border-color: #0066FF;
+  border-color: rgba(0, 85, 255, 0.4);
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px -10px rgba(0, 102, 255, 0.15);
+  box-shadow: 0 12px 30px -10px rgba(0, 85, 255, 0.12);
 }
 
 /* Stagger animations adhering to frontend-craft skill */
