@@ -1,0 +1,208 @@
+---
+export const prerender = false;
+
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import { getCollection } from 'astro:content';
+
+// Verify authenticated session
+const sessionCookie = Astro.cookies.get('entretormentas_session');
+if (!sessionCookie?.value) {
+  return Astro.redirect('/login');
+}
+
+const userCookie = Astro.cookies.get('entretormentas_user');
+let activeUser = { email: 'Redactor Autorizado', name: 'Periodista' };
+try {
+  if (userCookie?.value) {
+    activeUser = JSON.parse(userCookie.value);
+  }
+} catch (e) {}
+
+const allPosts = await getCollection('posts');
+const sortedPosts = allPosts.sort(
+  (a, b) => new Date(b.data.publishedAt || 0).getTime() - new Date(a.data.publishedAt || 0).getTime()
+);
+
+// Metrics
+const countTotal = allPosts.length;
+const countRegionales = allPosts.filter((p) => p.data.category === 'regionales').length;
+const countDeportes = allPosts.filter((p) => p.data.category === 'deportes').length;
+const countNacionales = allPosts.filter((p) => p.data.category === 'nacionales').length;
+const countSucesos = allPosts.filter((p) => p.data.category === 'sucesos').length;
+
+// Initial 30 most recent posts for instant rendering
+const initialPosts = sortedPosts.slice(0, 40);
+---
+
+<AdminLayout title="Todas las entradas | EntreTormentas Backoffice" activeTab="entradas">
+  <div class="max-w-7xl mx-auto px-4 py-4 sm:px-6 space-y-4">
+    
+    <!-- Subheader: Page Title & Metrics & Quick Action -->
+    <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/[0.06] pb-3">
+      <div class="flex items-center gap-3">
+        <h1 class="font-serif text-xl sm:text-2xl font-medium text-white">Entradas</h1>
+        <span class="rounded-full bg-white/[0.06] border border-white/10 px-2.5 py-0.5 text-xs font-mono text-slate-300">
+          {countTotal} artículos
+        </span>
+      </div>
+
+      <!-- Quick Metrics Summary -->
+      <div class="hidden md:flex items-center gap-2 text-xs">
+        <span class="text-slate-400">Zulia: <b class="text-white font-medium">{countRegionales}</b></span>
+        <span class="text-slate-600">•</span>
+        <span class="text-slate-400">Deportes: <b class="text-white font-medium">{countDeportes}</b></span>
+        <span class="text-slate-600">•</span>
+        <span class="text-slate-400">Nacionales: <b class="text-white font-medium">{countNacionales}</b></span>
+        <span class="text-slate-600">•</span>
+        <span class="text-slate-400">Sucesos: <b class="text-white font-medium">{countSucesos}</b></span>
+      </div>
+
+      <a
+        href="/admin/nueva"
+        class="inline-flex items-center gap-1.5 rounded-lg bg-electric-600 hover:bg-electric-500 px-3.5 py-1.5 text-xs font-medium text-white shadow-sm transition active:scale-[0.99]"
+      >
+        <span>➕</span>
+        <span>Añadir nueva</span>
+      </a>
+    </div>
+
+    <!-- Main Content Area: Search, Filters & Posts Table -->
+    <main class="space-y-4">
+      
+      <!-- Filter Bar (WordPress Style) -->
+      <div class="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-white/[0.08] bg-[#0B101D] p-3 shadow-sm text-xs">
+        
+        <!-- Category Filter Buttons -->
+        <div class="flex flex-wrap items-center gap-1 text-slate-400">
+          <button type="button" class="btn-filter-cat active rounded px-2.5 py-1 text-white bg-white/[0.08] font-medium" data-cat="all">
+            Todas ({countTotal})
+          </button>
+          <button type="button" class="btn-filter-cat rounded px-2.5 py-1 hover:text-white hover:bg-white/[0.04]" data-cat="regionales">
+            Regionales ({countRegionales})
+          </button>
+          <button type="button" class="btn-filter-cat rounded px-2.5 py-1 hover:text-white hover:bg-white/[0.04]" data-cat="deportes">
+            Deportes ({countDeportes})
+          </button>
+          <button type="button" class="btn-filter-cat rounded px-2.5 py-1 hover:text-white hover:bg-white/[0.04]" data-cat="nacionales">
+            Nacionales ({countNacionales})
+          </button>
+          <button type="button" class="btn-filter-cat rounded px-2.5 py-1 hover:text-white hover:bg-white/[0.04]" data-cat="sucesos">
+            Sucesos ({countSucesos})
+          </button>
+        </div>
+
+        <!-- Search Input -->
+        <div class="relative w-full sm:w-72">
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Buscar entre las entradas..."
+            class="w-full rounded-lg border border-white/[0.08] bg-black/40 pl-8 pr-3 py-1.5 text-xs text-white placeholder-slate-500 focus:border-electric-500 focus:outline-none"
+          />
+          <span class="pointer-events-none absolute left-2.5 top-2 text-slate-500">🔍</span>
+        </div>
+      </div>
+
+      <!-- Posts Table -->
+      <div class="rounded-xl border border-white/[0.08] bg-[#0B101D] overflow-hidden shadow-sm">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs text-slate-300">
+            <thead class="border-b border-white/[0.08] bg-white/[0.02] text-[11px] uppercase tracking-wider text-slate-400">
+              <tr>
+                <th class="px-4 py-3 font-medium">Título</th>
+                <th class="px-4 py-3 font-medium">Autor</th>
+                <th class="px-4 py-3 font-medium">Categoría</th>
+                <th class="px-4 py-3 font-medium">Fecha</th>
+                <th class="px-4 py-3 text-right font-medium">Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="posts-tbody" class="divide-y divide-white/[0.04]">
+              {initialPosts.map((post) => (
+                <tr class="post-row hover:bg-white/[0.02] transition" data-category={post.data.category} data-title={post.data.title.toLowerCase()}>
+                  <td class="px-4 py-3 font-medium text-slate-100 max-w-lg">
+                    <a href={`/noticias/${post.id}`} target="_blank" class="hover:text-electric-300 transition line-clamp-1">
+                      {post.data.title}
+                    </a>
+                  </td>
+                  <td class="px-4 py-3 text-slate-400 whitespace-nowrap">
+                    {post.data.author || 'Redacción'}
+                  </td>
+                  <td class="px-4 py-3 whitespace-nowrap">
+                    <span class="rounded bg-white/[0.05] border border-white/[0.08] px-2 py-0.5 text-[10px] text-slate-300 uppercase">
+                      {post.data.category}
+                    </span>
+                  </td>
+                  <td class="px-4 py-3 text-slate-400 whitespace-nowrap">
+                    {post.data.publishedAt ? new Date(post.data.publishedAt).toLocaleDateString('es-VE') : 'Reciente'}
+                  </td>
+                  <td class="px-4 py-3 text-right whitespace-nowrap space-x-2">
+                    <a
+                      href={`/admin/editar/${post.id}`}
+                      class="rounded bg-white/[0.06] hover:bg-white/[0.12] px-2.5 py-1 text-slate-200 transition font-medium"
+                    >
+                      ✏️ Editar
+                    </a>
+                    <a
+                      href={`/noticias/${post.id}`}
+                      target="_blank"
+                      class="text-electric-400 hover:text-electric-300 underline font-medium"
+                    >
+                      Ver ↗
+                    </a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="text-center text-xs text-slate-500 py-3">
+        Mostrando las entradas más recientes del archivo editorial.
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('search-input');
+    const filterButtons = document.querySelectorAll('.btn-filter-cat');
+    const rows = document.querySelectorAll('.post-row');
+
+    let currentCategory = 'all';
+    let currentQuery = '';
+
+    function filterRows() {
+      rows.forEach(row => {
+        const cat = row.getAttribute('data-category') || '';
+        const title = row.getAttribute('data-title') || '';
+        const matchesCat = (currentCategory === 'all' || cat.toLowerCase() === currentCategory);
+        const matchesQuery = (!currentQuery || title.includes(currentQuery));
+
+        if (matchesCat && matchesQuery) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    searchInput?.addEventListener('input', (e) => {
+      currentQuery = e.target.value.toLowerCase().trim();
+      filterRows();
+    });
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('active', 'text-white', 'bg-white/[0.08]', 'font-medium');
+          b.classList.add('text-slate-400');
+        });
+        btn.classList.add('active', 'text-white', 'bg-white/[0.08]', 'font-medium');
+        btn.classList.remove('text-slate-400');
+
+        currentCategory = btn.getAttribute('data-cat') || 'all';
+        filterRows();
+      });
+    });
+  </script>
+</AdminLayout>
