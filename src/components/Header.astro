@@ -33,10 +33,10 @@ const recentTickerPosts = allPosts
   }));
 ---
 
-<header id="main-header" class="w-full sticky top-0 z-50 transition-all duration-300 bg-storm-950/95 backdrop-blur-md border-b border-storm-700/60 shadow-lg">
+<header id="main-header" class="w-full sticky top-0 z-50 bg-storm-950/95 backdrop-blur-md border-b border-storm-700/60 shadow-lg">
   
-  <!-- Top Telemetry & Date Bar (Shrinks & hides on scroll) -->
-  <div id="header-telemetry" class="border-b border-storm-800/80 bg-storm-900/90 px-4 py-1.5 text-xs text-slate-400 transition-all duration-300 overflow-hidden">
+  <!-- Top Telemetry & Date Bar (Smoothly collapses on scroll) -->
+  <div id="header-telemetry" class="border-b border-storm-800/80 bg-storm-900/90 px-4 py-1.5 text-xs text-slate-400 overflow-hidden">
     <div class="mx-auto flex max-w-7xl items-center justify-between">
       <div class="flex items-center gap-4 text-[11px] font-mono capitalize text-slate-300">
         <span>📍 Maracaibo, Zulia</span>
@@ -55,8 +55,8 @@ const recentTickerPosts = allPosts
     </div>
   </div>
 
-  <!-- Main Masthead: Brand Logo + Sponsor (Compresses on scroll) -->
-  <div id="header-masthead" class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6 transition-all duration-300">
+  <!-- Main Masthead: Brand Logo + Sponsor (Compresses to ultra-minimal on scroll) -->
+  <div id="header-masthead" class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6">
     <!-- Logotype Brand -->
     <a href="/" class="group flex items-center gap-3 transition flex-shrink-0">
       <!-- Boutique Isologo Vector Badge -->
@@ -88,7 +88,7 @@ const recentTickerPosts = allPosts
             Tormentas
           </span>
         </div>
-        <div id="header-tagline" class="flex items-center gap-2 mt-0.5 transition-all duration-300">
+        <div id="header-tagline" class="flex items-center gap-2 mt-0.5">
           <span class="h-1.5 w-1.5 rounded-full bg-ion-400 animate-pulse"></span>
           <span class="text-[10px] font-mono font-medium tracking-[0.2em] text-slate-400 uppercase">
             Diario Digital · Zulia
@@ -98,7 +98,7 @@ const recentTickerPosts = allPosts
     </a>
 
     <!-- Header Ad Banner (Hidden on shrink scroll) -->
-    <div id="header-ad-banner" class="hidden md:block flex-1 max-w-[540px] transition-all duration-300">
+    <div id="header-ad-banner" class="hidden md:block flex-1 max-w-[540px]">
       <AdBanner
         image="/images/ads/banner-header.png"
         href="https://sedemat.gob.ve"
@@ -107,13 +107,13 @@ const recentTickerPosts = allPosts
     </div>
 
     <!-- Quick CMS Pill (Visible on shrink scroll) -->
-    <a href="/login" id="header-shrink-cms" class="hidden rounded-lg bg-electric-600 px-3 py-1.5 text-xs font-bold text-white shadow-md transition hover:bg-electric-500">
-      CMS
+    <a href="/login" id="header-shrink-cms" class="hidden items-center gap-1.5 rounded-lg bg-electric-600 px-3 py-1.5 text-xs font-bold text-white shadow-md transition hover:bg-electric-500">
+      <span>CMS</span>
     </a>
   </div>
 
   <!-- Primary Categories Navigation (Solid Brand Blue Bar) -->
-  <nav id="header-categories" class="bg-electric-brand text-white shadow-md transition-all duration-300">
+  <nav id="header-categories" class="bg-electric-brand text-white shadow-md">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6">
       <ul class="flex items-center gap-1 sm:gap-2 overflow-x-auto py-1 text-xs sm:text-sm font-bold tracking-wider uppercase no-scrollbar">
         {categories.map((cat) => (
@@ -134,84 +134,99 @@ const recentTickerPosts = allPosts
   </nav>
 
   <!-- Breaking News Ticker (Stuck in natural flow, hidden on shrink) -->
-  <div id="header-ticker" class="transition-all duration-300">
+  <div id="header-ticker">
     <BreakingTicker items={recentTickerPosts} />
   </div>
 </header>
 
+<style>
+  /* Seamless GPU-accelerated Header Shrink Transitions */
+  #main-header {
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+  }
+
+  #header-telemetry {
+    max-height: 48px;
+    opacity: 1;
+    transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease, padding 0.3s ease;
+  }
+
+  #header-ticker {
+    max-height: 48px;
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+  }
+
+  #header-masthead {
+    transition: padding 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  #header-isologo {
+    transition: width 0.25s ease, height 0.25s ease, padding 0.25s ease;
+  }
+
+  /* Minimal Shrink Active State */
+  #main-header.header-shrunk #header-telemetry {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    pointer-events: none;
+  }
+
+  #main-header.header-shrunk #header-ticker {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #main-header.header-shrunk #header-ad-banner {
+    display: none;
+  }
+
+  #main-header.header-shrunk #header-tagline {
+    display: none;
+  }
+
+  #main-header.header-shrunk #header-masthead {
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+  }
+
+  #main-header.header-shrunk #header-isologo {
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0.35rem;
+  }
+
+  #main-header.header-shrunk #brand-word-entre,
+  #main-header.header-shrunk #brand-word-tormentas {
+    font-size: 1.25rem;
+    line-height: 1.25;
+  }
+
+  #main-header.header-shrunk #header-shrink-cms {
+    display: inline-flex;
+  }
+
+  #main-header.header-shrunk #header-categories ul {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+</style>
+
 <script>
   // Shrink Header on Scroll (Minimal Mode)
-  const telemetry = document.getElementById('header-telemetry');
-  const masthead = document.getElementById('header-masthead');
-  const adBanner = document.getElementById('header-ad-banner');
-  const ticker = document.getElementById('header-ticker');
-  const isologo = document.getElementById('header-isologo');
-  const brandEntre = document.getElementById('brand-word-entre');
-  const brandTormentas = document.getElementById('brand-word-tormentas');
-  const tagline = document.getElementById('header-tagline');
-  const shrinkCms = document.getElementById('header-shrink-cms');
+  const header = document.getElementById('main-header');
+  if (header) {
+    const updateHeader = () => {
+      const isShrunk = window.scrollY > 50;
+      header.classList.toggle('header-shrunk', isShrunk);
+    };
 
-  let isShrunk = false;
-
-  window.addEventListener('scroll', () => {
-    const shouldShrink = window.scrollY > 60;
-
-    if (shouldShrink && !isShrunk) {
-      isShrunk = true;
-      // Shrink components
-      if (telemetry) telemetry.style.display = 'none';
-      if (adBanner) adBanner.style.display = 'none';
-      if (ticker) ticker.style.display = 'none';
-      if (tagline) tagline.style.display = 'none';
-      if (shrinkCms) shrinkCms.classList.remove('hidden');
-
-      if (masthead) {
-        masthead.classList.remove('py-3');
-        masthead.classList.add('py-1.5');
-      }
-
-      if (isologo) {
-        isologo.classList.remove('h-11', 'w-11', 'sm:h-12', 'sm:w-12', 'p-2.5');
-        isologo.classList.add('h-8', 'w-8', 'p-1.5');
-      }
-
-      if (brandEntre) {
-        brandEntre.classList.remove('text-2xl', 'sm:text-3xl');
-        brandEntre.classList.add('text-lg', 'sm:text-xl');
-      }
-
-      if (brandTormentas) {
-        brandTormentas.classList.remove('text-2xl', 'sm:text-3xl');
-        brandTormentas.classList.add('text-lg', 'sm:text-xl');
-      }
-    } else if (!shouldShrink && isShrunk) {
-      isShrunk = false;
-      // Expand back to full masthead
-      if (telemetry) telemetry.style.display = '';
-      if (adBanner) adBanner.style.display = '';
-      if (ticker) ticker.style.display = '';
-      if (tagline) tagline.style.display = '';
-      if (shrinkCms) shrinkCms.classList.add('hidden');
-
-      if (masthead) {
-        masthead.classList.remove('py-1.5');
-        masthead.classList.add('py-3');
-      }
-
-      if (isologo) {
-        isologo.classList.remove('h-8', 'w-8', 'p-1.5');
-        isologo.classList.add('h-11', 'w-11', 'sm:h-12', 'sm:w-12', 'p-2.5');
-      }
-
-      if (brandEntre) {
-        brandEntre.classList.remove('text-lg', 'sm:text-xl');
-        brandEntre.classList.add('text-2xl', 'sm:text-3xl');
-      }
-
-      if (brandTormentas) {
-        brandTormentas.classList.remove('text-lg', 'sm:text-xl');
-        brandTormentas.classList.add('text-2xl', 'sm:text-3xl');
-      }
-    }
-  }, { passive: true });
+    window.addEventListener('scroll', updateHeader, { passive: true });
+    updateHeader();
+  }
 </script>

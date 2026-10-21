@@ -8,6 +8,8 @@ const sessionCookie = Astro.cookies.get('entretormentas_session');
 if (sessionCookie?.value) {
   return Astro.redirect('/admin');
 }
+
+const urlError = Astro.url.searchParams.get('error');
 ---
 
 <Layout title="EntreTormentas CMS | Redacción Digital">
@@ -37,7 +39,9 @@ if (sessionCookie?.value) {
       </div>
 
       <!-- Error / Status Notice -->
-      <div id="auth-alert" class="hidden rounded-lg border border-rose-500/30 bg-rose-500/10 p-3 text-xs text-rose-300"></div>
+      <div id="auth-alert" class:list={["rounded-lg border border-rose-500/30 bg-rose-500/10 p-3 text-xs text-rose-300", !urlError && "hidden"]}>
+        {urlError || ''}
+      </div>
 
       <!-- One-click Google Login (InsForge) -->
       <div class="space-y-4">

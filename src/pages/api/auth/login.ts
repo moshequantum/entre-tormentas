@@ -39,6 +39,17 @@ export const POST: APIRoute = async ({ request, cookies }) => {
         });
       }
 
+      // Store PKCE codeVerifier in a secure temporary HTTP-only cookie for callback exchange
+      if (data?.codeVerifier) {
+        cookies.set('insforge_pkce_verifier', data.codeVerifier, {
+          path: '/',
+          httpOnly: true,
+          secure: import.meta.env.PROD,
+          sameSite: 'lax',
+          maxAge: 60 * 15, // 15 minutes
+        });
+      }
+
       return new Response(JSON.stringify({ url: data?.url }), {
         status: 200,
         headers: { 'Content-Type': 'application/json' },
@@ -55,14 +66,29 @@ export const POST: APIRoute = async ({ request, cookies }) => {
         );
       }
 
-      // Set session cookie
+      // Set persistent session cookie (7 days)
       if (data.accessToken) {
         cookies.set('entretormentas_session', data.accessToken, {
           path: '/',
           httpOnly: true,
           secure: import.meta.env.PROD,
           sameSite: 'lax',
-          maxAge: 60 * 60 * 24 * 7, // 7 days
+          maxAge: 60 * 60 * 24 * 7,
+        });
+      }
+
+      if (data.user?.email) {
+        cookies.set('entretormentas_user', JSON.stringify({
+          id: data.user.id,
+          email: data.user.email,
+          name: data.user.name || data.user.email.split('@')[0],
+          role: data.user.role || 'editor',
+        }), {
+          path: '/',
+          httpOnly: false,
+          secure: import.meta.env.PROD,
+          sameSite: 'lax',
+          maxAge: 60 * 60 * 24 * 7,
         });
       }
 
