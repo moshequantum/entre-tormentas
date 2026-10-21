@@ -7,6 +7,7 @@ isBreaking: false
 author: "Redacción Entre Tormentas"
 coverImage: "/images/posts/default-post.jpg"
 excerpt: "Prueba de titulo"
+status: "trash"
 ---
 
 Aqui va todo el contenido
