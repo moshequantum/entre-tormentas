@@ -1,0 +1,119 @@
+export const prerender = false;
+
+import type { APIRoute } from 'astro';
+import { getInsForgeClient } from '../../../lib/insforge';
+
+export const POST: APIRoute = async ({ request, cookies }) => {
+  try {
+    const body = await request.json().catch(() => ({}));
+    const { action, provider, email, password, otp, redirectTo } = body;
+
+    const insforge = getInsForgeClient();
+    if (!insforge) {
+      return new Response(
+        JSON.stringify({
+          error: 'Servicio de autenticación InsForge no configurado en el servidor.',
+        }),
+        { status: 503, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
+
+    // Google / OAuth login
+    if (provider === 'google') {
+      const redirectUrl = redirectTo || new URL('/api/auth/callback', request.url).href;
+      const { data, error } = await insforge.auth.signInWithOAuth('google', {
+        redirectTo: redirectUrl,
+      });
+
+      if (error) {
+        return new Response(JSON.stringify({ error: error.message }), {
+          status: 400,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+
+      return new Response(JSON.stringify({ url: data?.url }), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
+    // Password Login
+    if (email && password) {
+      const { data, error } = await insforge.auth.signInWithPassword({ email, password });
+      if (error || !data) {
+        return new Response(
+          JSON.stringify({ error: error?.message || 'Credenciales inválidas' }),
+          { status: 401, headers: { 'Content-Type': 'application/json' } }
+        );
+      }
+
+      // Set session cookie
+      if (data.accessToken) {
+        cookies.set('entretormentas_session', data.accessToken, {
+          path: '/',
+          httpOnly: true,
+          secure: import.meta.env.PROD,
+          sameSite: 'lax',
+          maxAge: 60 * 60 * 24 * 7, // 7 days
+        });
+      }
+
+      return new Response(JSON.stringify({ success: true, user: data.user }), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
+    // Email OTP request
+    if (action === 'send_otp' && email) {
+      const { data, error } = await insforge.auth.signInWithOtp({ email });
+      if (error) {
+        return new Response(JSON.stringify({ error: error.message }), {
+          status: 400,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+      return new Response(JSON.stringify({ success: true, message: data?.message }), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
+    // Email OTP verify
+    if (action === 'verify_otp' && email && otp) {
+      const { data, error } = await insforge.auth.verifyOtp({ email, otp });
+      if (error || !data) {
+        return new Response(
+          JSON.stringify({ error: error?.message || 'Código OTP inválido o expirado' }),
+          { status: 400, headers: { 'Content-Type': 'application/json' } }
+        );
+      }
+
+      if (data.accessToken) {
+        cookies.set('entretormentas_session', data.accessToken, {
+          path: '/',
+          httpOnly: true,
+          secure: import.meta.env.PROD,
+          sameSite: 'lax',
+          maxAge: 60 * 60 * 24 * 7, // 7 days
+        });
+      }
+
+      return new Response(JSON.stringify({ success: true, user: data.user }), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
+    return new Response(JSON.stringify({ error: 'Parámetros de autenticación requeridos' }), {
+      status: 400,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  } catch (err: any) {
+    return new Response(JSON.stringify({ error: err.message || 'Error interno de autenticación' }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
+};

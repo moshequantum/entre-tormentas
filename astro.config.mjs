@@ -11,7 +11,7 @@ export default defineConfig({
   adapter: vercel({
     isr: {
       expiration: 600,
-      exclude: ['/api/keystatic(.*)'],
+      exclude: ['/api/(.*)', '/admin', '/login', '/keystatic(.*)'],
     },
   }),
   env: {
@@ -19,6 +19,11 @@ export default defineConfig({
       KEYSTATIC_GITHUB_CLIENT_ID: envField.string({ context: 'server', access: 'secret', optional: true }),
       KEYSTATIC_GITHUB_CLIENT_SECRET: envField.string({ context: 'server', access: 'secret', optional: true }),
       KEYSTATIC_SECRET: envField.string({ context: 'server', access: 'secret', optional: true }),
+      GITHUB_TOKEN: envField.string({ context: 'server', access: 'secret', optional: true }),
+      INSFORGE_BASE_URL: envField.string({ context: 'server', access: 'secret', optional: true }),
+      INSFORGE_API_KEY: envField.string({ context: 'server', access: 'secret', optional: true }),
+      INSFORGE_SERVICE_KEY: envField.string({ context: 'server', access: 'secret', optional: true }),
+      MEDIA_CDN_URL: envField.string({ context: 'server', access: 'secret', optional: true }),
     }
   },
   integrations: [
