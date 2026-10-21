@@ -8,6 +8,9 @@ import vercel from '@astrojs/vercel';
 export default defineConfig({
   site: 'https://www.entretormentas.com',
   output: 'static',
+  security: {
+    checkOrigin: false,
+  },
   adapter: vercel({
     isr: {
       expiration: 600,
