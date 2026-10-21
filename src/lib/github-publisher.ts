@@ -1,4 +1,5 @@
 export interface ArticlePayload {
+  slug?: string;
   title: string;
   publishedAt?: string;
   category: string;
@@ -8,6 +9,7 @@ export interface ArticlePayload {
   coverImage?: string;
   excerpt?: string;
   content: string;
+  status?: 'published' | 'draft' | 'review' | 'trash';
 }
 
 export interface PublishResult {
@@ -41,13 +43,15 @@ export async function publishArticleToGitHub(article: ArticlePayload): Promise<P
     throw new Error('GITHUB_TOKEN no está configurado en las variables de entorno del servidor.');
   }
 
-  const slug = slugify(article.title);
+  // Use provided slug (when editing) or generate new one from title
+  const slug = (article.slug && article.slug.trim()) ? slugify(article.slug) : slugify(article.title);
   if (!slug) {
-    throw new Error('El título de la noticia no genera un slug válido.');
+    throw new Error('El título o identificador de la noticia no genera un slug válido.');
   }
 
   const filePath = `src/content/posts/${slug}.md`;
   const publishedDate = article.publishedAt || new Date().toISOString().split('T')[0];
+  const status = article.status || 'published';
 
   // Construct Markdown with YAML frontmatter
   const safeExcerpt = (article.excerpt || article.title).replace(/"/g, '\\"');
@@ -64,6 +68,7 @@ isBreaking: ${Boolean(article.isBreaking)}
 author: "${safeAuthor}"
 coverImage: "${coverImage}"
 excerpt: "${safeExcerpt}"
+status: "${status}"
 ---
 
 ${article.content.trim()}
@@ -91,9 +96,8 @@ ${article.content.trim()}
   }
 
   const base64Content = Buffer.from(fileContent, 'utf8').toString('base64');
-  const commitMessage = existingSha
-    ? `feat(news): update "${article.title}" via newsroom`
-    : `feat(news): publish "${article.title}" via newsroom`;
+  const actionWord = existingSha ? 'update' : 'publish';
+  const commitMessage = `feat(news): ${actionWord} "${article.title}" [${status}] via backoffice`;
 
   const putBody: Record<string, any> = {
     message: commitMessage,
@@ -129,5 +133,62 @@ ${article.content.trim()}
     path: filePath,
     commitSha: resultData.commit?.sha,
     commitUrl: resultData.commit?.html_url,
+  };
+}
+
+export async function deleteArticleFromGitHub(slug: string): Promise<{ success: boolean; message: string }> {
+  const token = process.env.GITHUB_TOKEN;
+  const owner = process.env.GITHUB_REPO_OWNER || 'moshequantum';
+  const repo = process.env.GITHUB_REPO_NAME || 'entre-tormentas';
+  const branch = process.env.GITHUB_BRANCH || 'main';
+
+  if (!token) {
+    throw new Error('GITHUB_TOKEN no está configurado en las variables de entorno del servidor.');
+  }
+
+  const cleanSlug = slugify(slug);
+  const filePath = `src/content/posts/${cleanSlug}.md`;
+  const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
+
+  // 1. Get SHA of file to delete
+  const checkRes = await fetch(`${apiUrl}?ref=${branch}`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+      Accept: 'application/vnd.github.v3+json',
+      'User-Agent': 'EntreTormentas-Publisher',
+    },
+  });
+
+  if (!checkRes.ok) {
+    throw new Error('La entrada que intentás eliminar no existe en el repositorio.');
+  }
+
+  const data = await checkRes.json();
+  const sha = data.sha;
+
+  // 2. Execute DELETE
+  const deleteRes = await fetch(apiUrl, {
+    method: 'DELETE',
+    headers: {
+      Authorization: `Bearer ${token}`,
+      Accept: 'application/vnd.github.v3+json',
+      'Content-Type': 'application/json',
+      'User-Agent': 'EntreTormentas-Publisher',
+    },
+    body: JSON.stringify({
+      message: `feat(news): delete "${cleanSlug}" permanently via backoffice`,
+      sha,
+      branch,
+    }),
+  });
+
+  if (!deleteRes.ok) {
+    const errorData = await deleteRes.json().catch(() => ({}));
+    throw new Error(`Error de GitHub al eliminar archivo: ${errorData.message || deleteRes.statusText}`);
+  }
+
+  return {
+    success: true,
+    message: `Entrada "${cleanSlug}" eliminada permanentemente.`,
   };
 }

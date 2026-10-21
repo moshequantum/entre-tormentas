@@ -10,27 +10,25 @@ if (!sessionCookie?.value) {
   return Astro.redirect('/login');
 }
 
-const userCookie = Astro.cookies.get('entretormentas_user');
-let activeUser = { email: 'Redactor Autorizado', name: 'Periodista' };
-try {
-  if (userCookie?.value) {
-    activeUser = JSON.parse(userCookie.value);
-  }
-} catch (e) {}
-
 const allPosts = await getCollection('posts');
 const sortedPosts = allPosts.sort(
   (a, b) => new Date(b.data.publishedAt || 0).getTime() - new Date(a.data.publishedAt || 0).getTime()
 );
 
-// Metrics
+// Metrics by category
 const countTotal = allPosts.length;
 const countRegionales = allPosts.filter((p) => p.data.category === 'regionales').length;
 const countDeportes = allPosts.filter((p) => p.data.category === 'deportes').length;
 const countNacionales = allPosts.filter((p) => p.data.category === 'nacionales').length;
 const countSucesos = allPosts.filter((p) => p.data.category === 'sucesos').length;
 
-// Initial 30 most recent posts for instant rendering
+// Metrics by status
+const countPublished = allPosts.filter((p) => !p.data.status || p.data.status === 'published').length;
+const countReview = allPosts.filter((p) => p.data.status === 'review').length;
+const countDraft = allPosts.filter((p) => p.data.status === 'draft').length;
+const countTrash = allPosts.filter((p) => p.data.status === 'trash').length;
+
+// Initial 40 most recent posts for instant rendering
 const initialPosts = sortedPosts.slice(0, 40);
 ---
 
@@ -42,19 +40,8 @@ const initialPosts = sortedPosts.slice(0, 40);
       <div class="flex items-center gap-3">
         <h1 class="font-serif text-xl sm:text-2xl font-medium text-white">Entradas</h1>
         <span class="rounded-full bg-white/[0.06] border border-white/10 px-2.5 py-0.5 text-xs font-mono text-slate-300">
-          {countTotal} artículos
+          {countTotal} notas
         </span>
-      </div>
-
-      <!-- Quick Metrics Summary -->
-      <div class="hidden md:flex items-center gap-2 text-xs">
-        <span class="text-slate-400">Zulia: <b class="text-white font-medium">{countRegionales}</b></span>
-        <span class="text-slate-600">•</span>
-        <span class="text-slate-400">Deportes: <b class="text-white font-medium">{countDeportes}</b></span>
-        <span class="text-slate-600">•</span>
-        <span class="text-slate-400">Nacionales: <b class="text-white font-medium">{countNacionales}</b></span>
-        <span class="text-slate-600">•</span>
-        <span class="text-slate-400">Sucesos: <b class="text-white font-medium">{countSucesos}</b></span>
       </div>
 
       <a
@@ -66,16 +53,59 @@ const initialPosts = sortedPosts.slice(0, 40);
       </a>
     </div>
 
-    <!-- Main Content Area: Search, Filters & Posts Table -->
-    <main class="space-y-4">
+    <!-- Main Content Area: Status Tabs, Filters & Posts Table -->
+    <main class="space-y-3">
       
-      <!-- Filter Bar (WordPress Style) -->
+      <!-- Tier 1: Status Tabs (WordPress Style) -->
+      <div class="flex flex-wrap items-center gap-2 text-xs border-b border-white/[0.06] pb-2">
+        <button
+          type="button"
+          class="btn-filter-status active rounded px-2.5 py-1 font-medium transition text-white bg-white/[0.08] border border-white/10"
+          data-status="all"
+        >
+          Todas <span class="text-slate-400 font-mono text-[11px]">({countTotal})</span>
+        </button>
+
+        <button
+          type="button"
+          class="btn-filter-status rounded px-2.5 py-1 font-medium transition text-slate-400 hover:text-white hover:bg-white/[0.04]"
+          data-status="published"
+        >
+          🟢 Publicadas <span class="text-slate-500 font-mono text-[11px]">({countPublished})</span>
+        </button>
+
+        <button
+          type="button"
+          class="btn-filter-status rounded px-2.5 py-1 font-medium transition text-slate-400 hover:text-white hover:bg-white/[0.04]"
+          data-status="review"
+        >
+          🟡 En revisión <span class="text-slate-500 font-mono text-[11px]">({countReview})</span>
+        </button>
+
+        <button
+          type="button"
+          class="btn-filter-status rounded px-2.5 py-1 font-medium transition text-slate-400 hover:text-white hover:bg-white/[0.04]"
+          data-status="draft"
+        >
+          ⚪ Borradores <span class="text-slate-500 font-mono text-[11px]">({countDraft})</span>
+        </button>
+
+        <button
+          type="button"
+          class="btn-filter-status rounded px-2.5 py-1 font-medium transition text-slate-400 hover:text-white hover:bg-white/[0.04]"
+          data-status="trash"
+        >
+          🔴 Papelera <span class="text-slate-500 font-mono text-[11px]">({countTrash})</span>
+        </button>
+      </div>
+
+      <!-- Tier 2: Category Filter & Search Bar -->
       <div class="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-white/[0.08] bg-[#0B101D] p-3 shadow-sm text-xs">
         
-        <!-- Category Filter Buttons -->
+        <!-- Category Buttons -->
         <div class="flex flex-wrap items-center gap-1 text-slate-400">
           <button type="button" class="btn-filter-cat active rounded px-2.5 py-1 text-white bg-white/[0.08] font-medium" data-cat="all">
-            Todas ({countTotal})
+            Todas las secciones
           </button>
           <button type="button" class="btn-filter-cat rounded px-2.5 py-1 hover:text-white hover:bg-white/[0.04]" data-cat="regionales">
             Regionales ({countRegionales})
@@ -110,48 +140,113 @@ const initialPosts = sortedPosts.slice(0, 40);
             <thead class="border-b border-white/[0.08] bg-white/[0.02] text-[11px] uppercase tracking-wider text-slate-400">
               <tr>
                 <th class="px-4 py-3 font-medium">Título</th>
-                <th class="px-4 py-3 font-medium">Autor</th>
+                <th class="px-4 py-3 font-medium">Estado</th>
                 <th class="px-4 py-3 font-medium">Categoría</th>
                 <th class="px-4 py-3 font-medium">Fecha</th>
                 <th class="px-4 py-3 text-right font-medium">Acciones</th>
               </tr>
             </thead>
             <tbody id="posts-tbody" class="divide-y divide-white/[0.04]">
-              {initialPosts.map((post) => (
-                <tr class="post-row hover:bg-white/[0.02] transition" data-category={post.data.category} data-title={post.data.title.toLowerCase()}>
-                  <td class="px-4 py-3 font-medium text-slate-100 max-w-lg">
-                    <a href={`/noticias/${post.id}`} target="_blank" class="hover:text-electric-300 transition line-clamp-1">
-                      {post.data.title}
-                    </a>
-                  </td>
-                  <td class="px-4 py-3 text-slate-400 whitespace-nowrap">
-                    {post.data.author || 'Redacción'}
-                  </td>
-                  <td class="px-4 py-3 whitespace-nowrap">
-                    <span class="rounded bg-white/[0.05] border border-white/[0.08] px-2 py-0.5 text-[10px] text-slate-300 uppercase">
-                      {post.data.category}
-                    </span>
-                  </td>
-                  <td class="px-4 py-3 text-slate-400 whitespace-nowrap">
-                    {post.data.publishedAt ? new Date(post.data.publishedAt).toLocaleDateString('es-VE') : 'Reciente'}
-                  </td>
-                  <td class="px-4 py-3 text-right whitespace-nowrap space-x-2">
-                    <a
-                      href={`/admin/editar/${post.id}`}
-                      class="rounded bg-white/[0.06] hover:bg-white/[0.12] px-2.5 py-1 text-slate-200 transition font-medium"
-                    >
-                      ✏️ Editar
-                    </a>
-                    <a
-                      href={`/noticias/${post.id}`}
-                      target="_blank"
-                      class="text-electric-400 hover:text-electric-300 underline font-medium"
-                    >
-                      Ver ↗
-                    </a>
-                  </td>
-                </tr>
-              ))}
+              {initialPosts.map((post) => {
+                const status = post.data.status || 'published';
+                return (
+                  <tr
+                    class="post-row hover:bg-white/[0.02] transition"
+                    data-category={post.data.category}
+                    data-status={status}
+                    data-title={post.data.title.toLowerCase()}
+                    data-slug={post.id}
+                  >
+                    <td class="px-4 py-3 font-medium text-slate-100 max-w-md">
+                      <a href={`/admin/editar/${post.id}`} class="hover:text-electric-300 transition line-clamp-1">
+                        {post.data.title}
+                      </a>
+                      <div class="text-[10px] text-slate-500 font-mono mt-0.5 truncate">
+                        slug: {post.id}
+                      </div>
+                    </td>
+                    <td class="px-4 py-3 whitespace-nowrap">
+                      {status === 'published' && (
+                        <span class="inline-flex items-center gap-1 rounded bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 text-[10px] font-medium text-emerald-400">
+                          <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                          Publicado
+                        </span>
+                      )}
+                      {status === 'review' && (
+                        <span class="inline-flex items-center gap-1 rounded bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 text-[10px] font-medium text-amber-400">
+                          <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>
+                          En revisión
+                        </span>
+                      )}
+                      {status === 'draft' && (
+                        <span class="inline-flex items-center gap-1 rounded bg-slate-500/10 border border-slate-500/20 px-2 py-0.5 text-[10px] font-medium text-slate-400">
+                          <span class="h-1.5 w-1.5 rounded-full bg-slate-400"></span>
+                          Borrador
+                        </span>
+                      )}
+                      {status === 'trash' && (
+                        <span class="inline-flex items-center gap-1 rounded bg-rose-500/10 border border-rose-500/20 px-2 py-0.5 text-[10px] font-medium text-rose-400">
+                          <span class="h-1.5 w-1.5 rounded-full bg-rose-400"></span>
+                          Papelera
+                        </span>
+                      )}
+                    </td>
+                    <td class="px-4 py-3 whitespace-nowrap">
+                      <span class="rounded bg-white/[0.05] border border-white/[0.08] px-2 py-0.5 text-[10px] text-slate-300 uppercase">
+                        {post.data.category}
+                      </span>
+                    </td>
+                    <td class="px-4 py-3 text-slate-400 whitespace-nowrap">
+                      {post.data.publishedAt ? new Date(post.data.publishedAt).toLocaleDateString('es-VE') : 'Reciente'}
+                    </td>
+                    <td class="px-4 py-3 text-right whitespace-nowrap space-x-1.5">
+                      <a
+                        href={`/admin/editar/${post.id}`}
+                        class="rounded bg-white/[0.06] hover:bg-white/[0.12] px-2 py-1 text-slate-200 transition font-medium"
+                      >
+                        ✏️ Editar
+                      </a>
+                      <a
+                        href={`/noticias/${post.id}`}
+                        target="_blank"
+                        class="rounded bg-white/[0.04] hover:bg-white/[0.08] px-2 py-1 text-electric-300 hover:text-white transition font-medium"
+                      >
+                        👁️ Ver
+                      </a>
+
+                      {status !== 'trash' ? (
+                        <button
+                          type="button"
+                          class="btn-action-trash rounded bg-rose-500/10 hover:bg-rose-500/20 px-2 py-1 text-rose-300 transition font-medium"
+                          data-slug={post.id}
+                          title="Mover a papelera"
+                        >
+                          🗑️
+                        </button>
+                      ) : (
+                        <>
+                          <button
+                            type="button"
+                            class="btn-action-restore rounded bg-emerald-500/10 hover:bg-emerald-500/20 px-2 py-1 text-emerald-300 transition font-medium"
+                            data-slug={post.id}
+                            title="Restaurar a borrador"
+                          >
+                            ♻️
+                          </button>
+                          <button
+                            type="button"
+                            class="btn-action-delete rounded bg-rose-600/20 hover:bg-rose-600/30 px-2 py-1 text-rose-400 hover:text-rose-300 transition font-medium"
+                            data-slug={post.id}
+                            title="Eliminar permanentemente de GitHub"
+                          >
+                            ⚠️
+                          </button>
+                        </>
+                      )}
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>
@@ -165,35 +260,41 @@ const initialPosts = sortedPosts.slice(0, 40);
 
   <script>
     const searchInput = document.getElementById('search-input');
-    const filterButtons = document.querySelectorAll('.btn-filter-cat');
+    const filterCatButtons = document.querySelectorAll('.btn-filter-cat');
+    const filterStatusButtons = document.querySelectorAll('.btn-filter-status');
     const rows = document.querySelectorAll('.post-row');
 
     let currentCategory = 'all';
+    let currentStatus = 'all';
     let currentQuery = '';
 
     function filterRows() {
       rows.forEach(row => {
         const cat = row.getAttribute('data-category') || '';
+        const status = row.getAttribute('data-status') || 'published';
         const title = row.getAttribute('data-title') || '';
+
         const matchesCat = (currentCategory === 'all' || cat.toLowerCase() === currentCategory);
+        const matchesStatus = (currentStatus === 'all' || status.toLowerCase() === currentStatus);
         const matchesQuery = (!currentQuery || title.includes(currentQuery));
 
-        if (matchesCat && matchesQuery) {
-          row.style.display = '';
+        if (matchesCat && matchesStatus && matchesQuery) {
+          (row as HTMLElement).style.display = '';
         } else {
-          row.style.display = 'none';
+          (row as HTMLElement).style.display = 'none';
         }
       });
     }
 
     searchInput?.addEventListener('input', (e) => {
-      currentQuery = e.target.value.toLowerCase().trim();
+      currentQuery = (e.target as HTMLInputElement).value.toLowerCase().trim();
       filterRows();
     });
 
-    filterButtons.forEach(btn => {
+    // Category button clicks
+    filterCatButtons.forEach(btn => {
       btn.addEventListener('click', () => {
-        filterButtons.forEach(b => {
+        filterCatButtons.forEach(b => {
           b.classList.remove('active', 'text-white', 'bg-white/[0.08]', 'font-medium');
           b.classList.add('text-slate-400');
         });
@@ -202,6 +303,96 @@ const initialPosts = sortedPosts.slice(0, 40);
 
         currentCategory = btn.getAttribute('data-cat') || 'all';
         filterRows();
+      });
+    });
+
+    // Status button clicks
+    filterStatusButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterStatusButtons.forEach(b => {
+          b.classList.remove('active', 'text-white', 'bg-white/[0.08]', 'border', 'border-white/10');
+          b.classList.add('text-slate-400');
+        });
+        btn.classList.add('active', 'text-white', 'bg-white/[0.08]', 'border', 'border-white/10');
+        btn.classList.remove('text-slate-400');
+
+        currentStatus = btn.getAttribute('data-status') || 'all';
+        filterRows();
+      });
+    });
+
+    // Row Quick Actions: Trash
+    document.querySelectorAll('.btn-action-trash').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const slug = btn.getAttribute('data-slug');
+        if (!slug || !confirm(`¿Mover "${slug}" a la papelera?`)) return;
+
+        try {
+          const res = await fetch('/api/admin/delete', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ slug, action: 'trash' }),
+          });
+          const data = await res.json();
+          if (res.ok && data.success) {
+            alert('Entrada movida a la papelera.');
+            window.location.reload();
+          } else {
+            alert('Error: ' + (data.error || 'No se pudo mover a la papelera'));
+          }
+        } catch (e) {
+          alert('Error de red al actualizar estado.');
+        }
+      });
+    });
+
+    // Row Quick Actions: Restore
+    document.querySelectorAll('.btn-action-restore').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const slug = btn.getAttribute('data-slug');
+        if (!slug || !confirm(`¿Restaurar "${slug}" a Borrador?`)) return;
+
+        try {
+          const res = await fetch('/api/admin/delete', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ slug, action: 'restore' }),
+          });
+          const data = await res.json();
+          if (res.ok && data.success) {
+            alert('Entrada restaurada.');
+            window.location.reload();
+          } else {
+            alert('Error: ' + (data.error || 'No se pudo restaurar'));
+          }
+        } catch (e) {
+          alert('Error de red al restaurar.');
+        }
+      });
+    });
+
+    // Row Quick Actions: Permanent Delete
+    document.querySelectorAll('.btn-action-delete').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const slug = btn.getAttribute('data-slug');
+        if (!slug || !confirm(`⚠️ ¿ELIMINAR DEFINITIVAMENTE "${slug}" de GitHub? Esta acción no se puede deshacer.`)) return;
+
+        try {
+          const res = await fetch('/api/admin/delete', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ slug, action: 'delete_permanent' }),
+          });
+          const data = await res.json();
+          if (res.ok && data.success) {
+            alert(data.message || 'Eliminado permanentemente.');
+            window.location.reload();
+          } else {
+            alert('Error: ' + (data.error || 'No se pudo eliminar'));
+          }
+        } catch (e) {
+          alert('Error de red al eliminar.');
+        }
       });
     });
   </script>

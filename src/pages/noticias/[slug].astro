@@ -21,6 +21,16 @@ if (!post) {
   return Astro.redirect('/404');
 }
 
+// Restrict unpublished posts (draft, review, trash) to authenticated editorial staff
+const postStatus = post.data.status || 'published';
+const isUnpublished = postStatus !== 'published';
+if (isUnpublished) {
+  const sessionCookie = Astro.cookies.get('entretormentas_session');
+  if (!sessionCookie?.value) {
+    return Astro.redirect('/404');
+  }
+}
+
 const { Content } = await render(post);
 
 // Formato de fecha en español de Venezuela
@@ -79,6 +89,23 @@ const pageUrl = Astro.url.href;
   </div>
 
   <article class="relative mx-auto max-w-4xl px-4 py-8 sm:px-6">
+    {isUnpublished && (
+      <div class="mb-6 flex items-center justify-between rounded-xl border border-amber-500/30 bg-amber-500/10 p-3.5 text-xs text-amber-200">
+        <div class="flex items-center gap-2">
+          <span>⚠️</span>
+          <span>
+            <strong>Vista previa editorial:</strong> Esta nota está en estado <b class="uppercase font-mono text-amber-300">{postStatus}</b> (no es visible para el público general).
+          </span>
+        </div>
+        <a
+          href={`/admin/editar/${slug}`}
+          class="rounded bg-amber-500/20 px-2.5 py-1 font-medium hover:bg-amber-500/30 text-white transition"
+        >
+          Editar entrada →
+        </a>
+      </div>
+    )}
+
     <!-- Breadcrumb de Navegación -->
     <nav aria-label="Miga de pan" class="mb-6 flex items-center gap-2 text-xs text-slate-400">
       <a href="/" class="transition hover:text-white">Inicio</a>

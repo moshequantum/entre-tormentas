@@ -146,17 +146,22 @@ try {
               </div>
 
               <div class="space-y-3 text-xs text-slate-400">
-                <div class="flex items-center justify-between">
-                  <span>Estado:</span>
-                  <strong class="text-slate-200 font-medium">Publicado de inmediato</strong>
+                <div>
+                  <label for="status" class="block mb-1 text-[11px] font-medium text-slate-300">
+                    Estado:
+                  </label>
+                  <select
+                    id="status"
+                    name="status"
+                    class="w-full rounded-lg border border-white/[0.08] bg-black/40 px-3 py-1.5 text-xs text-white focus:border-electric-500 focus:outline-none"
+                  >
+                    <option value="published" selected>🟢 Publicar de inmediato</option>
+                    <option value="review">🟡 Guardar En Revisión</option>
+                    <option value="draft">⚪ Guardar como Borrador</option>
+                  </select>
                 </div>
 
-                <div class="flex items-center justify-between">
-                  <span>Visibilidad:</span>
-                  <strong class="text-slate-200 font-medium">Público</strong>
-                </div>
-
-                <div class="pt-2">
+                <div class="pt-1">
                   <label for="publishedAt" class="block mb-1 text-[11px] text-slate-400">
                     Fecha de publicación:
                   </label>
@@ -593,6 +598,7 @@ try {
             publishedAt,
             coverImage,
             excerpt,
+            status: (document.getElementById('status') as HTMLSelectElement)?.value || 'published',
             isFeatured,
             isBreaking,
           }),

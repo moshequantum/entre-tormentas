@@ -13,9 +13,13 @@ const VALID_CATEGORIES = [
   'opinion',
 ];
 
+const VALID_STATUSES = ['published', 'draft', 'review', 'trash'];
+
 export const POST: APIRoute = async ({ request, cookies }) => {
   try {
-    const sessionToken = cookies.get('entretormentas_session')?.value || request.headers.get('Authorization')?.replace('Bearer ', '');
+    const sessionToken =
+      cookies.get('entretormentas_session')?.value ||
+      request.headers.get('Authorization')?.replace('Bearer ', '');
 
     // Require active session
     if (!sessionToken) {
@@ -27,6 +31,7 @@ export const POST: APIRoute = async ({ request, cookies }) => {
 
     const body = await request.json().catch(() => ({}));
     const {
+      slug,
       title,
       category,
       author,
@@ -36,6 +41,7 @@ export const POST: APIRoute = async ({ request, cookies }) => {
       isFeatured,
       isBreaking,
       publishedAt,
+      status,
     } = body;
 
     // Strict validation
@@ -63,8 +69,19 @@ export const POST: APIRoute = async ({ request, cookies }) => {
       );
     }
 
+    const cleanStatus = (status || 'published').toLowerCase().trim();
+    if (!VALID_STATUSES.includes(cleanStatus)) {
+      return new Response(
+        JSON.stringify({
+          error: `Estado inválido. Debe ser uno de: ${VALID_STATUSES.join(', ')}`,
+        }),
+        { status: 400, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
+
     // Execute server-to-server GitHub publish
     const result = await publishArticleToGitHub({
+      slug: slug ? slug.trim() : undefined,
       title: title.trim(),
       category: cleanCategory,
       author: (author || 'Redacción Entre Tormentas').trim(),
@@ -74,13 +91,15 @@ export const POST: APIRoute = async ({ request, cookies }) => {
       isFeatured: Boolean(isFeatured),
       isBreaking: Boolean(isBreaking),
       publishedAt: publishedAt || new Date().toISOString().split('T')[0],
+      status: cleanStatus as 'published' | 'draft' | 'review' | 'trash',
     });
 
     return new Response(
       JSON.stringify({
         success: true,
-        message: 'Noticia enviada y publicada exitosamente a GitHub.',
+        message: 'Entrada procesada y guardada exitosamente.',
         slug: result.slug,
+        status: cleanStatus,
         commitSha: result.commitSha,
         commitUrl: result.commitUrl,
       }),
@@ -90,7 +109,7 @@ export const POST: APIRoute = async ({ request, cookies }) => {
     console.error('Error publicando noticia:', err);
     return new Response(
       JSON.stringify({
-        error: err.message || 'Error al publicar la noticia en el repositorio.',
+        error: err.message || 'Error al guardar la noticia en el repositorio.',
       }),
       { status: 500, headers: { 'Content-Type': 'application/json' } }
     );
