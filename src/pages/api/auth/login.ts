@@ -50,9 +50,12 @@ export const POST: APIRoute = async ({ request, cookies }) => {
         });
       }
 
-      return new Response(JSON.stringify({ url: data?.url }), {
+      return new Response(JSON.stringify({ url: data?.url, codeVerifier: data?.codeVerifier }), {
         status: 200,
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'Cache-Control': 'private, no-cache, no-store, max-age=0, must-revalidate',
+        },
       });
     }
 

@@ -149,6 +149,10 @@ const urlError = Astro.url.searchParams.get('error');
           }),
         });
         const data = await res.json();
+        if (data.codeVerifier) {
+          sessionStorage.setItem('insforge_pkce_verifier', data.codeVerifier);
+          localStorage.setItem('insforge_pkce_verifier', data.codeVerifier);
+        }
         if (data.url) {
           window.location.href = data.url;
         } else {
