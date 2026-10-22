@@ -20,7 +20,13 @@ export default defineConfig({
     includeFiles: ['./src/content/settings/site.yaml', './src/content/settings/ads.yaml'],
     isr: {
       expiration: 600,
-      exclude: ['/api/(.*)', '/admin', '/login', '/keystatic(.*)'],
+      // `exclude` acepta strings que se comparan por igualdad exacta contra
+      // route.pattern (p. ej. '/api/auth/login'), o RegExp que sí se evalúan
+      // contra cada patrón. Los strings con sintaxis regex ('/api/(.*)') nunca
+      // coincidían, así que todos los endpoints dinámicos quedaban cacheados en
+      // el ISR de Vercel: servían respuestas ajenas a los POST y devolvían
+      // FUNCTION_INVOCATION_FAILED en texto plano en vez de JSON.
+      exclude: [/^\/api\//, /^\/admin/, /^\/login$/, /^\/keystatic/],
     },
   }),
   env: {
