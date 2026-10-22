@@ -10,6 +10,10 @@ export default defineConfig({
   output: 'static',
   security: {
     checkOrigin: false,
+    allowedDomains: [
+      { hostname: 'www.entretormentas.com', protocol: 'https' },
+      { hostname: 'entretormentas.com', protocol: 'https' },
+    ],
   },
   adapter: vercel({
     isr: {
