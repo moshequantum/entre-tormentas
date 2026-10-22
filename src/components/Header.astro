@@ -3,6 +3,7 @@ import AdBanner from './AdBanner.astro';
 import BreakingTicker from './BreakingTicker.astro';
 
 import { getCollection } from 'astro:content';
+import { getSiteSettings, getActiveAd } from '../lib/site-settings';
 
 const categories = [
   { name: 'Regionales', href: '/categoria/regionales' },
@@ -21,6 +22,9 @@ const today = new Intl.DateTimeFormat('es-VE', {
   day: 'numeric'
 }).format(new Date());
 
+const siteSettings = await getSiteSettings();
+const headerAd = await getActiveAd('header');
+
 const allPosts = await getCollection('posts');
 const recentTickerPosts = allPosts
   .sort((a, b) => new Date(b.data.publishedAt || 0).getTime() - new Date(a.data.publishedAt || 0).getTime())
@@ -34,9 +38,18 @@ const recentTickerPosts = allPosts
 ---
 
 <header id="main-header" class="w-full sticky top-0 z-50 bg-storm-950/95 backdrop-blur-md border-b border-storm-800/80 shadow-editorial-card">
-  
+  {siteSettings.headerBackground && (
+    <img
+      src={siteSettings.headerBackground}
+      alt=""
+      aria-hidden="true"
+      class="pointer-events-none absolute inset-0 h-full w-full object-cover"
+      style={`opacity: ${siteSettings.headerBackgroundOpacity / 100};`}
+    />
+  )}
+
   <!-- Top Telemetry & Date Bar (Smoothly collapses on scroll) -->
-  <div id="header-telemetry" class="border-b border-storm-800/60 bg-storm-950/80 px-4 py-1.5 text-xs text-slate-400 overflow-hidden">
+  <div id="header-telemetry" class="relative border-b border-storm-800/60 bg-storm-950/80 px-4 py-1.5 text-xs text-slate-400 overflow-hidden">
     <div class="mx-auto flex max-w-7xl items-center justify-between">
       <div class="flex items-center gap-4 text-[11px] font-mono capitalize text-slate-400">
         <span>📍 Maracaibo, Zulia</span>
@@ -60,28 +73,37 @@ const recentTickerPosts = allPosts
   </div>
 
   <!-- Main Masthead: Brand Logo + Sponsor (Compresses to ultra-minimal on scroll) -->
-  <div id="header-masthead" class="mx-auto flex max-w-7xl items-center justify-between gap-8 px-4 py-4 sm:px-6 transition-all duration-300">
+  <div id="header-masthead" class="relative mx-auto flex max-w-7xl items-center justify-between gap-8 px-4 py-4 sm:px-6 transition-all duration-300">
     <!-- Logotype Brand -->
     <a href="/" class="group flex items-center gap-3.5 transition flex-shrink-0">
       <!-- Boutique Isologo Vector Badge with Midnight-Electric Lighting -->
-      <div id="header-isologo" class="relative flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-electric-600 via-electric-700 to-storm-950 p-2.5 shadow-editorial-glow border border-white/15 transition-all duration-300 group-hover:scale-105">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="h-full w-full" fill="none">
-          <path
-            d="M18 3L6 17H15L13 29L26 14H17L18 3Z"
-            fill="url(#lightning-header-grad)"
-            stroke="#ffffff"
-            stroke-width="0.75"
-            stroke-linejoin="round"
-          />
-          <defs>
-            <linearGradient id="lightning-header-grad" x1="6" y1="3" x2="26" y2="29" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#FFFFFF" />
-              <stop offset="0.65" stop-color="#E0F2FE" />
-              <stop offset="1" stop-color="#38BDF8" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
+      {siteSettings.logo ? (
+        <img
+          id="header-isologo"
+          src={siteSettings.logo}
+          alt="Entre Tormentas"
+          class="relative h-11 w-11 sm:h-12 sm:w-12 rounded-xl object-contain transition-all duration-300 group-hover:scale-105"
+        />
+      ) : (
+        <div id="header-isologo" class="relative flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-electric-600 via-electric-700 to-storm-950 p-2.5 shadow-editorial-glow border border-white/15 transition-all duration-300 group-hover:scale-105">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="h-full w-full" fill="none">
+            <path
+              d="M18 3L6 17H15L13 29L26 14H17L18 3Z"
+              fill="url(#lightning-header-grad)"
+              stroke="#ffffff"
+              stroke-width="0.75"
+              stroke-linejoin="round"
+            />
+            <defs>
+              <linearGradient id="lightning-header-grad" x1="6" y1="3" x2="26" y2="29" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFFFFF" />
+                <stop offset="0.65" stop-color="#E0F2FE" />
+                <stop offset="1" stop-color="#38BDF8" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      )}
 
       <div class="flex flex-col">
         <div class="flex items-baseline gap-1.5">
@@ -104,9 +126,9 @@ const recentTickerPosts = allPosts
     <!-- Header Ad Banner (Hidden on shrink scroll) -->
     <div id="header-ad-banner" class="hidden md:block flex-1 max-w-[540px]">
       <AdBanner
-        image="/images/ads/banner-header.png"
-        href="https://sedemat.gob.ve"
-        alt="Alcaldía de Maracaibo - SEDEMAT"
+        image={headerAd?.image ?? '/images/ads/banner-header.png'}
+        href={headerAd?.href ?? 'https://sedemat.gob.ve'}
+        alt={headerAd?.alt ?? 'Alcaldía de Maracaibo - SEDEMAT'}
       />
     </div>
 
@@ -117,7 +139,7 @@ const recentTickerPosts = allPosts
   </div>
 
   <!-- Primary Categories Navigation (Humanized Slate Editorial Bar with Tints & Shadows) -->
-  <nav id="header-categories" class="bg-editorial-surface/95 text-slate-300 border-y border-white/[0.08] shadow-editorial-nav transition-all duration-300">
+  <nav id="header-categories" class="relative bg-editorial-surface/95 text-slate-300 border-y border-white/[0.08] shadow-editorial-nav transition-all duration-300">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6">
       <ul class="flex items-center gap-1 sm:gap-2 overflow-x-auto py-1.5 text-xs sm:text-[13px] font-medium tracking-wider uppercase no-scrollbar">
         {categories.map((cat) => (
@@ -141,7 +163,7 @@ const recentTickerPosts = allPosts
   </nav>
 
   <!-- Breaking News Ticker (Stuck in natural flow, hidden on shrink) -->
-  <div id="header-ticker">
+  <div id="header-ticker" class="relative">
     <BreakingTicker items={recentTickerPosts} />
   </div>
 </header>

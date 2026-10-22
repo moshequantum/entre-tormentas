@@ -1,4 +1,4 @@
-import { config, fields, collection } from '@keystatic/core';
+import { config, fields, collection, singleton } from '@keystatic/core';
 
 export default config({
   storage: {
@@ -65,6 +65,69 @@ export default config({
             },
           },
         }),
+      },
+    }),
+  },
+  singletons: {
+    siteSettings: singleton({
+      label: 'Ajustes del sitio',
+      path: 'src/content/settings/site',
+      format: 'yaml',
+      schema: {
+        logo: fields.image({
+          label: 'Logo del sitio',
+          description: 'Opcional. Si está vacío se usa el isologo por defecto.',
+          directory: 'public/images/site',
+          publicPath: '/images/site/',
+        }),
+        headerBackground: fields.image({
+          label: 'Imagen de fondo del encabezado',
+          description: 'Opcional. Se muestra detrás del contenido del encabezado.',
+          directory: 'public/images/site',
+          publicPath: '/images/site/',
+        }),
+        headerBackgroundOpacity: fields.integer({
+          label: 'Opacidad del fondo del encabezado (0-100)',
+          defaultValue: 20,
+          validation: { min: 0, max: 100 },
+        }),
+      },
+    }),
+    ads: singleton({
+      label: 'Anuncios',
+      path: 'src/content/settings/ads',
+      format: 'yaml',
+      schema: {
+        items: fields.array(
+          fields.object({
+            name: fields.text({ label: 'Nombre del anunciante' }),
+            placement: fields.select({
+              label: 'Ubicación',
+              options: [
+                { label: 'Encabezado', value: 'header' },
+                { label: 'Portada', value: 'home' },
+                { label: 'Categoría', value: 'category' },
+                { label: 'Noticia (arriba)', value: 'article-top' },
+                { label: 'Noticia (dentro del texto)', value: 'article-bottom' },
+              ],
+              defaultValue: 'header',
+            }),
+            image: fields.image({
+              label: 'Imagen del anuncio',
+              directory: 'public/images/ads',
+              publicPath: '/images/ads/',
+            }),
+            href: fields.url({ label: 'Enlace de destino' }),
+            alt: fields.text({ label: 'Texto alternativo' }),
+            startDate: fields.date({ label: 'Fecha de inicio (opcional)' }),
+            endDate: fields.date({ label: 'Fecha de fin (opcional)' }),
+            enabled: fields.checkbox({ label: 'Activo', defaultValue: true }),
+          }),
+          {
+            label: 'Anuncios',
+            itemLabel: (props) => props.fields.name.value || 'Anuncio sin nombre',
+          }
+        ),
       },
     }),
   },

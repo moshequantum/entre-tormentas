@@ -3,6 +3,7 @@ export const prerender = false;
 
 import Layout from '../../layouts/Layout.astro';
 import Pagination from '../../components/Pagination.astro';
+import { getActiveAd } from '../../lib/site-settings';
 import AdBanner from '../../components/AdBanner.astro';
 import { getCollection } from 'astro:content';
 
@@ -62,6 +63,7 @@ const currentPage = Math.max(1, parseInt(urlPage, 10) || 1);
 const pageSize = 12;
 const totalPages = Math.max(1, Math.ceil(categoryPosts.length / pageSize));
 const paginatedPosts = categoryPosts.slice((currentPage - 1) * pageSize, currentPage * pageSize);
+const categoryAd = await getActiveAd('category');
 ---
 
 <Layout
@@ -92,9 +94,9 @@ const paginatedPosts = categoryPosts.slice((currentPage - 1) * pageSize, current
     <!-- Leaderboard Ad -->
     <div class="mb-10">
       <AdBanner
-        image="/images/ads/banner-header.png"
-        href="https://sedemat.gob.ve"
-        alt="Publicidad"
+        image={categoryAd?.image ?? "/images/ads/banner-header.png"}
+        href={categoryAd?.href ?? "https://sedemat.gob.ve"}
+        alt={categoryAd?.alt ?? "Publicidad"}
       />
     </div>
 

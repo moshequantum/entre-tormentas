@@ -16,6 +16,8 @@ export default defineConfig({
     ],
   },
   adapter: vercel({
+    // Keystatic singletons are read from disk at request time by SSR pages
+    includeFiles: ['./src/content/settings/site.yaml', './src/content/settings/ads.yaml'],
     isr: {
       expiration: 600,
       exclude: ['/api/(.*)', '/admin', '/login', '/keystatic(.*)'],

@@ -2,6 +2,7 @@
 export const prerender = false;
 
 import Layout from '../../layouts/Layout.astro';
+import { getActiveAd } from '../../lib/site-settings';
 import AdBanner from '../../components/AdBanner.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 
@@ -77,6 +78,8 @@ const pageUrl = Astro.url.href;
 const rawBody = post.body || '';
 const wordCount = rawBody.trim() ? rawBody.trim().split(/\s+/).length : 250;
 const readingTimeMinutes = Math.max(1, Math.ceil(wordCount / 200));
+const articleTopAd = await getActiveAd('article-top');
+const articleBottomAd = await getActiveAd('article-bottom');
 ---
 
 <Layout
@@ -239,9 +242,9 @@ const readingTimeMinutes = Math.max(1, Math.ceil(wordCount / 200));
     <!-- Publicidad Superior al Cuerpo -->
     <div class="my-8">
       <AdBanner
-        image="/images/ads/banner-header.png"
-        href="https://sedemat.gob.ve"
-        alt="Publicidad Institucional"
+        image={articleTopAd?.image ?? "/images/ads/banner-header.png"}
+        href={articleTopAd?.href ?? "https://sedemat.gob.ve"}
+        alt={articleTopAd?.alt ?? "Publicidad Institucional"}
       />
     </div>
 
@@ -254,9 +257,9 @@ const readingTimeMinutes = Math.max(1, Math.ceil(wordCount / 200));
     <div class="my-10">
       <AdBanner
         slotType="in-article"
-        image="/images/ads/banner-header.png"
-        href="https://sedemat.gob.ve"
-        alt="Publicidad Entre Tormentas"
+        image={articleBottomAd?.image ?? "/images/ads/banner-header.png"}
+        href={articleBottomAd?.href ?? "https://sedemat.gob.ve"}
+        alt={articleBottomAd?.alt ?? "Publicidad Entre Tormentas"}
       />
     </div>
 
