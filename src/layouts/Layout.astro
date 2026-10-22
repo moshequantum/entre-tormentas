@@ -178,6 +178,15 @@ const schemaData = type === 'article'
     <!-- Structured Data JSON-LD (SEO, GEO & AEO) -->
     <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
 
+    <!-- Google AdSense Official Script (Asynchronous & Non-blocking) -->
+    {import.meta.env.PUBLIC_ADSENSE_CLIENT_ID && (
+      <script
+        async
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${import.meta.env.PUBLIC_ADSENSE_CLIENT_ID}`}
+        crossorigin="anonymous"
+      ></script>
+    )}
+
     <!-- Typography: Lora (Editorial Serif), Geist (Interface Sans) & Geist Mono (Telemetry) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
