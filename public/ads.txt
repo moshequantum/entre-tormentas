@@ -1,0 +1,4 @@
+# Google AdSense - Entre Tormentas (entretormentas.com)
+# Archivo de Vendedores Digitales Autorizados (IAB Tech Lab standard)
+# Reemplazar con el Publisher ID oficial al recibir la confirmación de AdSense:
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
