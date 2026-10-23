@@ -1,3 +1,4 @@
+import { existsSync } from 'node:fs';
 import { defineConfig, envField } from 'astro/config';
 import react from '@astrojs/react';
 import keystatic from '@keystatic/astro';
@@ -16,8 +17,13 @@ export default defineConfig({
     ],
   },
   adapter: vercel({
-    // Keystatic singletons are read from disk at request time by SSR pages
-    includeFiles: ['./src/content/settings/site.yaml', './src/content/settings/ads.yaml'],
+    // Keystatic singletons are read from disk at request time by SSR pages.
+    // @astrojs/vercel no expande globs en includeFiles y falla con ENOENT si la
+    // ruta no existe (los singletons se crean en el repo al primer guardado en
+    // /keystatic), así que solo incluimos los yaml que ya estén en el repo.
+    includeFiles: ['./src/content/settings/site.yaml', './src/content/settings/ads.yaml'].filter((file) =>
+      existsSync(new URL(file, import.meta.url))
+    ),
     isr: {
       expiration: 600,
       // `exclude` acepta strings que se comparan por igualdad exacta contra

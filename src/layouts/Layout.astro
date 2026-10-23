@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { getSiteSettings } from '../lib/site-settings';
 import '../styles/global.css';
 
 interface Props {
@@ -30,6 +31,29 @@ const {
 const siteUrl = 'https://www.entretormentas.com';
 const canonicalUrl = canonical || (Astro.site ? new URL(Astro.url.pathname, Astro.site).href : `${siteUrl}${Astro.url.pathname}`);
 const absoluteImageUrl = image.startsWith('http') ? image : `${siteUrl}${image.startsWith('/') ? '' : '/'}${image}`;
+
+// Favicon editable desde Keystatic (Ajustes del sitio); si no hay uno guardado se
+// mantiene el /favicon.svg por defecto. La extensión define el MIME del <link>.
+const siteSettings = await getSiteSettings();
+const faviconHref = siteSettings.favicon || '/favicon.svg';
+const faviconExt = faviconHref.split('.').pop()?.toLowerCase();
+const faviconType =
+  faviconExt === 'svg'
+    ? 'image/svg+xml'
+    : faviconExt === 'png'
+      ? 'image/png'
+      : faviconExt === 'ico'
+        ? 'image/x-icon'
+        : faviconExt === 'webp'
+          ? 'image/webp'
+          : faviconExt === 'gif'
+            ? 'image/gif'
+            : faviconExt === 'jpg' || faviconExt === 'jpeg'
+              ? 'image/jpeg'
+              : undefined;
+const faviconUrl = faviconHref.startsWith('http')
+  ? faviconHref
+  : `${siteUrl}${faviconHref.startsWith('/') ? '' : '/'}${faviconHref}`;
 
 // ISO Dates for Article Schema & OG
 let isoPublished = '';
@@ -73,7 +97,7 @@ const schemaData = type === 'article'
         'url': siteUrl,
         'logo': {
           '@type': 'ImageObject',
-          'url': `${siteUrl}/favicon.svg`
+          'url': faviconUrl
         }
       },
       'articleSection': category || 'General',
@@ -100,7 +124,7 @@ const schemaData = type === 'article'
           '@id': `${siteUrl}/#organization`,
           'name': 'Entre Tormentas',
           'url': siteUrl,
-          'logo': `${siteUrl}/favicon.svg`,
+          'logo': faviconUrl,
           'description': 'Diario digital de noticias, opinión y sucesos del Estado Zulia y Venezuela.',
           'address': {
             '@type': 'PostalAddress',
@@ -133,7 +157,7 @@ const schemaData = type === 'article'
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type={faviconType} href={faviconHref} />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
