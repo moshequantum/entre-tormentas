@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Pagination from '../components/Pagination.astro';
+import { getActiveAd } from '../lib/site-settings';
 import AdBanner from '../components/AdBanner.astro';
 import { getCollection } from 'astro:content';
 
@@ -63,6 +64,7 @@ const opinionPieces = sortedPosts
     title: p.data.title,
     avatar: p.data.coverImage || '/images/brand/isologo-e-concept.jpg'
   }));
+const homeAd = await getActiveAd('home');
 ---
 
 <Layout
@@ -189,9 +191,9 @@ const opinionPieces = sortedPosts
     <div class="my-8">
       <AdBanner
         slotType="leaderboard"
-        image="/images/ads/banner-header.png"
-        href="https://sedemat.gob.ve"
-        alt="Publicidad Entre Tormentas"
+        image={homeAd?.image ?? "/images/ads/banner-header.png"}
+        href={homeAd?.href ?? "https://sedemat.gob.ve"}
+        alt={homeAd?.alt ?? "Publicidad Entre Tormentas"}
       />
     </div>
 
