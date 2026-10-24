@@ -23,3 +23,7 @@ temp_uploads_extracted/
 # Operating System
 .DS_Store
 Thumbs.db
+
+
+# Agent & Skill metadata
+.atl/
