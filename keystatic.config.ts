@@ -52,10 +52,21 @@ export default config({
           directory: 'public/images/posts',
           publicPath: '/images/posts/',
         }),
+        imageCaption: fields.text({
+          label: 'Pie de foto / Crédito de imagen (opcional)',
+        }),
         excerpt: fields.text({
-          label: 'Bajada / Extracto',
+          label: 'Bajada / Extracto (Resumen para portada y redes)',
           multiline: true,
         }),
+        tags: fields.array(
+          fields.text({ label: 'Etiqueta / Tema SEO' }),
+          {
+            label: 'Etiquetas SEO (Palabras clave de la noticia)',
+            description: 'Ej: Maracaibo, Blanca Mármol de León, Zulia, Política',
+            itemLabel: (props) => props.value || 'Nueva etiqueta',
+          }
+        ),
         content: fields.markdoc({
           label: 'Cuerpo de la Noticia',
           // fields.markdoc() guarda por defecto en `.mdoc`, pero todo el archivo

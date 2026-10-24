@@ -34,20 +34,21 @@ if (isUnpublished) {
 
 const { Content } = await render(post);
 
-// Formato de fecha en español de Venezuela
-let formattedDate = 'Reciente';
-if (post.data.publishedAt) {
-  try {
-    formattedDate = new Intl.DateTimeFormat('es-VE', {
-      weekday: 'long',
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric'
-    }).format(new Date(post.data.publishedAt));
-  } catch (e) {
-    formattedDate = String(post.data.publishedAt);
-  }
+function formatEditorialDate(value?: string | Date): string {
+  if (!value) return 'Reciente';
+  const parsed = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(parsed.getTime())) return String(value);
+  return new Intl.DateTimeFormat('es-VE', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(parsed);
 }
+
+const formattedDate = formatEditorialDate(post.data.publishedAt);
+const cleanSlug = post.id.replace(/\.md$/, '');
 
 // Categoría con estilo editorial
 const categoryLabels: Record<string, { label: string; color: string }> = {
@@ -78,18 +79,35 @@ const pageUrl = Astro.url.href;
 const rawBody = post.body || '';
 const wordCount = rawBody.trim() ? rawBody.trim().split(/\s+/).length : 250;
 const readingTimeMinutes = Math.max(1, Math.ceil(wordCount / 200));
+
+// Descripción SEO automática si el periodista no completó la bajada
+const autoDescription =
+  post.data.excerpt?.trim() ||
+  rawBody
+    .replace(/!\[.*?\]\(.*?\)/g, '')
+    .replace(/[#*_>`~\\]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, 160) ||
+  post.data.title;
+
+const postTags = Array.isArray(post.data.tags) && post.data.tags.length > 0
+  ? post.data.tags.filter((t) => Boolean(t && t.trim()))
+  : [currentCategory.label, 'Zulia', 'Maracaibo', 'Venezuela'];
+
 const articleTopAd = await getActiveAd('article-top');
 const articleBottomAd = await getActiveAd('article-bottom');
 ---
 
 <Layout
   title={`${post.data.title} | Entre Tormentas`}
-  description={post.data.excerpt || post.data.title}
+  description={autoDescription}
   image={coverImage}
   type="article"
   publishedTime={post.data.publishedAt}
   category={post.data.category}
   author={post.data.author}
+  tags={postTags}
 >
   <!-- Atmospheric Glow Effect -->
   <div class="pointer-events-none absolute inset-x-0 top-0 h-[400px] overflow-hidden opacity-25">
@@ -106,7 +124,7 @@ const articleBottomAd = await getActiveAd('article-bottom');
           </span>
         </div>
         <a
-          href={`/keystatic/collection/posts/item/${slug}`}
+          href={`/keystatic/collection/posts/item/${cleanSlug}`}
           class="rounded bg-amber-500/20 px-2.5 py-1 font-medium hover:bg-amber-500/30 text-white transition"
         >
           Editar en Keystatic →
@@ -115,16 +133,27 @@ const articleBottomAd = await getActiveAd('article-bottom');
     )}
 
     <!-- Breadcrumb de Navegación -->
-    <nav aria-label="Miga de pan" class="mb-6 flex items-center gap-2 text-xs text-slate-400">
-      <a href="/" class="transition hover:text-white">Inicio</a>
-      <span>/</span>
-      <a href={`/categoria/${post.data.category}`} class="capitalize transition hover:text-ion-300">
-        {post.data.category}
+    <nav aria-label="Miga de pan" class="mb-6 flex items-center justify-between gap-2 text-xs text-slate-400">
+      <div class="flex items-center gap-2 overflow-hidden">
+        <a href="/" class="transition hover:text-white">Inicio</a>
+        <span>/</span>
+        <a href={`/categoria/${post.data.category}`} class="capitalize transition hover:text-ion-300">
+          {post.data.category}
+        </a>
+        <span>/</span>
+        <span class="truncate max-w-[180px] sm:max-w-md text-slate-500" aria-current="page">
+          {post.data.title}
+        </span>
+      </div>
+      <!-- Direct 1-click CMS Edit shortcut for Editorial Staff -->
+      <a
+        href={`/keystatic/collection/posts/item/${cleanSlug}`}
+        class="inline-flex items-center gap-1.5 rounded-lg border border-storm-700 bg-storm-900/80 px-2.5 py-1 text-[11px] font-semibold text-slate-300 transition hover:border-cyan-400/50 hover:bg-electric-600/20 hover:text-white flex-shrink-0"
+        title="Modificar esta noticia en Keystatic CMS"
+      >
+        <span>✏️</span>
+        <span>Editar nota</span>
       </a>
-      <span>/</span>
-      <span class="truncate max-w-[200px] sm:max-w-md text-slate-500" aria-current="page">
-        {post.data.title}
-      </span>
     </nav>
 
     <!-- Header del Artículo -->
@@ -137,7 +166,7 @@ const articleBottomAd = await getActiveAd('article-bottom');
           <span class="h-1.5 w-1.5 rounded-full bg-current animate-pulse"></span>
           {currentCategory.label}
         </a>
-        <span class="text-xs text-slate-400 font-mono">
+        <span class="text-xs text-slate-400 font-mono capitalize">
           📅 {formattedDate}
         </span>
         <span class="text-xs text-slate-400 font-mono">
@@ -152,7 +181,7 @@ const articleBottomAd = await getActiveAd('article-bottom');
       <!-- Metadata del Autor y Redacción -->
       <div class="flex flex-wrap items-center justify-between gap-4 border-y border-storm-800/80 py-3.5 text-xs text-slate-300">
         <div class="flex items-center gap-3">
-          <div class="flex h-9 w-9 items-center justify-center rounded-full bg-electric-600/20 text-ion-300 font-bold border border-electric-500/30">
+          <div class="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-sky-400 via-electric-600 to-blue-800 text-white font-bold border border-sky-300/40 shadow-sm">
             ET
           </div>
           <div>
@@ -221,20 +250,25 @@ const articleBottomAd = await getActiveAd('article-bottom');
     </header>
 
     <!-- Imagen de Portada Principal con Fallback -->
-    <div class="relative mb-8 overflow-hidden rounded-2xl border border-storm-700 bg-storm-900 shadow-2xl">
+    <figure class="relative mb-8 overflow-hidden rounded-2xl border border-storm-700 bg-storm-900 shadow-2xl">
       <img
         src={coverImage}
         alt={post.data.title}
         class="w-full max-h-[520px] object-cover"
         onerror="this.src='/images/posts/default-post.jpg'"
       />
-    </div>
+      {post.data.imageCaption && (
+        <figcaption class="border-t border-storm-800 bg-storm-950/90 px-4 py-2.5 text-xs text-slate-400">
+          📷 {post.data.imageCaption}
+        </figcaption>
+      )}
+    </figure>
 
     <!-- Bajada / Extracto Editorial si existe -->
     {post.data.excerpt && (
-      <div class="mb-8 rounded-r-xl border-l-4 border-electric-brand bg-storm-900/60 p-5 backdrop-blur-sm">
-        <p class="font-sans text-base sm:text-lg italic leading-relaxed text-slate-200">
-          «{post.data.excerpt}»
+      <div class="article-excerpt mb-8 rounded-r-xl border-l-4 border-cyan-400 bg-storm-900/70 p-5 backdrop-blur-sm shadow-sm">
+        <p class="font-sans text-base sm:text-lg font-medium leading-relaxed text-slate-100">
+          {post.data.excerpt}
         </p>
       </div>
     )}
@@ -249,9 +283,23 @@ const articleBottomAd = await getActiveAd('article-bottom');
     </div>
 
     <!-- Contenido Principal en Markdown / Prose -->
-    <div class="prose prose-invert prose-lg max-w-none text-slate-200 leading-relaxed font-sans prose-headings:font-sans prose-headings:text-white prose-a:text-ion-400 hover:prose-a:text-white prose-strong:text-white prose-img:rounded-xl prose-img:border prose-img:border-storm-800">
+    <div id="article-body" class="prose prose-invert prose-lg max-w-none text-slate-200 leading-relaxed font-sans">
       <Content />
     </div>
+
+    <!-- Etiquetas / Temas SEO del Artículo -->
+    {postTags.length > 0 && (
+      <div class="mt-10 flex flex-wrap items-center gap-2 border-t border-storm-800/80 pt-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-slate-400 mr-1">
+          🏷️ Etiquetas:
+        </span>
+        {postTags.map((tag) => (
+          <span class="rounded-lg border border-storm-700 bg-storm-900/80 px-3 py-1 text-xs font-medium text-cyan-300">
+            #{tag}
+          </span>
+        ))}
+      </div>
+    )}
 
     <!-- Espacio Publicitario In-Article (AdSense Fluid / Direct Sponsor con Cero CLS) -->
     <div class="my-10">
@@ -265,16 +313,24 @@ const articleBottomAd = await getActiveAd('article-bottom');
 
     <!-- Firma de Redacción -->
     <div class="mt-12 rounded-xl border border-storm-800 bg-storm-900/40 p-6 backdrop-blur-sm">
-      <div class="flex items-center gap-4">
-        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-electric-brand text-white font-bold text-lg shadow-lg shadow-electric-brand/30">
-          ET
-        </div>
-        <div>
-          <div class="text-sm font-bold text-white">Redacción Entre Tormentas</div>
-          <div class="text-xs text-slate-400">
-            Periodismo independiente, veraz y oportuno desde el Zulia para toda Venezuela y el mundo.
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-sky-400 via-electric-600 to-blue-800 text-white font-bold text-lg shadow-lg shadow-electric-brand/30">
+            ET
+          </div>
+          <div>
+            <div class="text-sm font-bold text-white">Redacción Entre Tormentas</div>
+            <div class="text-xs text-slate-400">
+              Periodismo independiente, veraz y oportuno desde el Zulia para toda Venezuela y el mundo.
+            </div>
           </div>
         </div>
+        <a
+          href={`/keystatic/collection/posts/item/${cleanSlug}`}
+          class="inline-flex items-center gap-1.5 rounded-lg border border-storm-700 bg-storm-900 px-3 py-1.5 text-xs font-semibold text-slate-300 transition hover:border-cyan-400/50 hover:text-white"
+        >
+          <span>✏️ Editar en Keystatic</span>
+        </a>
       </div>
     </div>
 
@@ -313,7 +369,7 @@ const articleBottomAd = await getActiveAd('article-bottom');
                 </div>
               </div>
               <div class="px-3.5 pb-3 text-[10px] text-slate-400 flex items-center justify-between border-t border-storm-800/80 pt-2">
-                <span>{rel.data.publishedAt || 'Reciente'}</span>
+                <span>{formatEditorialDate(rel.data.publishedAt)}</span>
                 <span class="text-ion-400 font-bold group-hover:translate-x-1 transition-transform">→</span>
               </div>
             </a>
@@ -324,6 +380,7 @@ const articleBottomAd = await getActiveAd('article-bottom');
   </article>
 
   <script>
+    // Copy Link Button
     const btnCopy = document.getElementById('btn-copy-link');
     const iconCopy = document.getElementById('icon-copy');
     const iconCopied = document.getElementById('icon-copied');
@@ -341,5 +398,46 @@ const articleBottomAd = await getActiveAd('article-bottom');
         console.error('Error al copiar enlace:', err);
       }
     });
+
+    // Smart Editorial Text Enhancer:
+    // Automatically upgrades plain-text ALL-CAPS subheadings, datelines ("ENTRE TORMENTAS."),
+    // and strips stray trailing backslashes when journalists paste from Word/WhatsApp.
+    const articleBody = document.getElementById('article-body');
+    if (articleBody) {
+      const paragraphs = Array.from(articleBody.querySelectorAll('p'));
+      for (const p of paragraphs) {
+        // Strip trailing literal backslash if present
+        if (p.innerHTML.trim().endsWith('\\')) {
+          p.innerHTML = p.innerHTML.trim().slice(0, -1).trim();
+        }
+        const text = (p.textContent || '').trim();
+        // Detect standalone ALL-CAPS subheadings (e.g., "INCONSTITUCIONALIDAD", "SE VA PREOCUPADA")
+        if (
+          text.length >= 3 &&
+          text.length <= 70 &&
+          p.children.length === 0 &&
+          text === text.toUpperCase() &&
+          /[A-ZÁÉÍÓÚÑ]/.test(text) &&
+          !text.endsWith('.') &&
+          !text.startsWith('ET /')
+        ) {
+          const h2 = document.createElement('h2');
+          h2.textContent = text;
+          p.replaceWith(h2);
+          continue;
+        }
+        // Highlight "ENTRE TORMENTAS." dateline at start of paragraph
+        if (p.innerHTML.startsWith('ENTRE TORMENTAS.')) {
+          p.innerHTML = p.innerHTML.replace(
+            /^ENTRE TORMENTAS\./,
+            '<strong class="text-cyan-400 tracking-wide">ENTRE TORMENTAS.</strong>'
+          );
+        }
+        // Style journalist sign-off line ("ET / ...")
+        if (/^ET\s*\/\s*.+/i.test(text) && text.length < 80) {
+          p.classList.add('font-semibold', 'text-cyan-300', 'pt-2');
+        }
+      }
+    }
   </script>
 </Layout>

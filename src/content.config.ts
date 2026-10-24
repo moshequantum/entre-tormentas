@@ -11,7 +11,9 @@ const posts = defineCollection({
     isBreaking: z.boolean().default(false),
     author: z.string().default('Redacción Entre Tormentas'),
     coverImage: z.string().optional(),
+    imageCaption: z.string().optional(),
     excerpt: z.string().optional(),
+    tags: z.array(z.string()).optional().default([]),
     status: z.enum(['published', 'draft', 'review', 'trash']).default('published'),
   }),
 });
