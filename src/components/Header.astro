@@ -41,13 +41,16 @@ const recentTickerPosts = allPosts
 <header id="main-header" class="w-full sticky top-0 z-50 bg-storm-950/95 backdrop-blur-md border-b border-storm-800/80 shadow-editorial-card overflow-hidden transition-all duration-300">
   {siteSettings.headerBackground && (
     <div class="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+      <!-- Panoramic Maracaibo Cover Photo with Cinematic Ambient Breathing Motion -->
       <img
         src={siteSettings.headerBackground}
         alt=""
         aria-hidden="true"
-        class="h-full w-full object-cover object-center scale-105 transition-transform duration-700 ease-out"
+        class="header-hero-bg h-full w-full object-cover object-center"
         style={`opacity: ${siteSettings.headerBackgroundOpacity / 100};`}
       />
+      <!-- Atmospheric Catatumbo Lightning Flash Effect -->
+      <div class="catatumbo-flash-overlay absolute inset-0 bg-gradient-to-tr from-sky-400/20 via-cyan-200/30 to-blue-500/20 mix-blend-screen pointer-events-none"></div>
       <!-- Smooth dark vignette & gradient overlay calibrated so Maracaibo background shines through with vitality -->
       <div class="absolute inset-0 bg-gradient-to-b from-storm-950/40 via-storm-950/60 to-storm-950/95"></div>
       <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-storm-950/20 to-storm-950/80"></div>
@@ -87,34 +90,29 @@ const recentTickerPosts = allPosts
 
   <!-- Main Masthead: Brand Logo + Sponsor (Majestic tall presence, compresses to lite bar on scroll) -->
   <div id="header-masthead" class="relative z-10 mx-auto flex max-w-7xl items-center justify-between gap-8 px-4 py-8 sm:py-12 md:py-14 min-h-[160px] sm:min-h-[200px] md:min-h-[220px] sm:px-6 transition-all duration-300">
-    <!-- Logotype Brand -->
+    <!-- Logotype Brand (100% Sans-Serif Modern Aesthetic with Pure White Text & Brand-Gradient Icon) -->
     <a href="/" class="group flex items-center gap-4 transition flex-shrink-0">
-      <!-- Boutique Isologo Vector Badge with Midnight-Electric Lighting & Light Cloud -->
-      {siteSettings.logo ? (
-        <img
-          id="header-isologo"
-          src={siteSettings.logo}
-          alt="Entre Tormentas"
-          class="relative h-14 w-14 sm:h-18 sm:w-18 md:h-20 md:w-20 rounded-2xl object-contain transition-all duration-300 group-hover:scale-105 shadow-editorial-glow border border-electric-500/40 p-1.5 bg-storm-950/70"
-        />
-      ) : (
-        <div id="header-isologo" class="relative flex h-14 w-14 sm:h-18 sm:w-18 md:h-20 md:w-20 items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-storm-900 via-storm-950 to-storm-900 p-2 shadow-editorial-glow border border-electric-400/40 transition-all duration-300 group-hover:scale-105 group-hover:border-cyan-300">
-          <BrandLogo class="h-full w-full" />
-        </div>
-      )}
+      <!-- Icon Badge: Brand Blue Gradient Background with Pure White Logo Icon -->
+      <div
+        id="header-isologo"
+        class="relative flex h-14 w-14 sm:h-18 sm:w-18 md:h-20 md:w-20 items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-sky-400 via-electric-600 to-blue-800 p-2 sm:p-2.5 shadow-[0_4px_20px_rgba(2,132,199,0.4)] border border-sky-300/50 transition-all duration-300 group-hover:scale-105 group-hover:shadow-[0_6px_25px_rgba(56,189,248,0.55)] flex-shrink-0"
+      >
+        <BrandLogo class="h-full w-full" variant="white" />
+      </div>
 
       <div class="flex flex-col">
+        <!-- Sans-Serif Pure White Logotype -->
         <div class="flex items-baseline gap-2">
-          <span id="brand-word-entre" class="font-serif text-3xl sm:text-5xl md:text-6xl font-light tracking-tight text-white transition-all duration-300 group-hover:text-cyan-200 drop-shadow-sm">
+          <span id="brand-word-entre" class="font-sans text-3xl sm:text-5xl md:text-6xl font-light tracking-tight text-white transition-all duration-300 group-hover:text-cyan-100 drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
             Entre
           </span>
-          <span id="brand-word-tormentas" class="font-serif italic text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-cyan-400 transition-all duration-300 group-hover:text-cyan-300 drop-shadow-[0_2px_12px_rgba(56,189,248,0.4)]">
+          <span id="brand-word-tormentas" class="font-sans text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white transition-all duration-300 group-hover:text-cyan-100 drop-shadow-[0_2px_14px_rgba(255,255,255,0.3)]">
             Tormentas
           </span>
         </div>
-        <div id="header-tagline" class="flex items-center gap-2.5 mt-1 transition-all duration-300">
+        <div id="header-tagline" class="flex items-center gap-2 mt-1 transition-all duration-300">
           <span class="h-2 w-2 rounded-full bg-amber-400 animate-pulse shadow-[0_0_8px_rgba(251,191,36,0.8)]"></span>
-          <span class="text-[11px] sm:text-xs font-mono font-semibold tracking-[0.28em] text-slate-300 uppercase">
+          <span class="text-[10px] sm:text-xs font-mono font-bold tracking-[0.25em] text-slate-300 uppercase">
             Diario Digital · Zulia
           </span>
         </div>
@@ -172,6 +170,57 @@ const recentTickerPosts = allPosts
 </header>
 
 <style>
+  /* Cinematic Ambient Motion on Header Background Photo */
+  @keyframes header-ambient-pan {
+    0% {
+      transform: scale(1.05) translate3d(0, 0, 0);
+      filter: contrast(1.12) brightness(1.02) saturate(1.2);
+    }
+    50% {
+      transform: scale(1.1) translate3d(-1%, -0.5%, 0);
+      filter: contrast(1.18) brightness(1.06) saturate(1.25);
+    }
+    100% {
+      transform: scale(1.05) translate3d(0, 0, 0);
+      filter: contrast(1.12) brightness(1.02) saturate(1.2);
+    }
+  }
+
+  .header-hero-bg {
+    animation: header-ambient-pan 22s ease-in-out infinite alternate;
+    will-change: transform, filter;
+  }
+
+  /* Authentic Atmospheric Catatumbo Lightning Flashes */
+  @keyframes catatumbo-flash {
+    0%, 91%, 100% {
+      opacity: 0;
+    }
+    92% {
+      opacity: 0.35;
+    }
+    93% {
+      opacity: 0.08;
+    }
+    94% {
+      opacity: 0.45;
+    }
+    95% {
+      opacity: 0;
+    }
+    97% {
+      opacity: 0.22;
+    }
+    98% {
+      opacity: 0;
+    }
+  }
+
+  .catatumbo-flash-overlay {
+    animation: catatumbo-flash 12s ease-in-out infinite;
+    pointer-events: none;
+  }
+
   /* Seamless GPU-accelerated Header Shrink Transitions */
   #main-header {
     transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;

@@ -1,40 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
   <defs>
-    <!-- Vivid Electric Lightning Bolt Gradient -->
-    <linearGradient id="et-bolt-vivid" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Brand Blue Electric Gradient -->
+    <linearGradient id="et-brand-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="100%" stop-color="#0066FF" />
+      <stop offset="45%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#004EA3" />
     </linearGradient>
-    <!-- Pure White / Light Cloud Gradient -->
-    <linearGradient id="et-cloud-light" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="100%" stop-color="#F0F9FF" />
-    </linearGradient>
-    <filter id="et-glow-filter" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#38BDF8" flood-opacity="0.65" />
+    <filter id="et-logo-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#002B66" flood-opacity="0.35" />
     </filter>
   </defs>
 
-  <!-- Nube versión Light (Blanco puro nítido para máximo contraste) -->
-  <path
-    d="M 36 60 L 24 60 C 14 60 14 43 23 40 C 21 27 36 21 44 26 C 50 12 70 12 74 26 C 85 26 89 38 85 47 C 91 58 83 60 76 60 L 64 60"
-    stroke="url(#et-cloud-light)"
-    stroke-width="6.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
+  <!-- Brand Blue Gradient Squircle Background -->
+  <rect width="100" height="100" rx="24" fill="url(#et-brand-gradient)" />
+  <rect width="98" height="98" x="1" y="1" rx="23" stroke="#BAE6FD" stroke-opacity="0.4" stroke-width="1.5" />
 
-  <!-- Rayo / Trueno Azul Eléctrico vibrante -->
-  <polygon
-    points="53,53 63,53 52,67 59,67 40,88 47,71 39,71"
-    fill="url(#et-bolt-vivid)"
-    stroke="url(#et-bolt-vivid)"
-    stroke-width="1.5"
-    stroke-linejoin="round"
-    filter="url(#et-glow-filter)"
-  />
+  <!-- Pure White Brand Icon inside -->
+  <g filter="url(#et-logo-glow)">
+    <!-- White Cloud -->
+    <path
+      d="M 36 60 L 24 60 C 14 60 14 43 23 40 C 21 27 36 21 44 26 C 50 12 70 12 74 26 C 85 26 89 38 85 47 C 91 58 83 60 76 60 L 64 60"
+      stroke="#FFFFFF"
+      stroke-width="6.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
 
-  <!-- Trazos de lluvia eléctrica cian -->
-  <line x1="29" y1="69" x2="20" y2="81" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" />
-  <line x1="74" y1="71" x2="65" y2="83" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" />
+    <!-- White Central Lightning Bolt -->
+    <polygon
+      points="53,53 63,53 52,67 59,67 40,88 47,71 39,71"
+      fill="#FFFFFF"
+      stroke="#FFFFFF"
+      stroke-width="1.5"
+      stroke-linejoin="round"
+    />
+
+    <!-- White Rain Streaks -->
+    <line x1="29" y1="69" x2="20" y2="81" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
+    <line x1="74" y1="71" x2="65" y2="83" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
+  </g>
 </svg>
