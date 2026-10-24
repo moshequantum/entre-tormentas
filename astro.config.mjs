@@ -4,6 +4,9 @@ import react from '@astrojs/react';
 import keystatic from '@keystatic/astro';
 import tailwind from '@astrojs/tailwind';
 import vercel from '@astrojs/vercel';
+import cloudflare from '@astrojs/cloudflare';
+
+const isCloudflarePages = Boolean(process.env.CF_PAGES);
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,25 +19,32 @@ export default defineConfig({
       { hostname: 'entretormentas.com', protocol: 'https' },
     ],
   },
-  adapter: vercel({
-    // Keystatic singletons are read from disk at request time by SSR pages.
-    // @astrojs/vercel no expande globs en includeFiles y falla con ENOENT si la
-    // ruta no existe (los singletons se crean en el repo al primer guardado en
-    // /keystatic), así que solo incluimos los yaml que ya estén en el repo.
-    includeFiles: ['./src/content/settings/site.yaml', './src/content/settings/ads.yaml'].filter((file) =>
-      existsSync(new URL(file, import.meta.url))
-    ),
-    isr: {
-      expiration: 600,
-      // `exclude` acepta strings que se comparan por igualdad exacta contra
-      // route.pattern (p. ej. '/api/auth/login'), o RegExp que sí se evalúan
-      // contra cada patrón. Los strings con sintaxis regex ('/api/(.*)') nunca
-      // coincidían, así que todos los endpoints dinámicos quedaban cacheados en
-      // el ISR de Vercel: servían respuestas ajenas a los POST y devolvían
-      // FUNCTION_INVOCATION_FAILED en texto plano en vez de JSON.
-      exclude: [/^\/api\//, /^\/admin/, /^\/login$/, /^\/keystatic/],
-    },
-  }),
+  adapter: isCloudflarePages
+    ? cloudflare({
+        imageService: 'passthrough',
+        platformProxy: {
+          enabled: false,
+        },
+      })
+    : vercel({
+        // Keystatic singletons are read from disk at request time by SSR pages.
+        // @astrojs/vercel no expande globs en includeFiles y falla con ENOENT si la
+        // ruta no existe (los singletons se crean en el repo al primer guardado en
+        // /keystatic), así que solo incluimos los yaml que ya estén en el repo.
+        includeFiles: ['./src/content/settings/site.yaml', './src/content/settings/ads.yaml'].filter((file) =>
+          existsSync(new URL(file, import.meta.url))
+        ),
+        isr: {
+          expiration: 600,
+          // `exclude` acepta strings que se comparan por igualdad exacta contra
+          // route.pattern (p. ej. '/api/auth/login'), o RegExp que sí se evalúan
+          // contra cada patrón. Los strings con sintaxis regex ('/api/(.*)') nunca
+          // coincidían, así que todos los endpoints dinámicos quedaban cacheados en
+          // el ISR de Vercel: servían respuestas ajenas a los POST y devolvían
+          // FUNCTION_INVOCATION_FAILED en texto plano en vez de JSON.
+          exclude: [/^\/api\//, /^\/admin/, /^\/login$/, /^\/keystatic/],
+        },
+      }),
   env: {
     schema: {
       KEYSTATIC_GITHUB_CLIENT_ID: envField.string({ context: 'server', access: 'secret', optional: true }),

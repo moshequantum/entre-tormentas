@@ -16,6 +16,33 @@ const posts = defineCollection({
   }),
 });
 
+const settings = defineCollection({
+  loader: glob({ pattern: '*.yaml', base: './src/content/settings' }),
+  schema: z
+    .object({
+      logo: z.string().nullable().optional(),
+      favicon: z.string().nullable().optional(),
+      headerBackground: z.string().nullable().optional(),
+      headerBackgroundOpacity: z.number().optional(),
+      items: z
+        .array(
+          z.object({
+            name: z.string(),
+            placement: z.enum(['header', 'home', 'category', 'article-top', 'article-bottom']),
+            image: z.string().nullable().optional(),
+            href: z.string().nullable().optional(),
+            alt: z.string().nullable().optional(),
+            startDate: z.string().or(z.date()).nullable().optional(),
+            endDate: z.string().or(z.date()).nullable().optional(),
+            enabled: z.boolean().default(true),
+          })
+        )
+        .optional(),
+    })
+    .passthrough(),
+});
+
 export const collections = {
   posts,
+  settings,
 };

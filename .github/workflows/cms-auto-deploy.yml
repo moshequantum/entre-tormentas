@@ -1,0 +1,33 @@
+name: CMS Editorial Auto-Deploy
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/content/**'
+      - 'public/images/**'
+
+concurrency:
+  group: cms-auto-deploy
+  cancel-in-progress: false
+
+jobs:
+  authorize-deploy:
+    name: Authorize Vercel Deployment for Editorial Commit
+    if: github.actor != 'moshequantum'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository with owner credentials
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.OWNER_GITHUB_TOKEN }}
+          fetch-depth: 2
+
+      - name: Create authorized deployment commit
+        run: |
+          git config user.name "Moisés David Vera"
+          git config user.email "moshequantum@gmail.com"
+          git pull --rebase origin main
+          git commit --allow-empty -m "chore(cms): authorize production build for editorial commit ${GITHUB_SHA::7}"
+          git push origin main
