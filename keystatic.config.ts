@@ -58,6 +58,10 @@ export default config({
         }),
         content: fields.markdoc({
           label: 'Cuerpo de la Noticia',
+          // fields.markdoc() guarda por defecto en `.mdoc`, pero todo el archivo
+          // vivo (9.319 notas) y el glob de Astro son `.md`: sin esto Keystatic
+          // contaba 0 entradas y publicaba notas que el sitio nunca recogía.
+          extension: 'md',
           options: {
             image: {
               directory: 'public/images/posts',
@@ -77,6 +81,12 @@ export default config({
         logo: fields.image({
           label: 'Logo del sitio',
           description: 'Opcional. Si está vacío se usa el isologo por defecto.',
+          directory: 'public/images/site',
+          publicPath: '/images/site/',
+        }),
+        favicon: fields.image({
+          label: 'Favicon del sitio',
+          description: 'Opcional. Icono de la pestaña (SVG, PNG o ICO). Si está vacío se usa /favicon.svg.',
           directory: 'public/images/site',
           publicPath: '/images/site/',
         }),

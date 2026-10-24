@@ -5,6 +5,7 @@ export type AdPlacement = 'header' | 'home' | 'category' | 'article-top' | 'arti
 
 export interface SiteSettings {
   logo?: string;
+  favicon?: string;
   headerBackground?: string;
   headerBackgroundOpacity: number;
 }
@@ -30,6 +31,7 @@ export async function getSiteSettings(): Promise<SiteSettings> {
     if (!data) return defaults;
     return {
       logo: data.logo || undefined,
+      favicon: data.favicon || undefined,
       headerBackground: data.headerBackground || undefined,
       headerBackgroundOpacity: data.headerBackgroundOpacity ?? 20,
     };
