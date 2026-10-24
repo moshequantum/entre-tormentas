@@ -1,4 +1,5 @@
 ---
+import BrandLogo from './BrandLogo.astro';
 const currentYear = new Date().getFullYear();
 ---
 
@@ -7,23 +8,8 @@ const currentYear = new Date().getFullYear();
     <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
       <div class="space-y-4 md:col-span-2">
         <div class="flex items-center gap-3">
-          <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-electric-brand to-electric-600 p-2 shadow-md shadow-electric-brand/20 border border-white/10">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="h-full w-full" fill="none">
-              <path
-                d="M18 3L6 17H15L13 29L26 14H17L18 3Z"
-                fill="url(#lightning-footer-grad)"
-                stroke="#ffffff"
-                stroke-width="0.75"
-                stroke-linejoin="round"
-              />
-              <defs>
-                <linearGradient id="lightning-footer-grad" x1="6" y1="3" x2="26" y2="29" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#FFFFFF" />
-                  <stop offset="0.65" stop-color="#E0F2FE" />
-                  <stop offset="1" stop-color="#38BDF8" />
-                </linearGradient>
-              </defs>
-            </svg>
+          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-storm-900 via-storm-950 to-storm-900 p-1.5 shadow-md shadow-electric-brand/20 border border-electric-500/30">
+            <BrandLogo class="h-full w-full" />
           </div>
           <div class="flex items-baseline gap-1.5">
             <span class="font-serif text-lg font-semibold text-white tracking-tight">Entre</span>
@@ -56,7 +42,7 @@ const currentYear = new Date().getFullYear();
     </div>
 
     <div class="mt-8 border-t border-storm-800/80 pt-6 text-center text-xs text-slate-500">
-      <p>© {currentYear} Diario Digital Entre Tormentas. Todos los derechos reservados.</p>
+      <p>&copy; {currentYear} Diario Digital Entre Tormentas. Todos los derechos reservados.</p>
     </div>
   </div>
 </footer>

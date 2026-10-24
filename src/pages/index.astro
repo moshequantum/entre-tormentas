@@ -73,9 +73,16 @@ const homeAd = await getActiveAd('home');
   type="website"
 >
 
-  <!-- Atmospheric Background Glow -->
-  <div class="pointer-events-none absolute inset-x-0 top-0 h-[600px] overflow-hidden opacity-30">
-    <div class="absolute -top-40 left-1/2 h-[500px] w-[900px] -translate-x-1/2 rounded-full bg-gradient-to-b from-electric-600/30 via-ion-400/10 to-transparent blur-3xl"></div>
+  <!-- Atmospheric Maracaibo Portada Backdrop with Smooth Black Fade -->
+  <div class="pointer-events-none absolute inset-x-0 top-0 h-[580px] overflow-hidden opacity-30">
+    <img
+      src="/images/brand/maracaibo-header-bg.jpg"
+      alt=""
+      aria-hidden="true"
+      class="h-full w-full object-cover object-top filter brightness-90 contrast-110"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-storm-950/40 via-storm-950/80 to-storm-950"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-transparent via-storm-950/40 to-storm-950"></div>
   </div>
 
   <div class="relative mx-auto max-w-7xl px-4 py-6 sm:px-6">
