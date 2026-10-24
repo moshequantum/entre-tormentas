@@ -145,7 +145,7 @@ const articleBottomAd = await getActiveAd('article-bottom');
         </span>
       </div>
 
-      <h1 class="font-serif text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
+      <h1 class="font-sans text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
         {post.data.title}
       </h1>
 
@@ -233,7 +233,7 @@ const articleBottomAd = await getActiveAd('article-bottom');
     <!-- Bajada / Extracto Editorial si existe -->
     {post.data.excerpt && (
       <div class="mb-8 rounded-r-xl border-l-4 border-electric-brand bg-storm-900/60 p-5 backdrop-blur-sm">
-        <p class="font-serif text-base sm:text-lg italic leading-relaxed text-slate-200">
+        <p class="font-sans text-base sm:text-lg italic leading-relaxed text-slate-200">
           «{post.data.excerpt}»
         </p>
       </div>
@@ -249,7 +249,7 @@ const articleBottomAd = await getActiveAd('article-bottom');
     </div>
 
     <!-- Contenido Principal en Markdown / Prose -->
-    <div class="prose prose-invert prose-lg max-w-none text-slate-200 leading-relaxed font-sans prose-headings:font-serif prose-headings:text-white prose-a:text-ion-400 hover:prose-a:text-white prose-strong:text-white prose-img:rounded-xl prose-img:border prose-img:border-storm-800">
+    <div class="prose prose-invert prose-lg max-w-none text-slate-200 leading-relaxed font-sans prose-headings:font-sans prose-headings:text-white prose-a:text-ion-400 hover:prose-a:text-white prose-strong:text-white prose-img:rounded-xl prose-img:border prose-img:border-storm-800">
       <Content />
     </div>
 

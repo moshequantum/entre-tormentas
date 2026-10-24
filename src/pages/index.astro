@@ -13,15 +13,40 @@ const sortedPosts = allPosts.sort((a, b) => {
   return dateB - dateA;
 });
 
+function formatEditorialDate(value?: string | Date): string {
+  if (!value) return 'Reciente';
+  const parsed = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(parsed.getTime())) return String(value);
+  return new Intl.DateTimeFormat('es-VE', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(parsed);
+}
+
+function resolveExcerpt(excerpt?: string, body?: string): string {
+  if (excerpt && excerpt.trim()) return excerpt.trim();
+  if (body && body.trim()) {
+    const clean = body
+      .replace(/!\[.*?\]\(.*?\)/g, '')
+      .replace(/[#*_>`~\\]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (clean) return clean.length > 200 ? `${clean.slice(0, 200).trim()}…` : clean;
+  }
+  return 'Noticias de actualidad y sucesos en el Zulia.';
+}
+
 // Noticia Principal (Lead Hero Story): la más reciente destacada o la primera
 const leadPost = sortedPosts.find((p) => p.data.isFeatured) || sortedPosts[0];
 
 const leadStory = {
   id: leadPost?.id || '',
   title: leadPost?.data.title || 'Entre Tormentas | Diario Digital',
-  excerpt: leadPost?.data.excerpt || 'Noticias de actualidad y sucesos en el Zulia.',
+  excerpt: resolveExcerpt(leadPost?.data.excerpt, leadPost?.body),
   category: leadPost?.data.category ? leadPost.data.category.toUpperCase() : 'REGIONALES',
-  time: leadPost?.data.publishedAt || 'Reciente',
+  time: formatEditorialDate(leadPost?.data.publishedAt),
   author: leadPost?.data.author || 'Redacción Entre Tormentas',
   image: leadPost?.data.coverImage || '/images/posts/default-post.jpg',
   slug: leadPost?.id || ''
@@ -48,7 +73,7 @@ const topRegionalStories = sortedPosts
     title: p.data.title,
     category: p.data.category === 'sucesos' ? 'Sucesos' : 'Regionales',
     badgeColor: p.data.category === 'sucesos' ? 'bg-rose-500/20 text-rose-400 border-rose-500/30' : 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30',
-    time: p.data.publishedAt || 'Reciente',
+    time: formatEditorialDate(p.data.publishedAt),
     author: p.data.author || 'Redacción',
     image: p.data.coverImage || '/images/posts/default-post.jpg'
   }));
@@ -122,7 +147,7 @@ const homeAd = await getActiveAd('home');
                 <span>Por {leadStory.author}</span>
               </div>
 
-              <h1 class="font-serif text-2xl font-extrabold leading-tight tracking-tight text-white sm:text-3xl lg:text-4xl group-hover:text-ion-300 transition-colors">
+              <h1 class="font-sans text-2xl font-extrabold leading-tight tracking-tight text-white sm:text-3xl lg:text-4xl group-hover:text-ion-300 transition-colors">
                 {leadStory.title}
               </h1>
 

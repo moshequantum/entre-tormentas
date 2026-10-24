@@ -9,6 +9,18 @@ import { getCollection } from 'astro:content';
 
 const { categoria = 'regionales' } = Astro.params;
 
+function formatEditorialDate(value?: string | Date): string {
+  if (!value) return 'Reciente';
+  const parsed = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(parsed.getTime())) return String(value);
+  return new Intl.DateTimeFormat('es-VE', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(parsed);
+}
+
 const categoryLabels: Record<string, { title: string; desc: string; badge: string }> = {
   regionales: {
     title: 'Noticias Regionales · Zulia',
@@ -83,7 +95,7 @@ const categoryAd = await getActiveAd('category');
           {categoryPosts.length} artículos archivados
         </span>
       </div>
-      <h1 class="font-serif text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+      <h1 class="font-sans text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
         {currentMeta.title}
       </h1>
       <p class="mt-2 text-sm text-slate-300 max-w-2xl leading-relaxed">
@@ -131,7 +143,7 @@ const categoryAd = await getActiveAd('category');
             </a>
             <div class="flex items-center justify-between border-t border-storm-800/80 px-4 py-3 text-[11px] text-slate-400">
               <span>{post.data.author || 'Redacción'}</span>
-              <span>{post.data.publishedAt || 'Reciente'}</span>
+              <span>{formatEditorialDate(post.data.publishedAt)}</span>
             </div>
           </article>
         ))}
