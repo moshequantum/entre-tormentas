@@ -34,15 +34,15 @@ const defaultItems: TickerItem[] = [
 const { items = defaultItems } = Astro.props;
 ---
 
-<div class="border-b border-storm-800/80 bg-storm-950/90 shadow-sm">
+<div class="border-b border-storm-800/80 bg-storm-950/95 shadow-sm">
   <div class="mx-auto flex max-w-7xl items-stretch overflow-hidden">
-    <!-- Editorial Ticker Badge (Humanized tint & weight 500) -->
-    <div class="flex items-center gap-2.5 border-r border-storm-800/90 bg-editorial-surface/90 px-4 py-2 font-sans text-xs font-medium tracking-wider text-slate-300 uppercase whitespace-nowrap z-10 shadow-sm">
-      <span class="relative flex h-2 w-2">
-        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-        <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+    <!-- Editorial Ticker Badge (Vibrant High-Contrast Accent) -->
+    <div class="flex items-center gap-2.5 border-r border-storm-800/80 bg-gradient-to-r from-storm-900 via-storm-950 to-storm-900 px-4 py-2 font-sans text-xs font-bold tracking-widest text-amber-300 uppercase whitespace-nowrap z-10 shadow-sm border-l-2 border-l-amber-400">
+      <span class="relative flex h-2.5 w-2.5">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-80"></span>
+        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.9)]"></span>
       </span>
-      <span class="text-xs font-medium text-editorial-sandstone">Últimas Noticias</span>
+      <span class="text-xs font-bold tracking-widest text-amber-300">Últimas Noticias</span>
     </div>
 
     <!-- Ticker Stream -->
