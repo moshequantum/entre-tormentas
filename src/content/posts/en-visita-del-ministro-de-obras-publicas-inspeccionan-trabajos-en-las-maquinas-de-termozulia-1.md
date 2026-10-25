@@ -9,7 +9,8 @@ isBreaking: false
 author: Redacción Entre Tormentas
 coverImage: >-
   /images/posts/en-visita-del-ministro-de-obras-publicas-inspeccionan-trabajos-en-las-maquinas-de-termozulia-1/coverImage.jpg
-tags: []
+tags:
+  - Zulia
 ---
 ENTRE TORMENTAS. Juan Ramírez Luces, ministro de Obras Públicas y Vicepresidente Sectorial de Obras Públicas y Servicios, viajó al estado Zulia este sábado para realizar una inspección a los trabajos que se llevan a cabo en diferentes máquinas de Termozulia.\
 \
