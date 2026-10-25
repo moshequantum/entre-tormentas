@@ -6,7 +6,7 @@ publishedAt: 2026-10-25
 category: nacionales
 isFeatured: false
 isBreaking: false
-author: ET / Unión Radio
+author: ET / Unión Radio.
 coverImage: >-
   /images/posts/en-la-guaira-avanza-la-remocion-de-escombros-a-cuatro-meses-del-doble-terremoto/coverImage.jfif
 excerpt: >
