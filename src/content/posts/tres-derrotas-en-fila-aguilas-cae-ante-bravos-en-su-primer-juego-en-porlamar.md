@@ -7,7 +7,8 @@ isBreaking: false
 author: ET / Prensa Águilas del Zulia
 coverImage: >-
   /images/posts/tres-derrotas-en-fila-aguilas-cae-ante-bravos-en-su-primer-juego-en-porlamar/coverImage.jfif
-tags: []
+tags:
+  - deportes
 ---
 ENTRE TORMENTAS. Las Águilas del Zulia sufrieron su tercer tropiezo consecutivo en la carretera, esta vez en el Estadio Nueva Esparta de Porlamar, donde los Bravos de Magarita ganaron 6 carreras por 1 este sábado 24 de octubre, en el inicio de su serie de fin de semana.
 
