@@ -5,7 +5,7 @@ title: >-
 publishedAt: 2026-10-25
 category: nacionales
 isFeatured: true
-isBreaking: false
+isBreaking: true
 author: ET / Agencias
 coverImage: >-
   /images/posts/fue-al-santuario-de-la-divina-pastora-maria-corina-machado-llega-a-venezuela-por-barquisimeto-2/coverImage.jfif
