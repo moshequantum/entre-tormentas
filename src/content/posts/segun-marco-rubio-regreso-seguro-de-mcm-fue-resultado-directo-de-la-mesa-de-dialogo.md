@@ -6,7 +6,7 @@ publishedAt: 2026-10-25
 category: internacionales
 isFeatured: false
 isBreaking: false
-author: ET / Agencias
+author: ' ET / Agencias'
 coverImage: >-
   /images/posts/segun-marco-rubio-regreso-seguro-de-mcm-fue-resultado-directo-de-la-mesa-de-dialogo/coverImage.jpg
 tags: []
