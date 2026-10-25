@@ -4,8 +4,8 @@ title: >-
   por Barquisimeto
 publishedAt: 2026-10-25
 category: nacionales
-isFeatured: true
-isBreaking: false
+isFeatured: false
+isBreaking: true
 author: Redacción Entre Tormentas
 coverImage: >-
   /images/posts/fue-al-santuario-de-la-divina-pastora-maria-corina-machado-llega-a-venezuela-por-barquisimeto-1/coverImage.jpg
