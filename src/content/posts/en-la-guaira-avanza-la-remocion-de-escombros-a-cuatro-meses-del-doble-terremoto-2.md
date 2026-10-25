@@ -3,11 +3,14 @@ title: >-
   ¡EN LA GUAIRA! Avanza la remoción de escombros a cuatro meses del doble
   terremoto
 publishedAt: 2026-10-25
-category: regionales
+category: nacionales
 isFeatured: false
 isBreaking: false
 author: ET / Unión Radio
-tags: []
+coverImage: >-
+  /images/posts/en-la-guaira-avanza-la-remocion-de-escombros-a-cuatro-meses-del-doble-terremoto-2/coverImage.jpg
+tags:
+  - Guaira
 ---
 ENTRE TORMENTAS. A cuatro meses del doble terremoto, el gobernador de La Guaira, José Terán, aseguró que las operaciones del puerto y del aeropuerto han permitido la reactivación económica de la región.\
 \
