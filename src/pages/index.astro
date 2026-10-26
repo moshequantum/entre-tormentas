@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Pagination from '../components/Pagination.astro';
 import { getActiveAd } from '../lib/site-settings';
 import AdBanner from '../components/AdBanner.astro';
 import { getCollection } from 'astro:content';
@@ -38,8 +37,9 @@ function resolveExcerpt(excerpt?: string, body?: string): string {
   return 'Noticias de actualidad y sucesos en el Zulia.';
 }
 
-// Noticia Principal (Lead Hero Story): la más reciente destacada o la primera
-const leadPost = sortedPosts.find((p) => p.data.isFeatured) || sortedPosts[0];
+// 1. Noticia Principal (Lead Hero Story): la primera destacada o la más reciente
+const featuredPosts = sortedPosts.filter((p) => p.data.isFeatured);
+const leadPost = featuredPosts[0] || sortedPosts[0];
 
 const leadStory = {
   id: leadPost?.id || '',
@@ -52,33 +52,89 @@ const leadStory = {
   slug: leadPost?.id || ''
 };
 
-// Tendencias / Lo Más Leído (4 noticias siguientes)
+// 2. Sub-Destacadas de Portada (Las demás marcadas como isFeatured por Guillo)
+const subFeaturedList = (featuredPosts.length > 1
+  ? featuredPosts.filter((p) => p.id !== leadStory.id).slice(0, 3)
+  : sortedPosts.filter((p) => p.id !== leadStory.id).slice(0, 3)
+).map((p) => ({
+  id: p.id,
+  title: p.data.title,
+  category: (p.data.category || 'REGIONALES').toUpperCase(),
+  time: formatEditorialDate(p.data.publishedAt),
+  author: p.data.author || 'Redacción',
+  image: p.data.coverImage || '/images/posts/default-post.jpg',
+  excerpt: resolveExcerpt(p.data.excerpt, p.body),
+}));
+
+// 3. Tendencias / Lo Más Leído (4 noticias del ranking lateral)
 const trendingRankings = sortedPosts
-  .filter((p) => p.id !== leadStory.id)
+  .filter((p) => p.id !== leadStory.id && !subFeaturedList.some((sf) => sf.id === p.id))
   .slice(0, 4)
   .map((p, idx) => ({
     id: p.id,
     rank: `0${idx + 1}`,
     title: p.data.title,
-    category: p.data.category.toUpperCase(),
+    category: (p.data.category || 'REGIONALES').toUpperCase(),
     reads: `${(15 - idx * 2.2).toFixed(1)}k lecturas`
   }));
 
-// Actualidad Noticiosa Zulia & Sucesos (4 noticias de la región)
-const topRegionalStories = sortedPosts
-  .filter((p) => p.id !== leadStory.id && (p.data.category === 'regionales' || p.data.category === 'sucesos'))
+// 4. Bloque Regionales (Zulia)
+const regionalStories = sortedPosts
+  .filter((p) => p.data.category === 'regionales' && p.id !== leadStory.id)
   .slice(0, 4)
   .map((p) => ({
     id: p.id,
     title: p.data.title,
-    category: p.data.category === 'sucesos' ? 'Sucesos' : 'Regionales',
-    badgeColor: p.data.category === 'sucesos' ? 'bg-rose-500/20 text-rose-400 border-rose-500/30' : 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30',
+    category: 'Regionales',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30',
     time: formatEditorialDate(p.data.publishedAt),
     author: p.data.author || 'Redacción',
     image: p.data.coverImage || '/images/posts/default-post.jpg'
   }));
 
-// Sección Opinión & Columnistas (artículos de opinión)
+// 5. Bloque Nacionales (Venezuela & Política)
+const nationalStories = sortedPosts
+  .filter((p) => p.data.category === 'nacionales' && p.id !== leadStory.id)
+  .slice(0, 4)
+  .map((p) => ({
+    id: p.id,
+    title: p.data.title,
+    category: 'Nacionales',
+    badgeColor: 'bg-blue-500/20 text-blue-400 border-blue-500/30',
+    time: formatEditorialDate(p.data.publishedAt),
+    author: p.data.author || 'Redacción',
+    image: p.data.coverImage || '/images/posts/default-post.jpg'
+  }));
+
+// 6. Bloque Deportes (Águilas, LVBP, Gaiteros, Vinotinto)
+const sportsStories = sortedPosts
+  .filter((p) => p.data.category === 'deportes' && p.id !== leadStory.id)
+  .slice(0, 3)
+  .map((p) => ({
+    id: p.id,
+    title: p.data.title,
+    category: 'Deportes',
+    badgeColor: 'bg-amber-500/20 text-amber-400 border-amber-500/30',
+    time: formatEditorialDate(p.data.publishedAt),
+    author: p.data.author || 'Deportes ET',
+    image: p.data.coverImage || '/images/posts/default-post.jpg'
+  }));
+
+// 7. Bloque Sucesos & Seguridad
+const sucesosStories = sortedPosts
+  .filter((p) => p.data.category === 'sucesos' && p.id !== leadStory.id)
+  .slice(0, 3)
+  .map((p) => ({
+    id: p.id,
+    title: p.data.title,
+    category: 'Sucesos',
+    badgeColor: 'bg-rose-500/20 text-rose-400 border-rose-500/30',
+    time: formatEditorialDate(p.data.publishedAt),
+    author: p.data.author || 'Seguridad',
+    image: p.data.coverImage || '/images/posts/default-post.jpg'
+  }));
+
+// 8. Sección Opinión & Columnistas
 const opinionPieces = sortedPosts
   .filter((p) => p.data.category === 'opinion')
   .slice(0, 2)
@@ -89,12 +145,13 @@ const opinionPieces = sortedPosts
     title: p.data.title,
     avatar: p.data.coverImage || '/images/brand/isologo-e-concept.jpg'
   }));
+
 const homeAd = await getActiveAd('home');
 ---
 
 <Layout
   title="Entre Tormentas | Diario Digital del Zulia - Noticias y Actualidad"
-  description="Primer diario digital de noticias de Maracaibo, Zulia y Venezuela. Información veraz e inmediata sobre regionales, sucesos, política, deportes y opinión."
+  description="Primer diario digital de noticias de Maracaibo, Zulia y Venezuela. Información veraz e inmediata sobre regionales, política nacional, sucesos, deportes y opinión."
   type="website"
 >
 
@@ -219,8 +276,53 @@ const homeAd = await getActiveAd('home');
 
     </section>
 
+    <!-- Sub-Destacadas de Portada (Grid de 3 columnas para notas marcadas como destacadas) -->
+    {subFeaturedList.length > 0 && (
+      <section class="mt-10">
+        <div class="mb-4 flex items-center justify-between border-b border-storm-800/80 pb-2">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold text-ion-400 uppercase tracking-widest">★ Destacadas de la Redacción</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+          {subFeaturedList.map((story) => (
+            <a href={`/noticias/${story.id}`} class="block h-full">
+              <article class="card-storm group flex flex-col justify-between overflow-hidden rounded-xl h-full border border-storm-800/80 hover:border-electric-500 transition-all">
+                <div>
+                  <div class="relative h-48 w-full overflow-hidden bg-storm-900">
+                    <img
+                      src={story.image}
+                      alt={story.title}
+                      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                      onerror="this.src='/images/posts/default-post.jpg'"
+                    />
+                    <span class="absolute top-3 left-3 rounded-full bg-electric-600/90 px-2.5 py-0.5 text-[10px] font-bold uppercase text-white shadow-md">
+                      {story.category}
+                    </span>
+                  </div>
+                  <div class="p-4 space-y-2">
+                    <h3 class="text-sm font-bold leading-snug text-white line-clamp-3 group-hover:text-ion-300 transition-colors">
+                      {story.title}
+                    </h3>
+                    <p class="text-xs text-slate-400 line-clamp-2 leading-relaxed">
+                      {story.excerpt}
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between border-t border-storm-800/80 px-4 py-2.5 text-[11px] text-slate-400 mt-auto">
+                  <span>{story.author}</span>
+                  <span>{story.time}</span>
+                </div>
+              </article>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
     <!-- Separador Publicitario Responsive (AdSense Leaderboard con Cero CLS) -->
-    <div class="my-8">
+    <div class="my-10">
       <AdBanner
         slotType="leaderboard"
         image={homeAd?.image ?? "/images/ads/banner-header.png"}
@@ -229,23 +331,23 @@ const homeAd = await getActiveAd('home');
       />
     </div>
 
-    <!-- Section 2: Actualidad Noticiosa Zulia (4 Column Cards) -->
-    <section class="mt-14">
+    <!-- Section 2: Regionales & Zulia -->
+    <section class="mt-12">
       <div class="mb-6 flex items-center justify-between border-b border-storm-800 pb-3">
         <div class="flex items-center gap-2.5">
-          <span class="h-4 w-1 rounded-full bg-ion-400"></span>
+          <span class="h-4 w-1 rounded-full bg-emerald-400"></span>
           <h2 class="text-lg font-bold tracking-tight text-white uppercase sm:text-xl">
-            Actualidad Zulia & Sucesos
+            Regionales · Maracaibo & Zulia
           </h2>
         </div>
         <a href="/categoria/regionales" class="text-xs font-semibold text-ion-400 transition hover:text-white">
-          Ver todas las noticias →
+          Ver más de Zulia →
         </a>
       </div>
 
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {topRegionalStories.map((story) => (
-          <a href={`/noticias/${story.id}`} class="block">
+        {regionalStories.map((story) => (
+          <a href={`/noticias/${story.id}`} class="block h-full">
             <article class="card-storm group flex flex-col justify-between overflow-hidden rounded-xl h-full">
               <div>
                 <div class="relative h-44 w-full overflow-hidden bg-storm-800">
@@ -274,18 +376,168 @@ const homeAd = await getActiveAd('home');
           </a>
         ))}
       </div>
-
-      <!-- Smart Sliding Window Pagination -->
-      <Pagination
-        currentPage={1}
-        totalPages={Math.max(1, Math.ceil(allPosts.filter(p => p.data.category === 'regionales').length / 12))}
-        baseUrl="/categoria/regionales"
-      />
     </section>
 
-    <!-- Section 3: Opinión Editorial & Firmas -->
+    <!-- Section 3: Nacionales & Política -->
+    {nationalStories.length > 0 && (
+      <section class="mt-14">
+        <div class="mb-6 flex items-center justify-between border-b border-storm-800 pb-3">
+          <div class="flex items-center gap-2.5">
+            <span class="h-4 w-1 rounded-full bg-blue-400"></span>
+            <h2 class="text-lg font-bold tracking-tight text-white uppercase sm:text-xl">
+              Nacionales · Venezuela & Política
+            </h2>
+          </div>
+          <a href="/categoria/nacionales" class="text-xs font-semibold text-ion-400 transition hover:text-white">
+            Ver más nacionales →
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {nationalStories.map((story) => (
+            <a href={`/noticias/${story.id}`} class="block h-full">
+              <article class="card-storm group flex flex-col justify-between overflow-hidden rounded-xl h-full">
+                <div>
+                  <div class="relative h-44 w-full overflow-hidden bg-storm-800">
+                    <img
+                      src={story.image}
+                      alt={story.title}
+                      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                      onerror="this.src='/images/posts/default-post.jpg'"
+                    />
+                    <span class={`absolute top-3 left-3 rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase backdrop-blur-md border ${story.badgeColor}`}>
+                      {story.category}
+                    </span>
+                  </div>
+                  <div class="p-4 space-y-2">
+                    <h3 class="text-sm font-bold leading-snug text-white line-clamp-3 group-hover:text-ion-300 transition-colors">
+                      {story.title}
+                    </h3>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between border-t border-storm-800/80 px-4 py-3 text-[11px] text-slate-400 mt-auto">
+                  <span>{story.author}</span>
+                  <span>{story.time}</span>
+                </div>
+              </article>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Section 4: Deportes & Sucesos (Doble Columna) -->
+    <div class="mt-14 grid grid-cols-1 gap-10 lg:grid-cols-12">
+      <!-- Deportes (7 cols) -->
+      <section class="lg:col-span-7">
+        <div class="mb-6 flex items-center justify-between border-b border-storm-800 pb-3">
+          <div class="flex items-center gap-2.5">
+            <span class="h-4 w-1 rounded-full bg-amber-400"></span>
+            <h2 class="text-lg font-bold tracking-tight text-white uppercase sm:text-xl">
+              Deportes · Águilas & Pasión
+            </h2>
+          </div>
+          <a href="/categoria/deportes" class="text-xs font-semibold text-ion-400 transition hover:text-white">
+            Ver más deportes →
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          {sportsStories.map((story) => (
+            <a href={`/noticias/${story.id}`} class="block h-full">
+              <article class="card-storm group flex flex-col justify-between overflow-hidden rounded-xl h-full border border-storm-800">
+                <div>
+                  <div class="relative h-32 w-full overflow-hidden bg-storm-800">
+                    <img
+                      src={story.image}
+                      alt={story.title}
+                      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                      onerror="this.src='/images/posts/default-post.jpg'"
+                    />
+                    <span class={`absolute top-2 left-2 rounded-full px-2 py-0.5 text-[9px] font-bold uppercase backdrop-blur-md border ${story.badgeColor}`}>
+                      {story.category}
+                    </span>
+                  </div>
+                  <div class="p-3">
+                    <h3 class="text-xs font-bold leading-snug text-white line-clamp-2 group-hover:text-ion-300 transition-colors">
+                      {story.title}
+                    </h3>
+                  </div>
+                </div>
+                <div class="border-t border-storm-800/80 px-3 py-2 text-[10px] text-slate-400">
+                  <span>{story.time}</span>
+                </div>
+              </article>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <!-- Sucesos (5 cols) -->
+      <section class="lg:col-span-5">
+        <div class="mb-6 flex items-center justify-between border-b border-storm-800 pb-3">
+          <div class="flex items-center gap-2.5">
+            <span class="h-4 w-1 rounded-full bg-rose-500"></span>
+            <h2 class="text-lg font-bold tracking-tight text-white uppercase sm:text-xl">
+              Sucesos & Seguridad
+            </h2>
+          </div>
+          <a href="/categoria/sucesos" class="text-xs font-semibold text-ion-400 transition hover:text-white">
+            Ver sucesos →
+          </a>
+        </div>
+
+        <div class="space-y-3">
+          {sucesosStories.map((story) => (
+            <a href={`/noticias/${story.id}`} class="block group">
+              <article class="flex gap-3 rounded-xl border border-storm-800/80 bg-storm-900/60 p-3 hover:border-rose-500/40 transition">
+                <img
+                  src={story.image}
+                  alt={story.title}
+                  class="h-16 w-20 flex-shrink-0 rounded-lg object-cover bg-storm-800"
+                  loading="lazy"
+                  onerror="this.src='/images/posts/default-post.jpg'"
+                />
+                <div class="flex flex-col justify-between space-y-1">
+                  <h3 class="text-xs font-semibold text-slate-200 group-hover:text-white line-clamp-2 leading-snug">
+                    {story.title}
+                  </h3>
+                  <div class="flex items-center gap-2 text-[10px] text-slate-400">
+                    <span class="text-rose-400">🚨 Sucesos</span>
+                    <span>·</span>
+                    <span>{story.time}</span>
+                  </div>
+                </div>
+              </article>
+            </a>
+          ))}
+        </div>
+      </section>
+    </div>
+
+    <!-- CTA para Explorar Todo el Archivo de Noticias -->
+    <div class="mt-14 rounded-2xl border border-storm-800 bg-gradient-to-r from-storm-950 via-storm-900 to-storm-950 p-6 sm:p-8 text-center">
+      <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight">
+        ¿Buscás más noticias y cobertura histórica?
+      </h3>
+      <p class="mt-1 text-xs sm:text-sm text-slate-400 max-w-xl mx-auto">
+        Accedé a nuestro archivo completo de más de {allPosts.length.toLocaleString('es-VE')} artículos organizados por fecha y categoría.
+      </p>
+      <div class="mt-5">
+        <a
+          href="/noticias"
+          class="inline-flex items-center gap-2 rounded-xl bg-electric-600 px-6 py-2.5 text-xs font-bold text-white uppercase tracking-wider shadow-lg shadow-electric-600/30 transition-all hover:bg-electric-500 hover:gap-3"
+        >
+          Ver Todas las Noticias del Archivo <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Section 5: Opinión Editorial & Firmas -->
     {opinionPieces.length > 0 && (
-      <section class="mt-16 rounded-2xl border border-storm-800 bg-storm-900/40 p-6 sm:p-8 backdrop-blur-sm">
+      <section class="mt-14 rounded-2xl border border-storm-800 bg-storm-900/40 p-6 sm:p-8 backdrop-blur-sm">
         <div class="mb-6 flex items-center justify-between border-b border-storm-800 pb-3">
           <div class="flex items-center gap-2.5">
             <span class="h-4 w-1 rounded-full bg-electric-500"></span>

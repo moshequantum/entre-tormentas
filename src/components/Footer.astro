@@ -24,10 +24,12 @@ const currentYear = new Date().getFullYear();
       <div>
         <h4 class="mb-3 text-xs font-bold tracking-wider text-slate-200 uppercase">Secciones</h4>
         <ul class="space-y-2 text-sm">
-          <li><a href="/categoria/regionales" class="hover:text-ion-400">Regionales</a></li>
+          <li><a href="/noticias" class="hover:text-ion-400 font-medium">Todas las Noticias</a></li>
+          <li><a href="/categoria/regionales" class="hover:text-ion-400">Regionales (Zulia)</a></li>
           <li><a href="/categoria/nacionales" class="hover:text-ion-400">Nacionales</a></li>
-          <li><a href="/categoria/sucesos" class="hover:text-ion-400">Sucesos</a></li>
           <li><a href="/categoria/deportes" class="hover:text-ion-400">Deportes</a></li>
+          <li><a href="/categoria/sucesos" class="hover:text-ion-400">Sucesos</a></li>
+          <li><a href="/categoria/opinion" class="hover:text-ion-400">Opinión</a></li>
         </ul>
       </div>
 
@@ -35,14 +37,16 @@ const currentYear = new Date().getFullYear();
         <h4 class="mb-3 text-xs font-bold tracking-wider text-slate-200 uppercase">Portal & Redacción</h4>
         <ul class="space-y-2 text-sm">
           <li><a href="/keystatic" class="text-ion-400 hover:underline">Acceso a Redacción (Keystatic)</a></li>
-          <li><span class="text-xs text-slate-500">Astro 5 + Cloudflare GitOps</span></li>
           <li><span class="text-xs text-slate-500">Maracaibo, Estado Zulia, Venezuela</span></li>
         </ul>
       </div>
     </div>
 
-    <div class="mt-8 border-t border-storm-800/80 pt-6 text-center text-xs text-slate-500">
+    <div class="mt-10 border-t border-storm-800/80 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
       <p>&copy; {currentYear} Diario Digital Entre Tormentas. Todos los derechos reservados.</p>
+      <p class="text-slate-400">
+        Hecho con cariño por: <a href="https://multiversagroup.com" target="_blank" rel="noopener noreferrer" class="text-ion-400 font-semibold hover:text-white transition">MultiversaGroup</a>
+      </p>
     </div>
   </div>
 </footer>
