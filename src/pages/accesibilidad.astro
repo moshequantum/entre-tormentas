@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Declaración de Accesibilidad Web (WCAG 2.1) | Entre Tormentas"
+  description="Declaración y compromiso de accesibilidad universal en el portal Diario Digital Entre Tormentas."
+  type="website"
+>
+  <div class="relative mx-auto max-w-4xl px-4 py-12 sm:px-6">
+    <header class="mb-10 border-b border-storm-800 pb-6">
+      <span class="rounded-full bg-emerald-600/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-emerald-300 border border-emerald-500/30">
+        Inclusión & Usabilidad
+      </span>
+      <h1 class="mt-4 font-sans text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+        Declaración de Accesibilidad
+      </h1>
+      <p class="mt-2 text-xs text-slate-400">
+        Conformidad con las pautas de accesibilidad para el contenido web (WCAG 2.1 Nivel AA)
+      </p>
+    </header>
+
+    <div class="prose prose-invert prose-slate max-w-none space-y-6 text-sm sm:text-base leading-relaxed text-slate-300">
+      <section class="space-y-3">
+        <h2 class="text-xl font-bold text-white tracking-tight">1. Nuestro Compromiso con el Acceso Universal</h2>
+        <p>
+          En <strong>Diario Digital Entre Tormentas</strong> creemos firmemente que la información veraz y el periodismo independiente deben ser accesibles para todas las personas, sin distinción de capacidades visuales, auditivas, motoras o cognitivas.
+        </p>
+        <p>
+          Por ello, el portal ha sido diseñado y desarrollado siguiendo los estándares internacionales de las <strong>Web Content Accessibility Guidelines (WCAG) 2.1 en su nivel AA</strong> definidas por el World Wide Web Consortium (W3C).
+        </p>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="text-xl font-bold text-white tracking-tight">2. Medidas y Características Implementadas</h2>
+        <ul class="list-disc pl-6 space-y-2 text-slate-300">
+          <li><strong>Estructura Semántica HTML5:</strong> Uso riguroso de etiquetas semánticas (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code>) para garantizar una navegación lógica con lectores de pantalla (NVDA, JAWS, VoiceOver, TalkBack).</li>
+          <li><strong>Contraste de Color Óptimo:</strong> Combinaciones tipográficas probadas para superar el ratio de contraste mínimo de 4.5:1 en texto normal y 3:1 en texto grande sobre fondos oscuros.</li>
+          <li><strong>Textos Alternativos en Fotografías:</strong> Requerimiento editorial de descripciones textuales significativas (<code>alt</code>) en todas las imágenes de noticias y gráficos.</li>
+          <li><strong>Navegación Total por Teclado:</strong> Todos los elementos interactivos (enlaces, botones, menú y paginadores) cuentan con indicadores visuales de foco (<code>focus-visible</code>) y son operables mediante la tecla <kbd class="px-1.5 py-0.5 rounded bg-storm-800 text-xs text-white border border-storm-700">Tab</kbd>.</li>
+          <li><strong>Diseño Adaptativo (Responsive):</strong> La tipografía y la interfaz se adaptan fluidamente a cualquier tamaño de pantalla y permiten zoom del 200% sin pérdida de contenido ni desplazamiento horizontal.</li>
+          <li><strong>Rendimiento y Cero Saltos (CLS):</strong> Maquetación optimizada para evitar cambios bruscos de diseño mientras cargan imágenes o anuncios publicitarios.</li>
+        </ul>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="text-xl font-bold text-white tracking-tight">3. Mejora Continua y Reporte de Barreras</h2>
+        <p>
+          A pesar de nuestros esfuerzos continuos, reconocemos que en un portal con más de 9.000 artículos de archivo histórico pueden existir elementos puntuales pendientes de actualización.
+        </p>
+        <p>
+          Si encontrás alguna dificultad de acceso o barrera de navegación en alguna de nuestras noticias, te invitamos a informarnos para corregirla a la brevedad posible.
+        </p>
+      </section>
+    </div>
+  </div>
+</Layout>
