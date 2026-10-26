@@ -11,41 +11,58 @@ export default config({
       branchPrefix: 'main',
     }),
   },
+  ui: {
+    brand: {
+      name: 'Entre Tormentas — Redacción',
+    },
+    navigation: {
+      'Contenido Editorial': ['posts'],
+      'Configuración del Portal': ['siteSettings', 'ads'],
+    },
+  },
   collections: {
     posts: collection({
       label: 'Noticias',
       slugField: 'title',
       path: 'src/content/posts/*',
       format: { contentField: 'content' },
+      previewUrl: '/noticias/{slug}',
+      columns: ['publishedAt', 'category'],
       schema: {
         title: fields.slug({
           name: {
-            label: 'Título',
-            description: 'Titular de la noticia (obligatorio, entre 5 y 150 caracteres).',
+            label: 'Título de la Noticia',
+            description: 'Titular en una sola línea (10 a 130 caracteres). No pegues párrafos ni prefijos de cables.',
             validation: {
               isRequired: true,
-              length: { min: 5, max: 150 },
+              length: { min: 10, max: 130 },
+              pattern: {
+                regex: /^[^\r\n]+$/,
+                message: 'El titular no puede contener saltos de línea ni párrafos.',
+              },
             },
           },
           slug: {
             label: 'Identificador URL (Slug)',
-            description: 'Generado automáticamente. Máximo 80 caracteres (solo minúsculas, números y guiones).',
+            description: 'Se genera automáticamente. Si el sistema dice que ya existe, NO agregues números (-1, -copy): busca la nota en la lista para editarla.',
             generate: (title) => {
               return title
+                // Remove news wire / agency prefixes
+                .replace(/^(?:entre\s+tormentas|et|urgente|alerta|exclusiva|atencion)\s*[:./\-–—]*\s*/i, '')
                 .normalize('NFD')
                 .replace(/[\u0300-\u036f]/g, '')
                 .toLowerCase()
                 .trim()
                 .replace(/[^a-z0-9]+/g, '-')
                 .replace(/^-+|-+$/g, '')
-                .slice(0, 80)
+                .slice(0, 75)
                 .replace(/-+$/, '');
             },
             validation: {
-              length: { min: 3, max: 80 },
+              length: { min: 3, max: 75 },
               pattern: {
                 regex: /^[a-z0-9]+(?:-[a-z0-9]+)*$/,
-                message: 'El slug solo puede contener letras minúsculas sin acentos, números y guiones simples.',
+                message: 'El slug solo puede contener letras minúsculas sin acentos, números y guiones.',
               },
             },
           },
@@ -53,6 +70,7 @@ export default config({
         publishedAt: fields.date({
           label: 'Fecha de publicación',
           defaultValue: { kind: 'today' },
+          validation: { isRequired: true },
         }),
         category: fields.select({
           label: 'Categoría',
@@ -69,30 +87,44 @@ export default config({
         }),
         isFeatured: fields.checkbox({
           label: '¿Noticia Destacada en Portada?',
+          description: 'Muestra la noticia en el bloque principal superior de la portada.',
           defaultValue: false,
         }),
         isBreaking: fields.checkbox({
           label: '¿Última Hora / Alerta Urgente?',
+          description: 'Activa la cinta roja de última hora en la cabecera.',
           defaultValue: false,
         }),
         author: fields.text({
           label: 'Autor / Periodista',
           defaultValue: 'Redacción Entre Tormentas',
+          description: 'Firma o crédito del redactor o fuente.',
+          validation: { isRequired: true },
         }),
         coverImage: fields.image({
           label: 'Imagen de Portada',
+          description: 'Fotografía principal horizontal (JPG, PNG o WebP). Requerida para que la portada no quede vacía.',
           directory: 'public/images/posts',
           publicPath: '/images/posts/',
+          validation: { isRequired: true },
         }),
         imageCaption: fields.text({
           label: 'Pie de foto / Crédito de imagen (opcional)',
+          description: 'Ej: Foto: Cortesía / Prensa Gobernación del Zulia',
         }),
         excerpt: fields.text({
           label: 'Bajada / Extracto (Resumen para portada y redes)',
+          description: 'Resumen conciso de 1 a 2 oraciones (máximo 320 caracteres).',
           multiline: true,
+          validation: {
+            length: { max: 320 },
+          },
         }),
         tags: fields.array(
-          fields.text({ label: 'Etiqueta / Tema SEO' }),
+          fields.text({
+            label: 'Etiqueta / Tema SEO',
+            validation: { isRequired: true },
+          }),
           {
             label: 'Etiquetas SEO (Palabras clave de la noticia)',
             description: 'Ej: Maracaibo, Blanca Mármol de León, Zulia, Política',
