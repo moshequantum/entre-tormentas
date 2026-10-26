@@ -8,6 +8,7 @@ export default config({
         owner: 'moshequantum',
         name: 'entre-tormentas',
       },
+      branchPrefix: 'main',
     }),
   },
   collections: {
@@ -17,7 +18,38 @@ export default config({
       path: 'src/content/posts/*',
       format: { contentField: 'content' },
       schema: {
-        title: fields.slug({ name: { label: 'Título' } }),
+        title: fields.slug({
+          name: {
+            label: 'Título',
+            description: 'Titular de la noticia (obligatorio, entre 5 y 150 caracteres).',
+            validation: {
+              isRequired: true,
+              length: { min: 5, max: 150 },
+            },
+          },
+          slug: {
+            label: 'Identificador URL (Slug)',
+            description: 'Generado automáticamente. Máximo 80 caracteres (solo minúsculas, números y guiones).',
+            generate: (title) => {
+              return title
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .toLowerCase()
+                .trim()
+                .replace(/[^a-z0-9]+/g, '-')
+                .replace(/^-+|-+$/g, '')
+                .slice(0, 80)
+                .replace(/-+$/, '');
+            },
+            validation: {
+              length: { min: 3, max: 80 },
+              pattern: {
+                regex: /^[a-z0-9]+(?:-[a-z0-9]+)*$/,
+                message: 'El slug solo puede contener letras minúsculas sin acentos, números y guiones simples.',
+              },
+            },
+          },
+        }),
         publishedAt: fields.date({
           label: 'Fecha de publicación',
           defaultValue: { kind: 'today' },
