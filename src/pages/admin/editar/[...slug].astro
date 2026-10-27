@@ -1,9 +1,0 @@
----
-export const prerender = false;
-
-const { slug } = Astro.params;
-const cleanSlug = slug ? String(slug).replace(/\.md$/, '') : '';
-
-// Redirección directa al editor de la nota en Keystatic
-return Astro.redirect(cleanSlug ? `/keystatic/collection/posts/item/${cleanSlug}` : '/keystatic');
----

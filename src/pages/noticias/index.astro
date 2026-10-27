@@ -1,5 +1,4 @@
 ---
-export const prerender = false;
 
 import Layout from '../../layouts/Layout.astro';
 import Pagination from '../../components/Pagination.astro';
@@ -35,7 +34,7 @@ function resolveExcerpt(excerpt?: string, body?: string): string {
 
 const urlPage = Astro.url.searchParams.get('page') || Astro.url.searchParams.get('pagina') || '1';
 const currentPage = Math.max(1, parseInt(urlPage, 10) || 1);
-const pageSize = 16;
+const pageSize = 48;
 const totalPages = Math.max(1, Math.ceil(sortedPosts.length / pageSize));
 const paginatedPosts = sortedPosts.slice((currentPage - 1) * pageSize, currentPage * pageSize);
 
