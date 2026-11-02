@@ -1,7 +1,7 @@
 ---
 title: >-
   ¡EN EL 7MO. LUGAR! Maracaibo impulsa el medallero de Zulia en los Juegos
-  Comunales 2026
+  Comunales
 publishedAt: 2026-11-01
 category: deportes
 isFeatured: false
