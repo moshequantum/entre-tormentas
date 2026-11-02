@@ -1,33 +1,39 @@
-name: CMS Editorial Auto-Deploy
+name: CMS Editorial Auto-Deploy (InsForge Sites)
 
 on:
   push:
     branches:
       - main
-    paths:
-      - 'src/content/**'
-      - 'public/images/**'
+  workflow_dispatch:
 
 concurrency:
   group: cms-auto-deploy
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
-  authorize-deploy:
-    name: Authorize Vercel Deployment for Editorial Commit
-    if: github.actor != 'moshequantum'
+  deploy-insforge:
+    name: Deploy Frontend to InsForge Sites
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository with owner credentials
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.OWNER_GITHUB_TOKEN }}
-          fetch-depth: 2
 
-      - name: Create authorized deployment commit
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Configure InsForge CLI credentials
+        env:
+          INSFORGE_CREDENTIALS_JSON: ${{ secrets.INSFORGE_CREDENTIALS_JSON }}
+          INSFORGE_PROJECT_JSON: ${{ secrets.INSFORGE_PROJECT_JSON }}
         run: |
-          git config user.name "Moisés David Vera"
-          git config user.email "moshequantum@gmail.com"
-          git pull --rebase origin main
-          git commit --allow-empty -m "chore(cms): authorize production build for editorial commit ${GITHUB_SHA::7}"
-          git push origin main
+          mkdir -p ~/.insforge .insforge
+          printf '%s' "$INSFORGE_CREDENTIALS_JSON" > ~/.insforge/credentials.json
+          printf '%s' "$INSFORGE_PROJECT_JSON" > .insforge/project.json
+
+      - name: Ensure post count stays under upload limit
+        run: node scripts/pack-posts-archive.mjs
+
+      - name: Deploy to InsForge Sites
+        run: npx --yes @insforge/cli@latest deployments deploy . --yes

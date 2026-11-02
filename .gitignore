@@ -9,7 +9,7 @@ dist/
 .vercel/
 
 # Local backups and heavy dumps (NEVER commit to git)
-data/
+/data/
 temp_uploads_extracted/
 *.tar.gz
 *.sql.gz
@@ -27,3 +27,18 @@ Thumbs.db
 
 # Agent & Skill metadata
 .atl/
+
+# InsForge & AI agent skills
+.insforge
+.agent
+.agents
+.augment
+.claude
+.cline
+.github/copilot*
+.kilocode
+.qoder
+.qwen
+.roo
+.trae
+.windsurf

@@ -17,6 +17,8 @@ export default defineConfig({
     allowedDomains: [
       { hostname: 'www.entretormentas.com', protocol: 'https' },
       { hostname: 'entretormentas.com', protocol: 'https' },
+      { hostname: '**.insforge.site', protocol: 'https' },
+      { hostname: '**.vercel.app', protocol: 'https' },
     ],
   },
   adapter: isCloudflarePages
@@ -35,7 +37,7 @@ export default defineConfig({
           existsSync(new URL(file, import.meta.url))
         ),
         isr: {
-          expiration: 600,
+          expiration: 86400,
           // `exclude` acepta strings que se comparan por igualdad exacta contra
           // route.pattern (p. ej. '/api/auth/login'), o RegExp que sí se evalúan
           // contra cada patrón. Los strings con sintaxis regex ('/api/(.*)') nunca

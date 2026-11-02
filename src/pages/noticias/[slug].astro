@@ -3,8 +3,9 @@ export const prerender = false;
 
 import Layout from '../../layouts/Layout.astro';
 import { getActiveAd } from '../../lib/site-settings';
+import { getRelatedPostsCached } from '../../lib/posts-cache';
 import AdBanner from '../../components/AdBanner.astro';
-import { getCollection, getEntry, render } from 'astro:content';
+import { getEntry, render } from 'astro:content';
 
 const { slug } = Astro.params;
 
@@ -66,11 +67,8 @@ const currentCategory = categoryLabels[post.data.category] || {
   color: 'bg-storm-700/50 text-slate-300 border-storm-600'
 };
 
-// Noticias relacionadas de la misma categoría (excluyendo la actual)
-const categoryPosts = await getCollection('posts', ({ data, id }) => data.category === post.data.category && id !== post.id);
-const relatedPosts = categoryPosts
-  .sort((a, b) => new Date(b.data.publishedAt || 0).getTime() - new Date(a.data.publishedAt || 0).getTime())
-  .slice(0, 4);
+// Noticias relacionadas de la misma categoría (excluyendo la actual) desde caché en memoria O(1)
+const relatedPosts = await getRelatedPostsCached(post.data.category, post.id, 4);
 
 const coverImage = post.data.coverImage || '/images/posts/default-post.jpg';
 const pageUrl = Astro.url.href;

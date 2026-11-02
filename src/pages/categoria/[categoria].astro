@@ -4,8 +4,8 @@ export const prerender = false;
 import Layout from '../../layouts/Layout.astro';
 import Pagination from '../../components/Pagination.astro';
 import { getActiveAd } from '../../lib/site-settings';
+import { getPostsByCategoryCached } from '../../lib/posts-cache';
 import AdBanner from '../../components/AdBanner.astro';
-import { getCollection } from 'astro:content';
 
 const { categoria = 'regionales' } = Astro.params;
 
@@ -65,9 +65,8 @@ const currentMeta = categoryLabels[categoria.toLowerCase()] || {
   badge: 'bg-storm-700/50 text-slate-300 border-storm-600'
 };
 
-// Obtener publicaciones filtradas directamente por categoría
-const categoryPosts = await getCollection('posts', ({ data }) => data.category.toLowerCase() === categoria.toLowerCase());
-categoryPosts.sort((a, b) => new Date(b.data.publishedAt || 0).getTime() - new Date(a.data.publishedAt || 0).getTime());
+// Obtener publicaciones filtradas directamente por categoría desde caché en memoria
+const categoryPosts = await getPostsByCategoryCached(categoria.toLowerCase());
 
 // Paginación
 const urlPage = Astro.url.searchParams.get('page') || Astro.url.searchParams.get('pagina') || '1';

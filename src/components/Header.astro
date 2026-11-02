@@ -3,7 +3,7 @@ import AdBanner from './AdBanner.astro';
 import BreakingTicker from './BreakingTicker.astro';
 import BrandLogo from './BrandLogo.astro';
 
-import { getCollection } from 'astro:content';
+import { getSortedPostsCached } from '../lib/posts-cache';
 import { getSiteSettings, getActiveAd } from '../lib/site-settings';
 
 const categories = [
@@ -26,9 +26,8 @@ const today = new Intl.DateTimeFormat('es-VE', {
 const siteSettings = await getSiteSettings();
 const headerAd = await getActiveAd('header');
 
-const allPosts = await getCollection('posts');
-const recentTickerPosts = allPosts
-  .sort((a, b) => new Date(b.data.publishedAt || 0).getTime() - new Date(a.data.publishedAt || 0).getTime())
+const sortedPosts = await getSortedPostsCached();
+const recentTickerPosts = sortedPosts
   .slice(0, 5)
   .map((p) => ({
     title: p.data.title,
