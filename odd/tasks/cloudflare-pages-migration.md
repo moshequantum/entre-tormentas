@@ -2,7 +2,7 @@
 
 > ODD · Protocolo QUANTUM · G.E.N.O.V.A
 > Inicio: 2026-11-06 · Owner: Moisés (@moshequantum) · Editor principal: Guillo (@guillosthormes-arch)
-> Estado: **EN PRODUCCIÓN desde 2026-11-06 · repo público · pendientes: redirect apex→www, prueba de Guillo, Search Console**
+> Estado: **EN PRODUCCIÓN desde 2026-11-06 · repo público · pendientes: prueba de Guillo, Search Console, apagar InsForge/Vercel**
 
 ## Objective
 
@@ -124,7 +124,7 @@ free privado, con poco margen. Si se pasa, el Bloque 6 (repo público) lo resuel
 - [x] T19 Producción verificada (2026-11-06): `www` → 200 `server: cloudflare`, nota 2025
       servida por el archivo, `/api/keystatic/github/login` → GitHub OAuth con el callback de `www`.
       CI: primer deploy automático OK en **1 min 54 s** (run 42273932732).
-- [ ] T19b **Apex → www**: `entretormentas.com` sirve el sitio con 200 (los estáticos se
+- [x] T19b **Apex → www** (Redirect Rule creada 2026-11-06; verificado 301 con path y query): `entretormentas.com` sirve el sitio con 200 (los estáticos se
       sirven antes del Worker, que no alcanza a redirigir). Crear en la zona una Redirect Rule
       (plantilla *Redirect from root to WWW*, 301, preservar query string). Mientras tanto el
       `canonical` apunta a `www`, así que no hay penalización SEO.
@@ -140,6 +140,7 @@ free privado, con poco margen. Si se pasa, el Bloque 6 (repo público) lo resuel
       basta: reescribir el historial no hace falta si la clave ya no sirve.
 - [x] T21c Owner hizo **Roll** del token de cuenta `entretormentas-media` (2026-11-06): el secreto
       filtrado ya no es válido. Imágenes en `media.entretormentas.com` verificadas tras el Roll.
+- [x] T22b Repo: Issues y Projects desactivados; ruleset `Proteger main` (sin borrado ni force push; sin exigir PR para no romper Keystatic).
 - [x] T22 Repo **público** desde 2026-11-06 (`gh repo edit --visibility public`). GitHub reporta la
       licencia como `NOASSERTION` (propietaria). Actions pasa a minutos ilimitados.
       **Límite real**: los Términos de GitHub permiten a cualquier usuario ver y hacer
@@ -207,7 +208,7 @@ ISR/rebuild por nota y editor sin depender de commits. Se abrirá su propio ODD.
 - [x] Ningún código importa `@insforge/sdk` ni `@astrojs/vercel`.
 - [x] Build vivo < 20.000 archivos y Worker < 3 MiB, sin contenido de notas en el bundle.
 - [x] Notas viejas responden en su misma URL desde el Worker de archivo.
-- [x] `https://www.entretormentas.com` → 200 desde Cloudflare. (apex → 301 pendiente, T19b)
+- [x] `https://www.entretormentas.com` → 200 desde Cloudflare; apex → 301 a www.
 - [ ] Guillo publica desde `/keystatic` y la nota aparece en ≤ 5 min.
 - [ ] Primer mes dentro del Free Tier (anotar minutos de Actions reales aquí).
       Referencia: 1 min 54 s por deploy → ~20 guardados/día ≈ 1.150 min/mes (límite 2.000).
