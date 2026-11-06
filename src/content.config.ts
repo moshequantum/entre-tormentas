@@ -1,8 +1,22 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
+import { mediaUrl } from './lib/media.mjs';
+
+// BUILD_SCOPE=live (por defecto): notas versionadas en src/content/posts + las
+//   del año en curso / 300 más recientes que `scripts/prepare-content.mjs`
+//   extrae del archivo comprimido a generated/posts.
+// BUILD_SCOPE=archive: solo generated/posts (el histórico), se construye una vez
+//   al año y se publica en el Worker `entre-tormentas-archivo`.
+const scope = process.env.BUILD_SCOPE === 'archive' ? 'archive' : 'live';
+const postPatterns =
+  scope === 'archive' ? ['generated/posts/*.md'] : ['src/content/posts/*.md', 'generated/posts/*.md'];
 
 const posts = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/posts' }),
+  loader: glob({
+    pattern: postPatterns,
+    base: '.',
+    generateId: ({ entry }) => entry.split('/').pop()!.replace(/\.md$/, ''),
+  }),
   schema: z.object({
     title: z.string(),
     publishedAt: z.string().or(z.date()).optional(),
@@ -10,7 +24,7 @@ const posts = defineCollection({
     isFeatured: z.boolean().default(false),
     isBreaking: z.boolean().default(false),
     author: z.string().default('Redacción Entre Tormentas'),
-    coverImage: z.string().optional(),
+    coverImage: z.string().optional().transform((v) => mediaUrl(v)),
     imageCaption: z.string().optional(),
     excerpt: z.string().optional(),
     tags: z.array(z.string()).optional().default([]),

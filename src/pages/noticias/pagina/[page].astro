@@ -1,0 +1,14 @@
+---
+import NewsListPage from '../../../components/NewsListPage.astro';
+import { getSortedPostsCached } from '../../../lib/posts-cache';
+
+export async function getStaticPaths() {
+  const posts = await getSortedPostsCached();
+  const totalPages = Math.max(1, Math.ceil(posts.length / 16));
+  return Array.from({ length: Math.max(0, totalPages - 1) }, (_, i) => ({ params: { page: String(i + 2) } }));
+}
+
+const currentPage = Number(Astro.params.page);
+---
+
+<NewsListPage currentPage={currentPage} />

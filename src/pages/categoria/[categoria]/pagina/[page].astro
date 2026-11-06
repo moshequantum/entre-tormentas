@@ -1,0 +1,20 @@
+---
+import CategoryListPage from '../../../../components/CategoryListPage.astro';
+import { getSortedPostsCached, getPostsByCategoryCached } from '../../../../lib/posts-cache';
+
+export async function getStaticPaths() {
+  const posts = await getSortedPostsCached();
+  const cats = new Set<string>(['regionales', 'nacionales', 'sucesos', 'deportes', 'internacionales', 'espectaculos', 'opinion']);
+  for (const p of posts) if (p.data.category) cats.add(p.data.category.toLowerCase());
+  const paths = [];
+  for (const categoria of cats) {
+    const total = Math.ceil((await getPostsByCategoryCached(categoria)).length / 12);
+    for (let n = 2; n <= total; n++) paths.push({ params: { categoria, page: String(n) } });
+  }
+  return paths;
+}
+
+const { categoria, page } = Astro.params;
+---
+
+<CategoryListPage categoria={categoria} currentPage={Number(page)} />

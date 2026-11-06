@@ -1,0 +1,25 @@
+{
+  // Worker principal: www.entretormentas.com (build vivo, se despliega en cada commit)
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "entre-tormentas",
+  "account_id": "62680f607b64e56109f6d9fbbd26abf7",
+  "main": "./worker/index.js",
+  "compatibility_date": "2025-09-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  // Dominios de producción. Antes del primer deploy con esto, borrar en
+  // Cloudflare DNS el A 216.150.16.1 (apex) y el CNAME www → *.vercel-dns-016.com.
+  "routes": [
+    { "pattern": "www.entretormentas.com", "custom_domain": true },
+    { "pattern": "entretormentas.com", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "none",
+    "html_handling": "drop-trailing-slash"
+  },
+  "services": [{ "binding": "ARCHIVE", "service": "entre-tormentas-archivo" }],
+  "observability": { "enabled": true }
+}

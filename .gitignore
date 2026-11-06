@@ -42,3 +42,8 @@ Thumbs.db
 .roo
 .trae
 .windsurf
+
+# Build Cloudflare
+generated/
+dist-archive/
+.wrangler/

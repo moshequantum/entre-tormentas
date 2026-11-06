@@ -9,8 +9,9 @@ const { currentPage, totalPages, baseUrl } = Astro.props;
 
 const hasPrev = currentPage > 1;
 const hasNext = currentPage < totalPages;
-const prevUrl = currentPage === 2 ? baseUrl : `${baseUrl}?page=${currentPage - 1}`;
-const nextUrl = `${baseUrl}?page=${currentPage + 1}`;
+const pageHref = (n: number) => (n <= 1 ? baseUrl : `${baseUrl}/pagina/${n}`);
+const prevUrl = pageHref(currentPage - 1);
+const nextUrl = pageHref(currentPage + 1);
 
 // Calculate visible page range (Smart sliding window)
 const getPageNumbers = () => {
@@ -70,7 +71,7 @@ const pages = getPageNumbers();
       }
 
       const isCurrent = page === currentPage;
-      const pageUrl = page === 1 ? baseUrl : `${baseUrl}?page=${page}`;
+      const pageUrl = pageHref(page as number);
 
       return (
         <li>

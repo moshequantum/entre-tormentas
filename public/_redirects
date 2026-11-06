@@ -1,0 +1,5 @@
+/admin /keystatic 302
+/admin/* /keystatic 302
+/wp-admin /keystatic 302
+/wp-admin/* /keystatic 302
+/login /keystatic 302

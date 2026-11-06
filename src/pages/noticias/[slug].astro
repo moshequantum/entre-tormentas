@@ -1,37 +1,19 @@
 ---
-export const prerender = false;
 
 import Layout from '../../layouts/Layout.astro';
 import { getActiveAd } from '../../lib/site-settings';
 import { getRelatedPostsCached } from '../../lib/posts-cache';
 import AdBanner from '../../components/AdBanner.astro';
-import { getEntry, render } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 
-const { slug } = Astro.params;
-
-if (!slug) {
-  return Astro.redirect('/404');
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', (p) => (p.data.status || 'published') === 'published');
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
 }
 
-// Obtener el artículo directamente por id indexado O(1)
-let post = await getEntry('posts', slug);
-if (!post) {
-  post = await getEntry('posts', `${slug}.md`);
-}
-
-if (!post) {
-  return Astro.redirect('/404');
-}
-
-// Restrict unpublished posts (draft, review, trash) to authenticated editorial staff
+const { post } = Astro.props;
 const postStatus = post.data.status || 'published';
-const isUnpublished = postStatus !== 'published';
-if (isUnpublished) {
-  const sessionCookie = Astro.cookies.get('entretormentas_session');
-  if (!sessionCookie?.value) {
-    return Astro.redirect('/404');
-  }
-}
+const isUnpublished = false;
 
 const { Content } = await render(post);
 
@@ -71,7 +53,7 @@ const currentCategory = categoryLabels[post.data.category] || {
 const relatedPosts = await getRelatedPostsCached(post.data.category, post.id, 4);
 
 const coverImage = post.data.coverImage || '/images/posts/default-post.jpg';
-const pageUrl = Astro.url.href;
+const pageUrl = new URL(`/noticias/${post.id}`, 'https://www.entretormentas.com').href;
 
 // Cálculo de tiempo estimado de lectura (200 palabras por minuto)
 const rawBody = post.body || '';

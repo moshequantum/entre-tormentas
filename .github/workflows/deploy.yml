@@ -1,0 +1,54 @@
+name: Deploy entretormentas.com (Cloudflare Worker)
+
+# Cada "Guardar" en Keystatic es un commit en main → este workflow publica el
+# sitio vivo (año en curso + 300 notas más recientes). El histórico NO se
+# recompila aquí: vive en el Worker `entre-tormentas-archivo` (ver archive.yml).
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'odd/**'
+      - '*.md'
+      - '*.html'
+      - '*.pdf'
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Cache Astro content layer
+        uses: actions/cache@v4
+        with:
+          path: node_modules/.astro
+          key: astro-live-${{ hashFiles('pnpm-lock.yaml') }}-${{ github.sha }}
+          restore-keys: astro-live-${{ hashFiles('pnpm-lock.yaml') }}-
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Build (sitio vivo)
+        run: pnpm run build
+        env:
+          PUBLIC_KEYSTATIC_GITHUB_APP_SLUG: entre-tormentas-cms
+
+      - name: Deploy Worker
+        run: pnpm exec wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

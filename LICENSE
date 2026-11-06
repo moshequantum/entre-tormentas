@@ -1,0 +1,23 @@
+Copyright (c) 2024-2026 Entre Tormentas y Multiversa Group. Todos los derechos reservados.
+
+LICENCIA PROPIETARIA — CÓDIGO VISIBLE, NO LIBRE
+
+Este repositorio (código, diseño, marca "Entre Tormentas", logotipos y todo el
+contenido editorial: noticias, textos, fotografías e imágenes) es propiedad de
+sus titulares. Que el código pueda verse públicamente NO concede ninguna licencia.
+
+Sin autorización previa y por escrito de los titulares, queda prohibido:
+  1. Copiar, clonar, reproducir o redistribuir este repositorio o partes de él.
+  2. Desplegar, alojar o ejecutar este proyecto, o derivados, en cualquier servidor.
+  3. Crear obras derivadas, incluidos sitios que imiten su diseño o su marca.
+  4. Republicar el contenido editorial, total o parcialmente.
+
+Se permite únicamente ver el código en GitHub y usar las funciones que GitHub
+ofrece a todos los usuarios conforme a sus Términos de Servicio.
+
+Las herramientas de terceros usadas por el proyecto (Astro, Keystatic, Tailwind,
+React, Cloudflare Wrangler, etc.) conservan sus propias licencias libres y siguen
+estando disponibles para cualquiera bajo esas licencias. Esta licencia cubre solo
+la obra propia de los titulares.
+
+Contacto para permisos: Multiversa Group.

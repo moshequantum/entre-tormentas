@@ -1,0 +1,15 @@
+{
+  // Worker del archivo histórico (años anteriores). Se despliega 1 vez al año.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "entre-tormentas-archivo",
+  "account_id": "62680f607b64e56109f6d9fbbd26abf7",
+  "main": "./worker/archive.js",
+  "compatibility_date": "2025-09-01",
+  "workers_dev": false,
+  "assets": {
+    "directory": "./dist-archive",
+    "binding": "ASSETS",
+    "not_found_handling": "none",
+    "html_handling": "drop-trailing-slash"
+  }
+}

@@ -1,24 +1,14 @@
 ---
 export const prerender = false;
 
-import { getEntry } from 'astro:content';
-
+// URLs heredadas de WordPress (/mi-noticia) → /noticias/mi-noticia.
+// No consulta el contenido para que el Worker no cargue las ~9.500 notas:
+// si la nota no existe, /noticias/... responde el 404 estático.
 const { slug } = Astro.params;
 
-if (!slug || slug.includes('.')) {
+if (!slug || slug.includes('.') || !/^[a-z0-9-]+$/i.test(slug)) {
   return new Response(null, { status: 404, statusText: 'Not Found' });
 }
 
-// Comprobar si el slug corresponde a un artículo mediante búsqueda indexada O(1)
-let post = await getEntry('posts', slug);
-if (!post) {
-  post = await getEntry('posts', `${slug}.md`);
-}
-
-if (post) {
-  // Redirección permanente 301 a la ruta canónica de noticias para preservar SEO
-  return Astro.redirect(`/noticias/${post.id}`, 301);
-}
-
-return new Response(null, { status: 404, statusText: 'Not Found' });
+return Astro.redirect(`/noticias/${slug.toLowerCase()}`, 301);
 ---
