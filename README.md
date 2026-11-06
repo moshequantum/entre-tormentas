@@ -62,6 +62,19 @@ Después de cada cambio importante, valida con
 [Rich Results Test](https://search.google.com/test/rich-results) y envía
 `https://www.entretormentas.com/sitemap.xml` en Google Search Console y Bing Webmaster Tools.
 
+## Rendimiento y seguridad
+
+| Qué | Dónde |
+|---|---|
+| Variantes WebP 160/480/960/1600 px de todo `/images/**`, generadas en el build con caché por hash (`.image-cache/`, cacheada en Actions) | `scripts/optimize-images.mjs` |
+| `<img {...img(src, 'thumb' \| 'card' \| 'hero' \| 'full')} />` → `src` + `srcset` + `sizes` | `src/lib/img.ts` |
+| Imagen LCP con `fetchpriority="high"` y `<link rel="preload">` | `Layout.astro` (`preloadImage`) |
+| Fuentes Geist servidas desde el propio dominio | `@fontsource-variable/geist` |
+| HSTS, X-Frame-Options, Permissions-Policy, COOP, CSP mínima | `public/_headers` (estáticos) y `worker/index.js` (respuestas del Worker) |
+
+Al agregar una imagen nueva en una plantilla, usa siempre `img()`: así se sirve la
+variante del tamaño correcto y no el original de varios MB.
+
 ## Desarrollo
 
 Requisitos: Node 22, pnpm 10.
@@ -106,7 +119,7 @@ src/
   lib/                  media.mjs (URLs R2), seo.ts, posts-cache.ts, site-settings.ts
   pages/                rutas estáticas + sitemaps, robots, llms.txt, RSS
 worker/                 Workers de Cloudflare (principal y archivo)
-scripts/                prepare-content.mjs, build-archive.mjs y utilidades de migración
+scripts/                prepare-content.mjs, build-archive.mjs, optimize-images.mjs, pack-posts-archive.mjs
 odd/tasks/              planes y bitácoras de trabajo (ODD)
 keystatic.config.ts     esquema del CMS
 ```

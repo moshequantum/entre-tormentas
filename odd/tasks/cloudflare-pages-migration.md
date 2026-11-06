@@ -172,6 +172,32 @@ free privado, con poco margen. Si se pasa, el Bloque 6 (repo público) lo resuel
 - [ ] Editorial: hay notas duplicadas con distinto slug (p. ej. dos "EN FRANCISCO E.
       BUSTAMANTE…" del 2026-11-06). Borrar la sobrante en Keystatic.
 
+### Bloque 6c — Rendimiento, seguridad y limpieza ✅ (2026-11-06)
+Línea base PageSpeed (antes): móvil 74, **LCP 10,1 s**; escritorio LCP 1,9 s; Accesibilidad 94,
+Buenas prácticas 100, SEO 100. Diagnóstico: originales de hasta 2 MB (el ticker cargaba la foto
+completa para miniaturas de 36×24 px), fondo del header de 774 KB en todas las páginas, Google
+Fonts bloqueando el render, caché de imágenes de 7 días.
+- [x] `scripts/optimize-images.mjs`: variantes WebP 160/480/960/1600 (319 imágenes → 1.232
+      variantes; 73 s en el primer CI, luego solo las nuevas por caché). Header 774 KB → 43 KB,
+      portada típica 444 KB → 50 KB.
+- [x] `src/lib/img.ts` en portada, nota, listados, ticker y header; `fetchpriority` + preload LCP;
+      fallback `onerror` que limpia el `srcset`.
+- [x] Fuentes locales (`@fontsource-variable/geist`, `geist-mono`); 0 peticiones a Google Fonts.
+- [x] Caché `/images/*` 30 días + `stale-while-revalidate`.
+- [x] Cabeceras de seguridad en estáticos y Worker (HSTS sin `includeSubDomains` para no afectar
+      otros subdominios; CSP mínima que no rompe AdSense ni Keystatic).
+- [x] Repo público: retirados del índice los informes ejecutivos del cliente
+      (`informe-entre-tormentas-multiversa.*`, quedan en disco e ignorados; siguen en el
+      historial). Eliminados 8 scripts de la migración WP/InsForge y `@aws-sdk/client-s3`.
+- [x] Ramas viejas respaldadas como tags `archive/<rama>` en GitHub.
+- [ ] **Owner**: borrar las 6 ramas en GitHub → Branches (bloqueado para el agente por
+      permisos): `feat/cms-site-settings-ads`, `feat/editorial-all-serif-italic`,
+      `feat/redesign-editorial-vercel`, `fix/cms-site-settings-build-resolved`,
+      `fix/keystatic-oauth-redirect-uri`, `staging`.
+- [ ] Medir PageSpeed de nuevo y anotar aquí (meta: móvil ≥ 90, LCP < 2,5 s).
+- [ ] El archivo 2024–2025 se compiló antes de este cambio (sin `srcset`); se actualiza solo en
+      el rebuild anual o con `archive.yml` manual. Sus portadas ya son WebP livianos en R2.
+
 ### Bloque 7 — Cierre ⏳
 - [x] T23a El owner inició sesión en `/keystatic` en producción y todo funciona (2026-11-06).
 - [ ] T23b Guillo publica una nota real y se mide guardar → visible (meta ≤ 5 min).
