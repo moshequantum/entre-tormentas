@@ -1,3 +1,9 @@
+onlyBuiltDependencies:
+  - esbuild
+  - sharp
+  - workerd
+  - '@cloudflare/workerd-windows-64'
+
 allowBuilds:
   esbuild: true
   sharp: true
