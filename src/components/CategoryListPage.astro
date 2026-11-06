@@ -74,10 +74,15 @@ const categoryAd = await getActiveAd('category');
 ---
 
 <Layout
-  title={`${currentMeta.title} | Entre Tormentas`}
-  description={currentMeta.desc}
+  title={currentPage > 1 ? `${currentMeta.title} · Página ${currentPage} | Entre Tormentas` : `${currentMeta.title} | Entre Tormentas`}
+  description={currentPage > 1 ? `${currentMeta.desc} Página ${currentPage} de ${totalPages}.` : currentMeta.desc}
   type="website"
   category={categoria}
+  breadcrumbs={[
+    { name: 'Inicio', url: '/' },
+    { name: currentMeta.title, url: `/categoria/${categoria}` },
+    ...(currentPage > 1 ? [{ name: `Página ${currentPage}`, url: `/categoria/${categoria}/pagina/${currentPage}` }] : []),
+  ]}
 >
   <div class="relative mx-auto max-w-7xl px-4 py-8 sm:px-6">
     <!-- Category Hero Header -->

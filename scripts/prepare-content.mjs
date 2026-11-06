@@ -54,6 +54,26 @@ for (const e of entries) {
   written++;
 }
 
+// Índice liviano del histórico para sitemaps y llms.txt del sitio vivo: así las
+// ~6.600 notas archivadas siguen descubribles sin volver a renderizarlas.
+if (SCOPE === 'live') {
+  const field = (content, name) => {
+    const m = content.match(new RegExp(`^${name}:\\s*(?:>-?\\s*\\n\\s+)?['"]?([^'"\\r\\n]+)['"]?`, 'm'));
+    return m ? m[1].trim() : '';
+  };
+  const archived = entries
+    .filter((e) => !(e.ts >= CUTOFF || recent.has(e.file)))
+    .filter((e) => !/^status:\s*['"]?(draft|review|trash)/m.test(e.content))
+    .map((e) => ({
+      slug: e.file.replace(/\.md$/, ''),
+      date: e.ts ? new Date(e.ts).toISOString().slice(0, 10) : '',
+      title: field(e.content, 'title'),
+      cover: field(e.content, 'coverImage'),
+    }));
+  fs.writeFileSync(path.resolve('generated/archive-index.json'), JSON.stringify(archived));
+  console.log(`[prepare-content] archive-index.json → ${archived.length} notas archivadas indexadas.`);
+}
+
 console.log(
   `[prepare-content] scope=${SCOPE} corte=${YEAR}-01-01 → ${total} notas en el build (${written} extraídas a generated/posts) de ${entries.length} totales.`
 );

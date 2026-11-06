@@ -47,9 +47,14 @@ const categoryBadgeStyles: Record<string, string> = {
 ---
 
 <Layout
-  title={`Todas las Noticias | Archivo Informativo (${currentPage}/${totalPages}) - Entre Tormentas`}
-  description="Archivo completo de noticias de Entre Tormentas: actualidad regional del Zulia, sucesos, política nacional, deportes y opinión."
+  title={currentPage > 1 ? `Últimas noticias · Página ${currentPage} | Entre Tormentas` : 'Últimas noticias del Zulia y Venezuela | Entre Tormentas'}
+  description={`Noticias de Entre Tormentas: actualidad regional del Zulia, sucesos, política nacional, deportes y opinión.${currentPage > 1 ? ` Página ${currentPage} de ${totalPages}.` : ''}`}
   type="website"
+  breadcrumbs={[
+    { name: 'Inicio', url: '/' },
+    { name: 'Noticias', url: '/noticias' },
+    ...(currentPage > 1 ? [{ name: `Página ${currentPage}`, url: `/noticias/pagina/${currentPage}` }] : []),
+  ]}
 >
   <div class="relative mx-auto max-w-7xl px-4 py-8 sm:px-6">
     <!-- Header de la Sección -->

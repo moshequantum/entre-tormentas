@@ -51,13 +51,13 @@ export const GET: APIRoute = async () => {
       <guid isPermaLink="true">${link}</guid>
       <description>${description}</description>
       <category>${category}</category>
-      <author>${author}</author>
+      <dc:creator>${author}</dc:creator>
       <pubDate>${pubDate}</pubDate>${mediaTag}
     </item>`;
   });
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Entre Tormentas | Diario Digital del Zulia</title>
     <link>${BASE_URL}</link>

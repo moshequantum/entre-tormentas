@@ -15,6 +15,8 @@ interface Props {
   author?: string;
   tags?: string[];
   canonical?: string;
+  noindex?: boolean;
+  breadcrumbs?: { name: string; url: string }[];
 }
 
 const {
@@ -27,11 +29,16 @@ const {
   category,
   author = 'Redacción Entre Tormentas',
   tags = [],
-  canonical
+  canonical,
+  noindex = false,
+  breadcrumbs = [],
 } = Astro.props;
 
 const siteUrl = 'https://www.entretormentas.com';
-const canonicalUrl = canonical || (Astro.site ? new URL(Astro.url.pathname, Astro.site).href : `${siteUrl}${Astro.url.pathname}`);
+// Las URLs públicas no llevan barra final (el Worker sirve /x y redirige /x/ → /x).
+const normalizedPath = Astro.url.pathname === '/' ? '/' : Astro.url.pathname.replace(/\/+$/, '');
+const canonicalUrl = canonical || `${siteUrl}${normalizedPath}`;
+const logoUrl = `${siteUrl}/images/brand/isologo-e-concept.jpg`;
 const absoluteImageUrl = image.startsWith('http') ? image : `${siteUrl}${image.startsWith('/') ? '' : '/'}${image}`;
 
 // Favicon editable desde Keystatic (Ajustes del sitio); si no hay uno guardado se
@@ -79,89 +86,116 @@ const keywordsMeta = cleanTags.length > 0
   ? cleanTags.join(', ')
   : `${category || 'Noticias'}, Maracaibo, Zulia, Venezuela, Entre Tormentas`;
 
-// Schema.org JSON-LD structured data (SEO, GEO & AEO)
-const schemaData = type === 'article'
-  ? {
-      '@context': 'https://schema.org',
-      '@type': 'NewsArticle',
-      'mainEntityOfPage': {
-        '@type': 'WebPage',
-        '@id': canonicalUrl
-      },
-      'headline': title,
-      'description': description,
-      'image': [absoluteImageUrl],
-      'datePublished': isoPublished || new Date().toISOString(),
-      'dateModified': isoModified || isoPublished || new Date().toISOString(),
-      'author': {
-        '@type': 'Person',
-        'name': author,
-        'url': siteUrl
-      },
-      'publisher': {
-        '@type': 'NewsMediaOrganization',
-        'name': 'Entre Tormentas',
-        'url': siteUrl,
-        'logo': {
-          '@type': 'ImageObject',
-          'url': faviconUrl
-        }
-      },
-      'articleSection': category || 'General',
-      'keywords': keywordsMeta,
-      'inLanguage': 'es-VE',
-      'contentLocation': {
-        '@type': 'Place',
-        'name': 'Maracaibo, Estado Zulia, Venezuela',
-        'geo': {
-          '@type': 'GeoCoordinates',
-          'latitude': 10.6427,
-          'longitude': -71.6125
-        }
-      },
-      'speakable': {
-        '@type': 'SpeakableSpecification',
-        'cssSelector': ['h1', '.article-lead', '.article-excerpt']
-      }
-    }
-  : {
-      '@context': 'https://schema.org',
-      '@graph': [
-        {
-          '@type': 'NewsMediaOrganization',
-          '@id': `${siteUrl}/#organization`,
-          'name': 'Entre Tormentas',
-          'url': siteUrl,
-          'logo': faviconUrl,
-          'description': 'Diario digital de noticias, opinión y sucesos del Estado Zulia y Venezuela.',
-          'address': {
-            '@type': 'PostalAddress',
-            'addressLocality': 'Maracaibo',
-            'addressRegion': 'Zulia',
-            'addressCountry': 'VE'
-          },
-          'sameAs': [
-            'https://twitter.com/EntreTormentas',
-            'https://www.instagram.com/entretormentas',
-            'https://www.facebook.com/EntreTormentas'
-          ]
-        },
-        {
-          '@type': 'WebSite',
-          '@id': `${siteUrl}/#website`,
-          'url': siteUrl,
-          'name': 'Entre Tormentas',
-          'publisher': {
-            '@id': `${siteUrl}/#organization`
-          },
-          'inLanguage': 'es-VE'
-        }
-      ]
-    };
+// Schema.org JSON-LD (SEO, GEO & AEO): un solo @graph con entidades enlazadas por @id.
+const organization = {
+  '@type': 'NewsMediaOrganization',
+  '@id': `${siteUrl}/#organization`,
+  name: 'Entre Tormentas',
+  alternateName: 'Entre Tormentas Diario Digital',
+  url: siteUrl,
+  logo: { '@type': 'ImageObject', url: logoUrl },
+  image: logoUrl,
+  description: 'Diario digital de noticias, opinión y sucesos del estado Zulia y Venezuela.',
+  foundingLocation: { '@type': 'Place', name: 'Maracaibo, Zulia, Venezuela' },
+  areaServed: [
+    { '@type': 'State', name: 'Zulia', containedInPlace: { '@type': 'Country', name: 'Venezuela' } },
+    { '@type': 'Country', name: 'Venezuela' },
+  ],
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Maracaibo',
+    addressRegion: 'Zulia',
+    addressCountry: 'VE',
+  },
+  sameAs: [
+    'https://twitter.com/EntreTormentas',
+    'https://www.instagram.com/entretormentas',
+    'https://www.facebook.com/EntreTormentas',
+  ],
+  publishingPrinciples: `${siteUrl}/terminos`,
+};
+
+const website = {
+  '@type': 'WebSite',
+  '@id': `${siteUrl}/#website`,
+  url: siteUrl,
+  name: 'Entre Tormentas',
+  description: 'Noticias del Zulia y Venezuela: regionales, nacionales, sucesos, deportes y opinión.',
+  publisher: { '@id': `${siteUrl}/#organization` },
+  inLanguage: 'es-VE',
+};
+
+const isInstitutionalAuthor = !author || /redacci[oó]n|entre tormentas/i.test(author);
+
+const graph: Record<string, unknown>[] = [organization, website];
+
+if (breadcrumbs.length > 0) {
+  graph.push({
+    '@type': 'BreadcrumbList',
+    '@id': `${canonicalUrl}#breadcrumb`,
+    itemListElement: breadcrumbs.map((crumb, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: crumb.name,
+      item: crumb.url.startsWith('http') ? crumb.url : `${siteUrl}${crumb.url}`,
+    })),
+  });
+}
+
+if (type === 'article') {
+  graph.push({
+    '@type': 'NewsArticle',
+    '@id': `${canonicalUrl}#article`,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
+    url: canonicalUrl,
+    headline: title.replace(/\s*\|\s*Entre Tormentas$/, '').slice(0, 110),
+    description,
+    image: [absoluteImageUrl],
+    thumbnailUrl: absoluteImageUrl,
+    datePublished: isoPublished || undefined,
+    dateModified: isoModified || isoPublished || undefined,
+    author: isInstitutionalAuthor
+      ? { '@id': `${siteUrl}/#organization` }
+      : { '@type': 'Person', name: author },
+    publisher: { '@id': `${siteUrl}/#organization` },
+    isPartOf: { '@id': `${siteUrl}/#website` },
+    articleSection: category || 'General',
+    keywords: keywordsMeta,
+    inLanguage: 'es-VE',
+    isAccessibleForFree: true,
+    breadcrumb: breadcrumbs.length > 0 ? { '@id': `${canonicalUrl}#breadcrumb` } : undefined,
+    contentLocation: {
+      '@type': 'Place',
+      name: 'Maracaibo, Estado Zulia, Venezuela',
+      geo: { '@type': 'GeoCoordinates', latitude: 10.6427, longitude: -71.6125 },
+    },
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '.article-lead', '.article-excerpt'],
+    },
+  });
+} else {
+  graph.push({
+    '@type': 'WebPage',
+    '@id': canonicalUrl,
+    url: canonicalUrl,
+    name: title,
+    description,
+    isPartOf: { '@id': `${siteUrl}/#website` },
+    about: { '@id': `${siteUrl}/#organization` },
+    inLanguage: 'es-VE',
+    breadcrumb: breadcrumbs.length > 0 ? { '@id': `${canonicalUrl}#breadcrumb` } : undefined,
+  });
+}
+
+const schemaData = { '@context': 'https://schema.org', '@graph': graph };
+const robotsContent = noindex
+  ? 'noindex, follow'
+  : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 ---
 
 <!doctype html>
-<html lang="es" class="dark scroll-smooth">
+<html lang="es-VE" class="dark scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -172,9 +206,9 @@ const schemaData = type === 'article'
     <link rel="canonical" href={canonicalUrl} />
 
     <!-- Search Engine Optimization (SEO) Crawlers -->
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="robots" content={robotsContent} />
+    <link rel="alternate" hreflang="es-VE" href={canonicalUrl} />
+    <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
 
     <!-- Geotargeting (GEO) - Maracaibo / Zulia / Venezuela -->
     <meta name="geo.region" content="VE-V" />
@@ -191,7 +225,10 @@ const schemaData = type === 'article'
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={absoluteImageUrl} />
     <meta property="og:image:alt" content={title} />
+    {absoluteImageUrl.startsWith('https://') && <meta property="og:image:secure_url" content={absoluteImageUrl} />}
     {type === 'article' && isoPublished && <meta property="article:published_time" content={isoPublished} />}
+    {type === 'article' && (isoModified || isoPublished) && <meta property="article:modified_time" content={isoModified || isoPublished} />}
+    {type === 'article' && <meta property="article:publisher" content="https://www.facebook.com/EntreTormentas" />}
     {type === 'article' && category && <meta property="article:section" content={category} />}
     {type === 'article' && author && <meta property="article:author" content={author} />}
     {type === 'article' && cleanTags.map((tag) => <meta property="article:tag" content={tag} />)}
@@ -208,6 +245,7 @@ const schemaData = type === 'article'
     <!-- Syndication & Feeds -->
     <link rel="alternate" type="application/rss+xml" title="Entre Tormentas RSS Feed" href="/rss.xml" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    <link rel="alternate" type="text/plain" title="Resumen para asistentes de IA" href="/llms.txt" />
 
     <!-- Structured Data JSON-LD (SEO, GEO & AEO) -->
     <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
@@ -222,6 +260,7 @@ const schemaData = type === 'article'
     )}
 
     <!-- Typography: Geist (Interface & Editorial Sans) & Geist Mono (Telemetry) -->
+    <link rel="preconnect" href="https://media.entretormentas.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

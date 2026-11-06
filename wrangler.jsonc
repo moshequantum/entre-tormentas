@@ -6,7 +6,7 @@
   "main": "./worker/index.js",
   "compatibility_date": "2025-09-01",
   "compatibility_flags": ["nodejs_compat"],
-  "workers_dev": true,
+  "workers_dev": false,
   "preview_urls": false,
   // Dominios de producción. Antes del primer deploy con esto, borrar en
   // Cloudflare DNS el A 216.150.16.1 (apex) y el CNAME www → *.vercel-dns-016.com.

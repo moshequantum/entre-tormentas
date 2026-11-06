@@ -88,6 +88,11 @@ const articleBottomAd = await getActiveAd('article-bottom');
   category={post.data.category}
   author={post.data.author}
   tags={postTags}
+  breadcrumbs={[
+    { name: 'Inicio', url: '/' },
+    { name: currentCategory.label, url: `/categoria/${post.data.category || 'regionales'}` },
+    { name: post.data.title, url: `/noticias/${post.id}` },
+  ]}
 >
   <!-- Atmospheric Glow Effect -->
   <div class="pointer-events-none absolute inset-x-0 top-0 h-[400px] overflow-hidden opacity-25">
