@@ -131,16 +131,46 @@ free privado, con poco margen. Si se pasa, el Bloque 6 (repo público) lo resuel
 
 ### Bloque 6 — Repo público con licencia propietaria ⏳
 - [x] T20 `LICENSE` propietaria (código visible, uso prohibido sin permiso escrito).
-- [ ] T21 Antes de hacer público: **rotar la clave R2** que quedó en el historial
-      (`cms-prod-hardening.md` T10) y revisar el historial completo en busca de otros
-      secretos (`OWNER_GITHUB_TOKEN`, credenciales InsForge).
-- [ ] T22 Cambiar visibilidad a público (decisión y clic del owner).
+- [x] T21a Escaneo del historial (2026-11-06): **la clave R2 (Access Key ID + Secret) está
+      hardcodeada** como valor por defecto en `src/pages/api/admin/upload.ts` desde
+      `9c2b977c` (2026-10-21) y sigue en commits posteriores. No se encontraron tokens de
+      GitHub, claves InsForge ni `.env` versionados. `scripts/upload-storage.cjs` solo lee env.
+- [ ] T21b **Owner**: R2 → Manage API Tokens → revocar el token cuyo Access Key ID aparece
+      en `9c2b977c` y crear uno nuevo si `scripts/upload-storage.cjs` lo necesita. Rotar
+      basta: reescribir el historial no hace falta si la clave ya no sirve.
+- [ ] T22 Cambiar visibilidad a público (decisión y clic del owner), **solo después de T21b**.
       **Límite real**: los Términos de GitHub permiten a cualquier usuario ver y hacer
       *fork* de un repo público dentro de GitHub; la licencia prohíbe *usarlo*,
       no lo impide técnicamente. Si eso no es aceptable, mantener privado.
 
+### Bloque 6b — SEO · GEO · AEO · OG ✅ (2026-11-06)
+- [x] JSON-LD unificado en `@graph`: `NewsMediaOrganization` (logo raster, áreas
+      servidas Zulia/Venezuela), `WebSite`, `WebPage` o `NewsArticle` (autor institucional
+      enlazado por `@id`, `isAccessibleForFree`, `speakable`), `BreadcrumbList`.
+- [x] Canonical y `og:url` sin barra final (antes apuntaban a una URL que redirige).
+- [x] `lang="es-VE"`, `hreflang` es-VE/x-default, `article:modified_time`, `article:publisher`,
+      `og:image:secure_url`, preconnect a `media.entretormentas.com`.
+- [x] Títulos y descripciones únicos en páginas `/pagina/N`; `noindex, follow` en el 404.
+- [x] Índice de sitemaps: `sitemap-paginas`, `sitemap-noticias` (2.842, con imagen),
+      `sitemap-news` (Google News, 48 h), `sitemap-archivo-2024` (3.091) y `-2025` (3.529).
+      El archivo vuelve a ser descubrible sin re-renderizarse
+      (`generated/archive-index.json` lo genera `prepare-content.mjs`).
+- [x] `robots.txt` con permisos explícitos a buscadores e IA (GPTBot, OAI-SearchBot,
+      PerplexityBot, ClaudeBot, Google-Extended…); solo se cierran `/keystatic` y `/api/`.
+- [x] `llms.txt` (secciones + últimas 60 notas) para AEO/GEO.
+- [x] RSS con `dc:creator` (el `<author>` de RSS 2.0 exige email).
+- [x] `workers_dev: false`: la URL de pruebas ya no duplica el sitio.
+- [x] `README.md` con arquitectura, SEO, operación y guía de editores.
+- [ ] **Owner**: enviar `https://www.entretormentas.com/sitemap.xml` en Google Search
+      Console y Bing Webmaster Tools; postular el medio en Google Publisher Center (News).
+- [ ] **Owner**: confirmar que las cuentas de `sameAs` (X, Instagram, Facebook
+      `EntreTormentas`) existen y son las oficiales; si no, corregirlas en `Layout.astro`.
+- [ ] Editorial: hay notas duplicadas con distinto slug (p. ej. dos "EN FRANCISCO E.
+      BUSTAMANTE…" del 2026-11-06). Borrar la sobrante en Keystatic.
+
 ### Bloque 7 — Cierre ⏳
-- [ ] T23 Sesión de 10 min con Guillo: publica una nota real y la ve online (meta ≤ 5 min).
+- [x] T23a El owner inició sesión en `/keystatic` en producción y todo funciona (2026-11-06).
+- [ ] T23b Guillo publica una nota real y se mide guardar → visible (meta ≤ 5 min).
 - [ ] T24 +7 días estables: borrar proyecto InsForge del cliente y el proyecto Vercel
       `prj_eyHDWZkGoZi9aEzPmoyi0FjkhsSi` (OWNER, irreversible).
 
