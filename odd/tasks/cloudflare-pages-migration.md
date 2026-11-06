@@ -190,11 +190,16 @@ Fonts bloqueando el render, caché de imágenes de 7 días.
       (`informe-entre-tormentas-multiversa.*`, quedan en disco e ignorados; siguen en el
       historial). Eliminados 8 scripts de la migración WP/InsForge y `@aws-sdk/client-s3`.
 - [x] Ramas viejas respaldadas como tags `archive/<rama>` en GitHub.
-- [ ] **Owner**: borrar las 6 ramas en GitHub → Branches (bloqueado para el agente por
+- [x] **Owner**: borró las 6 ramas en GitHub → Branches (bloqueado para el agente por
       permisos): `feat/cms-site-settings-ads`, `feat/editorial-all-serif-italic`,
       `feat/redesign-editorial-vercel`, `fix/cms-site-settings-build-resolved`,
       `fix/keystatic-oauth-redirect-uri`, `staging`.
-- [ ] Medir PageSpeed de nuevo y anotar aquí (meta: móvil ≥ 90, LCP < 2,5 s).
+- [x] PageSpeed después (2026-11-06): **escritorio 100 · móvil 96**; Accesibilidad 94, Buenas prácticas 100,
+      SEO 100, Agentic Browsing 3/3. (Antes: móvil 74, LCP 10,1 s.)
+- [ ] **Owner**: desinstalar la GitHub App de Vercel del repo (GitHub → Settings → Integrations →
+      GitHub Apps → Vercel → Configure → quitar `entre-tormentas`). Hoy marca ❌ "Account is blocked"
+      en cada commit; no afecta al sitio.
+- [ ] Detalle: Accesibilidad 94 → revisar contraste y etiquetas que marque Lighthouse.
 - [ ] El archivo 2024–2025 se compiló antes de este cambio (sin `srcset`); se actualiza solo en
       el rebuild anual o con `archive.yml` manual. Sus portadas ya son WebP livianos en R2.
 
