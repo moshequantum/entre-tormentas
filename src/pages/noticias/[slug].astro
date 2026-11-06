@@ -1,4 +1,5 @@
 ---
+import { img, IMG_FALLBACK } from '../../lib/img';
 
 import Layout from '../../layouts/Layout.astro';
 import { getActiveAd } from '../../lib/site-settings';
@@ -80,6 +81,7 @@ const articleBottomAd = await getActiveAd('article-bottom');
 ---
 
 <Layout
+  preloadImage={img(coverImage, 'full')}
   title={`${post.data.title} | Entre Tormentas`}
   description={autoDescription}
   image={coverImage}
@@ -237,10 +239,12 @@ const articleBottomAd = await getActiveAd('article-bottom');
     <!-- Imagen de Portada Principal con Fallback -->
     <figure class="relative mb-8 overflow-hidden rounded-2xl border border-storm-700 bg-storm-900 shadow-2xl">
       <img
-        src={coverImage}
+        {...img(coverImage, 'full')}
         alt={post.data.title}
+        fetchpriority="high"
+        decoding="async"
         class="w-full max-h-[520px] object-cover"
-        onerror="this.src='/images/posts/default-post.jpg'"
+        onerror={IMG_FALLBACK}
       />
       {post.data.imageCaption && (
         <figcaption class="border-t border-storm-800 bg-storm-950/90 px-4 py-2.5 text-xs text-slate-400">
@@ -340,11 +344,11 @@ const articleBottomAd = await getActiveAd('article-bottom');
               <div>
                 <div class="relative h-36 w-full overflow-hidden bg-storm-800">
                   <img
-                    src={rel.data.coverImage || '/images/posts/default-post.jpg'}
+                    {...img(rel.data.coverImage, 'card')}
                     alt={rel.data.title}
                     class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
-                    onerror="this.src='/images/posts/default-post.jpg'"
+                    onerror={IMG_FALLBACK}
                   />
                 </div>
                 <div class="p-3.5 space-y-2">

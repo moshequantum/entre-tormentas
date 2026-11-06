@@ -47,3 +47,8 @@ Thumbs.db
 generated/
 dist-archive/
 .wrangler/
+.image-cache/
+
+# Documentos internos del cliente (no publicar)
+informe-*.html
+informe-*.pdf

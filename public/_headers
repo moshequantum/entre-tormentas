@@ -1,14 +1,31 @@
+# Cabeceras para archivos estáticos (Workers Static Assets).
+# Las respuestas del Worker (Keystatic, redirecciones) reciben las mismas
+# cabeceras de seguridad desde worker/index.js.
+
+/*
+  Strict-Transport-Security: max-age=31536000
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+  Content-Security-Policy: upgrade-insecure-requests; frame-ancestors 'self'; object-src 'none'; base-uri 'self'
+
 /_astro/*
   Cache-Control: public, max-age=31536000, immutable
+
 /images/*
-  Cache-Control: public, max-age=604800
-/*
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=604800
+
+/favicon.svg
+  Cache-Control: public, max-age=2592000
+
 /llms.txt
   Content-Type: text/plain; charset=utf-8
   Cache-Control: public, max-age=3600
+
 /robots.txt
   Cache-Control: public, max-age=3600
+
 /sitemap*.xml
   Cache-Control: public, max-age=1800

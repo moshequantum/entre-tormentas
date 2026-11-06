@@ -6,7 +6,7 @@
   "packageManager": "pnpm@10.10.0",
   "scripts": {
     "dev": "node scripts/prepare-content.mjs && astro dev",
-    "build": "node scripts/prepare-content.mjs && astro build",
+    "build": "node scripts/prepare-content.mjs && astro build && node scripts/optimize-images.mjs dist",
     "build:archive": "node scripts/build-archive.mjs",
     "preview": "wrangler dev",
     "deploy": "wrangler deploy",
@@ -17,7 +17,8 @@
     "@astrojs/cloudflare": "^12.0.0",
     "@astrojs/react": "^4.0.0",
     "@astrojs/tailwind": "^5.1.0",
-    "@aws-sdk/client-s3": "^3.1152.0",
+    "@fontsource-variable/geist": "^5.3.0",
+    "@fontsource-variable/geist-mono": "^5.3.0",
     "@keystatic/astro": "^6.0.0",
     "@keystatic/core": "^0.5.0",
     "astro": "^5.0.0",
@@ -29,6 +30,7 @@
   "devDependencies": {
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "sharp": "^0.35.5",
     "wrangler": "^4.59.2"
   }
 }

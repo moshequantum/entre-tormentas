@@ -2,6 +2,9 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { getSiteSettings } from '../lib/site-settings';
+// Fuentes servidas desde el propio dominio (sin bloqueo de render por Google Fonts).
+import '@fontsource-variable/geist';
+import '@fontsource-variable/geist-mono';
 import '../styles/global.css';
 
 interface Props {
@@ -17,6 +20,8 @@ interface Props {
   canonical?: string;
   noindex?: boolean;
   breadcrumbs?: { name: string; url: string }[];
+  /** Imagen LCP a precargar: el resultado de img(src, preset). */
+  preloadImage?: { src: string; srcset?: string; sizes?: string };
 }
 
 const {
@@ -32,6 +37,7 @@ const {
   canonical,
   noindex = false,
   breadcrumbs = [],
+  preloadImage,
 } = Astro.props;
 
 const siteUrl = 'https://www.entretormentas.com';
@@ -261,12 +267,16 @@ const robotsContent = noindex
 
     <!-- Typography: Geist (Interface & Editorial Sans) & Geist Mono (Telemetry) -->
     <link rel="preconnect" href="https://media.entretormentas.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Geist:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    {preloadImage && (
+      <link
+        rel="preload"
+        as="image"
+        href={preloadImage.src}
+        imagesrcset={preloadImage.srcset}
+        imagesizes={preloadImage.sizes}
+        fetchpriority="high"
+      />
+    )}
   </head>
   <body class="min-h-screen bg-storm-950 text-slate-100 flex flex-col antialiased">
     <!-- Accessibility Skip Link (WCAG 2.1 AA requirement) -->

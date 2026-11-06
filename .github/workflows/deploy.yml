@@ -40,6 +40,13 @@ jobs:
           key: astro-live-${{ hashFiles('pnpm-lock.yaml') }}-${{ github.sha }}
           restore-keys: astro-live-${{ hashFiles('pnpm-lock.yaml') }}-
 
+      - name: Cache variantes de imágenes
+        uses: actions/cache@v4
+        with:
+          path: .image-cache
+          key: images-${{ github.sha }}
+          restore-keys: images-
+
       - run: pnpm install --frozen-lockfile
 
       - name: Build (sitio vivo)

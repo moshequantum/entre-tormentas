@@ -1,4 +1,5 @@
 ---
+import { img, IMG_FALLBACK } from '../lib/img';
 import Layout from '../layouts/Layout.astro';
 import Pagination from './Pagination.astro';
 import { getSortedPostsCached } from '../lib/posts-cache';
@@ -111,11 +112,11 @@ const categoryBadgeStyles: Record<string, string> = {
               <div>
                 <div class="relative h-44 w-full overflow-hidden bg-storm-800">
                   <img
-                    src={post.data.coverImage || '/images/posts/default-post.jpg'}
+                    {...img(post.data.coverImage, 'card')}
                     alt={post.data.title}
                     class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
-                    onerror="this.src='/images/posts/default-post.jpg'"
+                    onerror={IMG_FALLBACK}
                   />
                   <span class={`absolute top-3 left-3 rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase backdrop-blur-md border ${badgeClass}`}>
                     {post.data.category || 'REGIONALES'}

@@ -48,8 +48,8 @@ export default {
       },
       fontFamily: {
         serif: ['Lora', 'Georgia', 'Cambria', 'serif'],
-        sans: ['Geist', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
-        mono: ['Geist Mono', 'ui-monospace', 'monospace'],
+        sans: ['Geist Variable', 'Geist', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        mono: ['Geist Mono Variable', 'Geist Mono', 'ui-monospace', 'monospace'],
       }
     },
   },

@@ -1,4 +1,5 @@
 ---
+import { img, IMG_FALLBACK } from '../lib/img';
 import Layout from '../layouts/Layout.astro';
 import { getActiveAd } from '../lib/site-settings';
 import AdBanner from '../components/AdBanner.astro';
@@ -150,6 +151,7 @@ const homeAd = await getActiveAd('home');
 ---
 
 <Layout
+  preloadImage={img(leadStory.image, 'hero')}
   title="Entre Tormentas | Diario Digital del Zulia - Noticias y Actualidad"
   description="Primer diario digital de noticias de Maracaibo, Zulia y Venezuela. Información veraz e inmediata sobre regionales, política nacional, sucesos, deportes y opinión."
   type="website"
@@ -158,9 +160,10 @@ const homeAd = await getActiveAd('home');
   <!-- Atmospheric Maracaibo Portada Backdrop with Smooth Black Fade -->
   <div class="pointer-events-none absolute inset-x-0 top-0 h-[580px] overflow-hidden opacity-30">
     <img
-      src="/images/brand/maracaibo-header-bg.jpg"
+      {...img('/images/brand/maracaibo-header-bg.jpg', 'full')}
       alt=""
       aria-hidden="true"
+      decoding="async"
       class="h-full w-full object-cover object-top filter brightness-90 contrast-110"
     />
     <div class="absolute inset-0 bg-gradient-to-b from-storm-950/40 via-storm-950/80 to-storm-950"></div>
@@ -178,10 +181,12 @@ const homeAd = await getActiveAd('home');
           <article class="relative flex min-h-[480px] flex-col justify-end overflow-hidden rounded-2xl border border-storm-700 bg-storm-900 shadow-2xl transition-all duration-300 hover:border-electric-500 hover:shadow-electric-600/20 sm:min-h-[540px]">
             <!-- Image with Atmospheric Vignette -->
             <img
-              src={leadStory.image}
+              {...img(leadStory.image, 'hero')}
               alt={leadStory.title}
+              fetchpriority="high"
+              decoding="async"
               class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              onerror="this.src='/images/posts/default-post.jpg'"
+              onerror={IMG_FALLBACK}
             />
             <div class="absolute inset-0 bg-gradient-to-t from-storm-950 via-storm-950/75 to-transparent"></div>
             
@@ -291,11 +296,11 @@ const homeAd = await getActiveAd('home');
                 <div>
                   <div class="relative h-48 w-full overflow-hidden bg-storm-900">
                     <img
-                      src={story.image}
+                      {...img(story.image, 'card')}
                       alt={story.title}
                       class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
-                      onerror="this.src='/images/posts/default-post.jpg'"
+                      onerror={IMG_FALLBACK}
                     />
                     <span class="absolute top-3 left-3 rounded-full bg-electric-600/90 px-2.5 py-0.5 text-[10px] font-bold uppercase text-white shadow-md">
                       {story.category}
@@ -352,11 +357,11 @@ const homeAd = await getActiveAd('home');
               <div>
                 <div class="relative h-44 w-full overflow-hidden bg-storm-800">
                   <img
-                    src={story.image}
+                    {...img(story.image, 'card')}
                     alt={story.title}
                     class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
-                    onerror="this.src='/images/posts/default-post.jpg'"
+                    onerror={IMG_FALLBACK}
                   />
                   <span class={`absolute top-3 left-3 rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase backdrop-blur-md border ${story.badgeColor}`}>
                     {story.category}
@@ -400,11 +405,11 @@ const homeAd = await getActiveAd('home');
                 <div>
                   <div class="relative h-44 w-full overflow-hidden bg-storm-800">
                     <img
-                      src={story.image}
+                      {...img(story.image, 'card')}
                       alt={story.title}
                       class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
-                      onerror="this.src='/images/posts/default-post.jpg'"
+                      onerror={IMG_FALLBACK}
                     />
                     <span class={`absolute top-3 left-3 rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase backdrop-blur-md border ${story.badgeColor}`}>
                       {story.category}
@@ -450,11 +455,11 @@ const homeAd = await getActiveAd('home');
                 <div>
                   <div class="relative h-32 w-full overflow-hidden bg-storm-800">
                     <img
-                      src={story.image}
+                      {...img(story.image, 'card')}
                       alt={story.title}
                       class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
-                      onerror="this.src='/images/posts/default-post.jpg'"
+                      onerror={IMG_FALLBACK}
                     />
                     <span class={`absolute top-2 left-2 rounded-full px-2 py-0.5 text-[9px] font-bold uppercase backdrop-blur-md border ${story.badgeColor}`}>
                       {story.category}
@@ -494,11 +499,11 @@ const homeAd = await getActiveAd('home');
             <a href={`/noticias/${story.id}`} class="block group">
               <article class="flex gap-3 rounded-xl border border-storm-800/80 bg-storm-900/60 p-3 hover:border-rose-500/40 transition">
                 <img
-                  src={story.image}
+                  {...img(story.image, 'card')}
                   alt={story.title}
                   class="h-16 w-20 flex-shrink-0 rounded-lg object-cover bg-storm-800"
                   loading="lazy"
-                  onerror="this.src='/images/posts/default-post.jpg'"
+                  onerror={IMG_FALLBACK}
                 />
                 <div class="flex flex-col justify-between space-y-1">
                   <h3 class="text-xs font-semibold text-slate-200 group-hover:text-white line-clamp-2 leading-snug">
@@ -555,10 +560,10 @@ const homeAd = await getActiveAd('home');
             <a href={`/noticias/${col.id}`} class="block">
               <article class="card-storm flex gap-4 rounded-xl p-5 transition hover:border-electric-500 h-full">
                 <img
-                  src={col.avatar}
+                  {...img(col.avatar, 'thumb')}
                   alt={col.author}
                   class="h-14 w-14 flex-shrink-0 rounded-full object-cover border-2 border-storm-700"
-                  onerror="this.src='/images/posts/default-post.jpg'"
+                  onerror={IMG_FALLBACK}
                 />
                 <div class="space-y-1.5">
                   <div class="flex items-center gap-2">

@@ -1,4 +1,5 @@
 ---
+import { img, IMG_FALLBACK } from '../lib/img';
 import Layout from '../layouts/Layout.astro';
 import Pagination from './Pagination.astro';
 import { getActiveAd } from '../lib/site-settings';
@@ -120,11 +121,11 @@ const categoryAd = await getActiveAd('category');
             <a href={`/noticias/${post.id}`} class="block">
               <div class="relative h-48 w-full overflow-hidden bg-storm-800">
                 <img
-                  src={post.data.coverImage || '/images/posts/default-post.jpg'}
+                  {...img(post.data.coverImage, 'card')}
                   alt={post.data.title}
                   class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
-                  onerror="this.src='/images/posts/default-post.jpg'"
+                  onerror={IMG_FALLBACK}
                 />
                 <span class="absolute top-3 left-3 rounded-full bg-storm-950/85 px-2.5 py-0.5 text-[10px] font-bold text-ion-300 uppercase backdrop-blur-md border border-storm-700">
                   {post.data.category}
