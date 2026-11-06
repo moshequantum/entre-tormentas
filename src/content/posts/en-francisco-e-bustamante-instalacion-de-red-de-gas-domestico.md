@@ -5,7 +5,7 @@ title: >-
 publishedAt: 2026-11-06
 category: regionales
 isFeatured: false
-isBreaking: false
+isBreaking: true
 author: Redacción Entre Tormentas
 coverImage: >-
   /images/posts/en-francisco-e-bustamante-instalacion-de-red-de-gas-domestico/coverImage.jpg
