@@ -2,7 +2,7 @@
 
 > ODD · Protocolo QUANTUM · G.E.N.O.V.A
 > Inicio: 2026-11-06 · Owner: Moisés (@moshequantum) · Editor principal: Guillo (@guillosthormes-arch)
-> Estado: **EN PRODUCCIÓN desde 2026-11-06 · pendientes: redirect apex→www, login real de Guillo, repo público**
+> Estado: **EN PRODUCCIÓN desde 2026-11-06 · repo público · pendientes: redirect apex→www, prueba de Guillo, Search Console**
 
 ## Objective
 
@@ -135,10 +135,13 @@ free privado, con poco margen. Si se pasa, el Bloque 6 (repo público) lo resuel
       hardcodeada** como valor por defecto en `src/pages/api/admin/upload.ts` desde
       `9c2b977c` (2026-10-21) y sigue en commits posteriores. No se encontraron tokens de
       GitHub, claves InsForge ni `.env` versionados. `scripts/upload-storage.cjs` solo lee env.
-- [ ] T21b **Owner**: R2 → Manage API Tokens → revocar el token cuyo Access Key ID aparece
+- [x] T21b **Owner**: R2 → Manage API Tokens → revocar el token cuyo Access Key ID aparece
       en `9c2b977c` y crear uno nuevo si `scripts/upload-storage.cjs` lo necesita. Rotar
       basta: reescribir el historial no hace falta si la clave ya no sirve.
-- [ ] T22 Cambiar visibilidad a público (decisión y clic del owner), **solo después de T21b**.
+- [x] T21c Owner hizo **Roll** del token de cuenta `entretormentas-media` (2026-11-06): el secreto
+      filtrado ya no es válido. Imágenes en `media.entretormentas.com` verificadas tras el Roll.
+- [x] T22 Repo **público** desde 2026-11-06 (`gh repo edit --visibility public`). GitHub reporta la
+      licencia como `NOASSERTION` (propietaria). Actions pasa a minutos ilimitados.
       **Límite real**: los Términos de GitHub permiten a cualquier usuario ver y hacer
       *fork* de un repo público dentro de GitHub; la licencia prohíbe *usarlo*,
       no lo impide técnicamente. Si eso no es aceptable, mantener privado.
