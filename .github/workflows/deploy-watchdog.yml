@@ -1,0 +1,77 @@
+name: Deploy Watchdog (reconciliación y alertas)
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  check-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verificar si main HEAD está desplegado
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+        run: |
+          set -euo pipefail
+
+          HEAD_JSON=$(gh api "repos/${REPO}/commits/main")
+          HEAD_SHA=$(echo "$HEAD_JSON" | jq -r '.sha')
+          HEAD_DATE=$(echo "$HEAD_JSON" | jq -r '.commit.committer.date')
+          HEAD_MSG=$(echo "$HEAD_JSON" | jq -r '.commit.message | split("\n")[0]')
+
+          NOW_EPOCH=$(date -u +%s)
+          HEAD_EPOCH=$(date -u -d "$HEAD_DATE" +%s)
+          AGE_SEC=$(( NOW_EPOCH - HEAD_EPOCH ))
+
+          echo "HEAD: ${HEAD_SHA:0:7} ($HEAD_DATE, hace ${AGE_SEC}s) - $HEAD_MSG"
+
+          if [ "$AGE_SEC" -lt 900 ]; then
+            echo "Último commit tiene menos de 15 minutos; esperando despliegue normal."
+            exit 0
+          fi
+
+          RUNS_JSON=$(gh api "repos/${REPO}/actions/workflows/deploy.yml/runs?branch=main&head_sha=${HEAD_SHA}&per_page=10")
+
+          HAS_SUCCESS=$(echo "$RUNS_JSON" | jq '[.workflow_runs[] | select(.conclusion == "success")] | length')
+          if [ "$HAS_SUCCESS" -gt 0 ]; then
+            echo "OK: HEAD ${HEAD_SHA:0:7} ya fue desplegado con éxito."
+            exit 0
+          fi
+
+          ACTIVE_RECENT=$(echo "$RUNS_JSON" | jq --argjson now "$NOW_EPOCH" '
+            [.workflow_runs[] | select(.status == "in_progress") |
+              select(($now - (.updated_at | fromdateiso8601)) < 1200)
+            ] | length')
+          if [ "$ACTIVE_RECENT" -gt 0 ]; then
+            echo "Deploy en progreso para ${HEAD_SHA:0:7} (< 20 min); esperando."
+            exit 0
+          fi
+
+          echo "::warning::HEAD ${HEAD_SHA:0:7} lleva $((AGE_SEC / 60)) min sin deploy exitoso. Reintentando..."
+
+          # Intentar cancelar runs atascados para este SHA (ignorar zombis sin jobs)
+          for RUN_ID in $(echo "$RUNS_JSON" | jq -r '.workflow_runs[] | select(.status == "queued" or .status == "in_progress") | .id'); do
+            gh api -X POST "repos/${REPO}/actions/runs/${RUN_ID}/cancel" || true
+          done
+
+          # Relanzar deploy.yml en main
+          gh workflow run deploy.yml --ref main
+
+          MSG="Alerta Entre Tormentas: el commit ${HEAD_SHA:0:7} (\"${HEAD_MSG}\") llevaba $((AGE_SEC / 60)) min sin publicarse. El watchdog relanzó deploy.yml automáticamente."
+          echo "$MSG" >> "$GITHUB_STEP_SUMMARY"
+
+          if [ -n "${ALERT_WEBHOOK_URL:-}" ]; then
+            jq -n --arg text "$MSG" --arg content "$MSG" '{text: $text, content: $content}' | \
+              curl -sS -X POST -H "Content-Type: application/json" -d @- "$ALERT_WEBHOOK_URL" || true
+          fi
+
+          # Fallar intencionalmente solo cuando hubo atasco/fallo para que GitHub envíe notificación
+          exit 1
